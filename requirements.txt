@@ -1,0 +1,19 @@
+# OreNPMGuard - Python Dependencies
+# Shai-Hulud npm package scanner requirements
+
+# YAML parsing for centralized configuration
+PyYAML>=6.0,<7.0
+
+# Optional: Enhanced JSON handling (built-in json module is sufficient, but this provides better error messages)
+# jsonschema>=4.0,<5.0
+
+# Development/Testing Dependencies (uncomment if needed)
+# pytest>=7.0,<8.0
+# pytest-cov>=4.0,<5.0
+# black>=23.0,<24.0
+# flake8>=6.0,<7.0
+# mypy>=1.0,<2.0
+
+# Security scanning (optional - for validating the scanner itself)
+# bandit>=1.7,<2.0
+# safety>=2.0,<3.0

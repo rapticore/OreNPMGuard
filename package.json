@@ -1,0 +1,60 @@
+{
+  "name": "orenpmpguard",
+  "version": "1.0.0",
+  "description": "Security tool to detect compromised npm packages from the Shai-Hulud supply chain attack. Available in both Python and Node.js implementations with centralized YAML configuration.",
+  "main": "shai_hulud_scanner.js",
+  "bin": {
+    "orenpmpguard": "./shai_hulud_scanner.js",
+    "shai-hulud-scan": "./shai_hulud_scanner.js"
+  },
+  "scripts": {
+    "scan": "node shai_hulud_scanner.js",
+    "scan:current": "node shai_hulud_scanner.js .",
+    "scan:python": "python3 shai_hulud_scanner.py",
+    "scan:python:current": "python3 shai_hulud_scanner.py .",
+    "install:python-deps": "pip install -r requirements.txt",
+    "test": "npm run scan:current && npm run scan:python:current",
+    "validate": "node -e \"require('./shai_hulud_scanner.js')\" && echo 'JavaScript scanner syntax OK'",
+    "validate:python": "python3 -m py_compile shai_hulud_scanner.py && echo 'Python scanner syntax OK'"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "shai_hulud_scanner.js",
+    "shai_hulud_scanner.py",
+    "affected_packages.yaml",
+    "requirements.txt",
+    "README.md"
+  ],
+  "keywords": [
+    "security",
+    "npm",
+    "scanner",
+    "shai-hulud",
+    "vulnerability",
+    "supply-chain",
+    "malware",
+    "detection",
+    "audit",
+    "threat-intelligence"
+  ],
+  "author": "Security Team",
+  "license": "MIT",
+  "homepage": "https://github.com/your-org/orenpmpguard#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-org/orenpmpguard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-org/orenpmpguard/issues"
+  },
+  "preferGlobal": true,
+  "os": [
+    "linux",
+    "darwin"
+  ]
+}
