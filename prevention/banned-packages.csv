@@ -1,0 +1,196 @@
+package_name,banned_versions,severity,weekly_downloads,first_detected,patient_zero,description,attack_vector,priority
+rxnt-authentication,"0.0.5,0.0.6,0.0.3,0.0.4",CRITICAL,150,2025-09-14T17:58:50Z,true,Patient Zero - First package compromised in the Shai-Hulud attack,postinstall script,1
+@ctrl/tinycolor,"4.1.1,4.1.2",CRITICAL,2200000,2025-09-15,false,Color manipulation library with massive reach - 2.2M weekly downloads,postinstall script,2
+ngx-bootstrap,"18.1.4,19.0.3,20.0.4,20.0.5,20.0.6,19.0.4,20.0.3",CRITICAL,300000,2025-09-15,false,Angular Bootstrap components with 300K weekly downloads,postinstall script,3
+ng2-file-upload,"8.0.3,7.0.2,7.0.3,8.0.1,8.0.2,9.0.1",CRITICAL,100000,2025-09-15,false,File upload component for Angular with 100K weekly downloads,postinstall script,4
+@ctrl/deluge,"7.2.2,7.2.1",HIGH,50000,2025-09-15,false,Popular torrent client library,postinstall script,5
+@ctrl/qbittorrent,"9.7.2,9.7.1",HIGH,45000,2025-09-15,false,qBittorrent API client,postinstall script,6
+@ctrl/magnet-link,"4.0.4,4.0.3",HIGH,35000,2025-09-15,false,Magnet URI parser library,postinstall script,7
+@ctrl/golang-template,"1.4.3,1.4.2",HIGH,30000,2025-09-15,false,Go template engine for JavaScript,postinstall script,8
+@ctrl/ngx-codemirror,"7.0.2,7.0.1",HIGH,25000,2025-09-15,false,CodeMirror wrapper for Angular,postinstall script,9
+@ctrl/ngx-csv,"6.0.2,6.0.1",HIGH,15000,2025-09-15,false,CSV manipulation for Angular,postinstall script,10
+@ctrl/react-adsense,"2.0.2,2.0.1",MEDIUM,12000,2025-09-15,false,Google AdSense component for React,postinstall script,11
+@ctrl/ngx-emoji-mart,"9.2.2,9.2.1",MEDIUM,8000,2025-09-15,false,Emoji picker component for Angular,postinstall script,12
+@ctrl/torrent-file,"4.1.2,4.1.1",MEDIUM,8000,2025-09-15,false,Torrent file parser,postinstall script,13
+@ctrl/transmission,7.3.1,MEDIUM,6000,2025-09-15,false,Transmission client API,postinstall script,14
+@ctrl/shared-torrent,"6.3.2,6.3.1",MEDIUM,5000,2025-09-15,false,Shared torrent utilities,postinstall script,15
+@ctrl/ngx-rightclick,"4.0.2,4.0.1",MEDIUM,3000,2025-09-15,false,Right-click context menu for Angular,postinstall script,16
+@ctrl/ts-base32,"4.0.2,4.0.1",MEDIUM,2500,2025-09-15,false,Base32 encoding library for TypeScript,postinstall script,17
+@nativescript-community/gesturehandler,2.0.35,HIGH,20000,2025-09-15,false,Gesture handling for NativeScript,postinstall script,18
+@nativescript-community/sentry,4.6.43,HIGH,15000,2025-09-15,false,Sentry integration for NativeScript,postinstall script,19
+@nativescript-community/text,"1.6.13,1.6.10,1.6.11,1.6.12,1.6.9",HIGH,12000,2025-09-15,false,Text handling utilities for NativeScript,postinstall script,20
+@nativescript-community/ui-collectionview,6.0.6,HIGH,10000,2025-09-15,false,Collection view component for NativeScript,postinstall script,21
+@nativescript-community/ui-drawer,0.1.30,MEDIUM,8000,2025-09-15,false,Drawer component for NativeScript,postinstall script,22
+@nativescript-community/ui-image,4.5.6,MEDIUM,7000,2025-09-15,false,Image component for NativeScript,postinstall script,23
+@nativescript-community/ui-material-bottomsheet,7.2.72,MEDIUM,6000,2025-09-15,false,Material bottom sheet for NativeScript,postinstall script,24
+@nativescript-community/ui-material-core,"7.2.76,7.2.72,7.2.73,7.2.74,7.2.75",MEDIUM,8000,2025-09-15,false,Material design core for NativeScript,postinstall script,25
+@nativescript-community/ui-material-core-tabs,"7.2.76,7.2.72,7.2.73,7.2.74,7.2.75",MEDIUM,5000,2025-09-15,false,Material tabs for NativeScript,postinstall script,26
+@nativescript-community/arraybuffers,"1.1.6,1.1.7,1.1.8",MEDIUM,4000,2025-09-15,false,ArrayBuffer utilities for NativeScript,postinstall script,27
+@nativescript-community/perms,"3.0.5,3.0.6,3.0.7,3.0.8,3.0.9",MEDIUM,5500,2025-09-15,false,Permissions handling for NativeScript,postinstall script,28
+@nativescript-community/sqlite,"3.5.2,3.5.3,3.5.4,3.5.5",MEDIUM,7000,2025-09-15,false,SQLite integration for NativeScript,postinstall script,29
+@nativescript-community/typeorm,"0.2.30,0.2.31,0.2.32,0.2.33",MEDIUM,3000,2025-09-15,false,TypeORM integration for NativeScript,postinstall script,30
+@nativescript-community/ui-document-picker,"1.1.27,1.1.28,13.0.32",MEDIUM,4500,2025-09-15,false,Document picker for NativeScript,postinstall script,31
+@nativescript-community/ui-label,"1.3.35,1.3.36,1.3.37",MEDIUM,3500,2025-09-15,false,Label component for NativeScript,postinstall script,32
+@nativescript-community/ui-material-bottom-navigation,"7.2.72,7.2.73,7.2.74,7.2.75",MEDIUM,4000,2025-09-15,false,Material bottom navigation for NativeScript,postinstall script,33
+@nativescript-community/ui-material-ripple,"7.2.72,7.2.73,7.2.74,7.2.75",MEDIUM,2500,2025-09-15,false,Material ripple effects for NativeScript,postinstall script,34
+@nativescript-community/ui-material-tabs,"7.2.72,7.2.73,7.2.74,7.2.75",MEDIUM,3000,2025-09-15,false,Material tabs for NativeScript,postinstall script,35
+@nativescript-community/ui-pager,"14.1.36,14.1.37,14.1.38",MEDIUM,2000,2025-09-15,false,Pager component for NativeScript,postinstall script,36
+@nativescript-community/ui-pulltorefresh,"2.5.4,2.5.5,2.5.6,2.5.7",MEDIUM,4500,2025-09-15,false,Pull-to-refresh component for NativeScript,postinstall script,37
+@teselagen/bio-parsers,"0.4.29,0.4.30",MEDIUM,2000,2025-09-15,false,Biological data parsers,postinstall script,38
+@teselagen/bounce-loader,"0.3.16,0.3.17",MEDIUM,1500,2025-09-15,false,Loading animation component,postinstall script,39
+@teselagen/file-utils,"0.3.21,0.3.22",MEDIUM,1800,2025-09-15,false,File utility functions,postinstall script,40
+@teselagen/liquibase-tools,0.4.1,MEDIUM,800,2025-09-15,false,Liquibase integration tools,postinstall script,41
+@teselagen/ove,"0.7.39,0.7.40",MEDIUM,1200,2025-09-15,false,Open Vector Editor component,postinstall script,42
+@teselagen/range-utils,"0.3.14,0.3.15",MEDIUM,1000,2025-09-15,false,Range manipulation utilities,postinstall script,43
+@teselagen/react-list,"0.8.19,0.8.20",MEDIUM,1600,2025-09-15,false,React list component,postinstall script,44
+@teselagen/react-table,"6.10.21,6.10.19,6.10.20,6.10.22",MEDIUM,2200,2025-09-15,false,React table component,postinstall script,45
+@teselagen/sequence-utils,"0.3.33,0.3.34",MEDIUM,1400,2025-09-15,false,DNA sequence utilities,postinstall script,46
+@teselagen/ui,"0.9.9,0.9.10",MEDIUM,1700,2025-09-15,false,UI component library,postinstall script,47
+@crowdstrike/commitlint,"8.1.1,8.1.2",HIGH,5000,2025-09-15,false,Commit linting rules for CrowdStrike,postinstall script,48
+@crowdstrike/falcon-shoelace,"0.4.1,0.4.2",HIGH,3000,2025-09-15,false,Shoelace components for Falcon platform,postinstall script,49
+@crowdstrike/foundry-js,"0.19.1,0.19.2",HIGH,4000,2025-09-15,false,Foundry JavaScript SDK,postinstall script,50
+@crowdstrike/glide-core,"0.34.2,0.34.3",HIGH,2500,2025-09-15,false,Glide framework core,postinstall script,51
+@crowdstrike/logscale-dashboard,"1.205.1,1.205.2",HIGH,2000,2025-09-15,false,LogScale dashboard components,postinstall script,52
+@crowdstrike/logscale-file-editor,"1.205.1,1.205.2",HIGH,1500,2025-09-15,false,LogScale file editor,postinstall script,53
+@crowdstrike/logscale-parser-edit,"1.205.1,1.205.2",HIGH,1200,2025-09-15,false,LogScale parser editor,postinstall script,54
+@crowdstrike/logscale-search,"1.205.1,1.205.2",HIGH,1800,2025-09-15,false,LogScale search components,postinstall script,55
+@crowdstrike/tailwind-toucan-base,"5.0.1,5.0.2",HIGH,3500,2025-09-15,false,Tailwind CSS base for Toucan design system,postinstall script,56
+angulartics2,"14.1.2,14.1.1",MEDIUM,25000,2025-09-15,false,Google Analytics integration for Angular,postinstall script,57
+encounter-playground,"0.0.4,0.0.5,0.0.2,0.0.3",MEDIUM,500,2025-09-15,false,Development playground component,postinstall script,58
+eslint-config-teselagen,"6.1.7,6.1.8",MEDIUM,300,2025-09-15,false,ESLint configuration for Teselagen,postinstall script,59
+graphql-sequelize-teselagen,"5.3.8,5.3.9",MEDIUM,400,2025-09-15,false,GraphQL Sequelize integration,postinstall script,60
+json-rules-engine-simplified,"0.2.3,0.2.4,0.2.1",MEDIUM,800,2025-09-15,false,Simplified JSON rules engine,postinstall script,61
+koa2-swagger-ui,"5.11.2,5.11.1",MEDIUM,5000,2025-09-15,false,Swagger UI middleware for Koa2,postinstall script,62
+ngx-color,"10.0.2,10.0.1",MEDIUM,8000,2025-09-15,false,Color picker for Angular,postinstall script,63
+ngx-toastr,"19.0.2,19.0.1",MEDIUM,45000,2025-09-15,false,Toast notifications for Angular,postinstall script,64
+ngx-trend,8.0.1,MEDIUM,2000,2025-09-15,false,Trend chart component for Angular,postinstall script,65
+oradm-to-gql,"35.0.14,35.0.15",MEDIUM,200,2025-09-15,false,Oracle to GraphQL converter,postinstall script,66
+oradm-to-sqlz,"1.1.4,1.1.2",MEDIUM,150,2025-09-15,false,Oracle to Sequelize converter,postinstall script,67
+ove-auto-annotate,"0.0.9,0.0.10",MEDIUM,100,2025-09-15,false,Auto-annotation for Open Vector Editor,postinstall script,68
+react-complaint-image,"0.0.34,0.0.35,0.0.32",MEDIUM,300,2025-09-15,false,Image component for complaints,postinstall script,69
+react-jsonschema-form-conditionals,"0.3.20,0.3.21,0.3.18",MEDIUM,800,2025-09-15,false,Conditional forms for React JSON Schema,postinstall script,70
+react-jsonschema-form-extras,"1.0.3,1.0.4",MEDIUM,600,2025-09-15,false,Extra components for React JSON Schema forms,postinstall script,71
+react-jsonschema-rxnt-extras,"0.4.8,0.4.9",MEDIUM,400,2025-09-15,false,RXNT extras for React JSON Schema,postinstall script,72
+rxnt-healthchecks-nestjs,"1.0.4,1.0.5,1.0.2,1.0.3",MEDIUM,300,2025-09-15,false,Health checks for NestJS,postinstall script,73
+rxnt-kue,"1.0.6,1.0.7,1.0.4,1.0.5",MEDIUM,250,2025-09-15,false,Queue processing utilities,postinstall script,74
+swc-plugin-component-annotate,"1.9.2,1.9.1",MEDIUM,500,2025-09-15,false,SWC plugin for component annotation,postinstall script,75
+tg-client-query-builder,"2.14.4,2.14.5",MEDIUM,200,2025-09-15,false,Query builder client,postinstall script,76
+tg-redbird,"1.3.1,1.3.2",MEDIUM,150,2025-09-15,false,Redbird proxy utilities,postinstall script,77
+tg-seq-gen,"1.0.9,1.0.10",MEDIUM,100,2025-09-15,false,Sequence generator utilities,postinstall script,78
+ts-gaussian,"3.0.6,3.0.5",MEDIUM,400,2025-09-15,false,Gaussian distribution for TypeScript,postinstall script,79
+ve-bamreader,"0.2.6,0.2.7",MEDIUM,80,2025-09-15,false,BAM file reader for Vector Editor,postinstall script,80
+ve-editor,"1.0.1,1.0.2",MEDIUM,120,2025-09-15,false,Vector Editor component,postinstall script,81
+@ahmedhfarag/ngx-perfect-scrollbar,20.0.20,MEDIUM,1000,2025-09-15,false,Perfect scrollbar for Angular,postinstall script,82
+@ahmedhfarag/ngx-virtual-scroller,4.0.4,MEDIUM,800,2025-09-15,false,Virtual scroller for Angular,postinstall script,83
+@art-ws/common,2.0.28,MEDIUM,300,2025-09-15,false,Common utilities for Art WebSocket,postinstall script,84
+@art-ws/config-eslint,"2.0.4,2.0.5",MEDIUM,200,2025-09-15,false,ESLint configuration for Art WebSocket,postinstall script,85
+@art-ws/config-ts,"2.0.7,2.0.8",MEDIUM,180,2025-09-15,false,TypeScript configuration for Art WebSocket,postinstall script,86
+@art-ws/db-context,2.0.24,MEDIUM,150,2025-09-15,false,Database context for Art WebSocket,postinstall script,87
+@art-ws/di-node,2.0.13,MEDIUM,120,2025-09-15,false,Dependency injection for Node.js,postinstall script,88
+@art-ws/di,"2.0.28,2.0.32",MEDIUM,200,2025-09-15,false,Dependency injection framework,postinstall script,89
+@art-ws/eslint,"1.0.5,1.0.6",MEDIUM,100,2025-09-15,false,ESLint utilities for Art WebSocket,postinstall script,90
+@art-ws/fastify-http-server,"2.0.24,2.0.27",MEDIUM,180,2025-09-15,false,Fastify HTTP server for Art WebSocket,postinstall script,91
+@art-ws/http-server,"2.0.21,2.0.25",MEDIUM,200,2025-09-15,false,HTTP server for Art WebSocket,postinstall script,92
+@art-ws/openapi,"0.1.12,0.1.9",MEDIUM,150,2025-09-15,false,OpenAPI utilities for Art WebSocket,postinstall script,93
+@art-ws/package-base,"1.0.5,1.0.6",MEDIUM,80,2025-09-15,false,Base package utilities,postinstall script,94
+@art-ws/prettier,"1.0.5,1.0.6",MEDIUM,90,2025-09-15,false,Prettier configuration,postinstall script,95
+@art-ws/slf,"2.0.15,2.0.22",MEDIUM,120,2025-09-15,false,Simple Logging Facade,postinstall script,96
+@art-ws/ssl-info,"1.0.10,1.0.9",MEDIUM,70,2025-09-15,false,SSL information utilities,postinstall script,97
+@art-ws/web-app,"1.0.3,1.0.4",MEDIUM,100,2025-09-15,false,Web application framework,postinstall script,98
+@hestjs/core,0.2.1,MEDIUM,300,2025-09-15,false,Core framework for HestJS,postinstall script,99
+@hestjs/cqrs,0.1.6,MEDIUM,200,2025-09-15,false,CQRS implementation for HestJS,postinstall script,100
+@hestjs/demo,0.1.2,MEDIUM,50,2025-09-15,false,Demo application for HestJS,postinstall script,101
+@hestjs/eslint-config,0.1.2,MEDIUM,80,2025-09-15,false,ESLint configuration for HestJS,postinstall script,102
+@hestjs/logger,0.1.6,MEDIUM,150,2025-09-15,false,Logging utilities for HestJS,postinstall script,103
+@hestjs/scalar,0.1.7,MEDIUM,100,2025-09-15,false,Scalar utilities for HestJS,postinstall script,104
+@hestjs/validation,0.1.6,MEDIUM,120,2025-09-15,false,Validation utilities for HestJS,postinstall script,105
+@nexe/config-manager,0.1.1,MEDIUM,80,2025-09-15,false,Configuration manager for Nexe,postinstall script,106
+@nexe/eslint-config,0.1.1,MEDIUM,60,2025-09-15,false,ESLint configuration for Nexe,postinstall script,107
+@nexe/logger,0.1.3,MEDIUM,90,2025-09-15,false,Logger for Nexe,postinstall script,108
+@nstudio/angular,"20.0.4,20.0.5,20.0.6",MEDIUM,2000,2025-09-15,false,Angular utilities for nStudio,postinstall script,109
+@nstudio/focus,"20.0.4,20.0.5,20.0.6",MEDIUM,1500,2025-09-15,false,Focus utilities for nStudio,postinstall script,110
+@nstudio/nativescript-checkbox,"2.0.6,2.0.7,2.0.8,2.0.9",MEDIUM,1200,2025-09-15,false,Checkbox component for NativeScript,postinstall script,111
+@nstudio/nativescript-loading-indicator,"5.0.1,5.0.2,5.0.3,5.0.4",MEDIUM,800,2025-09-15,false,Loading indicator for NativeScript,postinstall script,112
+@nstudio/ui-collectionview,"5.1.11,5.1.12,5.1.13,5.1.14",MEDIUM,1000,2025-09-15,false,Collection view for nStudio UI,postinstall script,113
+@nstudio/web-angular,20.0.4,MEDIUM,500,2025-09-15,false,Angular web utilities,postinstall script,114
+@nstudio/web,20.0.4,MEDIUM,600,2025-09-15,false,Web utilities for nStudio,postinstall script,115
+@nstudio/xplat-utils,"20.0.5,20.0.6,20.0.7",MEDIUM,700,2025-09-15,false,Cross-platform utilities,postinstall script,116
+@nstudio/xplat,"20.0.5,20.0.6,20.0.7",MEDIUM,800,2025-09-15,false,Cross-platform framework,postinstall script,117
+@operato/board,"9.0.36,9.0.37,9.0.38,9.0.39,9.0.40,9.0.41,9.0.42,9.0.43,9.0.44,9.0.45,9.0.46",MEDIUM,500,2025-09-15,false,Board component for Operato,postinstall script,118
+@operato/data-grist,"9.0.29,9.0.35,9.0.36,9.0.37",MEDIUM,300,2025-09-15,false,Data grid component,postinstall script,119
+@operato/graphql,"9.0.22,9.0.35,9.0.36,9.0.37,9.0.38,9.0.39,9.0.40,9.0.41,9.0.42,9.0.43,9.0.44,9.0.45,9.0.46",MEDIUM,400,2025-09-15,false,GraphQL utilities for Operato,postinstall script,120
+@operato/headroom,"9.0.2,9.0.35,9.0.36,9.0.37",MEDIUM,200,2025-09-15,false,Headroom component,postinstall script,121
+@operato/help,"9.0.35,9.0.36,9.0.37,9.0.38,9.0.39,9.0.40,9.0.41,9.0.42,9.0.43,9.0.44,9.0.45,9.0.46",MEDIUM,150,2025-09-15,false,Help system component,postinstall script,122
+@operato/i18n,"9.0.35,9.0.36,9.0.37",MEDIUM,180,2025-09-15,false,Internationalization utilities,postinstall script,123
+@operato/input,"9.0.27,9.0.35,9.0.36,9.0.37,9.0.38,9.0.39,9.0.40,9.0.41,9.0.42,9.0.43,9.0.44,9.0.45,9.0.46,9.0.47,9.0.48",MEDIUM,300,2025-09-15,false,Input components for Operato,postinstall script,124
+@operato/layout,"9.0.35,9.0.36,9.0.37",MEDIUM,250,2025-09-15,false,Layout components,postinstall script,125
+@operato/popup,"9.0.22,9.0.35,9.0.36,9.0.37,9.0.38,9.0.39,9.0.40,9.0.41,9.0.42,9.0.43,9.0.44,9.0.45,9.0.46,9.0.49",MEDIUM,200,2025-09-15,false,Popup components,postinstall script,126
+@operato/pull-to-refresh,"9.0.36,9.0.37,9.0.38,9.0.39,9.0.40,9.0.41,9.0.42",MEDIUM,150,2025-09-15,false,Pull-to-refresh component,postinstall script,127
+@operato/shell,"9.0.22,9.0.35,9.0.36,9.0.37,9.0.38,9.0.39",MEDIUM,300,2025-09-15,false,Shell framework,postinstall script,128
+@operato/styles,"9.0.2,9.0.35,9.0.36,9.0.37",MEDIUM,200,2025-09-15,false,Style utilities,postinstall script,129
+@operato/utils,"9.0.22,9.0.35,9.0.36,9.0.37,9.0.38,9.0.39,9.0.40,9.0.41,9.0.42,9.0.43,9.0.44,9.0.45,9.0.46,9.0.49",MEDIUM,400,2025-09-15,false,Utility functions for Operato,postinstall script,130
+@thangved/callback-window,1.1.4,MEDIUM,100,2025-09-15,false,Callback window utilities,postinstall script,131
+@things-factory/attachment-base,"9.0.42,9.0.43,9.0.44,9.0.45,9.0.46,9.0.47,9.0.48,9.0.49,9.0.50,9.0.51,9.0.52,9.0.53,9.0.54,9.0.55",MEDIUM,300,2025-09-15,false,Attachment handling base,postinstall script,132
+@things-factory/auth-base,"9.0.42,9.0.43,9.0.44,9.0.45",MEDIUM,200,2025-09-15,false,Authentication base,postinstall script,133
+@things-factory/email-base,"9.0.42,9.0.43,9.0.44,9.0.45,9.0.46,9.0.47,9.0.48,9.0.49,9.0.50,9.0.51,9.0.52,9.0.53,9.0.54,9.0.55,9.0.56,9.0.57,9.0.58,9.0.59",MEDIUM,250,2025-09-15,false,Email handling base,postinstall script,134
+@things-factory/env,"9.0.42,9.0.43,9.0.44,9.0.45",MEDIUM,150,2025-09-15,false,Environment utilities,postinstall script,135
+@things-factory/integration-base,"9.0.42,9.0.43,9.0.44,9.0.45",MEDIUM,180,2025-09-15,false,Integration framework base,postinstall script,136
+@things-factory/integration-marketplace,"9.0.42,9.0.43,9.0.44,9.0.45",MEDIUM,120,2025-09-15,false,Integration marketplace,postinstall script,137
+@things-factory/shell,"9.0.42,9.0.43,9.0.44,9.0.45",MEDIUM,200,2025-09-15,false,Shell framework for Things Factory,postinstall script,138
+@tnf-dev/api,1.0.8,MEDIUM,80,2025-09-15,false,API utilities for TNF,postinstall script,139
+@tnf-dev/core,1.0.8,MEDIUM,100,2025-09-15,false,Core framework for TNF,postinstall script,140
+@tnf-dev/js,1.0.8,MEDIUM,70,2025-09-15,false,JavaScript utilities for TNF,postinstall script,141
+@tnf-dev/mui,1.0.8,MEDIUM,60,2025-09-15,false,Material-UI components for TNF,postinstall script,142
+@tnf-dev/react,1.0.8,MEDIUM,90,2025-09-15,false,React components for TNF,postinstall script,143
+@ui-ux-gang/devextreme-angular-rpk,24.1.7,MEDIUM,500,2025-09-15,false,DevExtreme Angular components,postinstall script,144
+@yoobic/design-system,6.5.17,MEDIUM,800,2025-09-15,false,Design system for Yoobic,postinstall script,145
+@yoobic/jpeg-camera-es6,1.0.13,MEDIUM,300,2025-09-15,false,JPEG camera utilities,postinstall script,146
+@yoobic/yobi,8.7.53,MEDIUM,400,2025-09-15,false,Yobi framework,postinstall script,147
+airchief,0.3.1,MEDIUM,50,2025-09-15,false,Air traffic management utilities,postinstall script,148
+airpilot,0.8.8,MEDIUM,80,2025-09-15,false,Aviation pilot utilities,postinstall script,149
+browser-webdriver-downloader,3.0.8,MEDIUM,1200,2025-09-15,false,WebDriver downloader for browsers,postinstall script,150
+capacitor-notificationhandler,"0.0.2,0.0.3",MEDIUM,300,2025-09-15,false,Notification handler for Capacitor,postinstall script,151
+capacitor-plugin-healthapp,"0.0.2,0.0.3",MEDIUM,200,2025-09-15,false,Health app plugin for Capacitor,postinstall script,152
+capacitor-plugin-ihealth,"1.1.8,1.1.9",MEDIUM,150,2025-09-15,false,iHealth plugin for Capacitor,postinstall script,153
+capacitor-plugin-vonage,"1.0.2,1.0.3",MEDIUM,100,2025-09-15,false,Vonage plugin for Capacitor,postinstall script,154
+capacitorandroidpermissions,"0.0.4,0.0.5",MEDIUM,250,2025-09-15,false,Android permissions for Capacitor,postinstall script,155
+config-cordova,0.8.5,MEDIUM,400,2025-09-15,false,Cordova configuration utilities,postinstall script,156
+cordova-plugin-voxeet2,1.0.24,MEDIUM,200,2025-09-15,false,Voxeet plugin for Cordova,postinstall script,157
+cordova-voxeet,1.0.32,MEDIUM,180,2025-09-15,false,Voxeet integration for Cordova,postinstall script,158
+create-hest-app,0.1.9,MEDIUM,100,2025-09-15,false,App generator for HestJS,postinstall script,159
+db-evo,"1.1.4,1.1.5",MEDIUM,300,2025-09-15,false,Database evolution utilities,postinstall script,160
+devextreme-angular-rpk,21.2.8,MEDIUM,800,2025-09-15,false,DevExtreme Angular package,postinstall script,161
+ember-browser-services,"5.0.2,5.0.3",MEDIUM,500,2025-09-15,false,Browser services for Ember,postinstall script,162
+ember-headless-form-yup,1.0.1,MEDIUM,200,2025-09-15,false,Headless forms with Yup validation,postinstall script,163
+ember-headless-form,"1.1.2,1.1.3",MEDIUM,300,2025-09-15,false,Headless forms for Ember,postinstall script,164
+ember-headless-table,"2.1.5,2.1.6",MEDIUM,400,2025-09-15,false,Headless tables for Ember,postinstall script,165
+ember-url-hash-polyfill,"1.0.12,1.0.13",MEDIUM,150,2025-09-15,false,URL hash polyfill for Ember,postinstall script,166
+ember-velcro,"2.2.1,2.2.2",MEDIUM,100,2025-09-15,false,Velcro utilities for Ember,postinstall script,167
+eslint-config-crowdstrike-node,"4.0.3,4.0.4",MEDIUM,300,2025-09-15,false,ESLint configuration for CrowdStrike Node.js,postinstall script,168
+eslint-config-crowdstrike,"11.0.2,11.0.3",MEDIUM,400,2025-09-15,false,ESLint configuration for CrowdStrike,postinstall script,169
+globalize-rpk,1.7.4,MEDIUM,200,2025-09-15,false,Globalization utilities,postinstall script,170
+html-to-base64-image,1.0.2,MEDIUM,150,2025-09-15,false,HTML to Base64 image converter,postinstall script,171
+jumpgate,0.0.2,MEDIUM,50,2025-09-15,false,Gateway utilities,postinstall script,172
+mcfly-semantic-release,1.3.1,MEDIUM,100,2025-09-15,false,Semantic release for McFly,postinstall script,173
+mcp-knowledge-base,0.0.2,MEDIUM,80,2025-09-15,false,Knowledge base for MCP,postinstall script,174
+mcp-knowledge-graph,1.2.1,MEDIUM,120,2025-09-15,false,Knowledge graph for MCP,postinstall script,175
+mobioffice-cli,1.0.3,MEDIUM,60,2025-09-15,false,CLI for MobiOffice,postinstall script,176
+monorepo-next,"13.0.1,13.0.2",MEDIUM,800,2025-09-15,false,Monorepo utilities for Next.js,postinstall script,177
+mstate-angular,0.4.4,MEDIUM,200,2025-09-15,false,State management for Angular,postinstall script,178
+mstate-cli,0.4.7,MEDIUM,150,2025-09-15,false,CLI for MState,postinstall script,179
+mstate-dev-react,1.1.1,MEDIUM,100,2025-09-15,false,Development utilities for React,postinstall script,180
+mstate-react,1.6.5,MEDIUM,300,2025-09-15,false,State management for React,postinstall script,181
+ngx-ws,"1.1.5,1.1.6",MEDIUM,400,2025-09-15,false,WebSocket utilities for Angular,postinstall script,182
+pm2-gelf-json,"1.0.4,1.0.5",MEDIUM,200,2025-09-15,false,GELF JSON logger for PM2,postinstall script,183
+printjs-rpk,1.6.1,MEDIUM,500,2025-09-15,false,Print utilities for JavaScript,postinstall script,184
+remark-preset-lint-crowdstrike,"4.0.1,4.0.2",MEDIUM,150,2025-09-15,false,Remark linting preset for CrowdStrike,postinstall script,185
+tbssnch,1.0.2,MEDIUM,50,2025-09-15,false,TBS synchronization utilities,postinstall script,186
+teselagen-interval-tree,1.1.2,MEDIUM,100,2025-09-15,false,Interval tree data structure,postinstall script,187
+thangved-react-grid,1.0.3,MEDIUM,80,2025-09-15,false,React grid component,postinstall script,188
+ts-imports,"1.0.1,1.0.2",MEDIUM,200,2025-09-15,false,TypeScript import utilities,postinstall script,189
+tvi-cli,0.1.5,MEDIUM,60,2025-09-15,false,CLI for TVI,postinstall script,190
+verror-extra,6.0.1,MEDIUM,300,2025-09-15,false,Extended error handling utilities,postinstall script,191
+voip-callkit,"1.0.2,1.0.3",MEDIUM,150,2025-09-15,false,VoIP call kit utilities,postinstall script,192
+wdio-web-reporter,0.1.3,MEDIUM,100,2025-09-15,false,Web reporter for WebDriver IO,postinstall script,193
+yargs-help-output,5.0.3,MEDIUM,200,2025-09-15,false,Help output formatter for Yargs,postinstall script,194
+yoo-styles,6.0.326,MEDIUM,300,2025-09-15,false,Style library for Yoo platform,postinstall script,195

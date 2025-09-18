@@ -1,0 +1,229 @@
+name: 🛡️ Shai-Hulud Security Scanner & Blocker
+
+on:
+  push:
+    branches: [ main, master, develop ]
+  pull_request:
+    branches: [ main, master, develop ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+  checks: write
+
+jobs:
+  shai-hulud-security-scan:
+    name: 🔍 Scan for Shai-Hulud Compromised Packages
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 🟢 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: 📦 Install Python dependencies
+        run: |
+          pip install pyyaml
+
+      - name: 🚨 Download OreNPMGuard Scanner
+        run: |
+          echo "🔍 Downloading latest OreNPMGuard scanner..."
+          curl -sSL https://raw.githubusercontent.com/rapticore/orenpmpguard/main/shai_hulud_scanner.py -o shai_hulud_scanner.py
+          curl -sSL https://raw.githubusercontent.com/rapticore/orenpmpguard/main/shai_hulud_scanner.js -o shai_hulud_scanner.js
+          curl -sSL https://raw.githubusercontent.com/rapticore/orenpmpguard/main/affected_packages.yaml -o affected_packages.yaml
+          chmod +x shai_hulud_scanner.py shai_hulud_scanner.js
+
+      - name: 🔍 Scan package.json files
+        id: package_scan
+        run: |
+          echo "🔍 Scanning package.json files for Shai-Hulud compromised packages..."
+          SCAN_RESULTS=""
+          EXIT_CODE=0
+
+          # Find and scan all package.json files
+          find . -name "package.json" -not -path "./node_modules/*" | while read -r file; do
+            echo "📦 Scanning: $file"
+            if python3 shai_hulud_scanner.py "$file" | grep -q "🚨 CRITICAL"; then
+              echo "🚨 CRITICAL THREAT DETECTED in $file!"
+              SCAN_RESULTS="$SCAN_RESULTS\n🚨 CRITICAL: Compromised packages found in $file"
+              EXIT_CODE=1
+            elif python3 shai_hulud_scanner.py "$file" | grep -q "⚠️ WARNING"; then
+              echo "⚠️ WARNING: Potential threats in $file"
+              SCAN_RESULTS="$SCAN_RESULTS\n⚠️ WARNING: Potential threats in $file"
+            else
+              echo "✅ Clean: $file"
+            fi
+          done
+
+          echo "scan_results<<EOF" >> $GITHUB_OUTPUT
+          echo -e "$SCAN_RESULTS" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+          echo "exit_code=$EXIT_CODE" >> $GITHUB_OUTPUT
+
+      - name: 🔒 Scan package-lock.json files
+        id: lockfile_scan
+        run: |
+          echo "🔒 Scanning package-lock.json files for exact installed versions..."
+          LOCK_RESULTS=""
+          LOCK_EXIT_CODE=0
+
+          # Find and scan all package-lock.json files
+          find . -name "package-lock.json" -not -path "./node_modules/*" | while read -r file; do
+            echo "🔒 Scanning: $file"
+            if python3 shai_hulud_scanner.py "$file" | grep -q "🚨 CRITICAL"; then
+              echo "🚨 CRITICAL THREAT DETECTED in $file!"
+              LOCK_RESULTS="$LOCK_RESULTS\n🚨 CRITICAL: Compromised packages found in $file"
+              LOCK_EXIT_CODE=1
+            elif python3 shai_hulud_scanner.py "$file" | grep -q "⚠️ WARNING"; then
+              echo "⚠️ WARNING: Potential threats in $file"
+              LOCK_RESULTS="$LOCK_RESULTS\n⚠️ WARNING: Potential threats in $file"
+            else
+              echo "✅ Clean: $file"
+            fi
+          done
+
+          echo "lock_results<<EOF" >> $GITHUB_OUTPUT
+          echo -e "$LOCK_RESULTS" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+          echo "lock_exit_code=$LOCK_EXIT_CODE" >> $GITHUB_OUTPUT
+
+      - name: 🔍 Generate Security Report
+        id: security_report
+        run: |
+          echo "📋 Generating comprehensive security report..."
+
+          REPORT="## 🛡️ Shai-Hulud Security Scan Results\n\n"
+          REPORT="$REPORT### 📊 Scan Summary\n"
+          REPORT="$REPORT- **Repository**: ${{ github.repository }}\n"
+          REPORT="$REPORT- **Branch**: ${{ github.ref_name }}\n"
+          REPORT="$REPORT- **Commit**: ${{ github.sha }}\n"
+          REPORT="$REPORT- **Triggered by**: ${{ github.event_name }}\n"
+          REPORT="$REPORT- **Scan time**: $(date -u '+%Y-%m-%d %H:%M:%S UTC')\n\n"
+
+          if [[ "${{ steps.package_scan.outputs.exit_code }}" == "1" ]] || [[ "${{ steps.lockfile_scan.outputs.lock_exit_code }}" == "1" ]]; then
+            REPORT="$REPORT### 🚨 **CRITICAL SECURITY ALERT**\n"
+            REPORT="$REPORT**Shai-Hulud compromised packages detected in this repository!**\n\n"
+            REPORT="$REPORT#### 📦 package.json Scan Results:\n"
+            REPORT="$REPORT${{ steps.package_scan.outputs.scan_results }}\n\n"
+            REPORT="$REPORT#### 🔒 package-lock.json Scan Results:\n"
+            REPORT="$REPORT${{ steps.lockfile_scan.outputs.lock_results }}\n\n"
+            REPORT="$REPORT### 🚨 IMMEDIATE ACTIONS REQUIRED:\n"
+            REPORT="$REPORT1. **🛑 DO NOT MERGE** this PR until packages are removed\n"
+            REPORT="$REPORT2. **Remove compromised packages**: \`npm uninstall <package-name>\`\n"
+            REPORT="$REPORT3. **Clear npm cache**: \`npm cache clean --force\`\n"
+            REPORT="$REPORT4. **Delete node_modules**: \`rm -rf node_modules && npm install\`\n"
+            REPORT="$REPORT5. **Rotate ALL credentials**: GitHub tokens, npm tokens, API keys\n"
+            REPORT="$REPORT6. **Check for Shai-Hulud repos** in your GitHub account\n"
+            REPORT="$REPORT7. **Review GitHub audit logs** for suspicious activity\n\n"
+            REPORT="$REPORT### 📚 Resources:\n"
+            REPORT="$REPORT- [OreNPMGuard Scanner](https://github.com/rapticore/orenpmpguard)\n"
+            REPORT="$REPORT- [Shai-Hulud Attack Details](https://github.com/rapticore/orenpmpguard#about-the-shai-hulud-attack)\n"
+            REPORT="$REPORT- **Emergency Contact**: contact@rapticore.com\n"
+          else
+            REPORT="$REPORT### ✅ **SCAN PASSED**\n"
+            REPORT="$REPORT**No Shai-Hulud compromised packages detected.**\n\n"
+            REPORT="$REPORT- All package.json files: **Clean** ✅\n"
+            REPORT="$REPORT- All package-lock.json files: **Clean** ✅\n\n"
+            REPORT="$REPORT*Scanned by [OreNPMGuard](https://github.com/rapticore/orenpmpguard) - Rapticore Security*\n"
+          fi
+
+          echo "security_report<<EOF" >> $GITHUB_OUTPUT
+          echo -e "$REPORT" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: 💬 Comment on Pull Request
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const report = `${{ steps.security_report.outputs.security_report }}`;
+
+            // Find existing comment
+            const comments = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+            });
+
+            const existingComment = comments.data.find(comment =>
+              comment.body.includes('🛡️ Shai-Hulud Security Scan Results')
+            );
+
+            if (existingComment) {
+              // Update existing comment
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existingComment.id,
+                body: report
+              });
+            } else {
+              // Create new comment
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body: report
+              });
+            }
+
+      - name: 📧 Notify Security Team
+        if: steps.package_scan.outputs.exit_code == '1' || steps.lockfile_scan.outputs.lock_exit_code == '1'
+        run: |
+          echo "🚨 SECURITY ALERT: Shai-Hulud compromised packages detected!"
+          echo "Repository: ${{ github.repository }}"
+          echo "Branch: ${{ github.ref_name }}"
+          echo "Commit: ${{ github.sha }}"
+          echo "Triggered by: ${{ github.actor }}"
+
+          # Send notification (customize with your notification system)
+          # Examples:
+          # curl -X POST "${{ secrets.SLACK_WEBHOOK }}" -d "payload={\"text\":\"🚨 SECURITY ALERT: Shai-Hulud detected in ${{ github.repository }}\"}"
+          # curl -X POST "${{ secrets.TEAMS_WEBHOOK }}" -d "{\"text\":\"🚨 SECURITY ALERT: Shai-Hulud detected in ${{ github.repository }}\"}"
+
+      - name: 📊 Upload Security Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: shai-hulud-security-report
+          path: |
+            shai_hulud_scanner.py
+            shai_hulud_scanner.js
+            affected_packages.yaml
+          retention-days: 30
+
+      - name: 🛑 Fail on Critical Packages
+        if: steps.package_scan.outputs.exit_code == '1' || steps.lockfile_scan.outputs.lock_exit_code == '1'
+        run: |
+          echo "🚨 BUILD FAILED: Critical security threats detected!"
+          echo "Shai-Hulud compromised packages found in this repository."
+          echo "This build is being failed to prevent deployment of compromised code."
+          echo ""
+          echo "IMMEDIATE ACTIONS REQUIRED:"
+          echo "1. Remove all compromised packages"
+          echo "2. Rotate ALL credentials (GitHub, npm, API keys)"
+          echo "3. Check for 'Shai-Hulud' repositories in your GitHub account"
+          echo "4. Contact security team: contact@rapticore.com"
+          echo ""
+          echo "DO NOT BYPASS THIS CHECK - Your security depends on it!"
+          exit 1
+
+      - name: ✅ Success Summary
+        if: steps.package_scan.outputs.exit_code != '1' && steps.lockfile_scan.outputs.lock_exit_code != '1'
+        run: |
+          echo "✅ Security scan completed successfully!"
+          echo "No Shai-Hulud compromised packages detected."
+          echo "Repository is clear for deployment."
