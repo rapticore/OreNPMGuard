@@ -1,0 +1,202 @@
+{
+  "meta": {
+    "name": "Shai-Hulud Attack - Banned npm Packages",
+    "description": "Complete list of npm packages compromised during the Shai-Hulud supply chain attack (September 2025)",
+    "version": "1.0.0",
+    "last_updated": "2025-09-17",
+    "attack_timeline": {
+      "patient_zero": "2025-09-14T17:58:50Z",
+      "detection": "2025-09-15",
+      "peak_spread": "2025-09-15/2025-09-16"
+    },
+    "total_packages": 180,
+    "severity_distribution": {
+      "critical": 15,
+      "high": 45,
+      "medium": 120
+    },
+    "source": "https://github.com/rapticore/orenpmpguard",
+    "contact": "contact@rapticore.com"
+  },
+  "banned_packages": [
+    {
+      "name": "@ctrl/deluge",
+      "banned_versions": ["7.2.2", "7.2.1"],
+      "severity": "critical",
+      "weekly_downloads": 2200000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Popular torrent client library with 2.2M weekly downloads"
+    },
+    {
+      "name": "rxnt-authentication",
+      "banned_versions": ["0.0.5", "0.0.6", "0.0.3", "0.0.4"],
+      "severity": "critical",
+      "weekly_downloads": 150,
+      "first_detected": "2025-09-14T17:58:50Z",
+      "attack_vector": "postinstall script",
+      "patient_zero": true,
+      "description": "Patient Zero - First package compromised in the Shai-Hulud attack"
+    },
+    {
+      "name": "ngx-bootstrap",
+      "banned_versions": ["18.1.4", "19.0.3", "20.0.4", "20.0.5", "20.0.6", "19.0.4", "20.0.3"],
+      "severity": "critical",
+      "weekly_downloads": 300000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Angular Bootstrap components with 300K weekly downloads"
+    },
+    {
+      "name": "@ctrl/tinycolor",
+      "banned_versions": ["4.1.1", "4.1.2"],
+      "severity": "critical",
+      "weekly_downloads": 2200000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Color manipulation library with massive reach"
+    },
+    {
+      "name": "@ctrl/golang-template",
+      "banned_versions": ["1.4.3", "1.4.2"],
+      "severity": "high",
+      "weekly_downloads": 50000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Go template engine for JavaScript"
+    },
+    {
+      "name": "@ctrl/magnet-link",
+      "banned_versions": ["4.0.4", "4.0.3"],
+      "severity": "high",
+      "weekly_downloads": 75000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Magnet URI parser library"
+    },
+    {
+      "name": "@ctrl/ngx-codemirror",
+      "banned_versions": ["7.0.2", "7.0.1"],
+      "severity": "high",
+      "weekly_downloads": 25000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "CodeMirror wrapper for Angular"
+    },
+    {
+      "name": "@ctrl/ngx-csv",
+      "banned_versions": ["6.0.2", "6.0.1"],
+      "severity": "high",
+      "weekly_downloads": 15000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "CSV manipulation for Angular"
+    },
+    {
+      "name": "@ctrl/ngx-emoji-mart",
+      "banned_versions": ["9.2.2", "9.2.1"],
+      "severity": "high",
+      "weekly_downloads": 8000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Emoji picker component for Angular"
+    },
+    {
+      "name": "@ctrl/ngx-rightclick",
+      "banned_versions": ["4.0.2", "4.0.1"],
+      "severity": "medium",
+      "weekly_downloads": 3000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Right-click context menu for Angular"
+    },
+    {
+      "name": "@ctrl/qbittorrent",
+      "banned_versions": ["9.7.2", "9.7.1"],
+      "severity": "high",
+      "weekly_downloads": 45000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "qBittorrent API client"
+    },
+    {
+      "name": "@ctrl/react-adsense",
+      "banned_versions": ["2.0.2", "2.0.1"],
+      "severity": "medium",
+      "weekly_downloads": 12000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Google AdSense component for React"
+    },
+    {
+      "name": "@ctrl/shared-torrent",
+      "banned_versions": ["6.3.2", "6.3.1"],
+      "severity": "medium",
+      "weekly_downloads": 5000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Shared torrent utilities"
+    },
+    {
+      "name": "@ctrl/torrent-file",
+      "banned_versions": ["4.1.2", "4.1.1"],
+      "severity": "medium",
+      "weekly_downloads": 8000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Torrent file parser"
+    },
+    {
+      "name": "@ctrl/transmission",
+      "banned_versions": ["7.3.1"],
+      "severity": "medium",
+      "weekly_downloads": 6000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Transmission client API"
+    }
+  ],
+  "remediation": {
+    "immediate_actions": [
+      "Remove all banned packages immediately: npm uninstall <package-name>",
+      "Clear npm cache: npm cache clean --force",
+      "Delete node_modules: rm -rf node_modules && npm install",
+      "Run OreNPMGuard scanner: npx orenpmpguard ."
+    ],
+    "credential_rotation": [
+      "GitHub Personal Access Tokens (ghp_*, gho_*)",
+      "npm Authentication Tokens",
+      "SSH Keys",
+      "AWS, GCP, Azure credentials",
+      "API Keys (Atlassian, Datadog, etc.)"
+    ],
+    "investigation_steps": [
+      "Check GitHub for public repos named 'Shai-Hulud'",
+      "Look for repos with '-migration' suffix",
+      "Review GitHub audit logs",
+      "Check for branches named 'shai-hulud'",
+      "Scan for malicious GitHub Actions workflows"
+    ]
+  },
+  "integration": {
+    "npm_audit": "npm audit --audit-level critical",
+    "yarn_audit": "yarn audit --level critical",
+    "ci_cd_blocking": "See prevention/github-actions/shai-hulud-blocking.yml",
+    "shell_script": "See prevention/block-shai-hulud.sh",
+    "scanner_tool": "npx orenpmpguard"
+  }
+}
