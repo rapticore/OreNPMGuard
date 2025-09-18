@@ -1,6 +1,6 @@
 # OreNPMGuard - Shai-Hulud Package Scanner
 
-A security tool to detect compromised npm packages from the Shai-Hulud supply chain attack. Available in both Python and Node.js implementations with centralized YAML configuration for easy maintenance.
+A security tool to detect compromised npm packages from the Shai-Hulud supply chain attack. Scans both package.json and package-lock.json files to detect exact installed versions. Available in both Python and Node.js implementations with centralized YAML configuration for easy maintenance.
 
 ## 🚨 About the Shai-Hulud Attack
 
@@ -56,6 +56,9 @@ chmod +x shai_hulud_scanner.py
 # Scan single package.json
 python3 shai_hulud_scanner.py ./package.json
 
+# Scan package-lock.json for exact versions
+python3 shai_hulud_scanner.py ./package-lock.json
+
 # Scan entire project directory
 python3 shai_hulud_scanner.py ./my-project
 
@@ -74,6 +77,9 @@ chmod +x shai_hulud_scanner.js
 # Scan single package.json
 node shai_hulud_scanner.js ./package.json
 
+# Scan package-lock.json for exact versions
+node shai_hulud_scanner.js ./package-lock.json
+
 # Scan entire project directory
 node shai_hulud_scanner.js ./my-project
 
@@ -87,7 +93,11 @@ node shai_hulud_scanner.js .
 
 ⚠️ **Potential Risk Detection**: Flags packages with the same name but different versions (may still be at risk)
 
-🔍 **Recursive Scanning**: Automatically scans all subdirectories while skipping `node_modules`
+🔍 **Dual File Support**: Scans both package.json (declared dependencies) and package-lock.json (exact installed versions)
+
+📦 **Comprehensive Coverage**: package-lock.json scanning includes nested dependencies and transitive packages
+
+🔄 **Recursive Scanning**: Automatically scans all subdirectories while skipping `node_modules`
 
 📋 **Detailed Reporting**: Shows package names, versions, dependency sections, and affected versions
 

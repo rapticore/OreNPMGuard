@@ -1,7 +1,7 @@
 {
   "name": "orenpmpguard",
   "version": "1.0.0",
-  "description": "Security tool to detect compromised npm packages from the Shai-Hulud supply chain attack. Available in both Python and Node.js implementations with centralized YAML configuration.",
+  "description": "Security tool to detect compromised npm packages from the Shai-Hulud supply chain attack. Scans both package.json and package-lock.json files. Available in both Python and Node.js implementations with centralized YAML configuration.",
   "main": "shai_hulud_scanner.js",
   "bin": {
     "orenpmpguard": "./shai_hulud_scanner.js",
