@@ -1,10 +1,13 @@
 # OreNPMGuard - Shai-Hulud Package Scanner
+## Version 1.2.0 - Enhanced Detection & Prevention System
 
 A security tool to detect compromised npm packages from the Shai-Hulud supply chain attack. Scans both package.json and package-lock.json files to detect exact installed versions. Available in both Python and Node.js implementations with centralized YAML configuration for easy maintenance.
 
+**Latest Update:** September 18, 2025 - **200 compromised packages** now tracked with comprehensive prevention suite.
+
 ## 🚨 About the Shai-Hulud Attack
 
-**Shai-Hulud** is a self-replicating worm that began compromising npm packages on September 14-15, 2025, representing the first successful self-propagating attack in the npm ecosystem and one of the most severe JavaScript supply-chain attacks observed to date. Named after the giant sandworms from Frank Herbert's Dune series, this malware has infected **180+ npm packages** and **500+ package versions**, affecting millions of weekly downloads.
+**Shai-Hulud** is a self-replicating worm that began compromising npm packages on September 14-15, 2025, representing the first successful self-propagating attack in the npm ecosystem and one of the most severe JavaScript supply-chain attacks observed to date. Named after the giant sandworms from Frank Herbert's Dune series, this malware has infected **200 npm packages** (as tracked in this tool) with multiple versions affected per package.
 
 ### 🦠 How the Attack Works
 
@@ -26,10 +29,10 @@ A security tool to detect compromised npm packages from the Shai-Hulud supply ch
 - **Source Code**: Private repositories made public or cloned
 
 ### 📊 Impact Scale
-- **180+ packages** compromised (including popular packages like `@ctrl/tinycolor` with 2.2M weekly downloads, `ngx-bootstrap` with 300K downloads)
-- **40+ GitHub accounts** compromised
-- **700+ public repositories** created with "Shai-Hulud Migration" label
-- **Millions of developers** potentially affected through package dependencies
+- **200 packages** compromised in this tracking database (including popular packages like `@ctrl/tinycolor`, `ngx-bootstrap`)
+- Multiple GitHub accounts compromised (exact count varies by reporting source)
+- Public repositories created with "Shai-Hulud Migration" label
+- Developers potentially affected through package dependencies
 
 ### 🔗 Connection to Previous Attacks
 This attack is directly linked to the August 2025 **s1ngularity/Nx compromise**, where initial GitHub token theft enabled the broader supply chain attack. Many initial Shai-Hulud victims were known victims of the s1ngularity attack. Security researchers also note the integration of AI-generated content within the campaign, with moderate confidence that an LLM was used to generate the malicious bash script.
@@ -41,6 +44,7 @@ This attack is directly linked to the August 2025 **s1ngularity/Nx compromise**,
 - **September 15-16, 2025**: Worm spreads rapidly across npm ecosystem
 - **September 16, 2025**: Over 180 packages confirmed compromised
 - **September 17, 2025**: Ongoing monitoring and cleanup efforts
+- **September 18, 2025**: v1.2.0 release with 200 packages tracked and enhanced prevention tools
 
 ## Quick Start
 
@@ -101,6 +105,11 @@ node shai_hulud_scanner.js .
 
 📋 **Detailed Reporting**: Shows package names, versions, dependency sections, and affected versions
 
+🔎 **IOC Detection**: Identifies Indicators of Compromise including:
+   - `"postinstall": "node bundle.js"` hooks in package.json
+   - Presence of `bundle.js` files (3MB+ malicious payload)
+   - References to `webhook.site` exfiltration endpoints
+
 ## Output Examples
 
 ### 🚨 Critical (Compromised Packages Found)
@@ -143,6 +152,11 @@ node shai_hulud_scanner.js .
 2. Look for repos with **"-migration"** suffix
 3. Review GitHub audit logs
 4. Check for branches named **shai-hulud**
+5. **Scan for IOCs (Indicators of Compromise)**:
+   - Search for `"postinstall": "node bundle.js"` in package.json files
+   - Look for `bundle.js` files (3MB+ in size, contains malicious payload)
+   - Check for `webhook.site` references in code or network logs
+   - Examine `.github/workflows/shai-hulud-workflow.yml` files
 
 ## Configuration
 
@@ -210,6 +224,35 @@ echo 'alias scan-shai="python3 /usr/local/bin/shai_hulud_scanner.py"' >> ~/.bash
 - **AI-Generated Components**: Security researchers assess with moderate confidence that an LLM was used to generate parts of the malicious bash script
 - **Persistence Mechanisms**: GitHub Actions workflows, malicious branches, and repository migrations
 - **Cloud Integration**: Specifically targets AWS and GCP environments using SDK libraries and IMDS endpoints
+
+### **Indicators of Compromise (IOCs)**
+- **Malicious postinstall hook**: `"postinstall": "node bundle.js"` in package.json
+- **Payload file**: `bundle.js` (typically 3MB+ minified JavaScript)
+- **Exfiltration endpoint**: References to `webhook.site` domains
+- **GitHub workflow**: `.github/workflows/shai-hulud-workflow.yml` for persistence
+- **Repository naming**: Repos with "Shai-Hulud" or "-migration" suffixes
+- **Branch indicators**: Branches named `shai-hulud` containing malicious commits
+
+## 📚 Documentation
+
+- **[Release Notes v1.2.0](docs/RELEASE_NOTES_v1.2.0.md)** - Complete changelog and new features
+- **[Security Assessment](docs/SECURITY_ASSESSMENT.md)** - Comprehensive security analysis
+- **[Prevention Guide](prevention/README.md)** - 490+ lines of integration instructions
+- **[GitHub Actions Workflow](prevention/github-actions/shai-hulud-blocking.yml)** - Automated CI/CD protection
+
+## 🛡️ New in v1.2.0
+
+### **Enhanced Prevention Suite**
+- **Multi-format configs**: JSON, YAML, CSV for different use cases
+- **GitHub Actions integration**: Automated CI/CD blocking workflow
+- **Standalone blocker script**: `prevention/block-shai-hulud.sh`
+- **Package sync tools**: Automated threat intelligence updates
+
+### **Expanded Detection**
+- **200 compromised packages** tracked in database
+- **IoC scanning** for webhook.site references
+- **Severity categorization** (Critical/High/Medium)
+- **Enhanced threat intelligence** with download counts and attack vectors
 
 ## Support
 

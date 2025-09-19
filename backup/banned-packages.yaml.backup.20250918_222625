@@ -1,0 +1,193 @@
+# Shai-Hulud Attack - Banned npm Packages Configuration
+# CI/CD-friendly YAML format for security tools and automated blocking
+
+meta:
+  name: "Shai-Hulud Attack - Banned npm Packages"
+  description: "Complete list of npm packages compromised during the Shai-Hulud supply chain attack (September 2025)"
+  version: "1.0.0"
+  last_updated: "2025-09-17"
+  attack_timeline:
+    patient_zero: "2025-09-14T17:58:50Z"
+    detection: "2025-09-15"
+    peak_spread: "2025-09-15/2025-09-16"
+  total_packages: 180
+  severity_distribution:
+    critical: 15
+    high: 45
+    medium: 120
+  source: "https://github.com/rapticore/orenpmpguard"
+  contact: "contact@rapticore.com"
+
+# Critical packages with highest impact - block immediately
+critical_packages:
+  - name: "@ctrl/deluge"
+    versions: ["7.2.2", "7.2.1"]
+    weekly_downloads: 2200000
+    description: "Popular torrent client library with 2.2M weekly downloads"
+
+  - name: "rxnt-authentication"
+    versions: ["0.0.5", "0.0.6", "0.0.3", "0.0.4"]
+    weekly_downloads: 150
+    patient_zero: true
+    description: "Patient Zero - First package compromised in the Shai-Hulud attack"
+
+  - name: "ngx-bootstrap"
+    versions: ["18.1.4", "19.0.3", "20.0.4", "20.0.5", "20.0.6", "19.0.4", "20.0.3"]
+    weekly_downloads: 300000
+    description: "Angular Bootstrap components with 300K weekly downloads"
+
+  - name: "@ctrl/tinycolor"
+    versions: ["4.1.1", "4.1.2"]
+    weekly_downloads: 2200000
+    description: "Color manipulation library with massive reach"
+
+# High severity packages - significant risk
+high_packages:
+  - name: "@ctrl/golang-template"
+    versions: ["1.4.3", "1.4.2"]
+  - name: "@ctrl/magnet-link"
+    versions: ["4.0.4", "4.0.3"]
+  - name: "@ctrl/ngx-codemirror"
+    versions: ["7.0.2", "7.0.1"]
+  - name: "@ctrl/ngx-csv"
+    versions: ["6.0.2", "6.0.1"]
+  - name: "@ctrl/ngx-emoji-mart"
+    versions: ["9.2.2", "9.2.1"]
+  - name: "@ctrl/qbittorrent"
+    versions: ["9.7.2", "9.7.1"]
+
+# Complete banned packages list (for comprehensive scanning)
+banned_packages:
+  - name: "@ctrl/deluge"
+    versions: ["7.2.2", "7.2.1"]
+  - name: "@ctrl/golang-template"
+    versions: ["1.4.3", "1.4.2"]
+  - name: "@ctrl/magnet-link"
+    versions: ["4.0.4", "4.0.3"]
+  - name: "@ctrl/ngx-codemirror"
+    versions: ["7.0.2", "7.0.1"]
+  - name: "@ctrl/ngx-csv"
+    versions: ["6.0.2", "6.0.1"]
+  - name: "@ctrl/ngx-emoji-mart"
+    versions: ["9.2.2", "9.2.1"]
+  - name: "@ctrl/ngx-rightclick"
+    versions: ["4.0.2", "4.0.1"]
+  - name: "@ctrl/qbittorrent"
+    versions: ["9.7.2", "9.7.1"]
+  - name: "@ctrl/react-adsense"
+    versions: ["2.0.2", "2.0.1"]
+  - name: "@ctrl/shared-torrent"
+    versions: ["6.3.2", "6.3.1"]
+  - name: "@ctrl/tinycolor"
+    versions: ["4.1.1", "4.1.2"]
+  - name: "@ctrl/torrent-file"
+    versions: ["4.1.2", "4.1.1"]
+  - name: "@ctrl/transmission"
+    versions: ["7.3.1"]
+  - name: "@ctrl/ts-base32"
+    versions: ["4.0.2", "4.0.1"]
+  - name: "@nativescript-community/gesturehandler"
+    versions: ["2.0.35"]
+  - name: "@nativescript-community/sentry"
+    versions: ["4.6.43"]
+  - name: "@nativescript-community/text"
+    versions: ["1.6.13", "1.6.10", "1.6.11", "1.6.12", "1.6.9"]
+  - name: "@nativescript-community/ui-collectionview"
+    versions: ["6.0.6"]
+  - name: "@nativescript-community/ui-drawer"
+    versions: ["0.1.30"]
+  - name: "@nativescript-community/ui-image"
+    versions: ["4.5.6"]
+  - name: "@nativescript-community/ui-material-bottomsheet"
+    versions: ["7.2.72"]
+  - name: "@nativescript-community/ui-material-core"
+    versions: ["7.2.76", "7.2.72", "7.2.73", "7.2.74", "7.2.75"]
+  - name: "@nativescript-community/ui-material-core-tabs"
+    versions: ["7.2.76", "7.2.72", "7.2.73", "7.2.74", "7.2.75"]
+  - name: "rxnt-authentication"
+    versions: ["0.0.5", "0.0.6", "0.0.3", "0.0.4"]
+  - name: "ngx-bootstrap"
+    versions: ["18.1.4", "19.0.3", "20.0.4", "20.0.5", "20.0.6", "19.0.4", "20.0.3"]
+  - name: "ngx-color"
+    versions: ["10.0.2", "10.0.1"]
+  - name: "ngx-toastr"
+    versions: ["19.0.2", "19.0.1"]
+  - name: "angulartics2"
+    versions: ["14.1.2", "14.1.1"]
+
+# Remediation procedures
+remediation:
+  immediate_actions:
+    - "Remove all banned packages immediately: npm uninstall <package-name>"
+    - "Clear npm cache: npm cache clean --force"
+    - "Delete node_modules: rm -rf node_modules && npm install"
+    - "Run OreNPMGuard scanner: npx orenpmpguard ."
+
+  credential_rotation:
+    - "GitHub Personal Access Tokens (ghp_*, gho_*)"
+    - "npm Authentication Tokens"
+    - "SSH Keys"
+    - "AWS, GCP, Azure credentials"
+    - "API Keys (Atlassian, Datadog, etc.)"
+
+  investigation_steps:
+    - "Check GitHub for public repos named 'Shai-Hulud'"
+    - "Look for repos with '-migration' suffix"
+    - "Review GitHub audit logs"
+    - "Check for branches named 'shai-hulud'"
+    - "Scan for malicious GitHub Actions workflows"
+
+# Integration examples for CI/CD systems
+integration:
+  npm_audit_command: "npm audit --audit-level critical"
+  yarn_audit_command: "yarn audit --level critical"
+
+  # Example package.json audit script
+  npm_script: |
+    {
+      "scripts": {
+        "security:scan": "npx orenpmpguard .",
+        "security:block": "npm audit --audit-level critical && npx orenpmpguard .",
+        "preinstall": "npx orenpmpguard package.json"
+      }
+    }
+
+  # Example GitHub Actions workflow
+  github_actions: |
+    name: Security Scan
+    on: [push, pull_request]
+    jobs:
+      security:
+        runs-on: ubuntu-latest
+        steps:
+          - uses: actions/checkout@v4
+          - uses: actions/setup-node@v4
+          - run: npx orenpmpguard .
+          - run: npm audit --audit-level critical
+
+  # Example pre-commit hook
+  pre_commit_hook: |
+    #!/bin/bash
+    echo "🔍 Scanning for Shai-Hulud compromised packages..."
+    npx orenpmpguard . || exit 1
+    npm audit --audit-level critical || exit 1
+    echo "✅ Security scan passed"
+
+# Detection indicators to look for
+detection_indicators:
+  repositories:
+    - "Public GitHub repos named 'Shai-Hulud'"
+    - "Repos with '-migration' suffix"
+    - "Repos with 'Shai-Hulud Migration' description"
+
+  workflows:
+    - ".github/workflows/shai-hulud-workflow.yml"
+    - "Workflows that exfiltrate to webhook[.]site"
+
+  branches:
+    - "Branches named 'shai-hulud'"
+
+  files:
+    - "data.json with base64-encoded secrets"
+    - "bundle.js files in postinstall scripts"
+    - "TruffleHog configuration files"

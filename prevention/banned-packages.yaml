@@ -5,16 +5,16 @@ meta:
   name: "Shai-Hulud Attack - Banned npm Packages"
   description: "Complete list of npm packages compromised during the Shai-Hulud supply chain attack (September 2025)"
   version: "1.0.0"
-  last_updated: "2025-09-17"
+  last_updated: "2025-09-18"
   attack_timeline:
     patient_zero: "2025-09-14T17:58:50Z"
     detection: "2025-09-15"
     peak_spread: "2025-09-15/2025-09-16"
-  total_packages: 180
+  total_packages: 200
   severity_distribution:
-    critical: 15
-    high: 45
-    medium: 120
+    critical: 5
+    high: 55
+    medium: 140
   source: "https://github.com/rapticore/orenpmpguard"
   contact: "contact@rapticore.com"
 
@@ -115,6 +115,350 @@ banned_packages:
   - name: "angulartics2"
     versions: ["14.1.2", "14.1.1"]
 
+  - name: "@ahmedhfarag/ngx-perfect-scrollbar"
+    versions: ["20.0.20"]
+  - name: "@ahmedhfarag/ngx-virtual-scroller"
+    versions: ["4.0.4"]
+  - name: "@art-ws/common"
+    versions: ["2.0.22", "2.0.28"]
+  - name: "@art-ws/config-eslint"
+    versions: ["2.0.4", "2.0.5"]
+  - name: "@art-ws/config-ts"
+    versions: ["2.0.7", "2.0.8"]
+  - name: "@art-ws/db-context"
+    versions: ["2.0.21", "2.0.24"]
+  - name: "@art-ws/di"
+    versions: ["2.0.28", "2.0.32"]
+  - name: "@art-ws/di-node"
+    versions: ["2.0.13"]
+  - name: "@art-ws/eslint"
+    versions: ["1.0.5", "1.0.6"]
+  - name: "@art-ws/fastify-http-server"
+    versions: ["2.0.24", "2.0.27"]
+  - name: "@art-ws/http-server"
+    versions: ["2.0.21", "2.0.25"]
+  - name: "@art-ws/openapi"
+    versions: ["0.1.12", "0.1.9"]
+  - name: "@art-ws/package-base"
+    versions: ["1.0.5", "1.0.6"]
+  - name: "@art-ws/prettier"
+    versions: ["1.0.5", "1.0.6"]
+  - name: "@art-ws/slf"
+    versions: ["2.0.15", "2.0.22"]
+  - name: "@art-ws/ssl-info"
+    versions: ["1.0.10", "1.0.9"]
+  - name: "@art-ws/web-app"
+    versions: ["1.0.3", "1.0.4"]
+  - name: "@basic-ui-components-stc/basic-ui-components"
+    versions: ["1.0.5"]
+  - name: "@crowdstrike/commitlint"
+    versions: ["8.1.1", "8.1.2"]
+  - name: "@crowdstrike/falcon-shoelace"
+    versions: ["0.4.1", "0.4.2"]
+  - name: "@crowdstrike/foundry-js"
+    versions: ["0.19.1", "0.19.2"]
+  - name: "@crowdstrike/glide-core"
+    versions: ["0.34.2", "0.34.3"]
+  - name: "@crowdstrike/logscale-dashboard"
+    versions: ["1.205.1", "1.205.2"]
+  - name: "@crowdstrike/logscale-file-editor"
+    versions: ["1.205.1", "1.205.2"]
+  - name: "@crowdstrike/logscale-parser-edit"
+    versions: ["1.205.1", "1.205.2"]
+  - name: "@crowdstrike/logscale-search"
+    versions: ["1.205.1", "1.205.2"]
+  - name: "@crowdstrike/tailwind-toucan-base"
+    versions: ["5.0.1", "5.0.2"]
+  - name: "@hestjs/core"
+    versions: ["0.2.1"]
+  - name: "@hestjs/cqrs"
+    versions: ["0.1.6"]
+  - name: "@hestjs/demo"
+    versions: ["0.1.2"]
+  - name: "@hestjs/eslint-config"
+    versions: ["0.1.2"]
+  - name: "@hestjs/logger"
+    versions: ["0.1.6"]
+  - name: "@hestjs/scalar"
+    versions: ["0.1.7"]
+  - name: "@hestjs/validation"
+    versions: ["0.1.6"]
+  - name: "@nativescript-community/arraybuffers"
+    versions: ["1.1.6", "1.1.7", "1.1.8"]
+  - name: "@nativescript-community/perms"
+    versions: ["3.0.5", "3.0.6", "3.0.7", "3.0.8", "3.0.9"]
+  - name: "@nativescript-community/sqlite"
+    versions: ["3.5.2", "3.5.3", "3.5.4", "3.5.5"]
+  - name: "@nativescript-community/typeorm"
+    versions: ["0.2.30", "0.2.31", "0.2.32", "0.2.33"]
+  - name: "@nativescript-community/ui-document-picker"
+    versions: ["1.1.27", "1.1.28", "13.0.32"]
+  - name: "@nativescript-community/ui-label"
+    versions: ["1.3.35", "1.3.36", "1.3.37"]
+  - name: "@nativescript-community/ui-material-bottom-navigation"
+    versions: ["7.2.72", "7.2.73", "7.2.74", "7.2.75"]
+  - name: "@nativescript-community/ui-material-ripple"
+    versions: ["7.2.72", "7.2.73", "7.2.74", "7.2.75"]
+  - name: "@nativescript-community/ui-material-tabs"
+    versions: ["7.2.72", "7.2.73", "7.2.74", "7.2.75"]
+  - name: "@nativescript-community/ui-pager"
+    versions: ["14.1.35", "14.1.36", "14.1.37", "14.1.38"]
+  - name: "@nativescript-community/ui-pulltorefresh"
+    versions: ["2.5.4", "2.5.5", "2.5.6", "2.5.7"]
+  - name: "@nexe/config-manager"
+    versions: ["0.1.1"]
+  - name: "@nexe/eslint-config"
+    versions: ["0.1.1"]
+  - name: "@nexe/logger"
+    versions: ["0.1.3"]
+  - name: "@nstudio/angular"
+    versions: ["20.0.4", "20.0.5", "20.0.6"]
+  - name: "@nstudio/focus"
+    versions: ["20.0.4", "20.0.5", "20.0.6"]
+  - name: "@nstudio/nativescript-checkbox"
+    versions: ["2.0.6", "2.0.7", "2.0.8", "2.0.9"]
+  - name: "@nstudio/nativescript-loading-indicator"
+    versions: ["5.0.1", "5.0.2", "5.0.3", "5.0.4"]
+  - name: "@nstudio/ui-collectionview"
+    versions: ["5.1.11", "5.1.12", "5.1.13", "5.1.14"]
+  - name: "@nstudio/web"
+    versions: ["20.0.4"]
+  - name: "@nstudio/web-angular"
+    versions: ["20.0.4"]
+  - name: "@nstudio/xplat"
+    versions: ["20.0.4", "20.0.5", "20.0.6", "20.0.7"]
+  - name: "@nstudio/xplat-utils"
+    versions: ["20.0.4", "20.0.5", "20.0.6", "20.0.7"]
+  - name: "@operato/board"
+    versions: ["9.0.35", "9.0.36", "9.0.37", "9.0.38", "9.0.39", "9.0.40", "9.0.41", "9.0.42", "9.0.43", "9.0.44", "9.0.45", "9.0.46", "9.0.47", "9.0.48", "9.0.49", "9.0.50", "9.0.51"]
+  - name: "@operato/data-grist"
+    versions: ["9.0.29", "9.0.35", "9.0.36", "9.0.37"]
+  - name: "@operato/graphql"
+    versions: ["9.0.22", "9.0.35", "9.0.36", "9.0.37", "9.0.38", "9.0.39", "9.0.40", "9.0.41", "9.0.42", "9.0.43", "9.0.44", "9.0.45", "9.0.46", "9.0.47", "9.0.48", "9.0.49", "9.0.50", "9.0.51"]
+  - name: "@operato/headroom"
+    versions: ["9.0.2", "9.0.35", "9.0.36", "9.0.37"]
+  - name: "@operato/help"
+    versions: ["9.0.35", "9.0.36", "9.0.37", "9.0.38", "9.0.39", "9.0.40", "9.0.41", "9.0.42", "9.0.43", "9.0.44", "9.0.45", "9.0.46", "9.0.47", "9.0.48", "9.0.49", "9.0.50", "9.0.51"]
+  - name: "@operato/i18n"
+    versions: ["9.0.35", "9.0.36", "9.0.37"]
+  - name: "@operato/input"
+    versions: ["9.0.27", "9.0.35", "9.0.36", "9.0.37", "9.0.38", "9.0.39", "9.0.40", "9.0.41", "9.0.42", "9.0.43", "9.0.44", "9.0.45", "9.0.46", "9.0.47", "9.0.48"]
+  - name: "@operato/layout"
+    versions: ["9.0.35", "9.0.36", "9.0.37"]
+  - name: "@operato/popup"
+    versions: ["9.0.22", "9.0.35", "9.0.36", "9.0.37", "9.0.38", "9.0.39", "9.0.40", "9.0.41", "9.0.42", "9.0.43", "9.0.44", "9.0.45", "9.0.46", "9.0.47", "9.0.48", "9.0.49", "9.0.50", "9.0.51"]
+  - name: "@operato/pull-to-refresh"
+    versions: ["9.0.35", "9.0.36", "9.0.37", "9.0.38", "9.0.39", "9.0.40", "9.0.41", "9.0.42", "9.0.43", "9.0.44", "9.0.45", "9.0.46", "9.0.47"]
+  - name: "@operato/shell"
+    versions: ["9.0.22", "9.0.35", "9.0.36", "9.0.37", "9.0.38", "9.0.39"]
+  - name: "@operato/styles"
+    versions: ["9.0.2", "9.0.35", "9.0.36", "9.0.37"]
+  - name: "@operato/utils"
+    versions: ["9.0.22", "9.0.35", "9.0.36", "9.0.37", "9.0.38", "9.0.39", "9.0.40", "9.0.41", "9.0.42", "9.0.43", "9.0.44", "9.0.45", "9.0.46", "9.0.47", "9.0.48", "9.0.49", "9.0.50", "9.0.51"]
+  - name: "@teselagen/bio-parsers"
+    versions: ["0.4.29", "0.4.30"]
+  - name: "@teselagen/bounce-loader"
+    versions: ["0.3.16", "0.3.17"]
+  - name: "@teselagen/file-utils"
+    versions: ["0.3.21", "0.3.22"]
+  - name: "@teselagen/liquibase-tools"
+    versions: ["0.4.1"]
+  - name: "@teselagen/ove"
+    versions: ["0.7.39", "0.7.40"]
+  - name: "@teselagen/range-utils"
+    versions: ["0.3.14", "0.3.15"]
+  - name: "@teselagen/react-list"
+    versions: ["0.8.19", "0.8.20"]
+  - name: "@teselagen/react-table"
+    versions: ["6.10.21", "6.10.19", "6.10.20", "6.10.22"]
+  - name: "@teselagen/sequence-utils"
+    versions: ["0.3.33", "0.3.34"]
+  - name: "@teselagen/ui"
+    versions: ["0.9.9", "0.9.10"]
+  - name: "@thangved/callback-window"
+    versions: ["1.1.4"]
+  - name: "@things-factory/attachment-base"
+    versions: ["9.0.42", "9.0.43", "9.0.44", "9.0.45", "9.0.46", "9.0.47", "9.0.48", "9.0.49", "9.0.50", "9.0.51", "9.0.52", "9.0.53", "9.0.54", "9.0.55"]
+  - name: "@things-factory/auth-base"
+    versions: ["9.0.42", "9.0.43", "9.0.44", "9.0.45"]
+  - name: "@things-factory/email-base"
+    versions: ["9.0.42", "9.0.43", "9.0.44", "9.0.45", "9.0.46", "9.0.47", "9.0.48", "9.0.49", "9.0.50", "9.0.51", "9.0.52", "9.0.53", "9.0.54", "9.0.55", "9.0.56", "9.0.57", "9.0.58", "9.0.59"]
+  - name: "@things-factory/env"
+    versions: ["9.0.42", "9.0.43", "9.0.44", "9.0.45"]
+  - name: "@things-factory/integration-base"
+    versions: ["9.0.42", "9.0.43", "9.0.44", "9.0.45"]
+  - name: "@things-factory/integration-marketplace"
+    versions: ["9.0.42", "9.0.43", "9.0.44", "9.0.45"]
+  - name: "@things-factory/shell"
+    versions: ["9.0.42", "9.0.43", "9.0.44", "9.0.45"]
+  - name: "@tnf-dev/api"
+    versions: ["1.0.8"]
+  - name: "@tnf-dev/core"
+    versions: ["1.0.8"]
+  - name: "@tnf-dev/js"
+    versions: ["1.0.8"]
+  - name: "@tnf-dev/mui"
+    versions: ["1.0.8"]
+  - name: "@tnf-dev/react"
+    versions: ["1.0.8"]
+  - name: "@ui-ux-gang/devextreme-angular-rpk"
+    versions: ["24.1.7"]
+  - name: "@ui-ux-gang/devextreme-rpk"
+    versions: ["24.1.7"]
+  - name: "@yoobic/design-system"
+    versions: ["6.5.17"]
+  - name: "@yoobic/jpeg-camera-es6"
+    versions: ["1.0.13"]
+  - name: "@yoobic/yobi"
+    versions: ["8.7.53"]
+  - name: "ace-colorpicker-rpk"
+    versions: ["0.0.14"]
+  - name: "airchief"
+    versions: ["0.3.1"]
+  - name: "airpilot"
+    versions: ["0.8.8"]
+  - name: "browser-webdriver-downloader"
+    versions: ["3.0.8"]
+  - name: "capacitor-notificationhandler"
+    versions: ["0.0.2", "0.0.3"]
+  - name: "capacitor-plugin-healthapp"
+    versions: ["0.0.2", "0.0.3"]
+  - name: "capacitor-plugin-ihealth"
+    versions: ["1.1.8", "1.1.9"]
+  - name: "capacitor-plugin-vonage"
+    versions: ["1.0.2", "1.0.3"]
+  - name: "capacitorandroidpermissions"
+    versions: ["0.0.4", "0.0.5"]
+  - name: "config-cordova"
+    versions: ["0.8.5"]
+  - name: "cordova-plugin-voxeet2"
+    versions: ["1.0.24"]
+  - name: "cordova-voxeet"
+    versions: ["1.0.32"]
+  - name: "create-hest-app"
+    versions: ["0.1.9"]
+  - name: "db-evo"
+    versions: ["1.1.4", "1.1.5"]
+  - name: "devextreme-angular-rpk"
+    versions: ["21.2.8"]
+  - name: "devextreme-rpk"
+    versions: ["21.2.8"]
+  - name: "ember-browser-services"
+    versions: ["5.0.2", "5.0.3"]
+  - name: "ember-headless-form"
+    versions: ["1.1.2", "1.1.3"]
+  - name: "ember-headless-form-yup"
+    versions: ["1.0.1"]
+  - name: "ember-headless-table"
+    versions: ["2.1.5", "2.1.6"]
+  - name: "ember-url-hash-polyfill"
+    versions: ["1.0.12", "1.0.13"]
+  - name: "ember-velcro"
+    versions: ["2.2.1", "2.2.2"]
+  - name: "encounter-playground"
+    versions: ["0.0.4", "0.0.5", "0.0.2", "0.0.3"]
+  - name: "eslint-config-crowdstrike"
+    versions: ["11.0.2", "11.0.3"]
+  - name: "eslint-config-crowdstrike-node"
+    versions: ["4.0.3", "4.0.4"]
+  - name: "eslint-config-teselagen"
+    versions: ["6.1.7", "6.1.8"]
+  - name: "globalize-rpk"
+    versions: ["1.7.4"]
+  - name: "graphql-sequelize-teselagen"
+    versions: ["5.3.8", "5.3.9"]
+  - name: "html-to-base64-image"
+    versions: ["1.0.2"]
+  - name: "json-rules-engine-simplified"
+    versions: ["0.2.1", "0.2.2", "0.2.3", "0.2.4"]
+  - name: "jumpgate"
+    versions: ["0.0.2"]
+  - name: "koa2-swagger-ui"
+    versions: ["5.11.2", "5.11.1"]
+  - name: "mcfly-semantic-release"
+    versions: ["1.3.1"]
+  - name: "mcp-knowledge-base"
+    versions: ["0.0.2"]
+  - name: "mcp-knowledge-graph"
+    versions: ["1.2.1"]
+  - name: "mobioffice-cli"
+    versions: ["1.0.3"]
+  - name: "monorepo-next"
+    versions: ["13.0.1", "13.0.2"]
+  - name: "mstate-angular"
+    versions: ["0.4.4"]
+  - name: "mstate-cli"
+    versions: ["0.4.7"]
+  - name: "mstate-dev-react"
+    versions: ["1.1.1"]
+  - name: "mstate-react"
+    versions: ["1.6.5"]
+  - name: "ng-imports-checker"
+    versions: ["0.0.10", "0.0.9"]
+  - name: "ng2-file-upload"
+    versions: ["8.0.3", "7.0.2", "7.0.3", "8.0.1", "8.0.2", "9.0.1"]
+  - name: "ngx-trend"
+    versions: ["8.0.1"]
+  - name: "ngx-ws"
+    versions: ["1.1.5", "1.1.6"]
+  - name: "oradm-to-gql"
+    versions: ["35.0.14", "35.0.15"]
+  - name: "oradm-to-sqlz"
+    versions: ["1.1.2", "1.1.3", "1.1.4", "1.1.5"]
+  - name: "ove-auto-annotate"
+    versions: ["0.0.9", "0.0.10"]
+  - name: "pm2-gelf-json"
+    versions: ["1.0.4", "1.0.5"]
+  - name: "printjs-rpk"
+    versions: ["1.6.1"]
+  - name: "react-complaint-image"
+    versions: ["0.0.32", "0.0.33", "0.0.34", "0.0.35"]
+  - name: "react-jsonschema-form-conditionals"
+    versions: ["0.3.18", "0.3.19", "0.3.20", "0.3.21"]
+  - name: "react-jsonschema-form-extras"
+    versions: ["1.0.1", "1.0.2", "1.0.3", "1.0.4"]
+  - name: "react-jsonschema-rxnt-extras"
+    versions: ["0.4.6", "0.4.7", "0.4.8", "0.4.9"]
+  - name: "remark-preset-lint-crowdstrike"
+    versions: ["4.0.1", "4.0.2"]
+  - name: "rxnt-healthchecks-nestjs"
+    versions: ["1.0.4", "1.0.5", "1.0.2", "1.0.3"]
+  - name: "rxnt-kue"
+    versions: ["1.0.6", "1.0.7", "1.0.4", "1.0.5"]
+  - name: "swc-plugin-component-annotate"
+    versions: ["1.9.2", "1.9.1"]
+  - name: "tbssnch"
+    versions: ["1.0.2"]
+  - name: "teselagen-interval-tree"
+    versions: ["1.1.2"]
+  - name: "tg-client-query-builder"
+    versions: ["2.14.4", "2.14.5"]
+  - name: "tg-redbird"
+    versions: ["1.3.1", "1.3.2"]
+  - name: "tg-seq-gen"
+    versions: ["1.0.9", "1.0.10"]
+  - name: "thangved-react-grid"
+    versions: ["1.0.3"]
+  - name: "ts-gaussian"
+    versions: ["3.0.6", "3.0.5"]
+  - name: "ts-imports"
+    versions: ["1.0.1", "1.0.2"]
+  - name: "tvi-cli"
+    versions: ["0.1.5"]
+  - name: "ve-bamreader"
+    versions: ["0.2.6", "0.2.7"]
+  - name: "ve-editor"
+    versions: ["1.0.1", "1.0.2"]
+  - name: "verror-extra"
+    versions: ["6.0.1"]
+  - name: "voip-callkit"
+    versions: ["1.0.2", "1.0.3"]
+  - name: "wdio-web-reporter"
+    versions: ["0.1.3"]
+  - name: "yargs-help-output"
+    versions: ["5.0.3"]
+  - name: "yoo-styles"
+    versions: ["6.0.326"]
 # Remediation procedures
 remediation:
   immediate_actions:
