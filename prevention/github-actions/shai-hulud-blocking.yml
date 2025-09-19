@@ -42,9 +42,9 @@ jobs:
       - name: 🚨 Download OreNPMGuard Scanner
         run: |
           echo "🔍 Downloading latest OreNPMGuard scanner..."
-          curl -sSL https://raw.githubusercontent.com/rapticore/orenpmpguard/main/shai_hulud_scanner.py -o shai_hulud_scanner.py
-          curl -sSL https://raw.githubusercontent.com/rapticore/orenpmpguard/main/shai_hulud_scanner.js -o shai_hulud_scanner.js
-          curl -sSL https://raw.githubusercontent.com/rapticore/orenpmpguard/main/affected_packages.yaml -o affected_packages.yaml
+          curl -sSL https://raw.githubusercontent.com/rapticore/OreNPMGuard/main/shai_hulud_scanner.py -o shai_hulud_scanner.py
+          curl -sSL https://raw.githubusercontent.com/rapticore/OreNPMGuard/main/shai_hulud_scanner.js -o shai_hulud_scanner.js
+          curl -sSL https://raw.githubusercontent.com/rapticore/OreNPMGuard/main/affected_packages.yaml -o affected_packages.yaml
           chmod +x shai_hulud_scanner.py shai_hulud_scanner.js
 
       - name: 🔍 Scan package.json files
@@ -130,15 +130,15 @@ jobs:
             REPORT="$REPORT6. **Check for Shai-Hulud repos** in your GitHub account\n"
             REPORT="$REPORT7. **Review GitHub audit logs** for suspicious activity\n\n"
             REPORT="$REPORT### 📚 Resources:\n"
-            REPORT="$REPORT- [OreNPMGuard Scanner](https://github.com/rapticore/orenpmpguard)\n"
-            REPORT="$REPORT- [Shai-Hulud Attack Details](https://github.com/rapticore/orenpmpguard#about-the-shai-hulud-attack)\n"
+            REPORT="$REPORT- [OreNPMGuard Scanner](https://github.com/rapticore/OreNPMGuard)\n"
+            REPORT="$REPORT- [Shai-Hulud Attack Details](https://github.com/rapticore/OreNPMGuard#about-the-shai-hulud-attack)\n"
             REPORT="$REPORT- **Emergency Contact**: contact@rapticore.com\n"
           else
             REPORT="$REPORT### ✅ **SCAN PASSED**\n"
             REPORT="$REPORT**No Shai-Hulud compromised packages detected.**\n\n"
             REPORT="$REPORT- All package.json files: **Clean** ✅\n"
             REPORT="$REPORT- All package-lock.json files: **Clean** ✅\n\n"
-            REPORT="$REPORT*Scanned by [OreNPMGuard](https://github.com/rapticore/orenpmpguard) - Rapticore Security*\n"
+            REPORT="$REPORT*Scanned by [OreNPMGuard](https://github.com/rapticore/OreNPMGuard) - Rapticore Security*\n"
           fi
 
           echo "security_report<<EOF" >> $GITHUB_OUTPUT

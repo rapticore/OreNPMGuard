@@ -1,7 +1,7 @@
 # Shai-Hulud Attack - Affected npm Packages
 # This file contains the centralized list of compromised packages and their affected versions
 # Both Python and JavaScript scanners read from this file to ensure consistency
-# Updated automatically with latest threat intelligence Sept 18 2025 10:00 PM PST
+# Updated automatically with latest threat intelligence
 
 affected_packages:
   - name: "@ahmedhfarag/ngx-perfect-scrollbar"

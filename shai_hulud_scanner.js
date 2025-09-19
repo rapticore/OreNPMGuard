@@ -1,56 +1,245 @@
 #!/usr/bin/env node
 
 /**
- * Shai-Hulud npm Package Scanner (Node.js)
+ * Shai-Hulud npm Package Scanner (Node.js) - Enhanced Version
  * Scans package.json and package-lock.json files for compromised packages from the Shai-Hulud attack
+ * Includes IoC detection and downloads latest package data from GitHub
  */
 
 const fs = require('fs');
 const path = require('path');
+const https = require('https');
+const crypto = require('crypto');
 const yaml = require('js-yaml');
 
-/**
- * Load affected packages from YAML configuration file
- */
-function loadAffectedPackagesFromYaml() {
-    const configPath = path.join(__dirname, 'affected_packages.yaml');
+// Shai-Hulud IoCs (Indicators of Compromise)
+const SHAI_HULUD_IOCS = {
+    webhookUrl: 'https://webhook.site/bb8ca5f6-4175-45d2-b042-fc9ebb8170b7',
+    bundleJsHashes: new Set([
+        '46faab8ab153fae6e80e7cca38eab363075bb524edd79e42269217a083628f09',
+        '81d2a004a1bca6ef87a1caf7d0e0b355ad1764238e40ff6d1b1cb77ad4f595c3',
+        'dc67467a39b70d1cd4c1f7f7a459b35058163592f4a9e8fb4dffcbba98ef210c'
+    ]),
+    postinstallPattern: /"postinstall":\s*"node\s+bundle\.js"/
+};
 
+const GITHUB_YAML_URL = "https://raw.githubusercontent.com/rapticore/OreNPMGuard/main/affected_packages.yaml";
+
+// Global cache for affected packages data
+let _affectedPackagesCache = null;
+let _cacheLoaded = false;
+
+/**
+ * Download the latest affected packages YAML from GitHub
+ */
+function downloadAffectedPackagesYaml() {
+    return new Promise((resolve, reject) => {
+        console.log('Downloading latest package data from GitHub...');
+
+        const options = {
+            headers: {
+                'User-Agent': 'Shai-Hulud-Scanner/1.0'
+            },
+            timeout: 10000
+        };
+
+        const req = https.get(GITHUB_YAML_URL, options, (res) => {
+            if (res.statusCode !== 200) {
+                reject(new Error(`HTTP ${res.statusCode}: ${res.statusMessage}`));
+                return;
+            }
+
+            let data = '';
+            res.on('data', chunk => data += chunk);
+            res.on('end', () => {
+                try {
+                    const config = yaml.load(data);
+                    console.log(`✅ Successfully downloaded data for ${config.affected_packages?.length || 0} packages`);
+                    resolve(config);
+                } catch (error) {
+                    reject(new Error(`YAML parse error: ${error.message}`));
+                }
+            });
+        });
+
+        req.on('error', reject);
+        req.on('timeout', () => {
+            req.destroy();
+            reject(new Error('Request timeout'));
+        });
+    });
+}
+
+/**
+ * Load affected packages from GitHub or local YAML configuration file (with caching)
+ */
+async function loadAffectedPackagesFromYaml() {
+    // Return cached data if already loaded
+    if (_cacheLoaded && _affectedPackagesCache !== null) {
+        return _affectedPackagesCache;
+    }
+
+    // First try to download from GitHub
+    try {
+        const config = await downloadAffectedPackagesYaml();
+        const packages = new Map();
+        for (const pkg of config.affected_packages || []) {
+            packages.set(pkg.name, new Set(pkg.versions));
+        }
+        _affectedPackagesCache = packages;
+        _cacheLoaded = true;
+        return packages;
+    } catch (error) {
+        console.error(`❌ Error downloading from GitHub: ${error.message}`);
+        console.error('Falling back to local file...');
+    }
+
+    // Try local file
+    const configPath = path.join(__dirname, 'affected_packages.yaml');
     try {
         const yamlContent = fs.readFileSync(configPath, 'utf8');
         const config = yaml.load(yamlContent);
+        console.log(`✅ Loaded local configuration with ${config.affected_packages?.length || 0} packages`);
 
         const packages = new Map();
-        for (const pkg of config.affected_packages) {
+        for (const pkg of config.affected_packages || []) {
             packages.set(pkg.name, new Set(pkg.versions));
         }
-
+        _affectedPackagesCache = packages;
+        _cacheLoaded = true;
         return packages;
     } catch (error) {
-        console.error(`❌ Error loading configuration from ${configPath}: ${error.message}`);
-        console.error('Using fallback hardcoded data...');
-        return parseAffectedPackagesFallback();
+        console.error(`❌ Error loading local configuration from ${configPath}: ${error.message}`);
+        console.error('Using minimal fallback data...');
+        _affectedPackagesCache = parseAffectedPackagesFallback();
+        _cacheLoaded = true;
+        return _affectedPackagesCache;
     }
 }
 
 /**
- * Fallback hardcoded package data in case YAML file is unavailable
+ * Fallback hardcoded package data in case both GitHub and local files are unavailable
  */
 function parseAffectedPackagesFallback() {
-    // Minimal fallback data - in production, the YAML file should always be available
+    console.log('⚠️  Using minimal fallback package data');
     const packages = new Map();
     packages.set('@ctrl/deluge', new Set(['7.2.2', '7.2.1']));
     packages.set('ngx-bootstrap', new Set(['18.1.4', '19.0.3', '20.0.4', '20.0.5', '20.0.6', '19.0.4', '20.0.3']));
-    // Add more critical packages as needed
+    packages.set('@ctrl/tinycolor', new Set(['4.1.1', '4.1.2']));
+    packages.set('rxnt-authentication', new Set(['0.0.5', '0.0.6', '0.0.3', '0.0.4']));
+    packages.set('angulartics2', new Set(['14.1.2', '14.1.1']));
     return packages;
+}
+
+/**
+ * Calculate SHA-256 hash of a file
+ */
+function calculateFileHash(filePath) {
+    try {
+        const fileContent = fs.readFileSync(filePath);
+        return crypto.createHash('sha256').update(fileContent).digest('hex');
+    } catch (error) {
+        console.error(`❌ Error calculating hash for ${filePath}: ${error.message}`);
+        return null;
+    }
+}
+
+/**
+ * Scan directory for Shai-Hulud IoCs (Indicators of Compromise)
+ */
+function scanForIocs(directory) {
+    const iocsFound = [];
+
+    function walkDir(dir) {
+        try {
+            const entries = fs.readdirSync(dir, { withFileTypes: true });
+
+            for (const entry of entries) {
+                const fullPath = path.join(dir, entry.name);
+
+                if (entry.isDirectory() && entry.name !== 'node_modules') {
+                    walkDir(fullPath);
+                } else if (entry.isFile()) {
+                    const relativePath = path.relative(directory, fullPath);
+
+                    // Check for malicious bundle.js files
+                    if (entry.name === 'bundle.js') {
+                        const fileHash = calculateFileHash(fullPath);
+                        if (fileHash && SHAI_HULUD_IOCS.bundleJsHashes.has(fileHash)) {
+                            iocsFound.push({
+                                type: 'malicious_bundle_js',
+                                path: relativePath,
+                                hash: fileHash,
+                                severity: 'CRITICAL'
+                            });
+                        }
+                    }
+
+                    // Check package.json files for malicious postinstall hooks and webhook references
+                    if (entry.name === 'package.json') {
+                        try {
+                            const content = fs.readFileSync(fullPath, 'utf8');
+
+                            // Check for malicious postinstall pattern
+                            if (SHAI_HULUD_IOCS.postinstallPattern.test(content)) {
+                                iocsFound.push({
+                                    type: 'malicious_postinstall',
+                                    path: relativePath,
+                                    pattern: 'node bundle.js',
+                                    severity: 'CRITICAL'
+                                });
+                            }
+
+                            // Check for webhook.site URL references
+                            if (content.includes(SHAI_HULUD_IOCS.webhookUrl)) {
+                                iocsFound.push({
+                                    type: 'webhook_site_reference',
+                                    path: relativePath,
+                                    url: SHAI_HULUD_IOCS.webhookUrl,
+                                    severity: 'HIGH'
+                                });
+                            }
+                        } catch (error) {
+                            console.error(`❌ Error reading ${fullPath}: ${error.message}`);
+                        }
+                    }
+
+                    // Check other JavaScript files for webhook references
+                    if ((entry.name.endsWith('.js') || entry.name.endsWith('.ts') || entry.name.endsWith('.json')) &&
+                        entry.name !== 'package.json') {
+                        try {
+                            const content = fs.readFileSync(fullPath, 'utf8');
+                            if (content.includes(SHAI_HULUD_IOCS.webhookUrl)) {
+                                iocsFound.push({
+                                    type: 'webhook_site_reference',
+                                    path: relativePath,
+                                    url: SHAI_HULUD_IOCS.webhookUrl,
+                                    severity: 'HIGH'
+                                });
+                            }
+                        } catch (error) {
+                            // Skip files that can't be read as text
+                            continue;
+                        }
+                    }
+                }
+            }
+        } catch (error) {
+            console.error(`❌ Error scanning directory ${dir}: ${error.message}`);
+        }
+    }
+
+    walkDir(directory);
+    return iocsFound;
 }
 
 /**
  * Scan a package.json or package-lock.json file for affected packages
  */
-function scanPackageJson(filePath) {
+async function scanPackageJson(filePath) {
     try {
         const packageData = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-        const affectedDb = loadAffectedPackagesFromYaml();
+        const affectedDb = await loadAffectedPackagesFromYaml();
 
         // Determine file type and scan accordingly
         if (filePath.endsWith('package-lock.json')) {
@@ -212,10 +401,33 @@ function scanPackageLockDependencies(packageData, affectedDb) {
 /**
  * Recursively scan directory for package.json and package-lock.json files
  */
-function scanDirectory(directory) {
+async function scanDirectory(directory) {
     console.log(`🔍 Scanning directory: ${directory}`);
     console.log('='.repeat(60));
 
+    // First scan for IoCs
+    console.log('\n🕵️  Scanning for Shai-Hulud IoCs...');
+    const iocs = scanForIocs(directory);
+
+    if (iocs.length > 0) {
+        console.log(`🚨 CRITICAL: Found ${iocs.length} Indicators of Compromise:`);
+        for (const ioc of iocs) {
+            const severityEmoji = ioc.severity === 'CRITICAL' ? '🔴' : '🟠';
+            console.log(`   ${severityEmoji} ${ioc.type.toUpperCase()}: ${ioc.path}`);
+
+            if (ioc.type === 'malicious_bundle_js') {
+                console.log(`      SHA-256: ${ioc.hash}`);
+            } else if (ioc.type === 'malicious_postinstall') {
+                console.log(`      Pattern: ${ioc.pattern}`);
+            } else if (ioc.type === 'webhook_site_reference') {
+                console.log(`      URL: ${ioc.url}`);
+            }
+        }
+    } else {
+        console.log('✅ No IoCs detected');
+    }
+
+    console.log('\n📦 Scanning for compromised packages...');
     let foundAny = false;
 
     function walkDir(dir) {
@@ -238,11 +450,11 @@ function scanDirectory(directory) {
         }
 
         // Process all files to scan
-        for (const file of filesToScan) {
+        filesToScan.forEach(async (file) => {
             const relativePath = path.relative(directory, file.path);
             console.log(`\n${file.icon} Checking: ${relativePath}`);
 
-            const { foundPackages, potentialMatches } = scanPackageJson(file.path);
+            const { foundPackages, potentialMatches } = await scanPackageJson(file.path);
 
             if (foundPackages.length > 0) {
                 foundAny = true;
@@ -264,7 +476,7 @@ function scanDirectory(directory) {
             if (foundPackages.length === 0 && potentialMatches.length === 0) {
                 console.log('✅ No affected packages found');
             }
-        }
+        });
     }
 
     try {
@@ -275,21 +487,23 @@ function scanDirectory(directory) {
     }
 
     console.log('\n' + '='.repeat(60));
-    if (foundAny) {
+    if (foundAny || iocs.length > 0) {
         console.log('🚨 IMMEDIATE ACTION REQUIRED!');
         console.log('1. Remove compromised packages immediately');
-        console.log('2. Rotate ALL credentials (GitHub tokens, npm tokens, API keys)');
-        console.log('3. Check for \'Shai-Hulud\' repos in your GitHub account');
-        console.log('4. Review GitHub audit logs');
+        console.log('2. Delete any malicious bundle.js files');
+        console.log('3. Rotate ALL credentials (GitHub tokens, npm tokens, API keys)');
+        console.log('4. Check for \'Shai-Hulud\' repos in your GitHub account');
+        console.log('5. Review GitHub audit logs');
+        console.log('6. Scan network logs for webhook.site communications');
     } else {
-        console.log('✅ No confirmed compromised packages found in scanned directories');
+        console.log('✅ No confirmed compromised packages or IoCs found in scanned directories');
     }
 }
 
 /**
  * Main function
  */
-function main() {
+async function main() {
     const args = process.argv.slice(2);
 
     if (args.length === 0) {
@@ -311,7 +525,23 @@ function main() {
             console.log(`🔍 Scanning file: ${targetPath}`);
             console.log('='.repeat(60));
 
-            const { foundPackages, potentialMatches } = scanPackageJson(targetPath);
+            // Scan for IoCs in the directory containing the file
+            const directory = path.dirname(targetPath) || '.';
+            console.log('\n🕵️  Scanning for Shai-Hulud IoCs...');
+            const iocs = scanForIocs(directory);
+
+            if (iocs.length > 0) {
+                console.log(`🚨 CRITICAL: Found ${iocs.length} Indicators of Compromise:`);
+                for (const ioc of iocs) {
+                    const severityEmoji = ioc.severity === 'CRITICAL' ? '🔴' : '🟠';
+                    console.log(`   ${severityEmoji} ${ioc.type.toUpperCase()}: ${ioc.path}`);
+                }
+            } else {
+                console.log('✅ No IoCs detected');
+            }
+
+            console.log(`\n📦 Scanning package file: ${targetPath}`);
+            const { foundPackages, potentialMatches } = await scanPackageJson(targetPath);
 
             if (foundPackages.length > 0) {
                 console.log(`🚨 CRITICAL: Found ${foundPackages.length} CONFIRMED compromised packages:`);
@@ -333,8 +563,15 @@ function main() {
                 console.log('✅ No affected packages found');
             }
 
+            if (foundPackages.length > 0 || iocs.length > 0) {
+                console.log('\n🚨 IMMEDIATE ACTION REQUIRED!');
+                console.log('1. Remove compromised packages immediately');
+                console.log('2. Delete any malicious bundle.js files');
+                console.log('3. Rotate ALL credentials');
+            }
+
         } else if (stats.isDirectory()) {
-            scanDirectory(targetPath);
+            await scanDirectory(targetPath);
         } else {
             console.error(`❌ Error: ${targetPath} is not a valid package.json file or directory`);
             process.exit(1);
@@ -347,7 +584,10 @@ function main() {
 
 // Run the scanner
 if (require.main === module) {
-    main();
+    main().catch(error => {
+        console.error('❌ Fatal error:', error.message);
+        process.exit(1);
+    });
 }
 
-module.exports = { loadAffectedPackagesFromYaml, scanPackageJson, scanDirectory };
+module.exports = { loadAffectedPackagesFromYaml, scanPackageJson, scanDirectory, scanForIocs };

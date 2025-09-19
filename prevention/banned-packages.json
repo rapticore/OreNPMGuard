@@ -3,17 +3,17 @@
     "name": "Shai-Hulud Attack - Banned npm Packages",
     "description": "Complete list of npm packages compromised during the Shai-Hulud supply chain attack (September 2025)",
     "version": "1.0.0",
-    "last_updated": "2025-09-17",
+    "last_updated": "2025-09-18",
     "attack_timeline": {
       "patient_zero": "2025-09-14T17:58:50Z",
       "detection": "2025-09-15",
       "peak_spread": "2025-09-15/2025-09-16"
     },
-    "total_packages": 180,
+    "total_packages": 200,
     "severity_distribution": {
-      "critical": 15,
-      "high": 45,
-      "medium": 120
+      "critical": 5,
+      "high": 55,
+      "medium": 140
     },
     "source": "https://github.com/rapticore/orenpmpguard",
     "contact": "contact@rapticore.com"
@@ -21,7 +21,10 @@
   "banned_packages": [
     {
       "name": "@ctrl/deluge",
-      "banned_versions": ["7.2.2", "7.2.1"],
+      "banned_versions": [
+        "7.2.2",
+        "7.2.1"
+      ],
       "severity": "critical",
       "weekly_downloads": 2200000,
       "first_detected": "2025-09-15",
@@ -31,7 +34,12 @@
     },
     {
       "name": "rxnt-authentication",
-      "banned_versions": ["0.0.5", "0.0.6", "0.0.3", "0.0.4"],
+      "banned_versions": [
+        "0.0.5",
+        "0.0.6",
+        "0.0.3",
+        "0.0.4"
+      ],
       "severity": "critical",
       "weekly_downloads": 150,
       "first_detected": "2025-09-14T17:58:50Z",
@@ -41,7 +49,15 @@
     },
     {
       "name": "ngx-bootstrap",
-      "banned_versions": ["18.1.4", "19.0.3", "20.0.4", "20.0.5", "20.0.6", "19.0.4", "20.0.3"],
+      "banned_versions": [
+        "18.1.4",
+        "19.0.3",
+        "20.0.4",
+        "20.0.5",
+        "20.0.6",
+        "19.0.4",
+        "20.0.3"
+      ],
       "severity": "critical",
       "weekly_downloads": 300000,
       "first_detected": "2025-09-15",
@@ -51,7 +67,10 @@
     },
     {
       "name": "@ctrl/tinycolor",
-      "banned_versions": ["4.1.1", "4.1.2"],
+      "banned_versions": [
+        "4.1.1",
+        "4.1.2"
+      ],
       "severity": "critical",
       "weekly_downloads": 2200000,
       "first_detected": "2025-09-15",
@@ -61,7 +80,10 @@
     },
     {
       "name": "@ctrl/golang-template",
-      "banned_versions": ["1.4.3", "1.4.2"],
+      "banned_versions": [
+        "1.4.3",
+        "1.4.2"
+      ],
       "severity": "high",
       "weekly_downloads": 50000,
       "first_detected": "2025-09-15",
@@ -71,7 +93,10 @@
     },
     {
       "name": "@ctrl/magnet-link",
-      "banned_versions": ["4.0.4", "4.0.3"],
+      "banned_versions": [
+        "4.0.4",
+        "4.0.3"
+      ],
       "severity": "high",
       "weekly_downloads": 75000,
       "first_detected": "2025-09-15",
@@ -81,7 +106,10 @@
     },
     {
       "name": "@ctrl/ngx-codemirror",
-      "banned_versions": ["7.0.2", "7.0.1"],
+      "banned_versions": [
+        "7.0.2",
+        "7.0.1"
+      ],
       "severity": "high",
       "weekly_downloads": 25000,
       "first_detected": "2025-09-15",
@@ -91,7 +119,10 @@
     },
     {
       "name": "@ctrl/ngx-csv",
-      "banned_versions": ["6.0.2", "6.0.1"],
+      "banned_versions": [
+        "6.0.2",
+        "6.0.1"
+      ],
       "severity": "high",
       "weekly_downloads": 15000,
       "first_detected": "2025-09-15",
@@ -101,7 +132,10 @@
     },
     {
       "name": "@ctrl/ngx-emoji-mart",
-      "banned_versions": ["9.2.2", "9.2.1"],
+      "banned_versions": [
+        "9.2.2",
+        "9.2.1"
+      ],
       "severity": "high",
       "weekly_downloads": 8000,
       "first_detected": "2025-09-15",
@@ -111,7 +145,10 @@
     },
     {
       "name": "@ctrl/ngx-rightclick",
-      "banned_versions": ["4.0.2", "4.0.1"],
+      "banned_versions": [
+        "4.0.2",
+        "4.0.1"
+      ],
       "severity": "medium",
       "weekly_downloads": 3000,
       "first_detected": "2025-09-15",
@@ -121,7 +158,10 @@
     },
     {
       "name": "@ctrl/qbittorrent",
-      "banned_versions": ["9.7.2", "9.7.1"],
+      "banned_versions": [
+        "9.7.2",
+        "9.7.1"
+      ],
       "severity": "high",
       "weekly_downloads": 45000,
       "first_detected": "2025-09-15",
@@ -131,7 +171,10 @@
     },
     {
       "name": "@ctrl/react-adsense",
-      "banned_versions": ["2.0.2", "2.0.1"],
+      "banned_versions": [
+        "2.0.2",
+        "2.0.1"
+      ],
       "severity": "medium",
       "weekly_downloads": 12000,
       "first_detected": "2025-09-15",
@@ -141,7 +184,10 @@
     },
     {
       "name": "@ctrl/shared-torrent",
-      "banned_versions": ["6.3.2", "6.3.1"],
+      "banned_versions": [
+        "6.3.2",
+        "6.3.1"
+      ],
       "severity": "medium",
       "weekly_downloads": 5000,
       "first_detected": "2025-09-15",
@@ -151,7 +197,10 @@
     },
     {
       "name": "@ctrl/torrent-file",
-      "banned_versions": ["4.1.2", "4.1.1"],
+      "banned_versions": [
+        "4.1.2",
+        "4.1.1"
+      ],
       "severity": "medium",
       "weekly_downloads": 8000,
       "first_detected": "2025-09-15",
@@ -161,13 +210,2571 @@
     },
     {
       "name": "@ctrl/transmission",
-      "banned_versions": ["7.3.1"],
+      "banned_versions": [
+        "7.3.1"
+      ],
       "severity": "medium",
       "weekly_downloads": 6000,
       "first_detected": "2025-09-15",
       "attack_vector": "postinstall script",
       "patient_zero": false,
       "description": "Transmission client API"
+    },
+    {
+      "name": "@ahmedhfarag/ngx-perfect-scrollbar",
+      "banned_versions": [
+        "20.0.20"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @ahmedhfarag/ngx-perfect-scrollbar"
+    },
+    {
+      "name": "@ahmedhfarag/ngx-virtual-scroller",
+      "banned_versions": [
+        "4.0.4"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @ahmedhfarag/ngx-virtual-scroller"
+    },
+    {
+      "name": "@art-ws/common",
+      "banned_versions": [
+        "2.0.22",
+        "2.0.28"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @art-ws/common"
+    },
+    {
+      "name": "@art-ws/config-eslint",
+      "banned_versions": [
+        "2.0.4",
+        "2.0.5"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @art-ws/config-eslint"
+    },
+    {
+      "name": "@art-ws/config-ts",
+      "banned_versions": [
+        "2.0.7",
+        "2.0.8"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @art-ws/config-ts"
+    },
+    {
+      "name": "@art-ws/db-context",
+      "banned_versions": [
+        "2.0.21",
+        "2.0.24"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @art-ws/db-context"
+    },
+    {
+      "name": "@art-ws/di",
+      "banned_versions": [
+        "2.0.28",
+        "2.0.32"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @art-ws/di"
+    },
+    {
+      "name": "@art-ws/di-node",
+      "banned_versions": [
+        "2.0.13"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @art-ws/di-node"
+    },
+    {
+      "name": "@art-ws/eslint",
+      "banned_versions": [
+        "1.0.5",
+        "1.0.6"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @art-ws/eslint"
+    },
+    {
+      "name": "@art-ws/fastify-http-server",
+      "banned_versions": [
+        "2.0.24",
+        "2.0.27"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @art-ws/fastify-http-server"
+    },
+    {
+      "name": "@art-ws/http-server",
+      "banned_versions": [
+        "2.0.21",
+        "2.0.25"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @art-ws/http-server"
+    },
+    {
+      "name": "@art-ws/openapi",
+      "banned_versions": [
+        "0.1.12",
+        "0.1.9"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @art-ws/openapi"
+    },
+    {
+      "name": "@art-ws/package-base",
+      "banned_versions": [
+        "1.0.5",
+        "1.0.6"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @art-ws/package-base"
+    },
+    {
+      "name": "@art-ws/prettier",
+      "banned_versions": [
+        "1.0.5",
+        "1.0.6"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @art-ws/prettier"
+    },
+    {
+      "name": "@art-ws/slf",
+      "banned_versions": [
+        "2.0.15",
+        "2.0.22"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @art-ws/slf"
+    },
+    {
+      "name": "@art-ws/ssl-info",
+      "banned_versions": [
+        "1.0.10",
+        "1.0.9"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @art-ws/ssl-info"
+    },
+    {
+      "name": "@art-ws/web-app",
+      "banned_versions": [
+        "1.0.3",
+        "1.0.4"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @art-ws/web-app"
+    },
+    {
+      "name": "@basic-ui-components-stc/basic-ui-components",
+      "banned_versions": [
+        "1.0.5"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @basic-ui-components-stc/basic-ui-components"
+    },
+    {
+      "name": "@crowdstrike/commitlint",
+      "banned_versions": [
+        "8.1.1",
+        "8.1.2"
+      ],
+      "severity": "high",
+      "weekly_downloads": 15000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @crowdstrike/commitlint"
+    },
+    {
+      "name": "@crowdstrike/falcon-shoelace",
+      "banned_versions": [
+        "0.4.1",
+        "0.4.2"
+      ],
+      "severity": "high",
+      "weekly_downloads": 15000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @crowdstrike/falcon-shoelace"
+    },
+    {
+      "name": "@crowdstrike/foundry-js",
+      "banned_versions": [
+        "0.19.1",
+        "0.19.2"
+      ],
+      "severity": "high",
+      "weekly_downloads": 15000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @crowdstrike/foundry-js"
+    },
+    {
+      "name": "@crowdstrike/glide-core",
+      "banned_versions": [
+        "0.34.2",
+        "0.34.3"
+      ],
+      "severity": "high",
+      "weekly_downloads": 15000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @crowdstrike/glide-core"
+    },
+    {
+      "name": "@crowdstrike/logscale-dashboard",
+      "banned_versions": [
+        "1.205.1",
+        "1.205.2"
+      ],
+      "severity": "high",
+      "weekly_downloads": 15000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @crowdstrike/logscale-dashboard"
+    },
+    {
+      "name": "@crowdstrike/logscale-file-editor",
+      "banned_versions": [
+        "1.205.1",
+        "1.205.2"
+      ],
+      "severity": "high",
+      "weekly_downloads": 15000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @crowdstrike/logscale-file-editor"
+    },
+    {
+      "name": "@crowdstrike/logscale-parser-edit",
+      "banned_versions": [
+        "1.205.1",
+        "1.205.2"
+      ],
+      "severity": "high",
+      "weekly_downloads": 15000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @crowdstrike/logscale-parser-edit"
+    },
+    {
+      "name": "@crowdstrike/logscale-search",
+      "banned_versions": [
+        "1.205.1",
+        "1.205.2"
+      ],
+      "severity": "high",
+      "weekly_downloads": 15000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @crowdstrike/logscale-search"
+    },
+    {
+      "name": "@crowdstrike/tailwind-toucan-base",
+      "banned_versions": [
+        "5.0.1",
+        "5.0.2"
+      ],
+      "severity": "high",
+      "weekly_downloads": 15000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @crowdstrike/tailwind-toucan-base"
+    },
+    {
+      "name": "@ctrl/ts-base32",
+      "banned_versions": [
+        "4.0.2",
+        "4.0.1"
+      ],
+      "severity": "high",
+      "weekly_downloads": 50000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @ctrl/ts-base32"
+    },
+    {
+      "name": "@hestjs/core",
+      "banned_versions": [
+        "0.2.1"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @hestjs/core"
+    },
+    {
+      "name": "@hestjs/cqrs",
+      "banned_versions": [
+        "0.1.6"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @hestjs/cqrs"
+    },
+    {
+      "name": "@hestjs/demo",
+      "banned_versions": [
+        "0.1.2"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @hestjs/demo"
+    },
+    {
+      "name": "@hestjs/eslint-config",
+      "banned_versions": [
+        "0.1.2"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @hestjs/eslint-config"
+    },
+    {
+      "name": "@hestjs/logger",
+      "banned_versions": [
+        "0.1.6"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @hestjs/logger"
+    },
+    {
+      "name": "@hestjs/scalar",
+      "banned_versions": [
+        "0.1.7"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @hestjs/scalar"
+    },
+    {
+      "name": "@hestjs/validation",
+      "banned_versions": [
+        "0.1.6"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @hestjs/validation"
+    },
+    {
+      "name": "@nativescript-community/arraybuffers",
+      "banned_versions": [
+        "1.1.6",
+        "1.1.7",
+        "1.1.8"
+      ],
+      "severity": "high",
+      "weekly_downloads": 25000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @nativescript-community/arraybuffers"
+    },
+    {
+      "name": "@nativescript-community/gesturehandler",
+      "banned_versions": [
+        "2.0.35"
+      ],
+      "severity": "high",
+      "weekly_downloads": 25000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @nativescript-community/gesturehandler"
+    },
+    {
+      "name": "@nativescript-community/perms",
+      "banned_versions": [
+        "3.0.5",
+        "3.0.6",
+        "3.0.7",
+        "3.0.8",
+        "3.0.9"
+      ],
+      "severity": "high",
+      "weekly_downloads": 25000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @nativescript-community/perms"
+    },
+    {
+      "name": "@nativescript-community/sentry",
+      "banned_versions": [
+        "4.6.43"
+      ],
+      "severity": "high",
+      "weekly_downloads": 25000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @nativescript-community/sentry"
+    },
+    {
+      "name": "@nativescript-community/sqlite",
+      "banned_versions": [
+        "3.5.2",
+        "3.5.3",
+        "3.5.4",
+        "3.5.5"
+      ],
+      "severity": "high",
+      "weekly_downloads": 25000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @nativescript-community/sqlite"
+    },
+    {
+      "name": "@nativescript-community/text",
+      "banned_versions": [
+        "1.6.13",
+        "1.6.10",
+        "1.6.11",
+        "1.6.12",
+        "1.6.9"
+      ],
+      "severity": "high",
+      "weekly_downloads": 25000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @nativescript-community/text"
+    },
+    {
+      "name": "@nativescript-community/typeorm",
+      "banned_versions": [
+        "0.2.30",
+        "0.2.31",
+        "0.2.32",
+        "0.2.33"
+      ],
+      "severity": "high",
+      "weekly_downloads": 25000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @nativescript-community/typeorm"
+    },
+    {
+      "name": "@nativescript-community/ui-collectionview",
+      "banned_versions": [
+        "6.0.6"
+      ],
+      "severity": "high",
+      "weekly_downloads": 25000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @nativescript-community/ui-collectionview"
+    },
+    {
+      "name": "@nativescript-community/ui-document-picker",
+      "banned_versions": [
+        "1.1.27",
+        "1.1.28",
+        "13.0.32"
+      ],
+      "severity": "high",
+      "weekly_downloads": 25000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @nativescript-community/ui-document-picker"
+    },
+    {
+      "name": "@nativescript-community/ui-drawer",
+      "banned_versions": [
+        "0.1.30"
+      ],
+      "severity": "high",
+      "weekly_downloads": 25000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @nativescript-community/ui-drawer"
+    },
+    {
+      "name": "@nativescript-community/ui-image",
+      "banned_versions": [
+        "4.5.6"
+      ],
+      "severity": "high",
+      "weekly_downloads": 25000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @nativescript-community/ui-image"
+    },
+    {
+      "name": "@nativescript-community/ui-label",
+      "banned_versions": [
+        "1.3.35",
+        "1.3.36",
+        "1.3.37"
+      ],
+      "severity": "high",
+      "weekly_downloads": 25000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @nativescript-community/ui-label"
+    },
+    {
+      "name": "@nativescript-community/ui-material-bottom-navigation",
+      "banned_versions": [
+        "7.2.72",
+        "7.2.73",
+        "7.2.74",
+        "7.2.75"
+      ],
+      "severity": "high",
+      "weekly_downloads": 25000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @nativescript-community/ui-material-bottom-navigation"
+    },
+    {
+      "name": "@nativescript-community/ui-material-bottomsheet",
+      "banned_versions": [
+        "7.2.72"
+      ],
+      "severity": "high",
+      "weekly_downloads": 25000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @nativescript-community/ui-material-bottomsheet"
+    },
+    {
+      "name": "@nativescript-community/ui-material-core",
+      "banned_versions": [
+        "7.2.76",
+        "7.2.72",
+        "7.2.73",
+        "7.2.74",
+        "7.2.75"
+      ],
+      "severity": "high",
+      "weekly_downloads": 25000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @nativescript-community/ui-material-core"
+    },
+    {
+      "name": "@nativescript-community/ui-material-core-tabs",
+      "banned_versions": [
+        "7.2.76",
+        "7.2.72",
+        "7.2.73",
+        "7.2.74",
+        "7.2.75"
+      ],
+      "severity": "high",
+      "weekly_downloads": 25000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @nativescript-community/ui-material-core-tabs"
+    },
+    {
+      "name": "@nativescript-community/ui-material-ripple",
+      "banned_versions": [
+        "7.2.72",
+        "7.2.73",
+        "7.2.74",
+        "7.2.75"
+      ],
+      "severity": "high",
+      "weekly_downloads": 25000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @nativescript-community/ui-material-ripple"
+    },
+    {
+      "name": "@nativescript-community/ui-material-tabs",
+      "banned_versions": [
+        "7.2.72",
+        "7.2.73",
+        "7.2.74",
+        "7.2.75"
+      ],
+      "severity": "high",
+      "weekly_downloads": 25000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @nativescript-community/ui-material-tabs"
+    },
+    {
+      "name": "@nativescript-community/ui-pager",
+      "banned_versions": [
+        "14.1.35",
+        "14.1.36",
+        "14.1.37",
+        "14.1.38"
+      ],
+      "severity": "high",
+      "weekly_downloads": 25000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @nativescript-community/ui-pager"
+    },
+    {
+      "name": "@nativescript-community/ui-pulltorefresh",
+      "banned_versions": [
+        "2.5.4",
+        "2.5.5",
+        "2.5.6",
+        "2.5.7"
+      ],
+      "severity": "high",
+      "weekly_downloads": 25000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @nativescript-community/ui-pulltorefresh"
+    },
+    {
+      "name": "@nexe/config-manager",
+      "banned_versions": [
+        "0.1.1"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @nexe/config-manager"
+    },
+    {
+      "name": "@nexe/eslint-config",
+      "banned_versions": [
+        "0.1.1"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @nexe/eslint-config"
+    },
+    {
+      "name": "@nexe/logger",
+      "banned_versions": [
+        "0.1.3"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @nexe/logger"
+    },
+    {
+      "name": "@nstudio/angular",
+      "banned_versions": [
+        "20.0.4",
+        "20.0.5",
+        "20.0.6"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @nstudio/angular"
+    },
+    {
+      "name": "@nstudio/focus",
+      "banned_versions": [
+        "20.0.4",
+        "20.0.5",
+        "20.0.6"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @nstudio/focus"
+    },
+    {
+      "name": "@nstudio/nativescript-checkbox",
+      "banned_versions": [
+        "2.0.6",
+        "2.0.7",
+        "2.0.8",
+        "2.0.9"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @nstudio/nativescript-checkbox"
+    },
+    {
+      "name": "@nstudio/nativescript-loading-indicator",
+      "banned_versions": [
+        "5.0.1",
+        "5.0.2",
+        "5.0.3",
+        "5.0.4"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @nstudio/nativescript-loading-indicator"
+    },
+    {
+      "name": "@nstudio/ui-collectionview",
+      "banned_versions": [
+        "5.1.11",
+        "5.1.12",
+        "5.1.13",
+        "5.1.14"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @nstudio/ui-collectionview"
+    },
+    {
+      "name": "@nstudio/web",
+      "banned_versions": [
+        "20.0.4"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @nstudio/web"
+    },
+    {
+      "name": "@nstudio/web-angular",
+      "banned_versions": [
+        "20.0.4"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @nstudio/web-angular"
+    },
+    {
+      "name": "@nstudio/xplat",
+      "banned_versions": [
+        "20.0.4",
+        "20.0.5",
+        "20.0.6",
+        "20.0.7"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @nstudio/xplat"
+    },
+    {
+      "name": "@nstudio/xplat-utils",
+      "banned_versions": [
+        "20.0.4",
+        "20.0.5",
+        "20.0.6",
+        "20.0.7"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @nstudio/xplat-utils"
+    },
+    {
+      "name": "@operato/board",
+      "banned_versions": [
+        "9.0.35",
+        "9.0.36",
+        "9.0.37",
+        "9.0.38",
+        "9.0.39",
+        "9.0.40",
+        "9.0.41",
+        "9.0.42",
+        "9.0.43",
+        "9.0.44",
+        "9.0.45",
+        "9.0.46",
+        "9.0.47",
+        "9.0.48",
+        "9.0.49",
+        "9.0.50",
+        "9.0.51"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @operato/board"
+    },
+    {
+      "name": "@operato/data-grist",
+      "banned_versions": [
+        "9.0.29",
+        "9.0.35",
+        "9.0.36",
+        "9.0.37"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @operato/data-grist"
+    },
+    {
+      "name": "@operato/graphql",
+      "banned_versions": [
+        "9.0.22",
+        "9.0.35",
+        "9.0.36",
+        "9.0.37",
+        "9.0.38",
+        "9.0.39",
+        "9.0.40",
+        "9.0.41",
+        "9.0.42",
+        "9.0.43",
+        "9.0.44",
+        "9.0.45",
+        "9.0.46",
+        "9.0.47",
+        "9.0.48",
+        "9.0.49",
+        "9.0.50",
+        "9.0.51"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @operato/graphql"
+    },
+    {
+      "name": "@operato/headroom",
+      "banned_versions": [
+        "9.0.2",
+        "9.0.35",
+        "9.0.36",
+        "9.0.37"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @operato/headroom"
+    },
+    {
+      "name": "@operato/help",
+      "banned_versions": [
+        "9.0.35",
+        "9.0.36",
+        "9.0.37",
+        "9.0.38",
+        "9.0.39",
+        "9.0.40",
+        "9.0.41",
+        "9.0.42",
+        "9.0.43",
+        "9.0.44",
+        "9.0.45",
+        "9.0.46",
+        "9.0.47",
+        "9.0.48",
+        "9.0.49",
+        "9.0.50",
+        "9.0.51"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @operato/help"
+    },
+    {
+      "name": "@operato/i18n",
+      "banned_versions": [
+        "9.0.35",
+        "9.0.36",
+        "9.0.37"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @operato/i18n"
+    },
+    {
+      "name": "@operato/input",
+      "banned_versions": [
+        "9.0.27",
+        "9.0.35",
+        "9.0.36",
+        "9.0.37",
+        "9.0.38",
+        "9.0.39",
+        "9.0.40",
+        "9.0.41",
+        "9.0.42",
+        "9.0.43",
+        "9.0.44",
+        "9.0.45",
+        "9.0.46",
+        "9.0.47",
+        "9.0.48"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @operato/input"
+    },
+    {
+      "name": "@operato/layout",
+      "banned_versions": [
+        "9.0.35",
+        "9.0.36",
+        "9.0.37"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @operato/layout"
+    },
+    {
+      "name": "@operato/popup",
+      "banned_versions": [
+        "9.0.22",
+        "9.0.35",
+        "9.0.36",
+        "9.0.37",
+        "9.0.38",
+        "9.0.39",
+        "9.0.40",
+        "9.0.41",
+        "9.0.42",
+        "9.0.43",
+        "9.0.44",
+        "9.0.45",
+        "9.0.46",
+        "9.0.47",
+        "9.0.48",
+        "9.0.49",
+        "9.0.50",
+        "9.0.51"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @operato/popup"
+    },
+    {
+      "name": "@operato/pull-to-refresh",
+      "banned_versions": [
+        "9.0.35",
+        "9.0.36",
+        "9.0.37",
+        "9.0.38",
+        "9.0.39",
+        "9.0.40",
+        "9.0.41",
+        "9.0.42",
+        "9.0.43",
+        "9.0.44",
+        "9.0.45",
+        "9.0.46",
+        "9.0.47"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @operato/pull-to-refresh"
+    },
+    {
+      "name": "@operato/shell",
+      "banned_versions": [
+        "9.0.22",
+        "9.0.35",
+        "9.0.36",
+        "9.0.37",
+        "9.0.38",
+        "9.0.39"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @operato/shell"
+    },
+    {
+      "name": "@operato/styles",
+      "banned_versions": [
+        "9.0.2",
+        "9.0.35",
+        "9.0.36",
+        "9.0.37"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @operato/styles"
+    },
+    {
+      "name": "@operato/utils",
+      "banned_versions": [
+        "9.0.22",
+        "9.0.35",
+        "9.0.36",
+        "9.0.37",
+        "9.0.38",
+        "9.0.39",
+        "9.0.40",
+        "9.0.41",
+        "9.0.42",
+        "9.0.43",
+        "9.0.44",
+        "9.0.45",
+        "9.0.46",
+        "9.0.47",
+        "9.0.48",
+        "9.0.49",
+        "9.0.50",
+        "9.0.51"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @operato/utils"
+    },
+    {
+      "name": "@teselagen/bio-parsers",
+      "banned_versions": [
+        "0.4.29",
+        "0.4.30"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @teselagen/bio-parsers"
+    },
+    {
+      "name": "@teselagen/bounce-loader",
+      "banned_versions": [
+        "0.3.16",
+        "0.3.17"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @teselagen/bounce-loader"
+    },
+    {
+      "name": "@teselagen/file-utils",
+      "banned_versions": [
+        "0.3.21",
+        "0.3.22"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @teselagen/file-utils"
+    },
+    {
+      "name": "@teselagen/liquibase-tools",
+      "banned_versions": [
+        "0.4.1"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @teselagen/liquibase-tools"
+    },
+    {
+      "name": "@teselagen/ove",
+      "banned_versions": [
+        "0.7.39",
+        "0.7.40"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @teselagen/ove"
+    },
+    {
+      "name": "@teselagen/range-utils",
+      "banned_versions": [
+        "0.3.14",
+        "0.3.15"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @teselagen/range-utils"
+    },
+    {
+      "name": "@teselagen/react-list",
+      "banned_versions": [
+        "0.8.19",
+        "0.8.20"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @teselagen/react-list"
+    },
+    {
+      "name": "@teselagen/react-table",
+      "banned_versions": [
+        "6.10.21",
+        "6.10.19",
+        "6.10.20",
+        "6.10.22"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @teselagen/react-table"
+    },
+    {
+      "name": "@teselagen/sequence-utils",
+      "banned_versions": [
+        "0.3.33",
+        "0.3.34"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @teselagen/sequence-utils"
+    },
+    {
+      "name": "@teselagen/ui",
+      "banned_versions": [
+        "0.9.9",
+        "0.9.10"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @teselagen/ui"
+    },
+    {
+      "name": "@thangved/callback-window",
+      "banned_versions": [
+        "1.1.4"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @thangved/callback-window"
+    },
+    {
+      "name": "@things-factory/attachment-base",
+      "banned_versions": [
+        "9.0.42",
+        "9.0.43",
+        "9.0.44",
+        "9.0.45",
+        "9.0.46",
+        "9.0.47",
+        "9.0.48",
+        "9.0.49",
+        "9.0.50",
+        "9.0.51",
+        "9.0.52",
+        "9.0.53",
+        "9.0.54",
+        "9.0.55"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @things-factory/attachment-base"
+    },
+    {
+      "name": "@things-factory/auth-base",
+      "banned_versions": [
+        "9.0.42",
+        "9.0.43",
+        "9.0.44",
+        "9.0.45"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @things-factory/auth-base"
+    },
+    {
+      "name": "@things-factory/email-base",
+      "banned_versions": [
+        "9.0.42",
+        "9.0.43",
+        "9.0.44",
+        "9.0.45",
+        "9.0.46",
+        "9.0.47",
+        "9.0.48",
+        "9.0.49",
+        "9.0.50",
+        "9.0.51",
+        "9.0.52",
+        "9.0.53",
+        "9.0.54",
+        "9.0.55",
+        "9.0.56",
+        "9.0.57",
+        "9.0.58",
+        "9.0.59"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @things-factory/email-base"
+    },
+    {
+      "name": "@things-factory/env",
+      "banned_versions": [
+        "9.0.42",
+        "9.0.43",
+        "9.0.44",
+        "9.0.45"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @things-factory/env"
+    },
+    {
+      "name": "@things-factory/integration-base",
+      "banned_versions": [
+        "9.0.42",
+        "9.0.43",
+        "9.0.44",
+        "9.0.45"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @things-factory/integration-base"
+    },
+    {
+      "name": "@things-factory/integration-marketplace",
+      "banned_versions": [
+        "9.0.42",
+        "9.0.43",
+        "9.0.44",
+        "9.0.45"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @things-factory/integration-marketplace"
+    },
+    {
+      "name": "@things-factory/shell",
+      "banned_versions": [
+        "9.0.42",
+        "9.0.43",
+        "9.0.44",
+        "9.0.45"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @things-factory/shell"
+    },
+    {
+      "name": "@tnf-dev/api",
+      "banned_versions": [
+        "1.0.8"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @tnf-dev/api"
+    },
+    {
+      "name": "@tnf-dev/core",
+      "banned_versions": [
+        "1.0.8"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @tnf-dev/core"
+    },
+    {
+      "name": "@tnf-dev/js",
+      "banned_versions": [
+        "1.0.8"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @tnf-dev/js"
+    },
+    {
+      "name": "@tnf-dev/mui",
+      "banned_versions": [
+        "1.0.8"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @tnf-dev/mui"
+    },
+    {
+      "name": "@tnf-dev/react",
+      "banned_versions": [
+        "1.0.8"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @tnf-dev/react"
+    },
+    {
+      "name": "@ui-ux-gang/devextreme-angular-rpk",
+      "banned_versions": [
+        "24.1.7"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @ui-ux-gang/devextreme-angular-rpk"
+    },
+    {
+      "name": "@ui-ux-gang/devextreme-rpk",
+      "banned_versions": [
+        "24.1.7"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @ui-ux-gang/devextreme-rpk"
+    },
+    {
+      "name": "@yoobic/design-system",
+      "banned_versions": [
+        "6.5.17"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @yoobic/design-system"
+    },
+    {
+      "name": "@yoobic/jpeg-camera-es6",
+      "banned_versions": [
+        "1.0.13"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @yoobic/jpeg-camera-es6"
+    },
+    {
+      "name": "@yoobic/yobi",
+      "banned_versions": [
+        "8.7.53"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: @yoobic/yobi"
+    },
+    {
+      "name": "ace-colorpicker-rpk",
+      "banned_versions": [
+        "0.0.14"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: ace-colorpicker-rpk"
+    },
+    {
+      "name": "airchief",
+      "banned_versions": [
+        "0.3.1"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: airchief"
+    },
+    {
+      "name": "airpilot",
+      "banned_versions": [
+        "0.8.8"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: airpilot"
+    },
+    {
+      "name": "angulartics2",
+      "banned_versions": [
+        "14.1.2",
+        "14.1.1"
+      ],
+      "severity": "critical",
+      "weekly_downloads": 200000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: angulartics2"
+    },
+    {
+      "name": "browser-webdriver-downloader",
+      "banned_versions": [
+        "3.0.8"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: browser-webdriver-downloader"
+    },
+    {
+      "name": "capacitor-notificationhandler",
+      "banned_versions": [
+        "0.0.2",
+        "0.0.3"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: capacitor-notificationhandler"
+    },
+    {
+      "name": "capacitor-plugin-healthapp",
+      "banned_versions": [
+        "0.0.2",
+        "0.0.3"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: capacitor-plugin-healthapp"
+    },
+    {
+      "name": "capacitor-plugin-ihealth",
+      "banned_versions": [
+        "1.1.8",
+        "1.1.9"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: capacitor-plugin-ihealth"
+    },
+    {
+      "name": "capacitor-plugin-vonage",
+      "banned_versions": [
+        "1.0.2",
+        "1.0.3"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: capacitor-plugin-vonage"
+    },
+    {
+      "name": "capacitorandroidpermissions",
+      "banned_versions": [
+        "0.0.4",
+        "0.0.5"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: capacitorandroidpermissions"
+    },
+    {
+      "name": "config-cordova",
+      "banned_versions": [
+        "0.8.5"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: config-cordova"
+    },
+    {
+      "name": "cordova-plugin-voxeet2",
+      "banned_versions": [
+        "1.0.24"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: cordova-plugin-voxeet2"
+    },
+    {
+      "name": "cordova-voxeet",
+      "banned_versions": [
+        "1.0.32"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: cordova-voxeet"
+    },
+    {
+      "name": "create-hest-app",
+      "banned_versions": [
+        "0.1.9"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: create-hest-app"
+    },
+    {
+      "name": "db-evo",
+      "banned_versions": [
+        "1.1.4",
+        "1.1.5"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: db-evo"
+    },
+    {
+      "name": "devextreme-angular-rpk",
+      "banned_versions": [
+        "21.2.8"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: devextreme-angular-rpk"
+    },
+    {
+      "name": "devextreme-rpk",
+      "banned_versions": [
+        "21.2.8"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: devextreme-rpk"
+    },
+    {
+      "name": "ember-browser-services",
+      "banned_versions": [
+        "5.0.2",
+        "5.0.3"
+      ],
+      "severity": "high",
+      "weekly_downloads": 10000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: ember-browser-services"
+    },
+    {
+      "name": "ember-headless-form",
+      "banned_versions": [
+        "1.1.2",
+        "1.1.3"
+      ],
+      "severity": "high",
+      "weekly_downloads": 10000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: ember-headless-form"
+    },
+    {
+      "name": "ember-headless-form-yup",
+      "banned_versions": [
+        "1.0.1"
+      ],
+      "severity": "high",
+      "weekly_downloads": 10000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: ember-headless-form-yup"
+    },
+    {
+      "name": "ember-headless-table",
+      "banned_versions": [
+        "2.1.5",
+        "2.1.6"
+      ],
+      "severity": "high",
+      "weekly_downloads": 10000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: ember-headless-table"
+    },
+    {
+      "name": "ember-url-hash-polyfill",
+      "banned_versions": [
+        "1.0.12",
+        "1.0.13"
+      ],
+      "severity": "high",
+      "weekly_downloads": 10000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: ember-url-hash-polyfill"
+    },
+    {
+      "name": "ember-velcro",
+      "banned_versions": [
+        "2.2.1",
+        "2.2.2"
+      ],
+      "severity": "high",
+      "weekly_downloads": 10000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: ember-velcro"
+    },
+    {
+      "name": "encounter-playground",
+      "banned_versions": [
+        "0.0.4",
+        "0.0.5",
+        "0.0.2",
+        "0.0.3"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: encounter-playground"
+    },
+    {
+      "name": "eslint-config-crowdstrike",
+      "banned_versions": [
+        "11.0.2",
+        "11.0.3"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: eslint-config-crowdstrike"
+    },
+    {
+      "name": "eslint-config-crowdstrike-node",
+      "banned_versions": [
+        "4.0.3",
+        "4.0.4"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: eslint-config-crowdstrike-node"
+    },
+    {
+      "name": "eslint-config-teselagen",
+      "banned_versions": [
+        "6.1.7",
+        "6.1.8"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: eslint-config-teselagen"
+    },
+    {
+      "name": "globalize-rpk",
+      "banned_versions": [
+        "1.7.4"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: globalize-rpk"
+    },
+    {
+      "name": "graphql-sequelize-teselagen",
+      "banned_versions": [
+        "5.3.8",
+        "5.3.9"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: graphql-sequelize-teselagen"
+    },
+    {
+      "name": "html-to-base64-image",
+      "banned_versions": [
+        "1.0.2"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: html-to-base64-image"
+    },
+    {
+      "name": "json-rules-engine-simplified",
+      "banned_versions": [
+        "0.2.1",
+        "0.2.2",
+        "0.2.3",
+        "0.2.4"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: json-rules-engine-simplified"
+    },
+    {
+      "name": "jumpgate",
+      "banned_versions": [
+        "0.0.2"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: jumpgate"
+    },
+    {
+      "name": "koa2-swagger-ui",
+      "banned_versions": [
+        "5.11.2",
+        "5.11.1"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: koa2-swagger-ui"
+    },
+    {
+      "name": "mcfly-semantic-release",
+      "banned_versions": [
+        "1.3.1"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: mcfly-semantic-release"
+    },
+    {
+      "name": "mcp-knowledge-base",
+      "banned_versions": [
+        "0.0.2"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: mcp-knowledge-base"
+    },
+    {
+      "name": "mcp-knowledge-graph",
+      "banned_versions": [
+        "1.2.1"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: mcp-knowledge-graph"
+    },
+    {
+      "name": "mobioffice-cli",
+      "banned_versions": [
+        "1.0.3"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: mobioffice-cli"
+    },
+    {
+      "name": "monorepo-next",
+      "banned_versions": [
+        "13.0.1",
+        "13.0.2"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: monorepo-next"
+    },
+    {
+      "name": "mstate-angular",
+      "banned_versions": [
+        "0.4.4"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: mstate-angular"
+    },
+    {
+      "name": "mstate-cli",
+      "banned_versions": [
+        "0.4.7"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: mstate-cli"
+    },
+    {
+      "name": "mstate-dev-react",
+      "banned_versions": [
+        "1.1.1"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: mstate-dev-react"
+    },
+    {
+      "name": "mstate-react",
+      "banned_versions": [
+        "1.6.5"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: mstate-react"
+    },
+    {
+      "name": "ng-imports-checker",
+      "banned_versions": [
+        "0.0.10",
+        "0.0.9"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: ng-imports-checker"
+    },
+    {
+      "name": "ng2-file-upload",
+      "banned_versions": [
+        "8.0.3",
+        "7.0.2",
+        "7.0.3",
+        "8.0.1",
+        "8.0.2",
+        "9.0.1"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: ng2-file-upload"
+    },
+    {
+      "name": "ngx-color",
+      "banned_versions": [
+        "10.0.2",
+        "10.0.1"
+      ],
+      "severity": "high",
+      "weekly_downloads": 20000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: ngx-color"
+    },
+    {
+      "name": "ngx-toastr",
+      "banned_versions": [
+        "19.0.2",
+        "19.0.1"
+      ],
+      "severity": "high",
+      "weekly_downloads": 20000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: ngx-toastr"
+    },
+    {
+      "name": "ngx-trend",
+      "banned_versions": [
+        "8.0.1"
+      ],
+      "severity": "high",
+      "weekly_downloads": 20000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: ngx-trend"
+    },
+    {
+      "name": "ngx-ws",
+      "banned_versions": [
+        "1.1.5",
+        "1.1.6"
+      ],
+      "severity": "high",
+      "weekly_downloads": 20000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: ngx-ws"
+    },
+    {
+      "name": "oradm-to-gql",
+      "banned_versions": [
+        "35.0.14",
+        "35.0.15"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: oradm-to-gql"
+    },
+    {
+      "name": "oradm-to-sqlz",
+      "banned_versions": [
+        "1.1.2",
+        "1.1.3",
+        "1.1.4",
+        "1.1.5"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: oradm-to-sqlz"
+    },
+    {
+      "name": "ove-auto-annotate",
+      "banned_versions": [
+        "0.0.9",
+        "0.0.10"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: ove-auto-annotate"
+    },
+    {
+      "name": "pm2-gelf-json",
+      "banned_versions": [
+        "1.0.4",
+        "1.0.5"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: pm2-gelf-json"
+    },
+    {
+      "name": "printjs-rpk",
+      "banned_versions": [
+        "1.6.1"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: printjs-rpk"
+    },
+    {
+      "name": "react-complaint-image",
+      "banned_versions": [
+        "0.0.32",
+        "0.0.33",
+        "0.0.34",
+        "0.0.35"
+      ],
+      "severity": "high",
+      "weekly_downloads": 15000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: react-complaint-image"
+    },
+    {
+      "name": "react-jsonschema-form-conditionals",
+      "banned_versions": [
+        "0.3.18",
+        "0.3.19",
+        "0.3.20",
+        "0.3.21"
+      ],
+      "severity": "high",
+      "weekly_downloads": 15000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: react-jsonschema-form-conditionals"
+    },
+    {
+      "name": "react-jsonschema-form-extras",
+      "banned_versions": [
+        "1.0.1",
+        "1.0.2",
+        "1.0.3",
+        "1.0.4"
+      ],
+      "severity": "high",
+      "weekly_downloads": 15000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: react-jsonschema-form-extras"
+    },
+    {
+      "name": "react-jsonschema-rxnt-extras",
+      "banned_versions": [
+        "0.4.6",
+        "0.4.7",
+        "0.4.8",
+        "0.4.9"
+      ],
+      "severity": "high",
+      "weekly_downloads": 15000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: react-jsonschema-rxnt-extras"
+    },
+    {
+      "name": "remark-preset-lint-crowdstrike",
+      "banned_versions": [
+        "4.0.1",
+        "4.0.2"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: remark-preset-lint-crowdstrike"
+    },
+    {
+      "name": "rxnt-healthchecks-nestjs",
+      "banned_versions": [
+        "1.0.4",
+        "1.0.5",
+        "1.0.2",
+        "1.0.3"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: rxnt-healthchecks-nestjs"
+    },
+    {
+      "name": "rxnt-kue",
+      "banned_versions": [
+        "1.0.6",
+        "1.0.7",
+        "1.0.4",
+        "1.0.5"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: rxnt-kue"
+    },
+    {
+      "name": "swc-plugin-component-annotate",
+      "banned_versions": [
+        "1.9.2",
+        "1.9.1"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: swc-plugin-component-annotate"
+    },
+    {
+      "name": "tbssnch",
+      "banned_versions": [
+        "1.0.2"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: tbssnch"
+    },
+    {
+      "name": "teselagen-interval-tree",
+      "banned_versions": [
+        "1.1.2"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: teselagen-interval-tree"
+    },
+    {
+      "name": "tg-client-query-builder",
+      "banned_versions": [
+        "2.14.4",
+        "2.14.5"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: tg-client-query-builder"
+    },
+    {
+      "name": "tg-redbird",
+      "banned_versions": [
+        "1.3.1",
+        "1.3.2"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: tg-redbird"
+    },
+    {
+      "name": "tg-seq-gen",
+      "banned_versions": [
+        "1.0.9",
+        "1.0.10"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: tg-seq-gen"
+    },
+    {
+      "name": "thangved-react-grid",
+      "banned_versions": [
+        "1.0.3"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: thangved-react-grid"
+    },
+    {
+      "name": "ts-gaussian",
+      "banned_versions": [
+        "3.0.6",
+        "3.0.5"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: ts-gaussian"
+    },
+    {
+      "name": "ts-imports",
+      "banned_versions": [
+        "1.0.1",
+        "1.0.2"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: ts-imports"
+    },
+    {
+      "name": "tvi-cli",
+      "banned_versions": [
+        "0.1.5"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: tvi-cli"
+    },
+    {
+      "name": "ve-bamreader",
+      "banned_versions": [
+        "0.2.6",
+        "0.2.7"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: ve-bamreader"
+    },
+    {
+      "name": "ve-editor",
+      "banned_versions": [
+        "1.0.1",
+        "1.0.2"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: ve-editor"
+    },
+    {
+      "name": "verror-extra",
+      "banned_versions": [
+        "6.0.1"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: verror-extra"
+    },
+    {
+      "name": "voip-callkit",
+      "banned_versions": [
+        "1.0.2",
+        "1.0.3"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: voip-callkit"
+    },
+    {
+      "name": "wdio-web-reporter",
+      "banned_versions": [
+        "0.1.3"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: wdio-web-reporter"
+    },
+    {
+      "name": "yargs-help-output",
+      "banned_versions": [
+        "5.0.3"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: yargs-help-output"
+    },
+    {
+      "name": "yoo-styles",
+      "banned_versions": [
+        "6.0.326"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-09-15",
+      "attack_vector": "postinstall script",
+      "patient_zero": false,
+      "description": "Compromised package: yoo-styles"
     }
   ],
   "remediation": {

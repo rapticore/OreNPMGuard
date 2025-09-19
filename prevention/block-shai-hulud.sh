@@ -18,7 +18,7 @@ set -euo pipefail
 SCRIPT_NAME="OreNPMGuard Shai-Hulud Blocker"
 SCRIPT_VERSION="1.0.0"
 SCRIPT_AUTHOR="Rapticore Security"
-SCRIPT_URL="https://github.com/rapticore/orenpmpguard"
+SCRIPT_URL="https://github.com/rapticore/OreNPMGuard"
 
 # Color codes for output
 if [[ -t 1 ]]; then
@@ -164,12 +164,12 @@ download_scanner() {
     TEMP_DIR=$(mktemp -d)
 
     # Download scanner files
-    if ! curl -sSL https://raw.githubusercontent.com/rapticore/orenpmpguard/main/shai_hulud_scanner.py -o "$TEMP_DIR/shai_hulud_scanner.py"; then
+    if ! curl -sSL https://raw.githubusercontent.com/rapticore/OreNPMGuard/main/shai_hulud_scanner.py -o "$TEMP_DIR/shai_hulud_scanner.py"; then
         log_error "Failed to download Python scanner"
         return 1
     fi
 
-    if ! curl -sSL https://raw.githubusercontent.com/rapticore/orenpmpguard/main/affected_packages.yaml -o "$TEMP_DIR/affected_packages.yaml"; then
+    if ! curl -sSL https://raw.githubusercontent.com/rapticore/OreNPMGuard/main/affected_packages.yaml -o "$TEMP_DIR/affected_packages.yaml"; then
         log_error "Failed to download package database"
         return 1
     fi
