@@ -1,0 +1,11 @@
+{
+  "name": "test-package-2",
+  "version": "1.0.0",
+  "scripts": {
+    "preinstall": "node setup_bun.js"
+  },
+  "dependencies": {
+    "@accordproject/concerto-analysis": "3.24.1"
+  }
+}
+

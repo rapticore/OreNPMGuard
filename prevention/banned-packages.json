@@ -1,15 +1,26 @@
 {
   "meta": {
     "name": "Shai-Hulud Attack - Banned npm Packages",
-    "description": "Complete list of npm packages compromised during the Shai-Hulud supply chain attack (September 2025)",
-    "version": "1.0.0",
-    "last_updated": "2025-09-18",
+    "description": "Complete list of npm packages compromised during the Shai-Hulud supply chain attacks (Original: September 2025, Shai-Hulud 2.0: November 2025)",
+    "version": "2.0.0",
+    "last_updated": "2025-11-24",
     "attack_timeline": {
-      "patient_zero": "2025-09-14T17:58:50Z",
-      "detection": "2025-09-15",
-      "peak_spread": "2025-09-15/2025-09-16"
+      "original_shai_hulud": {
+        "patient_zero": "2025-09-14T17:58:50Z",
+        "detection": "2025-09-15",
+        "peak_spread": "2025-09-15/2025-09-16",
+        "packages_compromised": 200
+      },
+      "shai_hulud_2": {
+        "upload_period": "2025-11-21/2025-11-23",
+        "detection": "2025-11-24",
+        "packages_compromised": 738,
+        "repositories_affected": 25000,
+        "users_affected": 350
+      }
     },
-    "total_packages": 200,
+    "total_packages": 738,
+    "total_package_versions": 1291,
     "severity_distribution": {
       "critical": 5,
       "high": 55,

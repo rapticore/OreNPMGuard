@@ -1,7 +1,7 @@
 {
   "name": "orenpmpguard",
-  "version": "1.0.0",
-  "description": "Security tool to detect compromised npm packages from the Shai-Hulud supply chain attack. Scans both package.json and package-lock.json files. Available in both Python and Node.js implementations with centralized YAML configuration.",
+  "version": "2.0.0",
+  "description": "Security tool to detect compromised npm packages from the Shai-Hulud supply chain attacks (original September 2025 and Shai-Hulud 2.0 November 2025). Scans both package.json and package-lock.json files. Available in both Python and Node.js implementations with centralized YAML configuration.",
   "main": "shai_hulud_scanner.js",
   "bin": {
     "orenpmpguard": "./shai_hulud_scanner.js",
@@ -13,7 +13,10 @@
     "scan:python": "python3 shai_hulud_scanner.py",
     "scan:python:current": "python3 shai_hulud_scanner.py .",
     "install:python-deps": "pip install -r requirements.txt",
-    "test": "npm run scan:current && npm run scan:python:current",
+    "test": "./tests/run_tests.sh",
+    "test:python": "python3 -m unittest discover -s tests -p 'test_*.py' -v",
+    "test:nodejs": "node tests/test_nodejs_scanner.js",
+    "test:all": "npm run test:python && npm run test:nodejs",
     "validate": "node -e \"require('./shai_hulud_scanner.js')\" && echo 'JavaScript scanner syntax OK'",
     "validate:python": "python3 -m py_compile shai_hulud_scanner.py && echo 'Python scanner syntax OK'"
   },

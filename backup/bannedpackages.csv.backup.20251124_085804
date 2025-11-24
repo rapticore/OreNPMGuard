@@ -1,0 +1,728 @@
+package_name,banned_versions,severity,weekly_downloads,first_detected,patient_zero,description,attack_vector,priority
+02-echo,0.0.7,medium,1000,2025-09-15,false,Compromised package: 02-echo,postinstall script,3
+@accordproject/concerto-analysis,3.24.1,medium,1000,2025-09-15,false,Compromised package: @accordproject/concerto-analysis,postinstall script,3
+@accordproject/concerto-linter,3.24.1,medium,1000,2025-09-15,false,Compromised package: @accordproject/concerto-linter,postinstall script,3
+@accordproject/concerto-linter-default-ruleset,3.24.1,medium,1000,2025-09-15,false,Compromised package: @accordproject/concerto-linter-default-ruleset,postinstall script,3
+@accordproject/concerto-metamodel,3.12.5,medium,1000,2025-09-15,false,Compromised package: @accordproject/concerto-metamodel,postinstall script,3
+@accordproject/concerto-types,3.24.1,medium,1000,2025-09-15,false,Compromised package: @accordproject/concerto-types,postinstall script,3
+@accordproject/markdown-it-cicero,0.16.26,medium,1000,2025-09-15,false,Compromised package: @accordproject/markdown-it-cicero,postinstall script,3
+@accordproject/template-engine,2.7.2,medium,1000,2025-09-15,false,Compromised package: @accordproject/template-engine,postinstall script,3
+@actbase/css-to-react-native-transform,1.0.3,medium,1000,2025-09-15,false,Compromised package: @actbase/css-to-react-native-transform,postinstall script,3
+@actbase/native,0.1.32,medium,1000,2025-09-15,false,Compromised package: @actbase/native,postinstall script,3
+@actbase/node-server,1.1.19,medium,1000,2025-09-15,false,Compromised package: @actbase/node-server,postinstall script,3
+@actbase/react-absolute,0.8.3,medium,1000,2025-09-15,false,Compromised package: @actbase/react-absolute,postinstall script,3
+@actbase/react-daum-postcode,1.0.5,medium,1000,2025-09-15,false,Compromised package: @actbase/react-daum-postcode,postinstall script,3
+@actbase/react-kakaosdk,0.9.27,medium,1000,2025-09-15,false,Compromised package: @actbase/react-kakaosdk,postinstall script,3
+@actbase/react-native-actionsheet,1.0.3,medium,1000,2025-09-15,false,Compromised package: @actbase/react-native-actionsheet,postinstall script,3
+@actbase/react-native-devtools,0.1.3,medium,1000,2025-09-15,false,Compromised package: @actbase/react-native-devtools,postinstall script,3
+@actbase/react-native-fast-image,8.5.13,medium,1000,2025-09-15,false,Compromised package: @actbase/react-native-fast-image,postinstall script,3
+@actbase/react-native-kakao-channel,1.0.2,medium,1000,2025-09-15,false,Compromised package: @actbase/react-native-kakao-channel,postinstall script,3
+@actbase/react-native-kakao-navi,2.0.4,medium,1000,2025-09-15,false,Compromised package: @actbase/react-native-kakao-navi,postinstall script,3
+@actbase/react-native-less-transformer,1.0.6,medium,1000,2025-09-15,false,Compromised package: @actbase/react-native-less-transformer,postinstall script,3
+@actbase/react-native-naver-login,1.0.1,medium,1000,2025-09-15,false,Compromised package: @actbase/react-native-naver-login,postinstall script,3
+@actbase/react-native-simple-video,1.0.13,medium,1000,2025-09-15,false,Compromised package: @actbase/react-native-simple-video,postinstall script,3
+@actbase/react-native-tiktok,1.1.3,medium,1000,2025-09-15,false,Compromised package: @actbase/react-native-tiktok,postinstall script,3
+@ahmedhfarag/ngx-perfect-scrollbar,20.0.20,medium,1000,2025-09-15,false,Compromised package: @ahmedhfarag/ngx-perfect-scrollbar,postinstall script,3
+@ahmedhfarag/ngx-virtual-scroller,4.0.4,medium,1000,2025-09-15,false,Compromised package: @ahmedhfarag/ngx-virtual-scroller,postinstall script,3
+@alexcolls/nuxt-socket.io,"0.0.7, 0.0.8",medium,1000,2025-09-15,false,Compromised package: @alexcolls/nuxt-socket.io,postinstall script,3
+@alexcolls/nuxt-ux,"0.6.1, 0.6.2",medium,1000,2025-09-15,false,Compromised package: @alexcolls/nuxt-ux,postinstall script,3
+@antstackio/eslint-config-antstack,0.0.3,medium,1000,2025-09-15,false,Compromised package: @antstackio/eslint-config-antstack,postinstall script,3
+@antstackio/express-graphql-proxy,0.2.8,medium,1000,2025-09-15,false,Compromised package: @antstackio/express-graphql-proxy,postinstall script,3
+@antstackio/graphql-body-parser,0.1.1,medium,1000,2025-09-15,false,Compromised package: @antstackio/graphql-body-parser,postinstall script,3
+@antstackio/json-to-graphql,1.0.3,medium,1000,2025-09-15,false,Compromised package: @antstackio/json-to-graphql,postinstall script,3
+@antstackio/shelbysam,1.1.7,medium,1000,2025-09-15,false,Compromised package: @antstackio/shelbysam,postinstall script,3
+@art-ws/common,"2.0.22, 2.0.28",medium,1000,2025-09-15,false,Compromised package: @art-ws/common,postinstall script,3
+@art-ws/config-eslint,"2.0.4, 2.0.5",medium,1000,2025-09-15,false,Compromised package: @art-ws/config-eslint,postinstall script,3
+@art-ws/config-ts,"2.0.7, 2.0.8",medium,1000,2025-09-15,false,Compromised package: @art-ws/config-ts,postinstall script,3
+@art-ws/db-context,"2.0.21, 2.0.24",medium,1000,2025-09-15,false,Compromised package: @art-ws/db-context,postinstall script,3
+@art-ws/di,"2.0.28, 2.0.32",medium,1000,2025-09-15,false,Compromised package: @art-ws/di,postinstall script,3
+@art-ws/di-node,2.0.13,medium,1000,2025-09-15,false,Compromised package: @art-ws/di-node,postinstall script,3
+@art-ws/eslint,"1.0.5, 1.0.6",medium,1000,2025-09-15,false,Compromised package: @art-ws/eslint,postinstall script,3
+@art-ws/fastify-http-server,"2.0.24, 2.0.27",medium,1000,2025-09-15,false,Compromised package: @art-ws/fastify-http-server,postinstall script,3
+@art-ws/http-server,"2.0.21, 2.0.25",medium,1000,2025-09-15,false,Compromised package: @art-ws/http-server,postinstall script,3
+@art-ws/openapi,"0.1.12, 0.1.9",medium,1000,2025-09-15,false,Compromised package: @art-ws/openapi,postinstall script,3
+@art-ws/package-base,"1.0.5, 1.0.6",medium,1000,2025-09-15,false,Compromised package: @art-ws/package-base,postinstall script,3
+@art-ws/prettier,"1.0.5, 1.0.6",medium,1000,2025-09-15,false,Compromised package: @art-ws/prettier,postinstall script,3
+@art-ws/slf,"2.0.15, 2.0.22",medium,1000,2025-09-15,false,Compromised package: @art-ws/slf,postinstall script,3
+@art-ws/ssl-info,"1.0.10, 1.0.9",medium,1000,2025-09-15,false,Compromised package: @art-ws/ssl-info,postinstall script,3
+@art-ws/web-app,"1.0.3, 1.0.4",medium,1000,2025-09-15,false,Compromised package: @art-ws/web-app,postinstall script,3
+@aryanhussain/my-angular-lib,0.0.23,medium,1000,2025-09-15,false,Compromised package: @aryanhussain/my-angular-lib,postinstall script,3
+@asyncapi/dotnet-rabbitmq-template,"1.0.1, 1.0.2",medium,1000,2025-09-15,false,Compromised package: @asyncapi/dotnet-rabbitmq-template,postinstall script,3
+@asyncapi/edavisualiser,"1.2.1, 1.2.2",medium,1000,2025-09-15,false,Compromised package: @asyncapi/edavisualiser,postinstall script,3
+@asyncapi/go-watermill-template,"0.2.76, 0.2.77",medium,1000,2025-09-15,false,Compromised package: @asyncapi/go-watermill-template,postinstall script,3
+@asyncapi/java-template,"0.3.5, 0.3.6",medium,1000,2025-09-15,false,Compromised package: @asyncapi/java-template,postinstall script,3
+@asyncapi/keeper,"0.0.2, 0.0.3",medium,1000,2025-09-15,false,Compromised package: @asyncapi/keeper,postinstall script,3
+@asyncapi/php-template,"0.1.1, 0.1.2",medium,1000,2025-09-15,false,Compromised package: @asyncapi/php-template,postinstall script,3
+@asyncapi/python-paho-template,"0.2.14, 0.2.15",medium,1000,2025-09-15,false,Compromised package: @asyncapi/python-paho-template,postinstall script,3
+@asyncapi/server-api,"0.16.24, 0.16.25",medium,1000,2025-09-15,false,Compromised package: @asyncapi/server-api,postinstall script,3
+@asyncapi/studio,"1.0.2, 1.0.3",medium,1000,2025-09-15,false,Compromised package: @asyncapi/studio,postinstall script,3
+@asyncapi/web-component,"2.6.6, 2.6.7",medium,1000,2025-09-15,false,Compromised package: @asyncapi/web-component,postinstall script,3
+@basic-ui-components-stc/basic-ui-components,1.0.5,medium,1000,2025-09-15,false,Compromised package: @basic-ui-components-stc/basic-ui-components,postinstall script,3
+@browserbasehq/bb9,1.2.21,medium,1000,2025-09-15,false,Compromised package: @browserbasehq/bb9,postinstall script,3
+@browserbasehq/director-ai,1.0.3,medium,1000,2025-09-15,false,Compromised package: @browserbasehq/director-ai,postinstall script,3
+@browserbasehq/mcp,2.1.1,medium,1000,2025-09-15,false,Compromised package: @browserbasehq/mcp,postinstall script,3
+@browserbasehq/mcp-server-browserbase,2.4.2,medium,1000,2025-09-15,false,Compromised package: @browserbasehq/mcp-server-browserbase,postinstall script,3
+@browserbasehq/sdk-functions,0.0.4,medium,1000,2025-09-15,false,Compromised package: @browserbasehq/sdk-functions,postinstall script,3
+@browserbasehq/stagehand,3.0.4,medium,1000,2025-09-15,false,Compromised package: @browserbasehq/stagehand,postinstall script,3
+@browserbasehq/stagehand-docs,1.0.1,medium,1000,2025-09-15,false,Compromised package: @browserbasehq/stagehand-docs,postinstall script,3
+@caretive/caret-cli,0.0.2,medium,1000,2025-09-15,false,Compromised package: @caretive/caret-cli,postinstall script,3
+@clausehq/flows-step-httprequest,0.1.14,medium,1000,2025-09-15,false,Compromised package: @clausehq/flows-step-httprequest,postinstall script,3
+@clausehq/flows-step-jsontoxml,0.1.14,medium,1000,2025-09-15,false,Compromised package: @clausehq/flows-step-jsontoxml,postinstall script,3
+@clausehq/flows-step-mqtt,0.1.14,medium,1000,2025-09-15,false,Compromised package: @clausehq/flows-step-mqtt,postinstall script,3
+@clausehq/flows-step-sendgridemail,0.1.14,medium,1000,2025-09-15,false,Compromised package: @clausehq/flows-step-sendgridemail,postinstall script,3
+@clausehq/flows-step-taskscreateurl,0.1.14,medium,1000,2025-09-15,false,Compromised package: @clausehq/flows-step-taskscreateurl,postinstall script,3
+@commute/bloom,1.0.3,medium,1000,2025-09-15,false,Compromised package: @commute/bloom,postinstall script,3
+@commute/market-data,1.0.2,medium,1000,2025-09-15,false,Compromised package: @commute/market-data,postinstall script,3
+@commute/market-data-chartjs,2.3.1,medium,1000,2025-09-15,false,Compromised package: @commute/market-data-chartjs,postinstall script,3
+@crowdstrike/commitlint,"8.1.1, 8.1.2",high,15000,2025-09-15,false,Compromised package: @crowdstrike/commitlint,postinstall script,2
+@crowdstrike/falcon-shoelace,"0.4.1, 0.4.2",high,15000,2025-09-15,false,Compromised package: @crowdstrike/falcon-shoelace,postinstall script,2
+@crowdstrike/foundry-js,"0.19.1, 0.19.2",high,15000,2025-09-15,false,Compromised package: @crowdstrike/foundry-js,postinstall script,2
+@crowdstrike/glide-core,"0.34.2, 0.34.3",high,15000,2025-09-15,false,Compromised package: @crowdstrike/glide-core,postinstall script,2
+@crowdstrike/logscale-dashboard,"1.205.1, 1.205.2",high,15000,2025-09-15,false,Compromised package: @crowdstrike/logscale-dashboard,postinstall script,2
+@crowdstrike/logscale-file-editor,"1.205.1, 1.205.2",high,15000,2025-09-15,false,Compromised package: @crowdstrike/logscale-file-editor,postinstall script,2
+@crowdstrike/logscale-parser-edit,"1.205.1, 1.205.2",high,15000,2025-09-15,false,Compromised package: @crowdstrike/logscale-parser-edit,postinstall script,2
+@crowdstrike/logscale-search,"1.205.1, 1.205.2",high,15000,2025-09-15,false,Compromised package: @crowdstrike/logscale-search,postinstall script,2
+@crowdstrike/tailwind-toucan-base,"5.0.1, 5.0.2",high,15000,2025-09-15,false,Compromised package: @crowdstrike/tailwind-toucan-base,postinstall script,2
+@ctrl/deluge,"7.2.2, 7.2.1",critical,2200000,2025-09-15,false,Compromised package: @ctrl/deluge,postinstall script,1
+@ctrl/golang-template,"1.4.3, 1.4.2",high,50000,2025-09-15,false,Compromised package: @ctrl/golang-template,postinstall script,2
+@ctrl/magnet-link,"4.0.4, 4.0.3",high,50000,2025-09-15,false,Compromised package: @ctrl/magnet-link,postinstall script,2
+@ctrl/ngx-codemirror,"7.0.2, 7.0.1",high,50000,2025-09-15,false,Compromised package: @ctrl/ngx-codemirror,postinstall script,2
+@ctrl/ngx-csv,"6.0.2, 6.0.1",high,50000,2025-09-15,false,Compromised package: @ctrl/ngx-csv,postinstall script,2
+@ctrl/ngx-emoji-mart,"9.2.2, 9.2.1",high,50000,2025-09-15,false,Compromised package: @ctrl/ngx-emoji-mart,postinstall script,2
+@ctrl/ngx-rightclick,"4.0.2, 4.0.1",high,50000,2025-09-15,false,Compromised package: @ctrl/ngx-rightclick,postinstall script,2
+@ctrl/qbittorrent,"9.7.2, 9.7.1",high,50000,2025-09-15,false,Compromised package: @ctrl/qbittorrent,postinstall script,2
+@ctrl/react-adsense,"2.0.2, 2.0.1",high,50000,2025-09-15,false,Compromised package: @ctrl/react-adsense,postinstall script,2
+@ctrl/shared-torrent,"6.3.2, 6.3.1",high,50000,2025-09-15,false,Compromised package: @ctrl/shared-torrent,postinstall script,2
+@ctrl/tinycolor,"4.1.1, 4.1.2",critical,2200000,2025-09-15,false,Compromised package: @ctrl/tinycolor,postinstall script,1
+@ctrl/torrent-file,"4.1.2, 4.1.1",high,50000,2025-09-15,false,Compromised package: @ctrl/torrent-file,postinstall script,2
+@ctrl/transmission,7.3.1,high,50000,2025-09-15,false,Compromised package: @ctrl/transmission,postinstall script,2
+@ctrl/ts-base32,"4.0.2, 4.0.1",high,50000,2025-09-15,false,Compromised package: @ctrl/ts-base32,postinstall script,2
+@dev-blinq/ai-qa-logic,1.0.19,medium,1000,2025-09-15,false,Compromised package: @dev-blinq/ai-qa-logic,postinstall script,3
+@dev-blinq/cucumber-js,1.0.131,medium,1000,2025-09-15,false,Compromised package: @dev-blinq/cucumber-js,postinstall script,3
+@dev-blinq/cucumber_client,1.0.738,medium,1000,2025-09-15,false,Compromised package: @dev-blinq/cucumber_client,postinstall script,3
+@dev-blinq/ui-systems,1.0.93,medium,1000,2025-09-15,false,Compromised package: @dev-blinq/ui-systems,postinstall script,3
+@ensdomains/address-encoder,1.1.5,medium,1000,2025-09-15,false,Compromised package: @ensdomains/address-encoder,postinstall script,3
+@ensdomains/blacklist,1.0.1,medium,1000,2025-09-15,false,Compromised package: @ensdomains/blacklist,postinstall script,3
+@ensdomains/buffer,0.1.2,medium,1000,2025-09-15,false,Compromised package: @ensdomains/buffer,postinstall script,3
+@ensdomains/ccip-read-cf-worker,0.0.4,medium,1000,2025-09-15,false,Compromised package: @ensdomains/ccip-read-cf-worker,postinstall script,3
+@ensdomains/ccip-read-dns-gateway,0.1.1,medium,1000,2025-09-15,false,Compromised package: @ensdomains/ccip-read-dns-gateway,postinstall script,3
+@ensdomains/ccip-read-router,0.0.7,medium,1000,2025-09-15,false,Compromised package: @ensdomains/ccip-read-router,postinstall script,3
+@ensdomains/ccip-read-worker-viem,0.0.4,medium,1000,2025-09-15,false,Compromised package: @ensdomains/ccip-read-worker-viem,postinstall script,3
+@ensdomains/content-hash,3.0.1,medium,1000,2025-09-15,false,Compromised package: @ensdomains/content-hash,postinstall script,3
+@ensdomains/curvearithmetics,1.0.1,medium,1000,2025-09-15,false,Compromised package: @ensdomains/curvearithmetics,postinstall script,3
+@ensdomains/cypress-metamask,1.2.1,medium,1000,2025-09-15,false,Compromised package: @ensdomains/cypress-metamask,postinstall script,3
+@ensdomains/dnsprovejs,0.5.3,medium,1000,2025-09-15,false,Compromised package: @ensdomains/dnsprovejs,postinstall script,3
+@ensdomains/dnssec-oracle-anchors,0.0.2,medium,1000,2025-09-15,false,Compromised package: @ensdomains/dnssec-oracle-anchors,postinstall script,3
+@ensdomains/dnssecoraclejs,0.2.9,medium,1000,2025-09-15,false,Compromised package: @ensdomains/dnssecoraclejs,postinstall script,3
+@ensdomains/durin,0.1.2,medium,1000,2025-09-15,false,Compromised package: @ensdomains/durin,postinstall script,3
+@ensdomains/durin-middleware,0.0.2,medium,1000,2025-09-15,false,Compromised package: @ensdomains/durin-middleware,postinstall script,3
+@ensdomains/ens-archived-contracts,0.0.3,medium,1000,2025-09-15,false,Compromised package: @ensdomains/ens-archived-contracts,postinstall script,3
+@ensdomains/ens-avatar,1.0.4,medium,1000,2025-09-15,false,Compromised package: @ensdomains/ens-avatar,postinstall script,3
+@ensdomains/ens-contracts,1.6.1,medium,1000,2025-09-15,false,Compromised package: @ensdomains/ens-contracts,postinstall script,3
+@ensdomains/ens-test-env,1.0.2,medium,1000,2025-09-15,false,Compromised package: @ensdomains/ens-test-env,postinstall script,3
+@ensdomains/ens-validation,0.1.1,medium,1000,2025-09-15,false,Compromised package: @ensdomains/ens-validation,postinstall script,3
+@ensdomains/ensjs,4.0.3,medium,1000,2025-09-15,false,Compromised package: @ensdomains/ensjs,postinstall script,3
+@ensdomains/ensjs-react,0.0.5,medium,1000,2025-09-15,false,Compromised package: @ensdomains/ensjs-react,postinstall script,3
+@ensdomains/eth-ens-namehash,2.0.16,medium,1000,2025-09-15,false,Compromised package: @ensdomains/eth-ens-namehash,postinstall script,3
+@ensdomains/hackathon-registrar,1.0.5,medium,1000,2025-09-15,false,Compromised package: @ensdomains/hackathon-registrar,postinstall script,3
+@ensdomains/hardhat-chai-matchers-viem,0.1.15,medium,1000,2025-09-15,false,Compromised package: @ensdomains/hardhat-chai-matchers-viem,postinstall script,3
+@ensdomains/hardhat-toolbox-viem-extended,0.0.6,medium,1000,2025-09-15,false,Compromised package: @ensdomains/hardhat-toolbox-viem-extended,postinstall script,3
+@ensdomains/mock,2.1.52,medium,1000,2025-09-15,false,Compromised package: @ensdomains/mock,postinstall script,3
+@ensdomains/name-wrapper,1.0.1,medium,1000,2025-09-15,false,Compromised package: @ensdomains/name-wrapper,postinstall script,3
+@ensdomains/offchain-resolver-contracts,0.2.2,medium,1000,2025-09-15,false,Compromised package: @ensdomains/offchain-resolver-contracts,postinstall script,3
+@ensdomains/op-resolver-contracts,0.0.2,medium,1000,2025-09-15,false,Compromised package: @ensdomains/op-resolver-contracts,postinstall script,3
+@ensdomains/react-ens-address,0.0.32,medium,1000,2025-09-15,false,Compromised package: @ensdomains/react-ens-address,postinstall script,3
+@ensdomains/renewal,0.0.13,medium,1000,2025-09-15,false,Compromised package: @ensdomains/renewal,postinstall script,3
+@ensdomains/renewal-widget,0.1.10,medium,1000,2025-09-15,false,Compromised package: @ensdomains/renewal-widget,postinstall script,3
+@ensdomains/reverse-records,1.0.1,medium,1000,2025-09-15,false,Compromised package: @ensdomains/reverse-records,postinstall script,3
+@ensdomains/server-analytics,0.0.2,medium,1000,2025-09-15,false,Compromised package: @ensdomains/server-analytics,postinstall script,3
+@ensdomains/solsha1,0.0.4,medium,1000,2025-09-15,false,Compromised package: @ensdomains/solsha1,postinstall script,3
+@ensdomains/subdomain-registrar,0.2.4,medium,1000,2025-09-15,false,Compromised package: @ensdomains/subdomain-registrar,postinstall script,3
+@ensdomains/test-utils,1.3.1,medium,1000,2025-09-15,false,Compromised package: @ensdomains/test-utils,postinstall script,3
+@ensdomains/thorin,0.6.51,medium,1000,2025-09-15,false,Compromised package: @ensdomains/thorin,postinstall script,3
+@ensdomains/ui,3.4.6,medium,1000,2025-09-15,false,Compromised package: @ensdomains/ui,postinstall script,3
+@ensdomains/unicode-confusables,0.1.1,medium,1000,2025-09-15,false,Compromised package: @ensdomains/unicode-confusables,postinstall script,3
+@ensdomains/unruggable-gateways,0.0.3,medium,1000,2025-09-15,false,Compromised package: @ensdomains/unruggable-gateways,postinstall script,3
+@ensdomains/vite-plugin-i18next-loader,4.0.4,medium,1000,2025-09-15,false,Compromised package: @ensdomains/vite-plugin-i18next-loader,postinstall script,3
+@ensdomains/web3modal,1.10.2,medium,1000,2025-09-15,false,Compromised package: @ensdomains/web3modal,postinstall script,3
+@everreal/react-charts,"2.0.1, 2.0.2",medium,1000,2025-09-15,false,Compromised package: @everreal/react-charts,postinstall script,3
+@everreal/validate-esmoduleinterop-imports,"1.4.4, 1.4.5",medium,1000,2025-09-15,false,Compromised package: @everreal/validate-esmoduleinterop-imports,postinstall script,3
+@everreal/web-analytics,"0.0.1, 0.0.2",medium,1000,2025-09-15,false,Compromised package: @everreal/web-analytics,postinstall script,3
+@faq-component/core,0.0.4,medium,1000,2025-09-15,false,Compromised package: @faq-component/core,postinstall script,3
+@faq-component/react,1.0.1,medium,1000,2025-09-15,false,Compromised package: @faq-component/react,postinstall script,3
+@fishingbooker/browser-sync-plugin,1.0.5,medium,1000,2025-09-15,false,Compromised package: @fishingbooker/browser-sync-plugin,postinstall script,3
+@fishingbooker/react-loader,1.0.7,medium,1000,2025-09-15,false,Compromised package: @fishingbooker/react-loader,postinstall script,3
+@fishingbooker/react-pagination,2.0.6,medium,1000,2025-09-15,false,Compromised package: @fishingbooker/react-pagination,postinstall script,3
+@fishingbooker/react-raty,2.0.1,medium,1000,2025-09-15,false,Compromised package: @fishingbooker/react-raty,postinstall script,3
+@fishingbooker/react-swiper,0.1.5,medium,1000,2025-09-15,false,Compromised package: @fishingbooker/react-swiper,postinstall script,3
+@hapheus/n8n-nodes-pgp,1.5.1,medium,1000,2025-09-15,false,Compromised package: @hapheus/n8n-nodes-pgp,postinstall script,3
+@hestjs/core,0.2.1,medium,1000,2025-09-15,false,Compromised package: @hestjs/core,postinstall script,3
+@hestjs/cqrs,0.1.6,medium,1000,2025-09-15,false,Compromised package: @hestjs/cqrs,postinstall script,3
+@hestjs/demo,0.1.2,medium,1000,2025-09-15,false,Compromised package: @hestjs/demo,postinstall script,3
+@hestjs/eslint-config,0.1.2,medium,1000,2025-09-15,false,Compromised package: @hestjs/eslint-config,postinstall script,3
+@hestjs/logger,0.1.6,medium,1000,2025-09-15,false,Compromised package: @hestjs/logger,postinstall script,3
+@hestjs/scalar,0.1.7,medium,1000,2025-09-15,false,Compromised package: @hestjs/scalar,postinstall script,3
+@hestjs/validation,0.1.6,medium,1000,2025-09-15,false,Compromised package: @hestjs/validation,postinstall script,3
+@hover-design/core,0.0.1,medium,1000,2025-09-15,false,Compromised package: @hover-design/core,postinstall script,3
+@hover-design/react,0.2.1,medium,1000,2025-09-15,false,Compromised package: @hover-design/react,postinstall script,3
+@ifelsedeveloper/protocol-contracts-svm-idl,0.1.2,medium,1000,2025-09-15,false,Compromised package: @ifelsedeveloper/protocol-contracts-svm-idl,postinstall script,3
+@ifings/design-system,4.9.2,medium,1000,2025-09-15,false,Compromised package: @ifings/design-system,postinstall script,3
+@ifings/metatron3,0.1.5,medium,1000,2025-09-15,false,Compromised package: @ifings/metatron3,postinstall script,3
+@kvytech/cli,0.0.7,medium,1000,2025-09-15,false,Compromised package: @kvytech/cli,postinstall script,3
+@kvytech/components,0.0.2,medium,1000,2025-09-15,false,Compromised package: @kvytech/components,postinstall script,3
+@kvytech/habbit-e2e-test,0.0.2,medium,1000,2025-09-15,false,Compromised package: @kvytech/habbit-e2e-test,postinstall script,3
+@kvytech/medusa-plugin-announcement,0.0.8,medium,1000,2025-09-15,false,Compromised package: @kvytech/medusa-plugin-announcement,postinstall script,3
+@kvytech/medusa-plugin-management,0.0.5,medium,1000,2025-09-15,false,Compromised package: @kvytech/medusa-plugin-management,postinstall script,3
+@kvytech/medusa-plugin-newsletter,0.0.5,medium,1000,2025-09-15,false,Compromised package: @kvytech/medusa-plugin-newsletter,postinstall script,3
+@kvytech/medusa-plugin-product-reviews,0.0.9,medium,1000,2025-09-15,false,Compromised package: @kvytech/medusa-plugin-product-reviews,postinstall script,3
+@kvytech/medusa-plugin-promotion,0.0.2,medium,1000,2025-09-15,false,Compromised package: @kvytech/medusa-plugin-promotion,postinstall script,3
+@kvytech/web,0.0.2,medium,1000,2025-09-15,false,Compromised package: @kvytech/web,postinstall script,3
+@lessondesk/api-client,"9.12.2, 9.12.3",medium,1000,2025-09-15,false,Compromised package: @lessondesk/api-client,postinstall script,3
+@lessondesk/babel-preset,1.0.1,medium,1000,2025-09-15,false,Compromised package: @lessondesk/babel-preset,postinstall script,3
+@lessondesk/electron-group-api-client,1.0.3,medium,1000,2025-09-15,false,Compromised package: @lessondesk/electron-group-api-client,postinstall script,3
+@lessondesk/eslint-config,1.4.2,medium,1000,2025-09-15,false,Compromised package: @lessondesk/eslint-config,postinstall script,3
+@lessondesk/material-icons,1.0.3,medium,1000,2025-09-15,false,Compromised package: @lessondesk/material-icons,postinstall script,3
+@lessondesk/react-table-context,2.0.4,medium,1000,2025-09-15,false,Compromised package: @lessondesk/react-table-context,postinstall script,3
+@lessondesk/schoolbus,"5.2.2, 5.2.3",medium,1000,2025-09-15,false,Compromised package: @lessondesk/schoolbus,postinstall script,3
+@livecms/live-edit,0.0.32,medium,1000,2025-09-15,false,Compromised package: @livecms/live-edit,postinstall script,3
+@livecms/nuxt-live-edit,1.9.2,medium,1000,2025-09-15,false,Compromised package: @livecms/nuxt-live-edit,postinstall script,3
+@louisle2/core,1.0.1,medium,1000,2025-09-15,false,Compromised package: @louisle2/core,postinstall script,3
+@louisle2/cortex-js,0.1.6,medium,1000,2025-09-15,false,Compromised package: @louisle2/cortex-js,postinstall script,3
+@lpdjs/firestore-repo-service,1.0.1,medium,1000,2025-09-15,false,Compromised package: @lpdjs/firestore-repo-service,postinstall script,3
+@markvivanco/app-version-checker,"1.0.1, 1.0.2",medium,1000,2025-09-15,false,Compromised package: @markvivanco/app-version-checker,postinstall script,3
+@nativescript-community/arraybuffers,"1.1.6, 1.1.7, 1.1.8",high,25000,2025-09-15,false,Compromised package: @nativescript-community/arraybuffers,postinstall script,2
+@nativescript-community/gesturehandler,2.0.35,high,25000,2025-09-15,false,Compromised package: @nativescript-community/gesturehandler,postinstall script,2
+@nativescript-community/perms,"3.0.5, 3.0.6, 3.0.7, 3.0.8, 3.0.9",high,25000,2025-09-15,false,Compromised package: @nativescript-community/perms,postinstall script,2
+@nativescript-community/sentry,4.6.43,high,25000,2025-09-15,false,Compromised package: @nativescript-community/sentry,postinstall script,2
+@nativescript-community/sqlite,"3.5.2, 3.5.3, 3.5.4, 3.5.5",high,25000,2025-09-15,false,Compromised package: @nativescript-community/sqlite,postinstall script,2
+@nativescript-community/text,"1.6.13, 1.6.10, 1.6.11, 1.6.12, 1.6.9",high,25000,2025-09-15,false,Compromised package: @nativescript-community/text,postinstall script,2
+@nativescript-community/typeorm,"0.2.30, 0.2.31, 0.2.32, 0.2.33",high,25000,2025-09-15,false,Compromised package: @nativescript-community/typeorm,postinstall script,2
+@nativescript-community/ui-collectionview,6.0.6,high,25000,2025-09-15,false,Compromised package: @nativescript-community/ui-collectionview,postinstall script,2
+@nativescript-community/ui-document-picker,"1.1.27, 1.1.28, 13.0.32",high,25000,2025-09-15,false,Compromised package: @nativescript-community/ui-document-picker,postinstall script,2
+@nativescript-community/ui-drawer,0.1.30,high,25000,2025-09-15,false,Compromised package: @nativescript-community/ui-drawer,postinstall script,2
+@nativescript-community/ui-image,4.5.6,high,25000,2025-09-15,false,Compromised package: @nativescript-community/ui-image,postinstall script,2
+@nativescript-community/ui-label,"1.3.35, 1.3.36, 1.3.37",high,25000,2025-09-15,false,Compromised package: @nativescript-community/ui-label,postinstall script,2
+@nativescript-community/ui-material-bottom-navigation,"7.2.72, 7.2.73, 7.2.74, 7.2.75",high,25000,2025-09-15,false,Compromised package: @nativescript-community/ui-material-bottom-navigation,postinstall script,2
+@nativescript-community/ui-material-bottomsheet,7.2.72,high,25000,2025-09-15,false,Compromised package: @nativescript-community/ui-material-bottomsheet,postinstall script,2
+@nativescript-community/ui-material-core,"7.2.76, 7.2.72, 7.2.73, 7.2.74, 7.2.75",high,25000,2025-09-15,false,Compromised package: @nativescript-community/ui-material-core,postinstall script,2
+@nativescript-community/ui-material-core-tabs,"7.2.76, 7.2.72, 7.2.73, 7.2.74, 7.2.75",high,25000,2025-09-15,false,Compromised package: @nativescript-community/ui-material-core-tabs,postinstall script,2
+@nativescript-community/ui-material-ripple,"7.2.72, 7.2.73, 7.2.74, 7.2.75",high,25000,2025-09-15,false,Compromised package: @nativescript-community/ui-material-ripple,postinstall script,2
+@nativescript-community/ui-material-tabs,"7.2.72, 7.2.73, 7.2.74, 7.2.75",high,25000,2025-09-15,false,Compromised package: @nativescript-community/ui-material-tabs,postinstall script,2
+@nativescript-community/ui-pager,"14.1.35, 14.1.36, 14.1.37, 14.1.38",high,25000,2025-09-15,false,Compromised package: @nativescript-community/ui-pager,postinstall script,2
+@nativescript-community/ui-pulltorefresh,"2.5.4, 2.5.5, 2.5.6, 2.5.7",high,25000,2025-09-15,false,Compromised package: @nativescript-community/ui-pulltorefresh,postinstall script,2
+@nexe/config-manager,0.1.1,medium,1000,2025-09-15,false,Compromised package: @nexe/config-manager,postinstall script,3
+@nexe/eslint-config,0.1.1,medium,1000,2025-09-15,false,Compromised package: @nexe/eslint-config,postinstall script,3
+@nexe/logger,0.1.3,medium,1000,2025-09-15,false,Compromised package: @nexe/logger,postinstall script,3
+@nstudio/angular,"20.0.4, 20.0.5, 20.0.6",medium,1000,2025-09-15,false,Compromised package: @nstudio/angular,postinstall script,3
+@nstudio/focus,"20.0.4, 20.0.5, 20.0.6",medium,1000,2025-09-15,false,Compromised package: @nstudio/focus,postinstall script,3
+@nstudio/nativescript-checkbox,"2.0.6, 2.0.7, 2.0.8, 2.0.9",medium,1000,2025-09-15,false,Compromised package: @nstudio/nativescript-checkbox,postinstall script,3
+@nstudio/nativescript-loading-indicator,"5.0.1, 5.0.2, 5.0.3, 5.0.4",medium,1000,2025-09-15,false,Compromised package: @nstudio/nativescript-loading-indicator,postinstall script,3
+@nstudio/ui-collectionview,"5.1.11, 5.1.12, 5.1.13, 5.1.14",medium,1000,2025-09-15,false,Compromised package: @nstudio/ui-collectionview,postinstall script,3
+@nstudio/web,20.0.4,medium,1000,2025-09-15,false,Compromised package: @nstudio/web,postinstall script,3
+@nstudio/web-angular,20.0.4,medium,1000,2025-09-15,false,Compromised package: @nstudio/web-angular,postinstall script,3
+@nstudio/xplat,"20.0.4, 20.0.5, 20.0.6, 20.0.7",medium,1000,2025-09-15,false,Compromised package: @nstudio/xplat,postinstall script,3
+@nstudio/xplat-utils,"20.0.4, 20.0.5, 20.0.6, 20.0.7",medium,1000,2025-09-15,false,Compromised package: @nstudio/xplat-utils,postinstall script,3
+@ntnx/passport-wso2,0.0.3,medium,1000,2025-09-15,false,Compromised package: @ntnx/passport-wso2,postinstall script,3
+@ntnx/t,0.0.101,medium,1000,2025-09-15,false,Compromised package: @ntnx/t,postinstall script,3
+@operato/board,"9.0.35, 9.0.36, 9.0.37, 9.0.38, 9.0.39, 9.0.40, 9.0.41, 9.0.42, 9.0.43, 9.0.44, 9.0.45, 9.0.46, 9.0.47, 9.0.48, 9.0.49, 9.0.50, 9.0.51",medium,1000,2025-09-15,false,Compromised package: @operato/board,postinstall script,3
+@operato/data-grist,"9.0.29, 9.0.35, 9.0.36, 9.0.37",medium,1000,2025-09-15,false,Compromised package: @operato/data-grist,postinstall script,3
+@operato/graphql,"9.0.22, 9.0.35, 9.0.36, 9.0.37, 9.0.38, 9.0.39, 9.0.40, 9.0.41, 9.0.42, 9.0.43, 9.0.44, 9.0.45, 9.0.46, 9.0.47, 9.0.48, 9.0.49, 9.0.50, 9.0.51",medium,1000,2025-09-15,false,Compromised package: @operato/graphql,postinstall script,3
+@operato/headroom,"9.0.2, 9.0.35, 9.0.36, 9.0.37",medium,1000,2025-09-15,false,Compromised package: @operato/headroom,postinstall script,3
+@operato/help,"9.0.35, 9.0.36, 9.0.37, 9.0.38, 9.0.39, 9.0.40, 9.0.41, 9.0.42, 9.0.43, 9.0.44, 9.0.45, 9.0.46, 9.0.47, 9.0.48, 9.0.49, 9.0.50, 9.0.51",medium,1000,2025-09-15,false,Compromised package: @operato/help,postinstall script,3
+@operato/i18n,"9.0.35, 9.0.36, 9.0.37",medium,1000,2025-09-15,false,Compromised package: @operato/i18n,postinstall script,3
+@operato/input,"9.0.27, 9.0.35, 9.0.36, 9.0.37, 9.0.38, 9.0.39, 9.0.40, 9.0.41, 9.0.42, 9.0.43, 9.0.44, 9.0.45, 9.0.46, 9.0.47, 9.0.48",medium,1000,2025-09-15,false,Compromised package: @operato/input,postinstall script,3
+@operato/layout,"9.0.35, 9.0.36, 9.0.37",medium,1000,2025-09-15,false,Compromised package: @operato/layout,postinstall script,3
+@operato/popup,"9.0.22, 9.0.35, 9.0.36, 9.0.37, 9.0.38, 9.0.39, 9.0.40, 9.0.41, 9.0.42, 9.0.43, 9.0.44, 9.0.45, 9.0.46, 9.0.47, 9.0.48, 9.0.49, 9.0.50, 9.0.51",medium,1000,2025-09-15,false,Compromised package: @operato/popup,postinstall script,3
+@operato/pull-to-refresh,"9.0.35, 9.0.36, 9.0.37, 9.0.38, 9.0.39, 9.0.40, 9.0.41, 9.0.42, 9.0.43, 9.0.44, 9.0.45, 9.0.46, 9.0.47",medium,1000,2025-09-15,false,Compromised package: @operato/pull-to-refresh,postinstall script,3
+@operato/shell,"9.0.22, 9.0.35, 9.0.36, 9.0.37, 9.0.38, 9.0.39",medium,1000,2025-09-15,false,Compromised package: @operato/shell,postinstall script,3
+@operato/styles,"9.0.2, 9.0.35, 9.0.36, 9.0.37",medium,1000,2025-09-15,false,Compromised package: @operato/styles,postinstall script,3
+@operato/utils,"9.0.22, 9.0.35, 9.0.36, 9.0.37, 9.0.38, 9.0.39, 9.0.40, 9.0.41, 9.0.42, 9.0.43, 9.0.44, 9.0.45, 9.0.46, 9.0.47, 9.0.48, 9.0.49, 9.0.50, 9.0.51",medium,1000,2025-09-15,false,Compromised package: @operato/utils,postinstall script,3
+@orbitgtbelgium/mapbox-gl-draw-cut-polygon-mode,2.0.5,medium,1000,2025-09-15,false,Compromised package: @orbitgtbelgium/mapbox-gl-draw-cut-polygon-mode,postinstall script,3
+@orbitgtbelgium/mapbox-gl-draw-scale-rotate-mode,1.1.1,medium,1000,2025-09-15,false,Compromised package: @orbitgtbelgium/mapbox-gl-draw-scale-rotate-mode,postinstall script,3
+@orbitgtbelgium/orbit-components,1.2.9,medium,1000,2025-09-15,false,Compromised package: @orbitgtbelgium/orbit-components,postinstall script,3
+@orbitgtbelgium/time-slider,1.0.187,medium,1000,2025-09-15,false,Compromised package: @orbitgtbelgium/time-slider,postinstall script,3
+@osmanekrem/bmad,1.0.6,medium,1000,2025-09-15,false,Compromised package: @osmanekrem/bmad,postinstall script,3
+@osmanekrem/error-handler,1.2.2,medium,1000,2025-09-15,false,Compromised package: @osmanekrem/error-handler,postinstall script,3
+@posthog/agent,1.24.1,medium,1000,2025-09-15,false,Compromised package: @posthog/agent,postinstall script,3
+@posthog/ai,7.1.2,medium,1000,2025-09-15,false,Compromised package: @posthog/ai,postinstall script,3
+@posthog/cli,0.5.15,medium,1000,2025-09-15,false,Compromised package: @posthog/cli,postinstall script,3
+@posthog/clickhouse,1.7.1,medium,1000,2025-09-15,false,Compromised package: @posthog/clickhouse,postinstall script,3
+@posthog/core,1.5.6,medium,1000,2025-09-15,false,Compromised package: @posthog/core,postinstall script,3
+@posthog/hedgehog-mode,0.0.42,medium,1000,2025-09-15,false,Compromised package: @posthog/hedgehog-mode,postinstall script,3
+@posthog/icons,0.36.1,medium,1000,2025-09-15,false,Compromised package: @posthog/icons,postinstall script,3
+@posthog/lemon-ui,0.0.1,medium,1000,2025-09-15,false,Compromised package: @posthog/lemon-ui,postinstall script,3
+@posthog/nextjs-config,1.5.1,medium,1000,2025-09-15,false,Compromised package: @posthog/nextjs-config,postinstall script,3
+@posthog/nuxt,1.2.9,medium,1000,2025-09-15,false,Compromised package: @posthog/nuxt,postinstall script,3
+@posthog/piscina,3.2.1,medium,1000,2025-09-15,false,Compromised package: @posthog/piscina,postinstall script,3
+@posthog/plugin-contrib,0.0.6,medium,1000,2025-09-15,false,Compromised package: @posthog/plugin-contrib,postinstall script,3
+@posthog/react-rrweb-player,1.1.4,medium,1000,2025-09-15,false,Compromised package: @posthog/react-rrweb-player,postinstall script,3
+@posthog/rrdom,0.0.31,medium,1000,2025-09-15,false,Compromised package: @posthog/rrdom,postinstall script,3
+@posthog/rrweb,0.0.31,medium,1000,2025-09-15,false,Compromised package: @posthog/rrweb,postinstall script,3
+@posthog/rrweb-player,0.0.31,medium,1000,2025-09-15,false,Compromised package: @posthog/rrweb-player,postinstall script,3
+@posthog/rrweb-record,0.0.31,medium,1000,2025-09-15,false,Compromised package: @posthog/rrweb-record,postinstall script,3
+@posthog/rrweb-replay,0.0.19,medium,1000,2025-09-15,false,Compromised package: @posthog/rrweb-replay,postinstall script,3
+@posthog/rrweb-snapshot,0.0.31,medium,1000,2025-09-15,false,Compromised package: @posthog/rrweb-snapshot,postinstall script,3
+@posthog/rrweb-utils,0.0.31,medium,1000,2025-09-15,false,Compromised package: @posthog/rrweb-utils,postinstall script,3
+@posthog/siphash,1.1.2,medium,1000,2025-09-15,false,Compromised package: @posthog/siphash,postinstall script,3
+@posthog/wizard,1.18.1,medium,1000,2025-09-15,false,Compromised package: @posthog/wizard,postinstall script,3
+@postman/aether-icons,"2.23.2, 2.23.3, 2.23.4",medium,1000,2025-09-15,false,Compromised package: @postman/aether-icons,postinstall script,3
+@postman/csv-parse,"4.0.3, 4.0.4, 4.0.5",medium,1000,2025-09-15,false,Compromised package: @postman/csv-parse,postinstall script,3
+@postman/node-keytar,"7.9.4, 7.9.5, 7.9.6",medium,1000,2025-09-15,false,Compromised package: @postman/node-keytar,postinstall script,3
+@postman/tunnel-agent,"0.6.5, 0.6.6, 0.6.7",medium,1000,2025-09-15,false,Compromised package: @postman/tunnel-agent,postinstall script,3
+@pradhumngautam/common-app,1.0.2,medium,1000,2025-09-15,false,Compromised package: @pradhumngautam/common-app,postinstall script,3
+@pruthvi21/use-debounce,1.0.3,medium,1000,2025-09-15,false,Compromised package: @pruthvi21/use-debounce,postinstall script,3
+@quick-start-soft/quick-document-translator,1.4.2511142126,medium,1000,2025-09-15,false,Compromised package: @quick-start-soft/quick-document-translator,postinstall script,3
+@quick-start-soft/quick-git-clean-markdown,1.4.2511142126,medium,1000,2025-09-15,false,Compromised package: @quick-start-soft/quick-git-clean-markdown,postinstall script,3
+@quick-start-soft/quick-markdown,1.4.2511142126,medium,1000,2025-09-15,false,Compromised package: @quick-start-soft/quick-markdown,postinstall script,3
+@quick-start-soft/quick-markdown-compose,1.4.2506300029,medium,1000,2025-09-15,false,Compromised package: @quick-start-soft/quick-markdown-compose,postinstall script,3
+@quick-start-soft/quick-markdown-image,1.4.2511142126,medium,1000,2025-09-15,false,Compromised package: @quick-start-soft/quick-markdown-image,postinstall script,3
+@quick-start-soft/quick-markdown-print,1.4.2511142126,medium,1000,2025-09-15,false,Compromised package: @quick-start-soft/quick-markdown-print,postinstall script,3
+@quick-start-soft/quick-markdown-translator,1.4.2509202331,medium,1000,2025-09-15,false,Compromised package: @quick-start-soft/quick-markdown-translator,postinstall script,3
+@quick-start-soft/quick-remove-image-background,1.4.2511142126,medium,1000,2025-09-15,false,Compromised package: @quick-start-soft/quick-remove-image-background,postinstall script,3
+@quick-start-soft/quick-task-refine,1.4.2511142126,medium,1000,2025-09-15,false,Compromised package: @quick-start-soft/quick-task-refine,postinstall script,3
+@relyt/claude-context-core,0.1.1,medium,1000,2025-09-15,false,Compromised package: @relyt/claude-context-core,postinstall script,3
+@seezo/sdr-mcp-server,0.0.5,medium,1000,2025-09-15,false,Compromised package: @seezo/sdr-mcp-server,postinstall script,3
+@seung-ju/next,0.0.2,medium,1000,2025-09-15,false,Compromised package: @seung-ju/next,postinstall script,3
+@seung-ju/openapi-generator,0.0.4,medium,1000,2025-09-15,false,Compromised package: @seung-ju/openapi-generator,postinstall script,3
+@seung-ju/react-hooks,0.0.2,medium,1000,2025-09-15,false,Compromised package: @seung-ju/react-hooks,postinstall script,3
+@seung-ju/react-native-action-sheet,0.2.1,medium,1000,2025-09-15,false,Compromised package: @seung-ju/react-native-action-sheet,postinstall script,3
+@sme-ui/aoma-vevasound-metadata-lib,0.1.3,medium,1000,2025-09-15,false,Compromised package: @sme-ui/aoma-vevasound-metadata-lib,postinstall script,3
+@strapbuild/react-native-date-time-picker,2.0.4,medium,1000,2025-09-15,false,Compromised package: @strapbuild/react-native-date-time-picker,postinstall script,3
+@strapbuild/react-native-perspective-image-cropper,0.4.15,medium,1000,2025-09-15,false,Compromised package: @strapbuild/react-native-perspective-image-cropper,postinstall script,3
+@strapbuild/react-native-perspective-image-cropper-2,0.4.7,medium,1000,2025-09-15,false,Compromised package: @strapbuild/react-native-perspective-image-cropper-2,postinstall script,3
+@strapbuild/react-native-perspective-image-cropper-poojan31,0.4.6,medium,1000,2025-09-15,false,Compromised package: @strapbuild/react-native-perspective-image-cropper-poojan31,postinstall script,3
+@suraj_h/medium-common,1.0.5,medium,1000,2025-09-15,false,Compromised package: @suraj_h/medium-common,postinstall script,3
+@teselagen/bio-parsers,"0.4.29, 0.4.30",medium,1000,2025-09-15,false,Compromised package: @teselagen/bio-parsers,postinstall script,3
+@teselagen/bounce-loader,"0.3.16, 0.3.17",medium,1000,2025-09-15,false,Compromised package: @teselagen/bounce-loader,postinstall script,3
+@teselagen/file-utils,"0.3.21, 0.3.22",medium,1000,2025-09-15,false,Compromised package: @teselagen/file-utils,postinstall script,3
+@teselagen/liquibase-tools,0.4.1,medium,1000,2025-09-15,false,Compromised package: @teselagen/liquibase-tools,postinstall script,3
+@teselagen/ove,"0.7.39, 0.7.40",medium,1000,2025-09-15,false,Compromised package: @teselagen/ove,postinstall script,3
+@teselagen/range-utils,"0.3.14, 0.3.15",medium,1000,2025-09-15,false,Compromised package: @teselagen/range-utils,postinstall script,3
+@teselagen/react-list,"0.8.19, 0.8.20",medium,1000,2025-09-15,false,Compromised package: @teselagen/react-list,postinstall script,3
+@teselagen/react-table,"6.10.21, 6.10.19, 6.10.20, 6.10.22",medium,1000,2025-09-15,false,Compromised package: @teselagen/react-table,postinstall script,3
+@teselagen/sequence-utils,"0.3.33, 0.3.34",medium,1000,2025-09-15,false,Compromised package: @teselagen/sequence-utils,postinstall script,3
+@teselagen/ui,"0.9.9, 0.9.10",medium,1000,2025-09-15,false,Compromised package: @teselagen/ui,postinstall script,3
+@thangved/callback-window,1.1.4,medium,1000,2025-09-15,false,Compromised package: @thangved/callback-window,postinstall script,3
+@thedelta/eslint-config,1.0.2,medium,1000,2025-09-15,false,Compromised package: @thedelta/eslint-config,postinstall script,3
+@things-factory/attachment-base,"9.0.42, 9.0.43, 9.0.44, 9.0.45, 9.0.46, 9.0.47, 9.0.48, 9.0.49, 9.0.50, 9.0.51, 9.0.52, 9.0.53, 9.0.54, 9.0.55",medium,1000,2025-09-15,false,Compromised package: @things-factory/attachment-base,postinstall script,3
+@things-factory/auth-base,"9.0.42, 9.0.43, 9.0.44, 9.0.45",medium,1000,2025-09-15,false,Compromised package: @things-factory/auth-base,postinstall script,3
+@things-factory/email-base,"9.0.42, 9.0.43, 9.0.44, 9.0.45, 9.0.46, 9.0.47, 9.0.48, 9.0.49, 9.0.50, 9.0.51, 9.0.52, 9.0.53, 9.0.54, 9.0.55, 9.0.56, 9.0.57, 9.0.58, 9.0.59",medium,1000,2025-09-15,false,Compromised package: @things-factory/email-base,postinstall script,3
+@things-factory/env,"9.0.42, 9.0.43, 9.0.44, 9.0.45",medium,1000,2025-09-15,false,Compromised package: @things-factory/env,postinstall script,3
+@things-factory/integration-base,"9.0.42, 9.0.43, 9.0.44, 9.0.45",medium,1000,2025-09-15,false,Compromised package: @things-factory/integration-base,postinstall script,3
+@things-factory/integration-marketplace,"9.0.42, 9.0.43, 9.0.44, 9.0.45",medium,1000,2025-09-15,false,Compromised package: @things-factory/integration-marketplace,postinstall script,3
+@things-factory/shell,"9.0.42, 9.0.43, 9.0.44, 9.0.45",medium,1000,2025-09-15,false,Compromised package: @things-factory/shell,postinstall script,3
+@tiaanduplessis/json,"2.0.2, 2.0.3",medium,1000,2025-09-15,false,Compromised package: @tiaanduplessis/json,postinstall script,3
+@tiaanduplessis/react-progressbar,"1.0.1, 1.0.2",medium,1000,2025-09-15,false,Compromised package: @tiaanduplessis/react-progressbar,postinstall script,3
+@tnf-dev/api,1.0.8,medium,1000,2025-09-15,false,Compromised package: @tnf-dev/api,postinstall script,3
+@tnf-dev/core,1.0.8,medium,1000,2025-09-15,false,Compromised package: @tnf-dev/core,postinstall script,3
+@tnf-dev/js,1.0.8,medium,1000,2025-09-15,false,Compromised package: @tnf-dev/js,postinstall script,3
+@tnf-dev/mui,1.0.8,medium,1000,2025-09-15,false,Compromised package: @tnf-dev/mui,postinstall script,3
+@tnf-dev/react,1.0.8,medium,1000,2025-09-15,false,Compromised package: @tnf-dev/react,postinstall script,3
+@trefox/sleekshop-js,0.1.6,medium,1000,2025-09-15,false,Compromised package: @trefox/sleekshop-js,postinstall script,3
+@trigo/atrix,7.0.1,medium,1000,2025-09-15,false,Compromised package: @trigo/atrix,postinstall script,3
+@trigo/atrix-elasticsearch,2.0.1,medium,1000,2025-09-15,false,Compromised package: @trigo/atrix-elasticsearch,postinstall script,3
+@trigo/atrix-postgres,1.0.3,medium,1000,2025-09-15,false,Compromised package: @trigo/atrix-postgres,postinstall script,3
+@trigo/atrix-pubsub,4.0.3,medium,1000,2025-09-15,false,Compromised package: @trigo/atrix-pubsub,postinstall script,3
+@trigo/atrix-soap,1.0.2,medium,1000,2025-09-15,false,Compromised package: @trigo/atrix-soap,postinstall script,3
+@trigo/atrix-swagger,3.0.1,medium,1000,2025-09-15,false,Compromised package: @trigo/atrix-swagger,postinstall script,3
+@trigo/bool-expressions,4.1.3,medium,1000,2025-09-15,false,Compromised package: @trigo/bool-expressions,postinstall script,3
+@trigo/eslint-config-trigo,3.3.1,medium,1000,2025-09-15,false,Compromised package: @trigo/eslint-config-trigo,postinstall script,3
+@trigo/fsm,3.4.2,medium,1000,2025-09-15,false,Compromised package: @trigo/fsm,postinstall script,3
+@trigo/hapi-auth-signedlink,1.3.1,medium,1000,2025-09-15,false,Compromised package: @trigo/hapi-auth-signedlink,postinstall script,3
+@trigo/pathfinder-ui-css,0.1.1,medium,1000,2025-09-15,false,Compromised package: @trigo/pathfinder-ui-css,postinstall script,3
+@trigo/trigo-hapijs,5.0.1,medium,1000,2025-09-15,false,Compromised package: @trigo/trigo-hapijs,postinstall script,3
+@trpc-rate-limiter/cloudflare,0.1.4,medium,1000,2025-09-15,false,Compromised package: @trpc-rate-limiter/cloudflare,postinstall script,3
+@trpc-rate-limiter/hono,0.1.4,medium,1000,2025-09-15,false,Compromised package: @trpc-rate-limiter/hono,postinstall script,3
+@ui-ux-gang/devextreme-angular-rpk,24.1.7,medium,1000,2025-09-15,false,Compromised package: @ui-ux-gang/devextreme-angular-rpk,postinstall script,3
+@ui-ux-gang/devextreme-rpk,24.1.7,medium,1000,2025-09-15,false,Compromised package: @ui-ux-gang/devextreme-rpk,postinstall script,3
+@varsityvibe/api-client,"1.3.36, 1.3.37",medium,1000,2025-09-15,false,Compromised package: @varsityvibe/api-client,postinstall script,3
+@varsityvibe/utils,5.0.6,medium,1000,2025-09-15,false,Compromised package: @varsityvibe/utils,postinstall script,3
+@varsityvibe/validation-schemas,"0.6.7, 0.6.8",medium,1000,2025-09-15,false,Compromised package: @varsityvibe/validation-schemas,postinstall script,3
+@vishadtyagi/full-year-calendar,0.1.11,medium,1000,2025-09-15,false,Compromised package: @vishadtyagi/full-year-calendar,postinstall script,3
+@voiceflow/alexa-types,"2.15.60, 2.15.61",medium,1000,2025-09-15,false,Compromised package: @voiceflow/alexa-types,postinstall script,3
+@voiceflow/anthropic,"0.4.4, 0.4.5",medium,1000,2025-09-15,false,Compromised package: @voiceflow/anthropic,postinstall script,3
+@voiceflow/api-sdk,"3.28.58, 3.28.59",medium,1000,2025-09-15,false,Compromised package: @voiceflow/api-sdk,postinstall script,3
+@voiceflow/backend-utils,"5.0.1, 5.0.2",medium,1000,2025-09-15,false,Compromised package: @voiceflow/backend-utils,postinstall script,3
+@voiceflow/base-types,"2.136.2, 2.136.3",medium,1000,2025-09-15,false,Compromised package: @voiceflow/base-types,postinstall script,3
+@voiceflow/body-parser,"1.21.2, 1.21.3",medium,1000,2025-09-15,false,Compromised package: @voiceflow/body-parser,postinstall script,3
+@voiceflow/chat-types,"2.14.58, 2.14.59",medium,1000,2025-09-15,false,Compromised package: @voiceflow/chat-types,postinstall script,3
+@voiceflow/circleci-config-sdk-orb-import,"0.2.1, 0.2.2",medium,1000,2025-09-15,false,Compromised package: @voiceflow/circleci-config-sdk-orb-import,postinstall script,3
+@voiceflow/commitlint-config,"2.6.1, 2.6.2",medium,1000,2025-09-15,false,Compromised package: @voiceflow/commitlint-config,postinstall script,3
+@voiceflow/common,"8.9.1, 8.9.2",medium,1000,2025-09-15,false,Compromised package: @voiceflow/common,postinstall script,3
+@voiceflow/default-prompt-wrappers,"1.7.3, 1.7.4",medium,1000,2025-09-15,false,Compromised package: @voiceflow/default-prompt-wrappers,postinstall script,3
+@voiceflow/dependency-cruiser-config,"1.8.11, 1.8.12",medium,1000,2025-09-15,false,Compromised package: @voiceflow/dependency-cruiser-config,postinstall script,3
+@voiceflow/dtos-interact,"1.40.1, 1.40.2",medium,1000,2025-09-15,false,Compromised package: @voiceflow/dtos-interact,postinstall script,3
+@voiceflow/encryption,"0.3.2, 0.3.3",medium,1000,2025-09-15,false,Compromised package: @voiceflow/encryption,postinstall script,3
+@voiceflow/eslint-config,"7.16.4, 7.16.5",medium,1000,2025-09-15,false,Compromised package: @voiceflow/eslint-config,postinstall script,3
+@voiceflow/eslint-plugin,"1.6.1, 1.6.2",medium,1000,2025-09-15,false,Compromised package: @voiceflow/eslint-plugin,postinstall script,3
+@voiceflow/exception,"1.10.1, 1.10.2",medium,1000,2025-09-15,false,Compromised package: @voiceflow/exception,postinstall script,3
+@voiceflow/fetch,"1.11.1, 1.11.2",medium,1000,2025-09-15,false,Compromised package: @voiceflow/fetch,postinstall script,3
+@voiceflow/general-types,"3.2.22, 3.2.23",medium,1000,2025-09-15,false,Compromised package: @voiceflow/general-types,postinstall script,3
+@voiceflow/git-branch-check,"1.4.3, 1.4.4",medium,1000,2025-09-15,false,Compromised package: @voiceflow/git-branch-check,postinstall script,3
+@voiceflow/google-dfes-types,"2.17.12, 2.17.13",medium,1000,2025-09-15,false,Compromised package: @voiceflow/google-dfes-types,postinstall script,3
+@voiceflow/google-types,"2.21.12, 2.21.13",medium,1000,2025-09-15,false,Compromised package: @voiceflow/google-types,postinstall script,3
+@voiceflow/husky-config,"1.3.1, 1.3.2",medium,1000,2025-09-15,false,Compromised package: @voiceflow/husky-config,postinstall script,3
+@voiceflow/logger,"2.4.2, 2.4.3",medium,1000,2025-09-15,false,Compromised package: @voiceflow/logger,postinstall script,3
+@voiceflow/metrics,"1.5.1, 1.5.2",medium,1000,2025-09-15,false,Compromised package: @voiceflow/metrics,postinstall script,3
+@voiceflow/natural-language-commander,"0.5.2, 0.5.3",medium,1000,2025-09-15,false,Compromised package: @voiceflow/natural-language-commander,postinstall script,3
+@voiceflow/nestjs-common,"2.75.2, 2.75.3",medium,1000,2025-09-15,false,Compromised package: @voiceflow/nestjs-common,postinstall script,3
+@voiceflow/nestjs-mongodb,"1.3.1, 1.3.2",medium,1000,2025-09-15,false,Compromised package: @voiceflow/nestjs-mongodb,postinstall script,3
+@voiceflow/nestjs-rate-limit,"1.3.2, 1.3.3",medium,1000,2025-09-15,false,Compromised package: @voiceflow/nestjs-rate-limit,postinstall script,3
+@voiceflow/nestjs-redis,"1.3.1, 1.3.2",medium,1000,2025-09-15,false,Compromised package: @voiceflow/nestjs-redis,postinstall script,3
+@voiceflow/nestjs-timeout,"1.3.1, 1.3.2",medium,1000,2025-09-15,false,Compromised package: @voiceflow/nestjs-timeout,postinstall script,3
+@voiceflow/npm-package-json-lint-config,"1.1.1, 1.1.2",medium,1000,2025-09-15,false,Compromised package: @voiceflow/npm-package-json-lint-config,postinstall script,3
+@voiceflow/openai,"3.2.2, 3.2.3",medium,1000,2025-09-15,false,Compromised package: @voiceflow/openai,postinstall script,3
+@voiceflow/pino,"6.11.3, 6.11.4",medium,1000,2025-09-15,false,Compromised package: @voiceflow/pino,postinstall script,3
+@voiceflow/pino-pretty,"4.4.1, 4.4.2",medium,1000,2025-09-15,false,Compromised package: @voiceflow/pino-pretty,postinstall script,3
+@voiceflow/prettier-config,"1.10.1, 1.10.2",medium,1000,2025-09-15,false,Compromised package: @voiceflow/prettier-config,postinstall script,3
+@voiceflow/react-chat,"1.65.3, 1.65.4",medium,1000,2025-09-15,false,Compromised package: @voiceflow/react-chat,postinstall script,3
+@voiceflow/runtime,"1.29.1, 1.29.2",medium,1000,2025-09-15,false,Compromised package: @voiceflow/runtime,postinstall script,3
+@voiceflow/runtime-client-js,"1.17.2, 1.17.3",medium,1000,2025-09-15,false,Compromised package: @voiceflow/runtime-client-js,postinstall script,3
+@voiceflow/sdk-runtime,"1.43.1, 1.43.2",medium,1000,2025-09-15,false,Compromised package: @voiceflow/sdk-runtime,postinstall script,3
+@voiceflow/secrets-provider,"1.9.2, 1.9.3",medium,1000,2025-09-15,false,Compromised package: @voiceflow/secrets-provider,postinstall script,3
+@voiceflow/semantic-release-config,"1.4.1, 1.4.2",medium,1000,2025-09-15,false,Compromised package: @voiceflow/semantic-release-config,postinstall script,3
+@voiceflow/serverless-plugin-typescript,"2.1.7, 2.1.8",medium,1000,2025-09-15,false,Compromised package: @voiceflow/serverless-plugin-typescript,postinstall script,3
+@voiceflow/slate-serializer,"1.7.3, 1.7.4",medium,1000,2025-09-15,false,Compromised package: @voiceflow/slate-serializer,postinstall script,3
+@voiceflow/stitches-react,"2.3.2, 2.3.3",medium,1000,2025-09-15,false,Compromised package: @voiceflow/stitches-react,postinstall script,3
+@voiceflow/storybook-config,"1.2.2, 1.2.3",medium,1000,2025-09-15,false,Compromised package: @voiceflow/storybook-config,postinstall script,3
+@voiceflow/stylelint-config,"1.1.1, 1.1.2",medium,1000,2025-09-15,false,Compromised package: @voiceflow/stylelint-config,postinstall script,3
+@voiceflow/test-common,"2.1.1, 2.1.2",medium,1000,2025-09-15,false,Compromised package: @voiceflow/test-common,postinstall script,3
+@voiceflow/tsconfig,"1.12.1, 1.12.2",medium,1000,2025-09-15,false,Compromised package: @voiceflow/tsconfig,postinstall script,3
+@voiceflow/tsconfig-paths,"1.1.4, 1.1.5",medium,1000,2025-09-15,false,Compromised package: @voiceflow/tsconfig-paths,postinstall script,3
+@voiceflow/utils-designer,"1.74.19, 1.74.20",medium,1000,2025-09-15,false,Compromised package: @voiceflow/utils-designer,postinstall script,3
+@voiceflow/verror,"1.1.4, 1.1.5",medium,1000,2025-09-15,false,Compromised package: @voiceflow/verror,postinstall script,3
+@voiceflow/vite-config,"2.6.2, 2.6.3",medium,1000,2025-09-15,false,Compromised package: @voiceflow/vite-config,postinstall script,3
+@voiceflow/vitest-config,"1.10.2, 1.10.3",medium,1000,2025-09-15,false,Compromised package: @voiceflow/vitest-config,postinstall script,3
+@voiceflow/voice-types,"2.10.58, 2.10.59",medium,1000,2025-09-15,false,Compromised package: @voiceflow/voice-types,postinstall script,3
+@voiceflow/voiceflow-types,"3.32.45, 3.32.46",medium,1000,2025-09-15,false,Compromised package: @voiceflow/voiceflow-types,postinstall script,3
+@voiceflow/widget,"1.7.18, 1.7.19",medium,1000,2025-09-15,false,Compromised package: @voiceflow/widget,postinstall script,3
+@yoobic/design-system,6.5.17,medium,1000,2025-09-15,false,Compromised package: @yoobic/design-system,postinstall script,3
+@yoobic/jpeg-camera-es6,1.0.13,medium,1000,2025-09-15,false,Compromised package: @yoobic/jpeg-camera-es6,postinstall script,3
+@yoobic/yobi,8.7.53,medium,1000,2025-09-15,false,Compromised package: @yoobic/yobi,postinstall script,3
+@zapier/ai-actions,"0.1.18, 0.1.19, 0.1.20",medium,1000,2025-09-15,false,Compromised package: @zapier/ai-actions,postinstall script,3
+@zapier/babel-preset-zapier,"6.4.1, 6.4.2, 6.4.3",medium,1000,2025-09-15,false,Compromised package: @zapier/babel-preset-zapier,postinstall script,3
+@zapier/browserslist-config-zapier,"1.0.3, 1.0.4, 1.0.5",medium,1000,2025-09-15,false,Compromised package: @zapier/browserslist-config-zapier,postinstall script,3
+@zapier/secret-scrubber,"1.1.3, 1.1.4, 1.1.5",medium,1000,2025-09-15,false,Compromised package: @zapier/secret-scrubber,postinstall script,3
+ace-colorpicker-rpk,0.0.14,medium,1000,2025-09-15,false,Compromised package: ace-colorpicker-rpk,postinstall script,3
+ai-crowl-shield,1.0.7,medium,1000,2025-09-15,false,Compromised package: ai-crowl-shield,postinstall script,3
+airchief,0.3.1,medium,1000,2025-09-15,false,Compromised package: airchief,postinstall script,3
+airpilot,0.8.8,medium,1000,2025-09-15,false,Compromised package: airpilot,postinstall script,3
+angulartics2,"14.1.2, 14.1.1",critical,200000,2025-09-15,false,Compromised package: angulartics2,postinstall script,1
+arc-cli-fc,1.0.1,medium,1000,2025-09-15,false,Compromised package: arc-cli-fc,postinstall script,3
+asyncapi-preview,"1.0.1, 1.0.2",medium,1000,2025-09-15,false,Compromised package: asyncapi-preview,postinstall script,3
+atrix,1.0.1,medium,1000,2025-09-15,false,Compromised package: atrix,postinstall script,3
+automation_model,1.0.491,medium,1000,2025-09-15,false,Compromised package: automation_model,postinstall script,3
+axios-builder,1.2.1,medium,1000,2025-09-15,false,Compromised package: axios-builder,postinstall script,3
+axios-cancelable,"1.0.1, 1.0.2",medium,1000,2025-09-15,false,Compromised package: axios-cancelable,postinstall script,3
+axios-timed,"1.0.1, 1.0.2",medium,1000,2025-09-15,false,Compromised package: axios-timed,postinstall script,3
+barebones-css,"1.1.3, 1.1.4",medium,1000,2025-09-15,false,Compromised package: barebones-css,postinstall script,3
+benmostyn-frame-print,1.0.1,medium,1000,2025-09-15,false,Compromised package: benmostyn-frame-print,postinstall script,3
+bestgpiocontroller,1.0.10,medium,1000,2025-09-15,false,Compromised package: bestgpiocontroller,postinstall script,3
+bidirectional-adapter,"1.2.2, 1.2.3, 1.2.4, 1.2.5",medium,1000,2025-09-15,false,Compromised package: bidirectional-adapter,postinstall script,3
+blinqio-executions-cli,1.0.41,medium,1000,2025-09-15,false,Compromised package: blinqio-executions-cli,postinstall script,3
+blob-to-base64,1.0.3,medium,1000,2025-09-15,false,Compromised package: blob-to-base64,postinstall script,3
+browser-webdriver-downloader,3.0.8,medium,1000,2025-09-15,false,Compromised package: browser-webdriver-downloader,postinstall script,3
+bun-plugin-httpfile,0.1.1,medium,1000,2025-09-15,false,Compromised package: bun-plugin-httpfile,postinstall script,3
+bytecode-checker-cli,"1.0.10, 1.0.11, 1.0.8, 1.0.9",medium,1000,2025-09-15,false,Compromised package: bytecode-checker-cli,postinstall script,3
+bytes-to-x,1.0.1,medium,1000,2025-09-15,false,Compromised package: bytes-to-x,postinstall script,3
+calc-loan-interest,1.0.4,medium,1000,2025-09-15,false,Compromised package: calc-loan-interest,postinstall script,3
+capacitor-notificationhandler,"0.0.2, 0.0.3",medium,1000,2025-09-15,false,Compromised package: capacitor-notificationhandler,postinstall script,3
+capacitor-plugin-apptrackingios,0.0.21,medium,1000,2025-09-15,false,Compromised package: capacitor-plugin-apptrackingios,postinstall script,3
+capacitor-plugin-healthapp,"0.0.2, 0.0.3",medium,1000,2025-09-15,false,Compromised package: capacitor-plugin-healthapp,postinstall script,3
+capacitor-plugin-ihealth,"1.1.8, 1.1.9",medium,1000,2025-09-15,false,Compromised package: capacitor-plugin-ihealth,postinstall script,3
+capacitor-plugin-purchase,0.1.1,medium,1000,2025-09-15,false,Compromised package: capacitor-plugin-purchase,postinstall script,3
+capacitor-plugin-scgssigninwithgoogle,0.0.5,medium,1000,2025-09-15,false,Compromised package: capacitor-plugin-scgssigninwithgoogle,postinstall script,3
+capacitor-plugin-vonage,"1.0.2, 1.0.3",medium,1000,2025-09-15,false,Compromised package: capacitor-plugin-vonage,postinstall script,3
+capacitor-purchase-history,0.0.10,medium,1000,2025-09-15,false,Compromised package: capacitor-purchase-history,postinstall script,3
+capacitor-voice-recorder-wav,6.0.3,medium,1000,2025-09-15,false,Compromised package: capacitor-voice-recorder-wav,postinstall script,3
+capacitorandroidpermissions,"0.0.4, 0.0.5",medium,1000,2025-09-15,false,Compromised package: capacitorandroidpermissions,postinstall script,3
+chrome-extension-downloads,"0.0.3, 0.0.4",medium,1000,2025-09-15,false,Compromised package: chrome-extension-downloads,postinstall script,3
+claude-token-updater,1.0.3,medium,1000,2025-09-15,false,Compromised package: claude-token-updater,postinstall script,3
+coinmarketcap-api,"3.1.2, 3.1.3",medium,1000,2025-09-15,false,Compromised package: coinmarketcap-api,postinstall script,3
+colors-regex,2.0.1,medium,1000,2025-09-15,false,Compromised package: colors-regex,postinstall script,3
+command-irail,0.5.4,medium,1000,2025-09-15,false,Compromised package: command-irail,postinstall script,3
+compare-obj,"1.1.1, 1.1.2",medium,1000,2025-09-15,false,Compromised package: compare-obj,postinstall script,3
+composite-reducer,"1.0.2, 1.0.3, 1.0.4, 1.0.5",medium,1000,2025-09-15,false,Compromised package: composite-reducer,postinstall script,3
+config-cordova,0.8.5,medium,1000,2025-09-15,false,Compromised package: config-cordova,postinstall script,3
+cordova-plugin-voxeet2,1.0.24,medium,1000,2025-09-15,false,Compromised package: cordova-plugin-voxeet2,postinstall script,3
+cordova-voxeet,1.0.32,medium,1000,2025-09-15,false,Compromised package: cordova-voxeet,postinstall script,3
+count-it-down,"1.0.1, 1.0.2",medium,1000,2025-09-15,false,Compromised package: count-it-down,postinstall script,3
+cpu-instructions,0.0.14,medium,1000,2025-09-15,false,Compromised package: cpu-instructions,postinstall script,3
+create-director-app,0.1.1,medium,1000,2025-09-15,false,Compromised package: create-director-app,postinstall script,3
+create-glee-app,"0.2.2, 0.2.3",medium,1000,2025-09-15,false,Compromised package: create-glee-app,postinstall script,3
+create-hardhat3-app,"1.1.1, 1.1.2, 1.1.3, 1.1.4",medium,1000,2025-09-15,false,Compromised package: create-hardhat3-app,postinstall script,3
+create-hest-app,0.1.9,medium,1000,2025-09-15,false,Compromised package: create-hest-app,postinstall script,3
+crypto-addr-codec,0.1.9,medium,1000,2025-09-15,false,Compromised package: crypto-addr-codec,postinstall script,3
+css-dedoupe,0.1.2,medium,1000,2025-09-15,false,Compromised package: css-dedoupe,postinstall script,3
+dashboard-empty-state,1.0.3,medium,1000,2025-09-15,false,Compromised package: dashboard-empty-state,postinstall script,3
+db-evo,"1.1.4, 1.1.5",medium,1000,2025-09-15,false,Compromised package: db-evo,postinstall script,3
+designstudiouiux,1.0.1,medium,1000,2025-09-15,false,Compromised package: designstudiouiux,postinstall script,3
+devextreme-angular-rpk,21.2.8,medium,1000,2025-09-15,false,Compromised package: devextreme-angular-rpk,postinstall script,3
+devextreme-rpk,21.2.8,medium,1000,2025-09-15,false,Compromised package: devextreme-rpk,postinstall script,3
+devstart-cli,1.0.6,medium,1000,2025-09-15,false,Compromised package: devstart-cli,postinstall script,3
+dialogflow-es,"1.1.1, 1.1.2, 1.1.3, 1.1.4",medium,1000,2025-09-15,false,Compromised package: dialogflow-es,postinstall script,3
+discord-bot-server,0.1.2,medium,1000,2025-09-15,false,Compromised package: discord-bot-server,postinstall script,3
+docusaurus-plugin-vanilla-extract,1.0.3,medium,1000,2025-09-15,false,Compromised package: docusaurus-plugin-vanilla-extract,postinstall script,3
+dont-go,1.1.2,medium,1000,2025-09-15,false,Compromised package: dont-go,postinstall script,3
+dotnet-template,"0.0.3, 0.0.4",medium,1000,2025-09-15,false,Compromised package: dotnet-template,postinstall script,3
+drop-events-on-property-plugin,0.0.2,medium,1000,2025-09-15,false,Compromised package: drop-events-on-property-plugin,postinstall script,3
+email-deliverability-tester,1.1.1,medium,1000,2025-09-15,false,Compromised package: email-deliverability-tester,postinstall script,3
+ember-browser-services,"5.0.2, 5.0.3",high,10000,2025-09-15,false,Compromised package: ember-browser-services,postinstall script,2
+ember-headless-form,"1.1.2, 1.1.3",high,10000,2025-09-15,false,Compromised package: ember-headless-form,postinstall script,2
+ember-headless-form-yup,1.0.1,high,10000,2025-09-15,false,Compromised package: ember-headless-form-yup,postinstall script,2
+ember-headless-table,"2.1.5, 2.1.6",high,10000,2025-09-15,false,Compromised package: ember-headless-table,postinstall script,2
+ember-url-hash-polyfill,"1.0.12, 1.0.13",high,10000,2025-09-15,false,Compromised package: ember-url-hash-polyfill,postinstall script,2
+ember-velcro,"2.2.1, 2.2.2",high,10000,2025-09-15,false,Compromised package: ember-velcro,postinstall script,2
+encounter-playground,"0.0.4, 0.0.5, 0.0.2, 0.0.3",medium,1000,2025-09-15,false,Compromised package: encounter-playground,postinstall script,3
+enforce-branch-name,1.1.3,medium,1000,2025-09-15,false,Compromised package: enforce-branch-name,postinstall script,3
+esbuild-plugin-brotli,0.2.1,medium,1000,2025-09-15,false,Compromised package: esbuild-plugin-brotli,postinstall script,3
+esbuild-plugin-eta,0.1.1,medium,1000,2025-09-15,false,Compromised package: esbuild-plugin-eta,postinstall script,3
+esbuild-plugin-httpfile,0.4.1,medium,1000,2025-09-15,false,Compromised package: esbuild-plugin-httpfile,postinstall script,3
+eslint-config-crowdstrike,"11.0.2, 11.0.3",medium,1000,2025-09-15,false,Compromised package: eslint-config-crowdstrike,postinstall script,3
+eslint-config-crowdstrike-node,"4.0.3, 4.0.4",medium,1000,2025-09-15,false,Compromised package: eslint-config-crowdstrike-node,postinstall script,3
+eslint-config-nitpicky,4.0.1,medium,1000,2025-09-15,false,Compromised package: eslint-config-nitpicky,postinstall script,3
+eslint-config-teselagen,"6.1.7, 6.1.8",medium,1000,2025-09-15,false,Compromised package: eslint-config-teselagen,postinstall script,3
+eslint-config-trigo,22.0.2,medium,1000,2025-09-15,false,Compromised package: eslint-config-trigo,postinstall script,3
+eslint-config-zeallat-base,1.0.4,medium,1000,2025-09-15,false,Compromised package: eslint-config-zeallat-base,postinstall script,3
+ethereum-ens,0.8.1,medium,1000,2025-09-15,false,Compromised package: ethereum-ens,postinstall script,3
+evm-checkcode-cli,"1.0.12, 1.0.13, 1.0.14, 1.0.15",medium,1000,2025-09-15,false,Compromised package: evm-checkcode-cli,postinstall script,3
+exact-ticker,0.3.5,medium,1000,2025-09-15,false,Compromised package: exact-ticker,postinstall script,3
+expo-audio-session,0.2.1,medium,1000,2025-09-15,false,Compromised package: expo-audio-session,postinstall script,3
+expressos,1.1.3,medium,1000,2025-09-15,false,Compromised package: expressos,postinstall script,3
+fat-fingered,"1.0.1, 1.0.2",medium,1000,2025-09-15,false,Compromised package: fat-fingered,postinstall script,3
+feature-flip,"1.0.1, 1.0.2",medium,1000,2025-09-15,false,Compromised package: feature-flip,postinstall script,3
+firestore-search-engine,1.2.3,medium,1000,2025-09-15,false,Compromised package: firestore-search-engine,postinstall script,3
+fittxt,"1.0.2, 1.0.3",medium,1000,2025-09-15,false,Compromised package: fittxt,postinstall script,3
+flapstacks,"1.0.1, 1.0.2",medium,1000,2025-09-15,false,Compromised package: flapstacks,postinstall script,3
+flatten-unflatten,"1.0.1, 1.0.2",medium,1000,2025-09-15,false,Compromised package: flatten-unflatten,postinstall script,3
+formik-error-focus,2.0.1,medium,1000,2025-09-15,false,Compromised package: formik-error-focus,postinstall script,3
+formik-store,1.0.1,medium,1000,2025-09-15,false,Compromised package: formik-store,postinstall script,3
+fuzzy-finder,"1.0.5, 1.0.6",medium,1000,2025-09-15,false,Compromised package: fuzzy-finder,postinstall script,3
+gate-evm-check-code2,"2.0.3, 2.0.4, 2.0.5, 2.0.6",medium,1000,2025-09-15,false,Compromised package: gate-evm-check-code2,postinstall script,3
+gate-evm-tools-test,"1.0.5, 1.0.6, 1.0.7, 1.0.8",medium,1000,2025-09-15,false,Compromised package: gate-evm-tools-test,postinstall script,3
+gatsby-plugin-cname,"1.0.1, 1.0.2",medium,1000,2025-09-15,false,Compromised package: gatsby-plugin-cname,postinstall script,3
+generator-meteor-stock,0.1.6,medium,1000,2025-09-15,false,Compromised package: generator-meteor-stock,postinstall script,3
+generator-ng-itobuz,0.0.15,medium,1000,2025-09-15,false,Compromised package: generator-ng-itobuz,postinstall script,3
+get-them-args,1.3.3,medium,1000,2025-09-15,false,Compromised package: get-them-args,postinstall script,3
+github-action-for-generator,"2.1.27, 2.1.28",medium,1000,2025-09-15,false,Compromised package: github-action-for-generator,postinstall script,3
+gitsafe,1.0.5,medium,1000,2025-09-15,false,Compromised package: gitsafe,postinstall script,3
+globalize-rpk,1.7.4,medium,1000,2025-09-15,false,Compromised package: globalize-rpk,postinstall script,3
+go-template,"0.1.8, 0.1.9",medium,1000,2025-09-15,false,Compromised package: go-template,postinstall script,3
+graphql-sequelize-teselagen,"5.3.8, 5.3.9",medium,1000,2025-09-15,false,Compromised package: graphql-sequelize-teselagen,postinstall script,3
+gulp-inject-envs,"1.2.1, 1.2.2",medium,1000,2025-09-15,false,Compromised package: gulp-inject-envs,postinstall script,3
+haufe-axera-api-client,"0.0.1, 0.0.2",medium,1000,2025-09-15,false,Compromised package: haufe-axera-api-client,postinstall script,3
+hope-mapboxdraw,0.1.1,medium,1000,2025-09-15,false,Compromised package: hope-mapboxdraw,postinstall script,3
+hopedraw,1.0.3,medium,1000,2025-09-15,false,Compromised package: hopedraw,postinstall script,3
+hover-design-prototype,0.0.5,medium,1000,2025-09-15,false,Compromised package: hover-design-prototype,postinstall script,3
+html-to-base64-image,1.0.2,medium,1000,2025-09-15,false,Compromised package: html-to-base64-image,postinstall script,3
+httpness,"1.0.2, 1.0.3",medium,1000,2025-09-15,false,Compromised package: httpness,postinstall script,3
+hyper-fullfacing,1.0.3,medium,1000,2025-09-15,false,Compromised package: hyper-fullfacing,postinstall script,3
+hyperterm-hipster,1.0.7,medium,1000,2025-09-15,false,Compromised package: hyperterm-hipster,postinstall script,3
+ids-css,1.5.1,medium,1000,2025-09-15,false,Compromised package: ids-css,postinstall script,3
+ids-enterprise-mcp-server,0.0.2,medium,1000,2025-09-15,false,Compromised package: ids-enterprise-mcp-server,postinstall script,3
+ids-enterprise-ng,20.1.6,medium,1000,2025-09-15,false,Compromised package: ids-enterprise-ng,postinstall script,3
+ids-enterprise-typings,20.1.6,medium,1000,2025-09-15,false,Compromised package: ids-enterprise-typings,postinstall script,3
+image-to-uri,"1.0.1, 1.0.2",medium,1000,2025-09-15,false,Compromised package: image-to-uri,postinstall script,3
+insomnia-plugin-random-pick,1.0.4,medium,1000,2025-09-15,false,Compromised package: insomnia-plugin-random-pick,postinstall script,3
+invo,0.2.2,medium,1000,2025-09-15,false,Compromised package: invo,postinstall script,3
+iron-shield-miniapp,0.0.2,medium,1000,2025-09-15,false,Compromised package: iron-shield-miniapp,postinstall script,3
+ito-button,8.0.3,medium,1000,2025-09-15,false,Compromised package: ito-button,postinstall script,3
+itobuz-angular,0.0.1,medium,1000,2025-09-15,false,Compromised package: itobuz-angular,postinstall script,3
+itobuz-angular-auth,8.0.11,medium,1000,2025-09-15,false,Compromised package: itobuz-angular-auth,postinstall script,3
+itobuz-angular-button,8.0.11,medium,1000,2025-09-15,false,Compromised package: itobuz-angular-button,postinstall script,3
+jacob-zuma,"1.0.1, 1.0.2",medium,1000,2025-09-15,false,Compromised package: jacob-zuma,postinstall script,3
+jaetut-varit-test,1.0.2,medium,1000,2025-09-15,false,Compromised package: jaetut-varit-test,postinstall script,3
+jan-browser,0.13.1,medium,1000,2025-09-15,false,Compromised package: jan-browser,postinstall script,3
+jquery-bindings,"1.1.2, 1.1.3",medium,1000,2025-09-15,false,Compromised package: jquery-bindings,postinstall script,3
+json-rules-engine-simplified,"0.2.1, 0.2.2, 0.2.3, 0.2.4",medium,1000,2025-09-15,false,Compromised package: json-rules-engine-simplified,postinstall script,3
+jsonsurge,1.0.7,medium,1000,2025-09-15,false,Compromised package: jsonsurge,postinstall script,3
+jumpgate,0.0.2,medium,1000,2025-09-15,false,Compromised package: jumpgate,postinstall script,3
+just-toasty,1.7.1,medium,1000,2025-09-15,false,Compromised package: just-toasty,postinstall script,3
+kill-port,"2.0.2, 2.0.3",medium,1000,2025-09-15,false,Compromised package: kill-port,postinstall script,3
+koa2-swagger-ui,"5.11.2, 5.11.1",medium,1000,2025-09-15,false,Compromised package: koa2-swagger-ui,postinstall script,3
+korea-administrative-area-geo-json-util,1.0.7,medium,1000,2025-09-15,false,Compromised package: korea-administrative-area-geo-json-util,postinstall script,3
+kwami,"1.5.10, 1.5.9",medium,1000,2025-09-15,false,Compromised package: kwami,postinstall script,3
+lang-codes,"1.0.1, 1.0.2",medium,1000,2025-09-15,false,Compromised package: lang-codes,postinstall script,3
+license-o-matic,"1.2.1, 1.2.2",medium,1000,2025-09-15,false,Compromised package: license-o-matic,postinstall script,3
+lint-staged-imagemin,"1.3.1, 1.3.2",medium,1000,2025-09-15,false,Compromised package: lint-staged-imagemin,postinstall script,3
+lite-serper-mcp-server,0.2.2,medium,1000,2025-09-15,false,Compromised package: lite-serper-mcp-server,postinstall script,3
+luno-api,1.2.3,medium,1000,2025-09-15,false,Compromised package: luno-api,postinstall script,3
+manual-billing-system-miniapp-api,1.3.1,medium,1000,2025-09-15,false,Compromised package: manual-billing-system-miniapp-api,postinstall script,3
+mcfly-semantic-release,1.3.1,medium,1000,2025-09-15,false,Compromised package: mcfly-semantic-release,postinstall script,3
+mcp-knowledge-base,0.0.2,medium,1000,2025-09-15,false,Compromised package: mcp-knowledge-base,postinstall script,3
+mcp-knowledge-graph,1.2.1,medium,1000,2025-09-15,false,Compromised package: mcp-knowledge-graph,postinstall script,3
+medusa-plugin-announcement,0.0.3,medium,1000,2025-09-15,false,Compromised package: medusa-plugin-announcement,postinstall script,3
+medusa-plugin-logs,0.0.17,medium,1000,2025-09-15,false,Compromised package: medusa-plugin-logs,postinstall script,3
+medusa-plugin-momo,0.0.68,medium,1000,2025-09-15,false,Compromised package: medusa-plugin-momo,postinstall script,3
+medusa-plugin-product-reviews-kvy,0.0.4,medium,1000,2025-09-15,false,Compromised package: medusa-plugin-product-reviews-kvy,postinstall script,3
+medusa-plugin-zalopay,0.0.40,medium,1000,2025-09-15,false,Compromised package: medusa-plugin-zalopay,postinstall script,3
+mobioffice-cli,1.0.3,medium,1000,2025-09-15,false,Compromised package: mobioffice-cli,postinstall script,3
+mod10-check-digit,1.0.1,medium,1000,2025-09-15,false,Compromised package: mod10-check-digit,postinstall script,3
+mon-package-react-typescript,1.0.1,medium,1000,2025-09-15,false,Compromised package: mon-package-react-typescript,postinstall script,3
+monorepo-next,"13.0.1, 13.0.2",medium,1000,2025-09-15,false,Compromised package: monorepo-next,postinstall script,3
+mstate-angular,0.4.4,medium,1000,2025-09-15,false,Compromised package: mstate-angular,postinstall script,3
+mstate-cli,0.4.7,medium,1000,2025-09-15,false,Compromised package: mstate-cli,postinstall script,3
+mstate-dev-react,1.1.1,medium,1000,2025-09-15,false,Compromised package: mstate-dev-react,postinstall script,3
+mstate-react,1.6.5,medium,1000,2025-09-15,false,Compromised package: mstate-react,postinstall script,3
+my-saeed-lib,0.1.1,medium,1000,2025-09-15,false,Compromised package: my-saeed-lib,postinstall script,3
+n8n-nodes-tmdb,0.5.1,medium,1000,2025-09-15,false,Compromised package: n8n-nodes-tmdb,postinstall script,3
+n8n-nodes-vercel-ai-sdk,0.1.7,medium,1000,2025-09-15,false,Compromised package: n8n-nodes-vercel-ai-sdk,postinstall script,3
+n8n-nodes-viral-app,0.2.5,medium,1000,2025-09-15,false,Compromised package: n8n-nodes-viral-app,postinstall script,3
+nanoreset,"7.0.1, 7.0.2",medium,1000,2025-09-15,false,Compromised package: nanoreset,postinstall script,3
+next-circular-dependency,"1.0.2, 1.0.3",medium,1000,2025-09-15,false,Compromised package: next-circular-dependency,postinstall script,3
+next-simple-google-analytics,"1.1.1, 1.1.2",medium,1000,2025-09-15,false,Compromised package: next-simple-google-analytics,postinstall script,3
+next-styled-nprogress,"1.0.4, 1.0.5",medium,1000,2025-09-15,false,Compromised package: next-styled-nprogress,postinstall script,3
+ng-imports-checker,"0.0.10, 0.0.9",medium,1000,2025-09-15,false,Compromised package: ng-imports-checker,postinstall script,3
+ng2-file-upload,"8.0.3, 7.0.2, 7.0.3, 8.0.1, 8.0.2, 9.0.1",medium,1000,2025-09-15,false,Compromised package: ng2-file-upload,postinstall script,3
+ngx-bootstrap,"18.1.4, 19.0.3, 20.0.4, 20.0.5, 20.0.6, 19.0.4, 20.0.3",critical,300000,2025-09-15,false,Compromised package: ngx-bootstrap,postinstall script,1
+ngx-color,"10.0.2, 10.0.1",high,20000,2025-09-15,false,Compromised package: ngx-color,postinstall script,2
+ngx-toastr,"19.0.2, 19.0.1",high,20000,2025-09-15,false,Compromised package: ngx-toastr,postinstall script,2
+ngx-trend,8.0.1,high,20000,2025-09-15,false,Compromised package: ngx-trend,postinstall script,2
+ngx-useful-swiper-prosenjit,9.0.2,high,20000,2025-09-15,false,Compromised package: ngx-useful-swiper-prosenjit,postinstall script,2
+ngx-wooapi,12.0.1,high,20000,2025-09-15,false,Compromised package: ngx-wooapi,postinstall script,2
+ngx-ws,"1.1.5, 1.1.6",high,20000,2025-09-15,false,Compromised package: ngx-ws,postinstall script,2
+normal-store,"1.3.1, 1.3.2, 1.3.3, 1.3.4",medium,1000,2025-09-15,false,Compromised package: normal-store,postinstall script,3
+obj-to-css,"1.0.2, 1.0.3",medium,1000,2025-09-15,false,Compromised package: obj-to-css,postinstall script,3
+okta-react-router-6,5.0.1,medium,1000,2025-09-15,false,Compromised package: okta-react-router-6,postinstall script,3
+open2internet,0.1.1,medium,1000,2025-09-15,false,Compromised package: open2internet,postinstall script,3
+oradm-to-gql,"35.0.14, 35.0.15",medium,1000,2025-09-15,false,Compromised package: oradm-to-gql,postinstall script,3
+oradm-to-sqlz,"1.1.2, 1.1.3, 1.1.4, 1.1.5",medium,1000,2025-09-15,false,Compromised package: oradm-to-sqlz,postinstall script,3
+orbit-boxicons,2.1.3,medium,1000,2025-09-15,false,Compromised package: orbit-boxicons,postinstall script,3
+orbit-nebula-draw-tools,1.0.10,medium,1000,2025-09-15,false,Compromised package: orbit-nebula-draw-tools,postinstall script,3
+orbit-nebula-editor,1.0.2,medium,1000,2025-09-15,false,Compromised package: orbit-nebula-editor,postinstall script,3
+orbit-soap,0.43.13,medium,1000,2025-09-15,false,Compromised package: orbit-soap,postinstall script,3
+orchestrix,12.1.2,medium,1000,2025-09-15,false,Compromised package: orchestrix,postinstall script,3
+ove-auto-annotate,"0.0.9, 0.0.10",medium,1000,2025-09-15,false,Compromised package: ove-auto-annotate,postinstall script,3
+package-tester,1.0.1,medium,1000,2025-09-15,false,Compromised package: package-tester,postinstall script,3
+parcel-plugin-asset-copier,"1.1.2, 1.1.3",medium,1000,2025-09-15,false,Compromised package: parcel-plugin-asset-copier,postinstall script,3
+pdf-annotation,0.0.2,medium,1000,2025-09-15,false,Compromised package: pdf-annotation,postinstall script,3
+piclite,1.0.1,medium,1000,2025-09-15,false,Compromised package: piclite,postinstall script,3
+pico-uid,"1.0.3, 1.0.4",medium,1000,2025-09-15,false,Compromised package: pico-uid,postinstall script,3
+pkg-readme,1.1.1,medium,1000,2025-09-15,false,Compromised package: pkg-readme,postinstall script,3
+pm2-gelf-json,"1.0.4, 1.0.5",medium,1000,2025-09-15,false,Compromised package: pm2-gelf-json,postinstall script,3
+poper-react-sdk,0.1.2,medium,1000,2025-09-15,false,Compromised package: poper-react-sdk,postinstall script,3
+posthog-docusaurus,2.0.6,medium,1000,2025-09-15,false,Compromised package: posthog-docusaurus,postinstall script,3
+posthog-js,1.297.3,medium,1000,2025-09-15,false,Compromised package: posthog-js,postinstall script,3
+posthog-node,"4.18.1, 5.11.3, 5.13.3",medium,1000,2025-09-15,false,Compromised package: posthog-node,postinstall script,3
+posthog-plugin-hello-world,1.0.1,medium,1000,2025-09-15,false,Compromised package: posthog-plugin-hello-world,postinstall script,3
+posthog-react-native,"4.11.1, 4.12.5",medium,1000,2025-09-15,false,Compromised package: posthog-react-native,postinstall script,3
+posthog-react-native-session-replay,1.2.2,medium,1000,2025-09-15,false,Compromised package: posthog-react-native-session-replay,postinstall script,3
+prime-one-table,0.0.19,medium,1000,2025-09-15,false,Compromised package: prime-one-table,postinstall script,3
+printjs-rpk,1.6.1,medium,1000,2025-09-15,false,Compromised package: printjs-rpk,postinstall script,3
+prompt-eng,1.0.50,medium,1000,2025-09-15,false,Compromised package: prompt-eng,postinstall script,3
+puny-req,1.0.3,medium,1000,2025-09-15,false,Compromised package: puny-req,postinstall script,3
+ra-auth-firebase,1.0.3,medium,1000,2025-09-15,false,Compromised package: ra-auth-firebase,postinstall script,3
+ra-data-firebase,"1.0.7, 1.0.8",medium,1000,2025-09-15,false,Compromised package: ra-data-firebase,postinstall script,3
+react-complaint-image,"0.0.32, 0.0.33, 0.0.34, 0.0.35",high,15000,2025-09-15,false,Compromised package: react-complaint-image,postinstall script,2
+react-component-taggers,0.1.9,high,15000,2025-09-15,false,Compromised package: react-component-taggers,postinstall script,2
+react-data-to-export,1.0.1,high,15000,2025-09-15,false,Compromised package: react-data-to-export,postinstall script,2
+react-element-prompt-inspector,0.1.18,high,15000,2025-09-15,false,Compromised package: react-element-prompt-inspector,postinstall script,2
+react-favic,1.0.2,high,15000,2025-09-15,false,Compromised package: react-favic,postinstall script,2
+react-hook-form-persist,"3.0.1, 3.0.2",high,15000,2025-09-15,false,Compromised package: react-hook-form-persist,postinstall script,2
+react-jam-icons,"1.0.1, 1.0.2",high,15000,2025-09-15,false,Compromised package: react-jam-icons,postinstall script,2
+react-jsonschema-form-conditionals,"0.3.18, 0.3.19, 0.3.20, 0.3.21",high,15000,2025-09-15,false,Compromised package: react-jsonschema-form-conditionals,postinstall script,2
+react-jsonschema-form-extras,"1.0.1, 1.0.2, 1.0.3, 1.0.4",high,15000,2025-09-15,false,Compromised package: react-jsonschema-form-extras,postinstall script,2
+react-jsonschema-rxnt-extras,"0.4.6, 0.4.7, 0.4.8, 0.4.9",high,15000,2025-09-15,false,Compromised package: react-jsonschema-rxnt-extras,postinstall script,2
+react-keycloak-context,"1.0.8, 1.0.9",high,15000,2025-09-15,false,Compromised package: react-keycloak-context,postinstall script,2
+react-library-setup,0.0.6,high,15000,2025-09-15,false,Compromised package: react-library-setup,postinstall script,2
+react-linear-loader,1.0.2,high,15000,2025-09-15,false,Compromised package: react-linear-loader,postinstall script,2
+react-micromodal.js,"1.0.1, 1.0.2",high,15000,2025-09-15,false,Compromised package: react-micromodal.js,postinstall script,2
+react-native-datepicker-modal,"1.3.1, 1.3.2",high,15000,2025-09-15,false,Compromised package: react-native-datepicker-modal,postinstall script,2
+react-native-email,"2.1.1, 2.1.2",high,15000,2025-09-15,false,Compromised package: react-native-email,postinstall script,2
+react-native-fetch,"2.0.1, 2.0.2",high,15000,2025-09-15,false,Compromised package: react-native-fetch,postinstall script,2
+react-native-get-pixel-dimensions,"1.0.1, 1.0.2",high,15000,2025-09-15,false,Compromised package: react-native-get-pixel-dimensions,postinstall script,2
+react-native-google-maps-directions,2.1.2,high,15000,2025-09-15,false,Compromised package: react-native-google-maps-directions,postinstall script,2
+react-native-jam-icons,"1.0.1, 1.0.2",high,15000,2025-09-15,false,Compromised package: react-native-jam-icons,postinstall script,2
+react-native-log-level,"1.2.1, 1.2.2",high,15000,2025-09-15,false,Compromised package: react-native-log-level,postinstall script,2
+react-native-modest-checkbox,3.3.1,high,15000,2025-09-15,false,Compromised package: react-native-modest-checkbox,postinstall script,2
+react-native-modest-storage,2.1.1,high,15000,2025-09-15,false,Compromised package: react-native-modest-storage,postinstall script,2
+react-native-phone-call,"1.2.1, 1.2.2",high,15000,2025-09-15,false,Compromised package: react-native-phone-call,postinstall script,2
+react-native-retriable-fetch,"2.0.1, 2.0.2",high,15000,2025-09-15,false,Compromised package: react-native-retriable-fetch,postinstall script,2
+react-native-use-modal,1.0.3,high,15000,2025-09-15,false,Compromised package: react-native-use-modal,postinstall script,2
+react-native-view-finder,"1.2.1, 1.2.2",high,15000,2025-09-15,false,Compromised package: react-native-view-finder,postinstall script,2
+react-native-websocket,"1.0.3, 1.0.4",high,15000,2025-09-15,false,Compromised package: react-native-websocket,postinstall script,2
+react-native-worklet-functions,3.3.3,high,15000,2025-09-15,false,Compromised package: react-native-worklet-functions,postinstall script,2
+react-qr-image,1.1.1,high,15000,2025-09-15,false,Compromised package: react-qr-image,postinstall script,2
+rediff,1.0.5,medium,1000,2025-09-15,false,Compromised package: rediff,postinstall script,3
+rediff-viewer,0.0.7,medium,1000,2025-09-15,false,Compromised package: rediff-viewer,postinstall script,3
+redux-router-kit,"1.2.2, 1.2.3, 1.2.4",medium,1000,2025-09-15,false,Compromised package: redux-router-kit,postinstall script,3
+remark-preset-lint-crowdstrike,"4.0.1, 4.0.2",medium,1000,2025-09-15,false,Compromised package: remark-preset-lint-crowdstrike,postinstall script,3
+rollup-plugin-httpfile,0.2.1,medium,1000,2025-09-15,false,Compromised package: rollup-plugin-httpfile,postinstall script,3
+rxnt-authentication,"0.0.5, 0.0.6, 0.0.3, 0.0.4",critical,150,2025-09-15,true,Compromised package: rxnt-authentication,postinstall script,1
+rxnt-healthchecks-nestjs,"1.0.4, 1.0.5, 1.0.2, 1.0.3",medium,1000,2025-09-15,false,Compromised package: rxnt-healthchecks-nestjs,postinstall script,3
+rxnt-kue,"1.0.6, 1.0.7, 1.0.4, 1.0.5",medium,1000,2025-09-15,false,Compromised package: rxnt-kue,postinstall script,3
+sa-company-registration-number-regex,"1.0.1, 1.0.2",medium,1000,2025-09-15,false,Compromised package: sa-company-registration-number-regex,postinstall script,3
+sa-id-gen,"1.0.4, 1.0.5",medium,1000,2025-09-15,false,Compromised package: sa-id-gen,postinstall script,3
+samesame,1.0.3,medium,1000,2025-09-15,false,Compromised package: samesame,postinstall script,3
+scgs-capacitor-subscribe,1.0.11,medium,1000,2025-09-15,false,Compromised package: scgs-capacitor-subscribe,postinstall script,3
+scgsffcreator,1.0.5,medium,1000,2025-09-15,false,Compromised package: scgsffcreator,postinstall script,3
+set-nested-prop,"2.0.1, 2.0.2",medium,1000,2025-09-15,false,Compromised package: set-nested-prop,postinstall script,3
+shelf-jwt-sessions,0.1.2,medium,1000,2025-09-15,false,Compromised package: shelf-jwt-sessions,postinstall script,3
+shell-exec,"1.1.3, 1.1.4",medium,1000,2025-09-15,false,Compromised package: shell-exec,postinstall script,3
+shinhan-limit-scrap,1.0.3,medium,1000,2025-09-15,false,Compromised package: shinhan-limit-scrap,postinstall script,3
+skills-use,"0.1.1, 0.1.2",medium,1000,2025-09-15,false,Compromised package: skills-use,postinstall script,3
+solomon-api-stories,1.0.2,medium,1000,2025-09-15,false,Compromised package: solomon-api-stories,postinstall script,3
+solomon-v3-stories,1.15.6,medium,1000,2025-09-15,false,Compromised package: solomon-v3-stories,postinstall script,3
+solomon-v3-ui-wrapper,1.6.1,medium,1000,2025-09-15,false,Compromised package: solomon-v3-ui-wrapper,postinstall script,3
+sort-by-distance,2.0.1,medium,1000,2025-09-15,false,Compromised package: sort-by-distance,postinstall script,3
+south-african-id-info,1.0.2,medium,1000,2025-09-15,false,Compromised package: south-african-id-info,postinstall script,3
+stat-fns,1.0.1,medium,1000,2025-09-15,false,Compromised package: stat-fns,postinstall script,3
+stoor,2.3.2,medium,1000,2025-09-15,false,Compromised package: stoor,postinstall script,3
+super-commit,1.0.1,medium,1000,2025-09-15,false,Compromised package: super-commit,postinstall script,3
+svelte-autocomplete-select,1.1.1,medium,1000,2025-09-15,false,Compromised package: svelte-autocomplete-select,postinstall script,3
+svelte-toasty,"1.1.2, 1.1.3",medium,1000,2025-09-15,false,Compromised package: svelte-toasty,postinstall script,3
+swc-plugin-component-annotate,"1.9.2, 1.9.1",medium,1000,2025-09-15,false,Compromised package: swc-plugin-component-annotate,postinstall script,3
+tanstack-shadcn-table,1.1.5,medium,1000,2025-09-15,false,Compromised package: tanstack-shadcn-table,postinstall script,3
+tbssnch,1.0.2,medium,1000,2025-09-15,false,Compromised package: tbssnch,postinstall script,3
+tcsp,2.0.2,medium,1000,2025-09-15,false,Compromised package: tcsp,postinstall script,3
+tcsp-draw-test,1.0.5,medium,1000,2025-09-15,false,Compromised package: tcsp-draw-test,postinstall script,3
+tcsp-test-vd,2.4.4,medium,1000,2025-09-15,false,Compromised package: tcsp-test-vd,postinstall script,3
+template-lib,"1.1.3, 1.1.4",medium,1000,2025-09-15,false,Compromised package: template-lib,postinstall script,3
+template-micro-service,"1.0.2, 1.0.3",medium,1000,2025-09-15,false,Compromised package: template-micro-service,postinstall script,3
+tenacious-fetch,"2.3.2, 2.3.3",medium,1000,2025-09-15,false,Compromised package: tenacious-fetch,postinstall script,3
+teselagen-interval-tree,1.1.2,medium,1000,2025-09-15,false,Compromised package: teselagen-interval-tree,postinstall script,3
+test-foundry-app,"1.0.1, 1.0.2, 1.0.3, 1.0.4",medium,1000,2025-09-15,false,Compromised package: test-foundry-app,postinstall script,3
+test-hardhat-app,"1.0.1, 1.0.2, 1.0.3, 1.0.4",medium,1000,2025-09-15,false,Compromised package: test-hardhat-app,postinstall script,3
+test23112222-api,1.0.1,medium,1000,2025-09-15,false,Compromised package: test23112222-api,postinstall script,3
+tg-client-query-builder,"2.14.4, 2.14.5",medium,1000,2025-09-15,false,Compromised package: tg-client-query-builder,postinstall script,3
+tg-redbird,"1.3.1, 1.3.2",medium,1000,2025-09-15,false,Compromised package: tg-redbird,postinstall script,3
+tg-seq-gen,"1.0.9, 1.0.10",medium,1000,2025-09-15,false,Compromised package: tg-seq-gen,postinstall script,3
+thangved-react-grid,1.0.3,medium,1000,2025-09-15,false,Compromised package: thangved-react-grid,postinstall script,3
+tiaan,1.0.2,medium,1000,2025-09-15,false,Compromised package: tiaan,postinstall script,3
+token.js-fork,0.7.32,medium,1000,2025-09-15,false,Compromised package: token.js-fork,postinstall script,3
+trigo-react-app,4.1.2,medium,1000,2025-09-15,false,Compromised package: trigo-react-app,postinstall script,3
+ts-gaussian,"3.0.6, 3.0.5",medium,1000,2025-09-15,false,Compromised package: ts-gaussian,postinstall script,3
+ts-imports,"1.0.1, 1.0.2",medium,1000,2025-09-15,false,Compromised package: ts-imports,postinstall script,3
+tvi-cli,0.1.5,medium,1000,2025-09-15,false,Compromised package: tvi-cli,postinstall script,3
+typefence,"1.2.2, 1.2.3",medium,1000,2025-09-15,false,Compromised package: typefence,postinstall script,3
+typeorm-orbit,0.2.27,medium,1000,2025-09-15,false,Compromised package: typeorm-orbit,postinstall script,3
+undefsafe-typed,"1.0.3, 1.0.4",medium,1000,2025-09-15,false,Compromised package: undefsafe-typed,postinstall script,3
+uplandui,0.5.4,medium,1000,2025-09-15,false,Compromised package: uplandui,postinstall script,3
+upload-to-play-store,"1.0.1, 1.0.2",medium,1000,2025-09-15,false,Compromised package: upload-to-play-store,postinstall script,3
+url-encode-decode,"1.0.1, 1.0.2",medium,1000,2025-09-15,false,Compromised package: url-encode-decode,postinstall script,3
+use-unsaved-changes,1.0.9,medium,1000,2025-09-15,false,Compromised package: use-unsaved-changes,postinstall script,3
+valid-south-african-id,1.0.3,medium,1000,2025-09-15,false,Compromised package: valid-south-african-id,postinstall script,3
+ve-bamreader,"0.2.6, 0.2.7",medium,1000,2025-09-15,false,Compromised package: ve-bamreader,postinstall script,3
+ve-editor,"1.0.1, 1.0.2",medium,1000,2025-09-15,false,Compromised package: ve-editor,postinstall script,3
+verror-extra,6.0.1,medium,1000,2025-09-15,false,Compromised package: verror-extra,postinstall script,3
+vf-oss-template,"1.0.1, 1.0.2, 1.0.3, 1.0.4",medium,1000,2025-09-15,false,Compromised package: vf-oss-template,postinstall script,3
+vite-plugin-httpfile,0.2.1,medium,1000,2025-09-15,false,Compromised package: vite-plugin-httpfile,postinstall script,3
+voip-callkit,"1.0.2, 1.0.3",medium,1000,2025-09-15,false,Compromised package: voip-callkit,postinstall script,3
+vue-browserupdate-nuxt,1.0.5,medium,1000,2025-09-15,false,Compromised package: vue-browserupdate-nuxt,postinstall script,3
+wdio-web-reporter,0.1.3,medium,1000,2025-09-15,false,Compromised package: wdio-web-reporter,postinstall script,3
+web-scraper-mcp,1.1.4,medium,1000,2025-09-15,false,Compromised package: web-scraper-mcp,postinstall script,3
+web-types-htmx,0.1.1,medium,1000,2025-09-15,false,Compromised package: web-types-htmx,postinstall script,3
+web-types-lit,0.1.1,medium,1000,2025-09-15,false,Compromised package: web-types-lit,postinstall script,3
+webpack-loader-httpfile,0.2.1,medium,1000,2025-09-15,false,Compromised package: webpack-loader-httpfile,postinstall script,3
+wellness-expert-ng-gallery,5.1.1,medium,1000,2025-09-15,false,Compromised package: wellness-expert-ng-gallery,postinstall script,3
+wenk,"1.0.10, 1.0.9",medium,1000,2025-09-15,false,Compromised package: wenk,postinstall script,3
+yargs-help-output,5.0.3,medium,1000,2025-09-15,false,Compromised package: yargs-help-output,postinstall script,3
+yoo-styles,6.0.326,medium,1000,2025-09-15,false,Compromised package: yoo-styles,postinstall script,3
+zapier-async-storage,"1.0.1, 1.0.2, 1.0.3",medium,1000,2025-09-15,false,Compromised package: zapier-async-storage,postinstall script,3
+zapier-platform-cli,"18.0.2, 18.0.3, 18.0.4",medium,1000,2025-09-15,false,Compromised package: zapier-platform-cli,postinstall script,3
+zapier-platform-core,"18.0.2, 18.0.3, 18.0.4",medium,1000,2025-09-15,false,Compromised package: zapier-platform-core,postinstall script,3
+zapier-platform-schema,"18.0.2, 18.0.3, 18.0.4",medium,1000,2025-09-15,false,Compromised package: zapier-platform-schema,postinstall script,3
+zapier-scripts,"7.8.3, 7.8.4",medium,1000,2025-09-15,false,Compromised package: zapier-scripts,postinstall script,3
+zuper-cli,1.0.1,medium,1000,2025-09-15,false,Compromised package: zuper-cli,postinstall script,3
+zuper-sdk,1.0.57,medium,1000,2025-09-15,false,Compromised package: zuper-sdk,postinstall script,3
+zuper-stream,2.0.9,medium,1000,2025-09-15,false,Compromised package: zuper-stream,postinstall script,3

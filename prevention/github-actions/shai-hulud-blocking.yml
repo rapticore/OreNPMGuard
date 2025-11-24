@@ -1,4 +1,6 @@
-name: 🛡️ Shai-Hulud Security Scanner & Blocker
+name: 🛡️ Shai-Hulud Security Scanner & Blocker (v2.0.0)
+
+# Detects both original Shai-Hulud (September 2025) and Shai-Hulud 2.0 (November 2025)
 
 on:
   push:
@@ -51,6 +53,7 @@ jobs:
         id: package_scan
         run: |
           echo "🔍 Scanning package.json files for Shai-Hulud compromised packages..."
+          echo "   Detecting: Original Shai-Hulud (Sept 2025) & Shai-Hulud 2.0 (Nov 2025)"
           SCAN_RESULTS=""
           EXIT_CODE=0
 
@@ -121,14 +124,16 @@ jobs:
             REPORT="$REPORT${{ steps.package_scan.outputs.scan_results }}\n\n"
             REPORT="$REPORT#### 🔒 package-lock.json Scan Results:\n"
             REPORT="$REPORT${{ steps.lockfile_scan.outputs.lock_results }}\n\n"
-            REPORT="$REPORT### 🚨 IMMEDIATE ACTIONS REQUIRED:\n"
-            REPORT="$REPORT1. **🛑 DO NOT MERGE** this PR until packages are removed\n"
-            REPORT="$REPORT2. **Remove compromised packages**: \`npm uninstall <package-name>\`\n"
-            REPORT="$REPORT3. **Clear npm cache**: \`npm cache clean --force\`\n"
-            REPORT="$REPORT4. **Delete node_modules**: \`rm -rf node_modules && npm install\`\n"
-            REPORT="$REPORT5. **Rotate ALL credentials**: GitHub tokens, npm tokens, API keys\n"
-            REPORT="$REPORT6. **Check for Shai-Hulud repos** in your GitHub account\n"
-            REPORT="$REPORT7. **Review GitHub audit logs** for suspicious activity\n\n"
+          REPORT="$REPORT### 🚨 IMMEDIATE ACTIONS REQUIRED:\n"
+          REPORT="$REPORT1. **🛑 DO NOT MERGE** this PR until packages are removed\n"
+          REPORT="$REPORT2. **Remove compromised packages**: \`npm uninstall <package-name>\`\n"
+          REPORT="$REPORT3. **Clear npm cache**: \`npm cache clean --force\`\n"
+          REPORT="$REPORT4. **Delete node_modules**: \`rm -rf node_modules && npm install\`\n"
+          REPORT="$REPORT5. **Rotate ALL credentials**: GitHub tokens, npm tokens, API keys, cloud credentials\n"
+          REPORT="$REPORT6. **Check for Shai-Hulud repos** in your GitHub account (both original and 2.0)\n"
+          REPORT="$REPORT7. **Review GitHub audit logs** for suspicious activity\n"
+          REPORT="$REPORT8. **Check for Shai-Hulud 2.0 indicators**: discussion.yaml, formatter_*.yml workflows, SHA1HULUD runners\n"
+          REPORT="$REPORT9. **Check for new payload files**: setup_bun.js, bun_environment.js, cloud.json, contents.json\n\n"
             REPORT="$REPORT### 📚 Resources:\n"
             REPORT="$REPORT- [OreNPMGuard Scanner](https://github.com/rapticore/OreNPMGuard)\n"
             REPORT="$REPORT- [Shai-Hulud Attack Details](https://github.com/rapticore/OreNPMGuard#about-the-shai-hulud-attack)\n"
