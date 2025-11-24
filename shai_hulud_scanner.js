@@ -13,14 +13,30 @@ const crypto = require('crypto');
 const yaml = require('js-yaml');
 
 // Shai-Hulud IoCs (Indicators of Compromise)
+// Includes both original Shai-Hulud (September 2025) and Shai-Hulud 2.0 (November 2025) patterns
 const SHAI_HULUD_IOCS = {
+    // Original Shai-Hulud IoCs
     webhookUrl: 'https://webhook.site/bb8ca5f6-4175-45d2-b042-fc9ebb8170b7',
     bundleJsHashes: new Set([
         '46faab8ab153fae6e80e7cca38eab363075bb524edd79e42269217a083628f09',
         '81d2a004a1bca6ef87a1caf7d0e0b355ad1764238e40ff6d1b1cb77ad4f595c3',
         'dc67467a39b70d1cd4c1f7f7a459b35058163592f4a9e8fb4dffcbba98ef210c'
     ]),
-    postinstallPattern: /"postinstall":\s*"node\s+bundle\.js"/
+    postinstallPattern: /"postinstall":\s*"node\s+bundle\.js"/,
+    
+    // Shai-Hulud 2.0 IoCs (November 2025)
+    preinstallPattern: /"preinstall":\s*"node\s+(bundle|setup_bun|bun_environment)\.js"/,
+    payloadFiles: ['bundle.js', 'setup_bun.js', 'bun_environment.js'],
+    dataFiles: ['cloud.json', 'contents.json', 'environment.json', 'truffleSecrets.json'],
+    githubWorkflowPatterns: {
+        discussionYaml: /\.github\/workflows\/discussion\.yaml/,
+        formatterYml: /\.github\/workflows\/formatter_\d+\.yml/,
+        shaiHuludWorkflow: /\.github\/workflows\/shai-hulud-workflow\.yml/  // Original
+    },
+    selfHostedRunnerPattern: /runs-on:\s*self-hosted/,
+    sha1huludRunnerPattern: /SHA1HULUD/i,
+    runnerTrackingIdPattern: /RUNNER_TRACKING_ID:\s*0/,
+    dockerPrivilegeEscalationPattern: /docker\s+run\s+--rm\s+--privileged\s+-v\s+\/:\/host/
 };
 
 const GITHUB_YAML_URL = "https://raw.githubusercontent.com/rapticore/OreNPMGuard/main/affected_packages.yaml";
@@ -146,6 +162,7 @@ function calculateFileHash(filePath) {
 
 /**
  * Scan directory for Shai-Hulud IoCs (Indicators of Compromise)
+ * Detects both original Shai-Hulud (September 2025) and Shai-Hulud 2.0 (November 2025) indicators.
  */
 function scanForIocs(directory) {
     const iocsFound = [];
@@ -162,31 +179,71 @@ function scanForIocs(directory) {
                 } else if (entry.isFile()) {
                     const relativePath = path.relative(directory, fullPath);
 
-                    // Check for malicious bundle.js files
-                    if (entry.name === 'bundle.js') {
-                        const fileHash = calculateFileHash(fullPath);
-                        if (fileHash && SHAI_HULUD_IOCS.bundleJsHashes.has(fileHash)) {
+                    // Check for malicious payload files (original and Shai-Hulud 2.0)
+                    for (const payloadFile of SHAI_HULUD_IOCS.payloadFiles) {
+                        if (entry.name === payloadFile) {
+                            // For bundle.js, check hash against known malicious hashes
+                            if (payloadFile === 'bundle.js') {
+                                const fileHash = calculateFileHash(fullPath);
+                                if (fileHash && SHAI_HULUD_IOCS.bundleJsHashes.has(fileHash)) {
+                                    iocsFound.push({
+                                        type: 'malicious_bundle_js',
+                                        path: relativePath,
+                                        hash: fileHash,
+                                        severity: 'CRITICAL',
+                                        variant: 'original'
+                                    });
+                                }
+                            } else {
+                                // For Shai-Hulud 2.0 payload files, presence is suspicious
+                                iocsFound.push({
+                                    type: 'malicious_payload_file',
+                                    path: relativePath,
+                                    filename: payloadFile,
+                                    severity: 'CRITICAL',
+                                    variant: '2.0'
+                                });
+                            }
+                        }
+                    }
+
+                    // Check for Shai-Hulud 2.0 data files
+                    for (const dataFile of SHAI_HULUD_IOCS.dataFiles) {
+                        if (entry.name === dataFile) {
                             iocsFound.push({
-                                type: 'malicious_bundle_js',
+                                type: 'shai_hulud_data_file',
                                 path: relativePath,
-                                hash: fileHash,
-                                severity: 'CRITICAL'
+                                filename: dataFile,
+                                severity: 'HIGH',
+                                variant: '2.0'
                             });
                         }
                     }
 
-                    // Check package.json files for malicious postinstall hooks and webhook references
+                    // Check package.json files for malicious hooks
                     if (entry.name === 'package.json') {
                         try {
                             const content = fs.readFileSync(fullPath, 'utf8');
 
-                            // Check for malicious postinstall pattern
+                            // Check for malicious postinstall pattern (original Shai-Hulud)
                             if (SHAI_HULUD_IOCS.postinstallPattern.test(content)) {
                                 iocsFound.push({
                                     type: 'malicious_postinstall',
                                     path: relativePath,
                                     pattern: 'node bundle.js',
-                                    severity: 'CRITICAL'
+                                    severity: 'CRITICAL',
+                                    variant: 'original'
+                                });
+                            }
+
+                            // Check for malicious preinstall pattern (Shai-Hulud 2.0)
+                            if (SHAI_HULUD_IOCS.preinstallPattern.test(content)) {
+                                iocsFound.push({
+                                    type: 'malicious_preinstall',
+                                    path: relativePath,
+                                    pattern: 'preinstall hook with suspicious payload',
+                                    severity: 'CRITICAL',
+                                    variant: '2.0'
                                 });
                             }
 
@@ -204,17 +261,101 @@ function scanForIocs(directory) {
                         }
                     }
 
-                    // Check other JavaScript files for webhook references
-                    if ((entry.name.endsWith('.js') || entry.name.endsWith('.ts') || entry.name.endsWith('.json')) &&
-                        entry.name !== 'package.json') {
+                    // Check for GitHub workflow files (Shai-Hulud 2.0)
+                    if (fullPath.includes('.github') || fullPath.includes('workflows')) {
+                        if (entry.name.endsWith('.yml') || entry.name.endsWith('.yaml')) {
+                            try {
+                                const workflowContent = fs.readFileSync(fullPath, 'utf8');
+                                const normalizedPath = fullPath.replace(/\\/g, '/');
+                                
+                                // Check for discussion.yaml pattern
+                                if (SHAI_HULUD_IOCS.githubWorkflowPatterns.discussionYaml.test(normalizedPath)) {
+                                    if (SHAI_HULUD_IOCS.selfHostedRunnerPattern.test(workflowContent)) {
+                                        iocsFound.push({
+                                            type: 'malicious_github_workflow',
+                                            path: relativePath,
+                                            pattern: 'discussion.yaml with self-hosted runner',
+                                            severity: 'CRITICAL',
+                                            variant: '2.0'
+                                        });
+                                    }
+                                }
+                                
+                                // Check for formatter workflow pattern
+                                if (SHAI_HULUD_IOCS.githubWorkflowPatterns.formatterYml.test(normalizedPath)) {
+                                    iocsFound.push({
+                                        type: 'malicious_github_workflow',
+                                        path: relativePath,
+                                        pattern: 'formatter workflow for secret exfiltration',
+                                        severity: 'CRITICAL',
+                                        variant: '2.0'
+                                    });
+                                }
+                                
+                                // Check for SHA1HULUD runner name
+                                if (SHAI_HULUD_IOCS.sha1huludRunnerPattern.test(workflowContent)) {
+                                    iocsFound.push({
+                                        type: 'sha1hulud_runner',
+                                        path: relativePath,
+                                        pattern: 'SHA1HULUD runner registration',
+                                        severity: 'CRITICAL',
+                                        variant: '2.0'
+                                    });
+                                }
+                                
+                                // Check for RUNNER_TRACKING_ID: 0
+                                if (SHAI_HULUD_IOCS.runnerTrackingIdPattern.test(workflowContent)) {
+                                    iocsFound.push({
+                                        type: 'suspicious_runner_config',
+                                        path: relativePath,
+                                        pattern: 'RUNNER_TRACKING_ID: 0',
+                                        severity: 'HIGH',
+                                        variant: '2.0'
+                                    });
+                                }
+                                
+                                // Check for original shai-hulud-workflow.yml
+                                if (SHAI_HULUD_IOCS.githubWorkflowPatterns.shaiHuludWorkflow.test(normalizedPath)) {
+                                    iocsFound.push({
+                                        type: 'malicious_github_workflow',
+                                        path: relativePath,
+                                        pattern: 'shai-hulud-workflow.yml',
+                                        severity: 'CRITICAL',
+                                        variant: 'original'
+                                    });
+                                }
+                            } catch (error) {
+                                // Skip files that can't be read
+                                continue;
+                            }
+                        }
+                    }
+
+                    // Check other files for webhook references and Docker patterns
+                    if ((entry.name.endsWith('.js') || entry.name.endsWith('.ts') || 
+                         entry.name.endsWith('.json') || entry.name.endsWith('.sh') || 
+                         entry.name.endsWith('.bash')) && entry.name !== 'package.json') {
                         try {
                             const content = fs.readFileSync(fullPath, 'utf8');
+                            
+                            // Check for webhook.site URL references
                             if (content.includes(SHAI_HULUD_IOCS.webhookUrl)) {
                                 iocsFound.push({
                                     type: 'webhook_site_reference',
                                     path: relativePath,
                                     url: SHAI_HULUD_IOCS.webhookUrl,
                                     severity: 'HIGH'
+                                });
+                            }
+                            
+                            // Check for Docker privilege escalation pattern (Shai-Hulud 2.0)
+                            if (SHAI_HULUD_IOCS.dockerPrivilegeEscalationPattern.test(content)) {
+                                iocsFound.push({
+                                    type: 'docker_privilege_escalation',
+                                    path: relativePath,
+                                    pattern: 'Docker privileged container with host mount',
+                                    severity: 'CRITICAL',
+                                    variant: '2.0'
                                 });
                             }
                         } catch (error) {
@@ -413,14 +554,22 @@ async function scanDirectory(directory) {
         console.log(`🚨 CRITICAL: Found ${iocs.length} Indicators of Compromise:`);
         for (const ioc of iocs) {
             const severityEmoji = ioc.severity === 'CRITICAL' ? '🔴' : '🟠';
-            console.log(`   ${severityEmoji} ${ioc.type.toUpperCase()}: ${ioc.path}`);
+            const variantInfo = ioc.variant ? ` [${ioc.variant}]` : '';
+            console.log(`   ${severityEmoji} ${ioc.type.toUpperCase()}${variantInfo}: ${ioc.path}`);
 
-            if (ioc.type === 'malicious_bundle_js') {
+            if (ioc.type === 'malicious_bundle_js' && ioc.hash) {
                 console.log(`      SHA-256: ${ioc.hash}`);
-            } else if (ioc.type === 'malicious_postinstall') {
+            } else if ((ioc.type === 'malicious_postinstall' || ioc.type === 'malicious_preinstall') && ioc.pattern) {
                 console.log(`      Pattern: ${ioc.pattern}`);
-            } else if (ioc.type === 'webhook_site_reference') {
+            } else if (ioc.type === 'webhook_site_reference' && ioc.url) {
                 console.log(`      URL: ${ioc.url}`);
+            } else if (ioc.type === 'malicious_payload_file' && ioc.filename) {
+                console.log(`      Payload file: ${ioc.filename}`);
+            } else if (ioc.type === 'shai_hulud_data_file' && ioc.filename) {
+                console.log(`      Data file: ${ioc.filename}`);
+            } else if ((ioc.type === 'malicious_github_workflow' || ioc.type === 'sha1hulud_runner' || 
+                       ioc.type === 'suspicious_runner_config' || ioc.type === 'docker_privilege_escalation') && ioc.pattern) {
+                console.log(`      Pattern: ${ioc.pattern}`);
             }
         }
     } else {
@@ -534,7 +683,23 @@ async function main() {
                 console.log(`🚨 CRITICAL: Found ${iocs.length} Indicators of Compromise:`);
                 for (const ioc of iocs) {
                     const severityEmoji = ioc.severity === 'CRITICAL' ? '🔴' : '🟠';
-                    console.log(`   ${severityEmoji} ${ioc.type.toUpperCase()}: ${ioc.path}`);
+                    const variantInfo = ioc.variant ? ` [${ioc.variant}]` : '';
+                    console.log(`   ${severityEmoji} ${ioc.type.toUpperCase()}${variantInfo}: ${ioc.path}`);
+                    
+                    if (ioc.type === 'malicious_bundle_js' && ioc.hash) {
+                        console.log(`      SHA-256: ${ioc.hash}`);
+                    } else if ((ioc.type === 'malicious_postinstall' || ioc.type === 'malicious_preinstall') && ioc.pattern) {
+                        console.log(`      Pattern: ${ioc.pattern}`);
+                    } else if (ioc.type === 'webhook_site_reference' && ioc.url) {
+                        console.log(`      URL: ${ioc.url}`);
+                    } else if (ioc.type === 'malicious_payload_file' && ioc.filename) {
+                        console.log(`      Payload file: ${ioc.filename}`);
+                    } else if (ioc.type === 'shai_hulud_data_file' && ioc.filename) {
+                        console.log(`      Data file: ${ioc.filename}`);
+                    } else if ((ioc.type === 'malicious_github_workflow' || ioc.type === 'sha1hulud_runner' || 
+                               ioc.type === 'suspicious_runner_config' || ioc.type === 'docker_privilege_escalation') && ioc.pattern) {
+                        console.log(`      Pattern: ${ioc.pattern}`);
+                    }
                 }
             } else {
                 console.log('✅ No IoCs detected');

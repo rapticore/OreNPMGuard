@@ -17,14 +17,30 @@ from typing import Set, Dict, List, Tuple, Optional
 import yaml
 
 # Shai-Hulud IoCs (Indicators of Compromise)
+# Includes both original Shai-Hulud (September 2025) and Shai-Hulud 2.0 (November 2025) patterns
 SHAI_HULUD_IOCS = {
+    # Original Shai-Hulud IoCs
     'webhook_url': 'https://webhook.site/bb8ca5f6-4175-45d2-b042-fc9ebb8170b7',
     'bundle_js_hashes': {
         '46faab8ab153fae6e80e7cca38eab363075bb524edd79e42269217a083628f09',
         '81d2a004a1bca6ef87a1caf7d0e0b355ad1764238e40ff6d1b1cb77ad4f595c3',
         'dc67467a39b70d1cd4c1f7f7a459b35058163592f4a9e8fb4dffcbba98ef210c'
     },
-    'postinstall_pattern': r'"postinstall":\s*"node\s+bundle\.js"'
+    'postinstall_pattern': r'"postinstall":\s*"node\s+bundle\.js"',
+    
+    # Shai-Hulud 2.0 IoCs (November 2025)
+    'preinstall_pattern': r'"preinstall":\s*"node\s+(bundle|setup_bun|bun_environment)\.js"',
+    'payload_files': ['bundle.js', 'setup_bun.js', 'bun_environment.js'],
+    'data_files': ['cloud.json', 'contents.json', 'environment.json', 'truffleSecrets.json'],
+    'github_workflow_patterns': {
+        'discussion_yaml': r'\.github/workflows/discussion\.yaml',
+        'formatter_yml': r'\.github/workflows/formatter_\d+\.yml',
+        'shai_hulud_workflow': r'\.github/workflows/shai-hulud-workflow\.yml'  # Original
+    },
+    'self_hosted_runner_pattern': r'runs-on:\s*self-hosted',
+    'sha1hulud_runner_pattern': r'SHA1HULUD',
+    'runner_tracking_id_pattern': r'RUNNER_TRACKING_ID:\s*0',
+    'docker_privilege_escalation_pattern': r'docker\s+run\s+--rm\s+--privileged\s+-v\s+/:/host'
 }
 
 GITHUB_YAML_URL = "https://raw.githubusercontent.com/rapticore/OreNPMGuard/main/affected_packages.yaml"
@@ -121,7 +137,10 @@ def calculate_file_hash(file_path: str) -> Optional[str]:
 
 
 def scan_for_iocs(directory: str) -> List[Dict]:
-    """Scan directory for Shai-Hulud IoCs (Indicators of Compromise)."""
+    """Scan directory for Shai-Hulud IoCs (Indicators of Compromise).
+    
+    Detects both original Shai-Hulud (September 2025) and Shai-Hulud 2.0 (November 2025) indicators.
+    """
     iocs_found = []
 
     for root, dirs, files in os.walk(directory):
@@ -129,33 +148,69 @@ def scan_for_iocs(directory: str) -> List[Dict]:
         if 'node_modules' in dirs:
             dirs.remove('node_modules')
 
-        # Check for malicious bundle.js files
-        if 'bundle.js' in files:
-            bundle_path = os.path.join(root, 'bundle.js')
-            file_hash = calculate_file_hash(bundle_path)
+        # Check for malicious payload files (original and Shai-Hulud 2.0)
+        for payload_file in SHAI_HULUD_IOCS['payload_files']:
+            if payload_file in files:
+                payload_path = os.path.join(root, payload_file)
+                
+                # For bundle.js, check hash against known malicious hashes
+                if payload_file == 'bundle.js':
+                    file_hash = calculate_file_hash(payload_path)
+                    if file_hash and file_hash in SHAI_HULUD_IOCS['bundle_js_hashes']:
+                        iocs_found.append({
+                            'type': 'malicious_bundle_js',
+                            'path': os.path.relpath(payload_path, directory),
+                            'hash': file_hash,
+                            'severity': 'CRITICAL',
+                            'variant': 'original'
+                        })
+                else:
+                    # For Shai-Hulud 2.0 payload files, presence is suspicious
+                    iocs_found.append({
+                        'type': 'malicious_payload_file',
+                        'path': os.path.relpath(payload_path, directory),
+                        'filename': payload_file,
+                        'severity': 'CRITICAL',
+                        'variant': '2.0'
+                    })
 
-            if file_hash and file_hash in SHAI_HULUD_IOCS['bundle_js_hashes']:
+        # Check for Shai-Hulud 2.0 data files
+        for data_file in SHAI_HULUD_IOCS['data_files']:
+            if data_file in files:
+                data_path = os.path.join(root, data_file)
                 iocs_found.append({
-                    'type': 'malicious_bundle_js',
-                    'path': os.path.relpath(bundle_path, directory),
-                    'hash': file_hash,
-                    'severity': 'CRITICAL'
+                    'type': 'shai_hulud_data_file',
+                    'path': os.path.relpath(data_path, directory),
+                    'filename': data_file,
+                    'severity': 'HIGH',
+                    'variant': '2.0'
                 })
 
-        # Check package.json files for malicious postinstall hooks
+        # Check package.json files for malicious hooks
         if 'package.json' in files:
             package_json_path = os.path.join(root, 'package.json')
             try:
                 with open(package_json_path, 'r', encoding='utf-8') as f:
                     content = f.read()
 
-                    # Check for malicious postinstall pattern
+                    # Check for malicious postinstall pattern (original Shai-Hulud)
                     if re.search(SHAI_HULUD_IOCS['postinstall_pattern'], content):
                         iocs_found.append({
                             'type': 'malicious_postinstall',
                             'path': os.path.relpath(package_json_path, directory),
                             'pattern': 'node bundle.js',
-                            'severity': 'CRITICAL'
+                            'severity': 'CRITICAL',
+                            'variant': 'original'
+                        })
+
+                    # Check for malicious preinstall pattern (Shai-Hulud 2.0)
+                    if re.search(SHAI_HULUD_IOCS['preinstall_pattern'], content):
+                        iocs_found.append({
+                            'type': 'malicious_preinstall',
+                            'path': os.path.relpath(package_json_path, directory),
+                            'pattern': 'preinstall hook with suspicious payload',
+                            'severity': 'CRITICAL',
+                            'variant': '2.0'
                         })
 
                     # Check for webhook.site URL references
@@ -170,19 +225,96 @@ def scan_for_iocs(directory: str) -> List[Dict]:
             except Exception as e:
                 print(f"❌ Error reading {package_json_path}: {e}")
 
-        # Check other JavaScript files for webhook references
+        # Check for GitHub workflow files (Shai-Hulud 2.0)
+        if '.github' in root or 'workflows' in root:
+            for file in files:
+                if file.endswith(('.yml', '.yaml')):
+                    workflow_path = os.path.join(root, file)
+                    try:
+                        with open(workflow_path, 'r', encoding='utf-8') as f:
+                            workflow_content = f.read()
+                            
+                            # Check for discussion.yaml pattern
+                            if re.search(SHAI_HULUD_IOCS['github_workflow_patterns']['discussion_yaml'], 
+                                       workflow_path.replace('\\', '/')):
+                                if re.search(SHAI_HULUD_IOCS['self_hosted_runner_pattern'], workflow_content):
+                                    iocs_found.append({
+                                        'type': 'malicious_github_workflow',
+                                        'path': os.path.relpath(workflow_path, directory),
+                                        'pattern': 'discussion.yaml with self-hosted runner',
+                                        'severity': 'CRITICAL',
+                                        'variant': '2.0'
+                                    })
+                            
+                            # Check for formatter workflow pattern
+                            if re.search(SHAI_HULUD_IOCS['github_workflow_patterns']['formatter_yml'],
+                                       workflow_path.replace('\\', '/')):
+                                iocs_found.append({
+                                    'type': 'malicious_github_workflow',
+                                    'path': os.path.relpath(workflow_path, directory),
+                                    'pattern': 'formatter workflow for secret exfiltration',
+                                    'severity': 'CRITICAL',
+                                    'variant': '2.0'
+                                })
+                            
+                            # Check for SHA1HULUD runner name
+                            if re.search(SHAI_HULUD_IOCS['sha1hulud_runner_pattern'], workflow_content, re.IGNORECASE):
+                                iocs_found.append({
+                                    'type': 'sha1hulud_runner',
+                                    'path': os.path.relpath(workflow_path, directory),
+                                    'pattern': 'SHA1HULUD runner registration',
+                                    'severity': 'CRITICAL',
+                                    'variant': '2.0'
+                                })
+                            
+                            # Check for RUNNER_TRACKING_ID: 0
+                            if re.search(SHAI_HULUD_IOCS['runner_tracking_id_pattern'], workflow_content):
+                                iocs_found.append({
+                                    'type': 'suspicious_runner_config',
+                                    'path': os.path.relpath(workflow_path, directory),
+                                    'pattern': 'RUNNER_TRACKING_ID: 0',
+                                    'severity': 'HIGH',
+                                    'variant': '2.0'
+                                })
+                            
+                            # Check for original shai-hulud-workflow.yml
+                            if re.search(SHAI_HULUD_IOCS['github_workflow_patterns']['shai_hulud_workflow'],
+                                       workflow_path.replace('\\', '/')):
+                                iocs_found.append({
+                                    'type': 'malicious_github_workflow',
+                                    'path': os.path.relpath(workflow_path, directory),
+                                    'pattern': 'shai-hulud-workflow.yml',
+                                    'severity': 'CRITICAL',
+                                    'variant': 'original'
+                                })
+                    except Exception:
+                        continue
+
+        # Check other JavaScript files for webhook references and Docker patterns
         for file in files:
-            if file.endswith(('.js', '.ts', '.json')) and file != 'package.json':
+            if file.endswith(('.js', '.ts', '.json', '.sh', '.bash')) and file != 'package.json':
                 file_path = os.path.join(root, file)
                 try:
                     with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
                         content = f.read()
+                        
+                        # Check for webhook.site URL references
                         if SHAI_HULUD_IOCS['webhook_url'] in content:
                             iocs_found.append({
                                 'type': 'webhook_site_reference',
                                 'path': os.path.relpath(file_path, directory),
                                 'url': SHAI_HULUD_IOCS['webhook_url'],
                                 'severity': 'HIGH'
+                            })
+                        
+                        # Check for Docker privilege escalation pattern (Shai-Hulud 2.0)
+                        if re.search(SHAI_HULUD_IOCS['docker_privilege_escalation_pattern'], content):
+                            iocs_found.append({
+                                'type': 'docker_privilege_escalation',
+                                'path': os.path.relpath(file_path, directory),
+                                'pattern': 'Docker privileged container with host mount',
+                                'severity': 'CRITICAL',
+                                'variant': '2.0'
                             })
                 except Exception:
                     # Skip files that can't be read as text
@@ -346,14 +478,23 @@ def scan_directory(directory: str) -> None:
         print(f"🚨 CRITICAL: Found {len(iocs)} Indicators of Compromise:")
         for ioc in iocs:
             severity_emoji = "🔴" if ioc['severity'] == 'CRITICAL' else "🟠"
-            print(f"   {severity_emoji} {ioc['type'].upper()}: {ioc['path']}")
+            variant_info = f" [{ioc.get('variant', 'unknown')}]" if 'variant' in ioc else ""
+            print(f"   {severity_emoji} {ioc['type'].upper()}{variant_info}: {ioc['path']}")
 
             if ioc['type'] == 'malicious_bundle_js':
                 print(f"      SHA-256: {ioc['hash']}")
-            elif ioc['type'] == 'malicious_postinstall':
+            elif ioc['type'] in ['malicious_postinstall', 'malicious_preinstall']:
                 print(f"      Pattern: {ioc['pattern']}")
             elif ioc['type'] == 'webhook_site_reference':
                 print(f"      URL: {ioc['url']}")
+            elif ioc['type'] == 'malicious_payload_file':
+                print(f"      Payload file: {ioc.get('filename', 'unknown')}")
+            elif ioc['type'] == 'shai_hulud_data_file':
+                print(f"      Data file: {ioc.get('filename', 'unknown')}")
+            elif ioc['type'] in ['malicious_github_workflow', 'sha1hulud_runner', 'suspicious_runner_config']:
+                print(f"      Pattern: {ioc.get('pattern', 'unknown')}")
+            elif ioc['type'] == 'docker_privilege_escalation':
+                print(f"      Pattern: {ioc.get('pattern', 'unknown')}")
     else:
         print("✅ No IoCs detected")
 
@@ -434,7 +575,21 @@ def main():
             print(f"🚨 CRITICAL: Found {len(iocs)} Indicators of Compromise:")
             for ioc in iocs:
                 severity_emoji = "🔴" if ioc['severity'] == 'CRITICAL' else "🟠"
-                print(f"   {severity_emoji} {ioc['type'].upper()}: {ioc['path']}")
+                variant_info = f" [{ioc.get('variant', 'unknown')}]" if 'variant' in ioc else ""
+                print(f"   {severity_emoji} {ioc['type'].upper()}{variant_info}: {ioc['path']}")
+                
+                if ioc['type'] == 'malicious_bundle_js' and 'hash' in ioc:
+                    print(f"      SHA-256: {ioc['hash']}")
+                elif ioc['type'] in ['malicious_postinstall', 'malicious_preinstall'] and 'pattern' in ioc:
+                    print(f"      Pattern: {ioc['pattern']}")
+                elif ioc['type'] == 'webhook_site_reference' and 'url' in ioc:
+                    print(f"      URL: {ioc['url']}")
+                elif ioc['type'] == 'malicious_payload_file' and 'filename' in ioc:
+                    print(f"      Payload file: {ioc['filename']}")
+                elif ioc['type'] == 'shai_hulud_data_file' and 'filename' in ioc:
+                    print(f"      Data file: {ioc['filename']}")
+                elif ioc['type'] in ['malicious_github_workflow', 'sha1hulud_runner', 'suspicious_runner_config', 'docker_privilege_escalation'] and 'pattern' in ioc:
+                    print(f"      Pattern: {ioc['pattern']}")
         else:
             print("✅ No IoCs detected")
 

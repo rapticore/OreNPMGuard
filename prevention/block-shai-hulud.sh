@@ -16,9 +16,10 @@ set -euo pipefail
 
 # Script metadata
 SCRIPT_NAME="OreNPMGuard Shai-Hulud Blocker"
-SCRIPT_VERSION="1.0.0"
+SCRIPT_VERSION="2.0.0"
 SCRIPT_AUTHOR="Rapticore Security"
 SCRIPT_URL="https://github.com/rapticore/OreNPMGuard"
+SCRIPT_DESCRIPTION="Detects both original Shai-Hulud (September 2025) and Shai-Hulud 2.0 (November 2025) compromised packages"
 
 # Color codes for output
 if [[ -t 1 ]]; then
@@ -94,7 +95,8 @@ print_header() {
         echo "╔══════════════════════════════════════════════════════════════════════════════╗"
         echo "║                     🛡️  OreNPMGuard - Shai-Hulud Blocker                    ║"
         echo "║                                                                              ║"
-        echo "║  Comprehensive security scanner for Shai-Hulud supply chain attack         ║"
+        echo "║  Comprehensive security scanner for Shai-Hulud supply chain attacks         ║"
+        echo "║  Detects: Original (Sept 2025) & Shai-Hulud 2.0 (Nov 2025) variants         ║"
         echo "║  Repository: https://github.com/rapticore/orenpmpguard                      ║"
         echo "║  Contact: contact@rapticore.com                                             ║"
         echo "╚══════════════════════════════════════════════════════════════════════════════╝"
@@ -331,10 +333,15 @@ generate_report() {
         echo "     • SSH Keys"
         echo "     • API Keys (AWS, Atlassian, Datadog, etc.)"
         echo "  6. 🔍 Investigation:"
-        echo "     • Check GitHub for public repos named 'Shai-Hulud'"
-        echo "     • Look for repos with '-migration' suffix"
-        echo "     • Review GitHub audit logs"
+        echo "     • Check GitHub for public repos named 'Shai-Hulud' or with 'Shai-Hulud' in description"
+        echo "     • Look for repos with '-migration' suffix (original Shai-Hulud)"
+        echo "     • Review GitHub audit logs for unauthorized repository creation"
         echo "     • Check for branches named 'shai-hulud'"
+        echo "     • Look for .github/workflows/discussion.yaml (Shai-Hulud 2.0)"
+        echo "     • Check for .github/workflows/formatter_*.yml files (Shai-Hulud 2.0)"
+        echo "     • Verify self-hosted runners for 'SHA1HULUD' name (Shai-Hulud 2.0)"
+        echo "     • Check for setup_bun.js, bun_environment.js files (Shai-Hulud 2.0)"
+        echo "     • Look for cloud.json, contents.json, environment.json files (Shai-Hulud 2.0)"
         echo
         echo -e "${BOLD}Emergency Contact:${NC} contact@rapticore.com"
         echo -e "${BOLD}Documentation:${NC} $SCRIPT_URL"

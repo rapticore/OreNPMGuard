@@ -161,8 +161,8 @@ class ShaiHuludPackageSync:
         self.banned_yaml = {
             'meta': {
                 'name': "Shai-Hulud Attack - Banned npm Packages",
-                'description': "Complete list of npm packages compromised during the Shai-Hulud supply chain attack (September 2025)",
-                'version': "1.0.0",
+                'description': "Complete list of npm packages compromised during the Shai-Hulud supply chain attacks (Original: September 2025, Shai-Hulud 2.0: November 2025)",
+                'version': "2.0.0",
                 'last_updated': datetime.now().strftime("%Y-%m-%d"),
                 'attack_timeline': {
                     'patient_zero': "2025-09-14T17:58:50Z",
@@ -203,8 +203,8 @@ class ShaiHuludPackageSync:
         self.banned_json = {
             'meta': {
                 'name': "Shai-Hulud Attack - Banned npm Packages",
-                'description': "Complete list of npm packages compromised during the Shai-Hulud supply chain attack (September 2025)",
-                'version': "1.0.0",
+                'description': "Complete list of npm packages compromised during the Shai-Hulud supply chain attacks (Original: September 2025, Shai-Hulud 2.0: November 2025)",
+                'version': "2.0.0",
                 'last_updated': datetime.now().strftime("%Y-%m-%d"),
                 'attack_timeline': {
                     'patient_zero': "2025-09-14T17:58:50Z",
@@ -469,8 +469,8 @@ class ShaiHuludPackageSync:
 
 meta:
   name: "Shai-Hulud Attack - Banned npm Packages"
-  description: "Complete list of npm packages compromised during the Shai-Hulud supply chain attack (September 2025)"
-  version: "1.0.0"
+  description: "Complete list of npm packages compromised during the Shai-Hulud supply chain attacks (Original: September 2025, Shai-Hulud 2.0: November 2025)"
+  version: "2.0.0"
   last_updated: "{datetime.now().strftime("%Y-%m-%d")}"
   attack_timeline:
     patient_zero: "2025-09-14T17:58:50Z"

@@ -22,8 +22,17 @@ class ShaiHuludPackageSync:
         # Default values for new packages
         self.default_severity = "medium"
         self.default_weekly_downloads = 1000
-        self.default_attack_vector = "postinstall script"
-        self.default_first_detected = "2025-09-15"
+        # Determine attack vector - most new packages are Shai-Hulud 2.0
+        # Original Shai-Hulud packages (200) were detected Sept 14-18, 2025
+        # Shai-Hulud 2.0 packages (738) were detected Nov 21-23, 2025
+        self.default_attack_vector = "postinstall or preinstall script (both variants)"
+        self.default_first_detected = "2025-11-21"  # Default to Shai-Hulud 2.0 for new packages
+        
+        # Known original Shai-Hulud packages (detected Sept 2025)
+        self.original_shai_hulud_packages = {
+            '@ctrl/deluge', '@ctrl/tinycolor', 'ngx-bootstrap',
+            'rxnt-authentication', 'angulartics2'
+        }
 
         # Severity mapping based on package patterns
         self.severity_patterns = {
@@ -109,27 +118,54 @@ class ShaiHuludPackageSync:
             print(f"❌ Error loading banned CSV: {e}")
             raise
 
+    def _get_attack_vector(self, package_name: str) -> str:
+        """Determine attack vector based on package name"""
+        if package_name in self.original_shai_hulud_packages:
+            return "postinstall script (original Shai-Hulud)"
+        else:
+            # Most new packages are Shai-Hulud 2.0
+            return "preinstall script (Shai-Hulud 2.0)"
+    
+    def _get_first_detected(self, package_name: str) -> str:
+        """Determine first detected date based on package name"""
+        if package_name in self.original_shai_hulud_packages:
+            return "2025-09-15"
+        else:
+            return "2025-11-21"
+    
     def _initialize_banned_yaml(self):
         """Initialize banned YAML structure if file doesn't exist"""
         self.banned_yaml = {
             'meta': {
                 'name': "Shai-Hulud Attack - Banned npm Packages",
-                'description': "Complete list of npm packages compromised during the Shai-Hulud supply chain attack (September 2025)",
-                'version': "1.0.0",
+                'description': "Complete list of npm packages compromised during the Shai-Hulud supply chain attacks (Original: September 2025, Shai-Hulud 2.0: November 2025)",
+                'version': "2.0.0",
                 'last_updated': datetime.now().strftime("%Y-%m-%d"),
                 'attack_timeline': {
-                    'patient_zero': "2025-09-14T17:58:50Z",
-                    'detection': "2025-09-15",
-                    'peak_spread': "2025-09-15/2025-09-16"
+                    'original_shai_hulud': {
+                        'patient_zero': "2025-09-14T17:58:50Z",
+                        'detection': "2025-09-15",
+                        'peak_spread': "2025-09-15/2025-09-16",
+                        'packages_compromised': 200
+                    },
+                    'shai_hulud_2': {
+                        'upload_period': "2025-11-21/2025-11-23",
+                        'detection': "2025-11-24",
+                        'packages_compromised': 738,
+                        'repositories_affected': 25000,
+                        'users_affected': 350
+                    }
                 },
                 'total_packages': 0,
+                'total_package_versions': 0,
                 'severity_distribution': {
                     'critical': 0,
                     'high': 0,
                     'medium': 0
                 },
                 'source': "https://github.com/rapticore/orenpmpguard",
-                'contact': "contact@rapticore.com"
+                'contact': "contact@rapticore.com",
+                'reference': "https://www.wiz.io/blog/shai-hulud-2-0-ongoing-supply-chain-attack"
             },
             'critical_packages': [],
             'high_packages': [],
@@ -156,15 +192,26 @@ class ShaiHuludPackageSync:
         self.banned_json = {
             'meta': {
                 'name': "Shai-Hulud Attack - Banned npm Packages",
-                'description': "Complete list of npm packages compromised during the Shai-Hulud supply chain attack (September 2025)",
-                'version': "1.0.0",
+                'description': "Complete list of npm packages compromised during the Shai-Hulud supply chain attacks (Original: September 2025, Shai-Hulud 2.0: November 2025)",
+                'version': "2.0.0",
                 'last_updated': datetime.now().strftime("%Y-%m-%d"),
                 'attack_timeline': {
-                    'patient_zero': "2025-09-14T17:58:50Z",
-                    'detection': "2025-09-15",
-                    'peak_spread': "2025-09-15/2025-09-16"
+                    'original_shai_hulud': {
+                        'patient_zero': "2025-09-14T17:58:50Z",
+                        'detection': "2025-09-15",
+                        'peak_spread': "2025-09-15/2025-09-16",
+                        'packages_compromised': 200
+                    },
+                    'shai_hulud_2': {
+                        'upload_period': "2025-11-21/2025-11-23",
+                        'detection': "2025-11-24",
+                        'packages_compromised': 738,
+                        'repositories_affected': 25000,
+                        'users_affected': 350
+                    }
                 },
                 'total_packages': 0,
+                'total_package_versions': 0,
                 'severity_distribution': {
                     'critical': 0,
                     'high': 0,
@@ -256,8 +303,8 @@ class ShaiHuludPackageSync:
                     'banned_versions': versions,
                     'severity': severity,
                     'weekly_downloads': self._estimate_downloads(package_name),
-                    'first_detected': self.default_first_detected,
-                    'attack_vector': self.default_attack_vector,
+                    'first_detected': self._get_first_detected(package_name),
+                    'attack_vector': self._get_attack_vector(package_name),
                     'patient_zero': self._is_patient_zero(package_name),
                     'description': f"Compromised package: {package_name}"
                 }
@@ -270,10 +317,10 @@ class ShaiHuludPackageSync:
                     'banned_versions': ', '.join(versions),
                     'severity': severity,
                     'weekly_downloads': self._estimate_downloads(package_name),
-                    'first_detected': self.default_first_detected,
+                    'first_detected': self._get_first_detected(package_name),
                     'patient_zero': str(self._is_patient_zero(package_name)).lower(),
                     'description': f"Compromised package: {package_name}",
-                    'attack_vector': self.default_attack_vector,
+                    'attack_vector': self._get_attack_vector(package_name),
                     'priority': 1 if severity == 'critical' else (2 if severity == 'high' else 3)
                 }
                 self.banned_csv.append(csv_entry)

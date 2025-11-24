@@ -3,20 +3,30 @@
 
 meta:
   name: "Shai-Hulud Attack - Banned npm Packages"
-  description: "Complete list of npm packages compromised during the Shai-Hulud supply chain attack (September 2025)"
-  version: "1.0.0"
-  last_updated: "2025-09-18"
+  description: "Complete list of npm packages compromised during the Shai-Hulud supply chain attacks (Original: September 2025, Shai-Hulud 2.0: November 2025)"
+  version: "2.0.0"
+  last_updated: "2025-11-24"
   attack_timeline:
-    patient_zero: "2025-09-14T17:58:50Z"
-    detection: "2025-09-15"
-    peak_spread: "2025-09-15/2025-09-16"
-  total_packages: 200
+    original_shai_hulud:
+      patient_zero: "2025-09-14T17:58:50Z"
+      detection: "2025-09-15"
+      peak_spread: "2025-09-15/2025-09-16"
+      packages_compromised: 200
+    shai_hulud_2:
+      upload_period: "2025-11-21/2025-11-23"
+      detection: "2025-11-24"
+      packages_compromised: 738
+      repositories_affected: 25000
+      users_affected: 350
+  total_packages: 738
+  total_package_versions: 1291
   severity_distribution:
     critical: 5
     high: 55
-    medium: 140
+    medium: 678
   source: "https://github.com/rapticore/orenpmpguard"
   contact: "contact@rapticore.com"
+  reference: "https://www.wiz.io/blog/shai-hulud-2-0-ongoing-supply-chain-attack"
 
 # Critical packages with highest impact - block immediately
 critical_packages:
@@ -519,19 +529,56 @@ integration:
 
 # Detection indicators to look for
 detection_indicators:
-  repositories:
-    - "Public GitHub repos named 'Shai-Hulud'"
-    - "Repos with '-migration' suffix"
-    - "Repos with 'Shai-Hulud Migration' description"
-
-  workflows:
-    - ".github/workflows/shai-hulud-workflow.yml"
-    - "Workflows that exfiltrate to webhook[.]site"
-
-  branches:
-    - "Branches named 'shai-hulud'"
-
-  files:
-    - "data.json with base64-encoded secrets"
-    - "bundle.js files in postinstall scripts"
-    - "TruffleHog configuration files"
+  original_shai_hulud:
+    repositories:
+      - "Public GitHub repos named 'Shai-Hulud'"
+      - "Repos with '-migration' suffix"
+      - "Repos with 'Shai-Hulud Migration' description"
+    workflows:
+      - ".github/workflows/shai-hulud-workflow.yml"
+      - "Workflows that exfiltrate to webhook[.]site"
+    branches:
+      - "Branches named 'shai-hulud'"
+    files:
+      - "data.json with base64-encoded secrets"
+      - "bundle.js files in postinstall scripts"
+      - "TruffleHog configuration files"
+    package_json_hooks:
+      - '"postinstall": "node bundle.js"'
+  
+  shai_hulud_2:
+    repositories:
+      - "Public GitHub repos with 'Shai-Hulud' in description"
+      - "Repos created between November 21-23, 2025"
+    workflows:
+      - ".github/workflows/discussion.yaml (with self-hosted runner)"
+      - ".github/workflows/formatter_*.yml (pattern matching)"
+      - "Workflows with RUNNER_TRACKING_ID: 0"
+      - "Workflows with SHA1HULUD runner name"
+    runners:
+      - "Self-hosted runners named 'SHA1HULUD'"
+      - "RUNNER_TRACKING_ID: 0 in workflow env"
+    files:
+      - "setup_bun.js (Shai-Hulud 2.0 payload)"
+      - "bun_environment.js (Shai-Hulud 2.0 payload)"
+      - "cloud.json (exfiltrated cloud credentials)"
+      - "contents.json (exfiltrated content)"
+      - "environment.json (exfiltrated environment)"
+      - "truffleSecrets.json (exfiltrated secrets)"
+    package_json_hooks:
+      - '"preinstall": "node setup_bun.js"'
+      - '"preinstall": "node bun_environment.js"'
+    docker_patterns:
+      - "docker run --rm --privileged -v /:/host"
+    cloud_targeting:
+      - "AWS Secrets Manager access attempts"
+      - "Google Secret Manager access attempts"
+      - "Azure Key Vault access attempts"
+  
+  common:
+    exfiltration_endpoints:
+      - "webhook.site references"
+    cloud_credentials:
+      - "AWS credentials harvesting"
+      - "GCP credentials harvesting"
+      - "Azure credentials harvesting"
