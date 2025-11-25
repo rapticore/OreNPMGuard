@@ -565,6 +565,7 @@ detection_indicators:
       - "contents.json (exfiltrated content)"
       - "environment.json (exfiltrated environment)"
       - "truffleSecrets.json (exfiltrated secrets)"
+      - "actionsSecrets.json (exfiltrated GitHub Actions secrets)"
     package_json_hooks:
       - '"preinstall": "node setup_bun.js"'
       - '"preinstall": "node bun_environment.js"'

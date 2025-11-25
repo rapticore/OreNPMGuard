@@ -445,6 +445,15 @@ log_security_event() {
 3. **📊 Review GitHub audit logs**
 4. **🌿 Check for branches** named "shai-hulud"
 5. **⚙️ Scan for malicious** GitHub Actions workflows
+6. **🔎 Look for Shai-Hulud 2.0 files**: `setup_bun.js`, `bun_environment.js`, `actionsSecrets.json`
+7. **🏃 Check self-hosted runners** for 'SHA1HULUD' named runners
+
+#### **⚠️ Cross-Victim Exfiltration Warning:**
+Wiz Research has confirmed that **cross-victim exfiltration** occurs in Shai-Hulud 2.0:
+- One victim's secrets may be published to repos owned by **another unrelated victim**
+- If you find suspicious data in your repos, verify if it actually belongs to your organization
+- Your data may exist in repositories you don't own
+- **Action**: When reviewing exfiltrated data, check if it belongs to you or another victim
 
 #### **Communication:**
 - **📧 Security Team**: security@yourcompany.com

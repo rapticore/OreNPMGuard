@@ -3,7 +3,7 @@
     "name": "Shai-Hulud Attack - Banned npm Packages",
     "description": "Complete list of npm packages compromised during the Shai-Hulud supply chain attacks (Original: September 2025, Shai-Hulud 2.0: November 2025)",
     "version": "2.0.0",
-    "last_updated": "2025-11-24",
+    "last_updated": "2025-11-25",
     "attack_timeline": {
       "original_shai_hulud": {
         "patient_zero": "2025-09-14T17:58:50Z",
@@ -19,12 +19,12 @@
         "users_affected": 350
       }
     },
-    "total_packages": 738,
+    "total_packages": 728,
     "total_package_versions": 1291,
     "severity_distribution": {
       "critical": 5,
       "high": 83,
-      "medium": 639
+      "medium": 640
     },
     "source": "https://github.com/rapticore/orenpmpguard",
     "contact": "contact@rapticore.com"
@@ -9321,6 +9321,20 @@
       "attack_vector": "postinstall script",
       "patient_zero": false,
       "description": "Compromised package: zuper-stream"
+    },
+    {
+      "name": "zapier-platform-legacy-scripting-runner",
+      "banned_versions": [
+        "4.0.2",
+        "4.0.3",
+        "4.0.4"
+      ],
+      "severity": "medium",
+      "weekly_downloads": 1000,
+      "first_detected": "2025-11-21",
+      "attack_vector": "preinstall script (Shai-Hulud 2.0)",
+      "patient_zero": false,
+      "description": "Compromised package: zapier-platform-legacy-scripting-runner"
     }
   ]
 }
