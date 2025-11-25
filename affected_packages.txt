@@ -1279,6 +1279,9 @@ zapier-platform-cli@18.0.4
 zapier-platform-core@18.0.2
 zapier-platform-core@18.0.3
 zapier-platform-core@18.0.4
+zapier-platform-legacy-scripting-runner@4.0.2
+zapier-platform-legacy-scripting-runner@4.0.3
+zapier-platform-legacy-scripting-runner@4.0.4
 zapier-platform-schema@18.0.2
 zapier-platform-schema@18.0.3
 zapier-platform-schema@18.0.4

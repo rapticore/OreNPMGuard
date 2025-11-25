@@ -72,6 +72,22 @@ A new variant emerged in November 2025 with significant changes:
 - Multi-cloud credential theft (AWS, Azure, GCP)
 - Docker privilege escalation attempts
 
+**Verified Credential Theft (from ~20,000 analyzed repos):**
+- 775 compromised GitHub access tokens
+- 373 AWS credentials exposed
+- 300 GCP credentials exposed
+- 115 Azure credentials exposed
+
+### ⚠️ Cross-Victim Exfiltration Warning
+
+**CRITICAL**: Wiz Research has confirmed **cross-victim exfiltration** is occurring. This means:
+- One victim's stolen secrets may be published to repositories owned by a **different, unrelated victim**
+- If you find suspicious data in your GitHub repositories, it may belong to another compromised user
+- Your data may have been exfiltrated to repositories you don't own
+- This complicates attribution and incident response
+
+**Investigation Implication**: When reviewing exfiltrated data in your repositories, verify whether the data actually belongs to your organization or another victim.
+
 ### 🔗 Connection to Previous Attacks
 This attack is directly linked to the August 2025 **s1ngularity/Nx compromise**, where initial GitHub token theft enabled the broader supply chain attack. Many initial Shai-Hulud victims were known victims of the s1ngularity attack. Security researchers also note the integration of AI-generated content within the campaign, with moderate confidence that an LLM was used to generate the malicious bash script.
 

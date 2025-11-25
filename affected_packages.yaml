@@ -2170,6 +2170,9 @@ affected_packages:
   - name: "zapier-platform-core"
     versions: ['18.0.2', '18.0.3', '18.0.4']
 
+  - name: "zapier-platform-legacy-scripting-runner"
+    versions: ['4.0.2', '4.0.3', '4.0.4']
+
   - name: "zapier-platform-schema"
     versions: ['18.0.2', '18.0.3', '18.0.4']
 

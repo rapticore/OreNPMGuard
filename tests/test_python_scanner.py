@@ -104,6 +104,20 @@ class TestIOCDetection(unittest.TestCase):
             self.assertEqual(ioc['variant'], '2.0')
             self.assertIn(ioc['filename'], data_files)
     
+    def test_actions_secrets_json_detection(self):
+        """Test detection of actionsSecrets.json (GitHub Actions secrets exfiltration file)."""
+        data_path = os.path.join(self.test_dir, "actionsSecrets.json")
+        with open(data_path, 'w') as f:
+            f.write('{"GITHUB_TOKEN": "ghp_fake_token"}')
+        
+        iocs = scan_for_iocs(self.test_dir)
+        data_file_iocs = [ioc for ioc in iocs if ioc['type'] == 'shai_hulud_data_file']
+        actions_secrets_iocs = [ioc for ioc in data_file_iocs if ioc['filename'] == 'actionsSecrets.json']
+        
+        self.assertGreater(len(actions_secrets_iocs), 0, "Should detect actionsSecrets.json")
+        self.assertEqual(actions_secrets_iocs[0]['variant'], '2.0')
+        self.assertEqual(actions_secrets_iocs[0]['severity'], 'HIGH')
+    
     def test_webhook_site_reference(self):
         """Test detection of webhook.site references."""
         test_file = os.path.join(self.test_dir, "test.js")
@@ -239,6 +253,31 @@ class TestPackageDetection(unittest.TestCase):
         self.assertEqual(len(exact_matches), 0, "Should not have exact match")
         self.assertGreater(len(potential_matches), 0, "Should detect potential match")
         self.assertEqual(potential_matches[0]['name'], '@ctrl/deluge')
+    
+    def test_zapier_platform_legacy_scripting_runner_detection(self):
+        """Test detection of zapier-platform-legacy-scripting-runner (new Shai-Hulud 2.0 package).
+        
+        Note: This test may skip if the package hasn't been pushed to GitHub yet,
+        as the scanner downloads from GitHub first.
+        """
+        # First check if the package is in the database
+        affected_db = load_affected_packages_from_yaml()
+        if 'zapier-platform-legacy-scripting-runner' not in affected_db:
+            self.skipTest("Package not yet in remote database - will pass after GitHub sync")
+        
+        package_json = {
+            "dependencies": {
+                "zapier-platform-legacy-scripting-runner": "4.0.3"
+            }
+        }
+        package_path = os.path.join(self.test_dir, "package.json")
+        with open(package_path, 'w') as f:
+            json.dump(package_json, f)
+        
+        exact_matches, potential_matches = scan_package_json(package_path)
+        self.assertGreater(len(exact_matches), 0, "Should detect zapier-platform-legacy-scripting-runner")
+        self.assertEqual(exact_matches[0]['name'], 'zapier-platform-legacy-scripting-runner')
+        self.assertEqual(exact_matches[0]['installed_version'], '4.0.3')
 
 
 class TestBackwardCompatibility(unittest.TestCase):
@@ -335,7 +374,7 @@ class TestIOCPatterns(unittest.TestCase):
     
     def test_data_files_list(self):
         """Test that data files list includes all expected files."""
-        expected_files = ['cloud.json', 'contents.json', 'environment.json', 'truffleSecrets.json']
+        expected_files = ['cloud.json', 'contents.json', 'environment.json', 'truffleSecrets.json', 'actionsSecrets.json']
         data_files = SHAI_HULUD_IOCS['data_files']
         
         for expected_file in expected_files:

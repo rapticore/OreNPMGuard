@@ -1,0 +1,729 @@
+package_name,banned_versions,severity,weekly_downloads,first_detected,patient_zero,description,attack_vector,priority
+02-echo,0.0.7,medium,1000,2025-11-21,false,Compromised package: 02-echo,preinstall script (Shai-Hulud 2.0),3
+@accordproject/concerto-analysis,3.24.1,medium,1000,2025-11-21,false,Compromised package: @accordproject/concerto-analysis,preinstall script (Shai-Hulud 2.0),3
+@accordproject/concerto-linter,3.24.1,medium,1000,2025-11-21,false,Compromised package: @accordproject/concerto-linter,preinstall script (Shai-Hulud 2.0),3
+@accordproject/concerto-linter-default-ruleset,3.24.1,medium,1000,2025-11-21,false,Compromised package: @accordproject/concerto-linter-default-ruleset,preinstall script (Shai-Hulud 2.0),3
+@accordproject/concerto-metamodel,3.12.5,medium,1000,2025-11-21,false,Compromised package: @accordproject/concerto-metamodel,preinstall script (Shai-Hulud 2.0),3
+@accordproject/concerto-types,3.24.1,medium,1000,2025-11-21,false,Compromised package: @accordproject/concerto-types,preinstall script (Shai-Hulud 2.0),3
+@accordproject/markdown-it-cicero,0.16.26,medium,1000,2025-11-21,false,Compromised package: @accordproject/markdown-it-cicero,preinstall script (Shai-Hulud 2.0),3
+@accordproject/template-engine,2.7.2,medium,1000,2025-11-21,false,Compromised package: @accordproject/template-engine,preinstall script (Shai-Hulud 2.0),3
+@actbase/css-to-react-native-transform,1.0.3,medium,1000,2025-11-21,false,Compromised package: @actbase/css-to-react-native-transform,preinstall script (Shai-Hulud 2.0),3
+@actbase/native,0.1.32,medium,1000,2025-11-21,false,Compromised package: @actbase/native,preinstall script (Shai-Hulud 2.0),3
+@actbase/node-server,1.1.19,medium,1000,2025-11-21,false,Compromised package: @actbase/node-server,preinstall script (Shai-Hulud 2.0),3
+@actbase/react-absolute,0.8.3,medium,1000,2025-11-21,false,Compromised package: @actbase/react-absolute,preinstall script (Shai-Hulud 2.0),3
+@actbase/react-daum-postcode,1.0.5,medium,1000,2025-11-21,false,Compromised package: @actbase/react-daum-postcode,preinstall script (Shai-Hulud 2.0),3
+@actbase/react-kakaosdk,0.9.27,medium,1000,2025-11-21,false,Compromised package: @actbase/react-kakaosdk,preinstall script (Shai-Hulud 2.0),3
+@actbase/react-native-actionsheet,1.0.3,medium,1000,2025-11-21,false,Compromised package: @actbase/react-native-actionsheet,preinstall script (Shai-Hulud 2.0),3
+@actbase/react-native-devtools,0.1.3,medium,1000,2025-11-21,false,Compromised package: @actbase/react-native-devtools,preinstall script (Shai-Hulud 2.0),3
+@actbase/react-native-fast-image,8.5.13,medium,1000,2025-11-21,false,Compromised package: @actbase/react-native-fast-image,preinstall script (Shai-Hulud 2.0),3
+@actbase/react-native-kakao-channel,1.0.2,medium,1000,2025-11-21,false,Compromised package: @actbase/react-native-kakao-channel,preinstall script (Shai-Hulud 2.0),3
+@actbase/react-native-kakao-navi,2.0.4,medium,1000,2025-11-21,false,Compromised package: @actbase/react-native-kakao-navi,preinstall script (Shai-Hulud 2.0),3
+@actbase/react-native-less-transformer,1.0.6,medium,1000,2025-11-21,false,Compromised package: @actbase/react-native-less-transformer,preinstall script (Shai-Hulud 2.0),3
+@actbase/react-native-naver-login,1.0.1,medium,1000,2025-11-21,false,Compromised package: @actbase/react-native-naver-login,preinstall script (Shai-Hulud 2.0),3
+@actbase/react-native-simple-video,1.0.13,medium,1000,2025-11-21,false,Compromised package: @actbase/react-native-simple-video,preinstall script (Shai-Hulud 2.0),3
+@actbase/react-native-tiktok,1.1.3,medium,1000,2025-11-21,false,Compromised package: @actbase/react-native-tiktok,preinstall script (Shai-Hulud 2.0),3
+@ahmedhfarag/ngx-perfect-scrollbar,20.0.20,medium,1000,2025-11-21,false,Compromised package: @ahmedhfarag/ngx-perfect-scrollbar,preinstall script (Shai-Hulud 2.0),3
+@ahmedhfarag/ngx-virtual-scroller,4.0.4,medium,1000,2025-11-21,false,Compromised package: @ahmedhfarag/ngx-virtual-scroller,preinstall script (Shai-Hulud 2.0),3
+@alexcolls/nuxt-socket.io,"0.0.7, 0.0.8",medium,1000,2025-11-21,false,Compromised package: @alexcolls/nuxt-socket.io,preinstall script (Shai-Hulud 2.0),3
+@alexcolls/nuxt-ux,"0.6.1, 0.6.2",medium,1000,2025-11-21,false,Compromised package: @alexcolls/nuxt-ux,preinstall script (Shai-Hulud 2.0),3
+@antstackio/eslint-config-antstack,0.0.3,medium,1000,2025-11-21,false,Compromised package: @antstackio/eslint-config-antstack,preinstall script (Shai-Hulud 2.0),3
+@antstackio/express-graphql-proxy,0.2.8,medium,1000,2025-11-21,false,Compromised package: @antstackio/express-graphql-proxy,preinstall script (Shai-Hulud 2.0),3
+@antstackio/graphql-body-parser,0.1.1,medium,1000,2025-11-21,false,Compromised package: @antstackio/graphql-body-parser,preinstall script (Shai-Hulud 2.0),3
+@antstackio/json-to-graphql,1.0.3,medium,1000,2025-11-21,false,Compromised package: @antstackio/json-to-graphql,preinstall script (Shai-Hulud 2.0),3
+@antstackio/shelbysam,1.1.7,medium,1000,2025-11-21,false,Compromised package: @antstackio/shelbysam,preinstall script (Shai-Hulud 2.0),3
+@art-ws/common,"2.0.22, 2.0.28",medium,1000,2025-11-21,false,Compromised package: @art-ws/common,preinstall script (Shai-Hulud 2.0),3
+@art-ws/config-eslint,"2.0.4, 2.0.5",medium,1000,2025-11-21,false,Compromised package: @art-ws/config-eslint,preinstall script (Shai-Hulud 2.0),3
+@art-ws/config-ts,"2.0.7, 2.0.8",medium,1000,2025-11-21,false,Compromised package: @art-ws/config-ts,preinstall script (Shai-Hulud 2.0),3
+@art-ws/db-context,"2.0.21, 2.0.24",medium,1000,2025-11-21,false,Compromised package: @art-ws/db-context,preinstall script (Shai-Hulud 2.0),3
+@art-ws/di,"2.0.28, 2.0.32",medium,1000,2025-11-21,false,Compromised package: @art-ws/di,preinstall script (Shai-Hulud 2.0),3
+@art-ws/di-node,2.0.13,medium,1000,2025-11-21,false,Compromised package: @art-ws/di-node,preinstall script (Shai-Hulud 2.0),3
+@art-ws/eslint,"1.0.5, 1.0.6",medium,1000,2025-11-21,false,Compromised package: @art-ws/eslint,preinstall script (Shai-Hulud 2.0),3
+@art-ws/fastify-http-server,"2.0.24, 2.0.27",medium,1000,2025-11-21,false,Compromised package: @art-ws/fastify-http-server,preinstall script (Shai-Hulud 2.0),3
+@art-ws/http-server,"2.0.21, 2.0.25",medium,1000,2025-11-21,false,Compromised package: @art-ws/http-server,preinstall script (Shai-Hulud 2.0),3
+@art-ws/openapi,"0.1.12, 0.1.9",medium,1000,2025-11-21,false,Compromised package: @art-ws/openapi,preinstall script (Shai-Hulud 2.0),3
+@art-ws/package-base,"1.0.5, 1.0.6",medium,1000,2025-11-21,false,Compromised package: @art-ws/package-base,preinstall script (Shai-Hulud 2.0),3
+@art-ws/prettier,"1.0.5, 1.0.6",medium,1000,2025-11-21,false,Compromised package: @art-ws/prettier,preinstall script (Shai-Hulud 2.0),3
+@art-ws/slf,"2.0.15, 2.0.22",medium,1000,2025-11-21,false,Compromised package: @art-ws/slf,preinstall script (Shai-Hulud 2.0),3
+@art-ws/ssl-info,"1.0.10, 1.0.9",medium,1000,2025-11-21,false,Compromised package: @art-ws/ssl-info,preinstall script (Shai-Hulud 2.0),3
+@art-ws/web-app,"1.0.3, 1.0.4",medium,1000,2025-11-21,false,Compromised package: @art-ws/web-app,preinstall script (Shai-Hulud 2.0),3
+@aryanhussain/my-angular-lib,0.0.23,medium,1000,2025-11-21,false,Compromised package: @aryanhussain/my-angular-lib,preinstall script (Shai-Hulud 2.0),3
+@asyncapi/dotnet-rabbitmq-template,"1.0.1, 1.0.2",medium,1000,2025-11-21,false,Compromised package: @asyncapi/dotnet-rabbitmq-template,preinstall script (Shai-Hulud 2.0),3
+@asyncapi/edavisualiser,"1.2.1, 1.2.2",medium,1000,2025-11-21,false,Compromised package: @asyncapi/edavisualiser,preinstall script (Shai-Hulud 2.0),3
+@asyncapi/go-watermill-template,"0.2.76, 0.2.77",medium,1000,2025-11-21,false,Compromised package: @asyncapi/go-watermill-template,preinstall script (Shai-Hulud 2.0),3
+@asyncapi/java-template,"0.3.5, 0.3.6",medium,1000,2025-11-21,false,Compromised package: @asyncapi/java-template,preinstall script (Shai-Hulud 2.0),3
+@asyncapi/keeper,"0.0.2, 0.0.3",medium,1000,2025-11-21,false,Compromised package: @asyncapi/keeper,preinstall script (Shai-Hulud 2.0),3
+@asyncapi/php-template,"0.1.1, 0.1.2",medium,1000,2025-11-21,false,Compromised package: @asyncapi/php-template,preinstall script (Shai-Hulud 2.0),3
+@asyncapi/python-paho-template,"0.2.14, 0.2.15",medium,1000,2025-11-21,false,Compromised package: @asyncapi/python-paho-template,preinstall script (Shai-Hulud 2.0),3
+@asyncapi/server-api,"0.16.24, 0.16.25",medium,1000,2025-11-21,false,Compromised package: @asyncapi/server-api,preinstall script (Shai-Hulud 2.0),3
+@asyncapi/studio,"1.0.2, 1.0.3",medium,1000,2025-11-21,false,Compromised package: @asyncapi/studio,preinstall script (Shai-Hulud 2.0),3
+@asyncapi/web-component,"2.6.6, 2.6.7",medium,1000,2025-11-21,false,Compromised package: @asyncapi/web-component,preinstall script (Shai-Hulud 2.0),3
+@basic-ui-components-stc/basic-ui-components,1.0.5,medium,1000,2025-11-21,false,Compromised package: @basic-ui-components-stc/basic-ui-components,preinstall script (Shai-Hulud 2.0),3
+@browserbasehq/bb9,1.2.21,medium,1000,2025-11-21,false,Compromised package: @browserbasehq/bb9,preinstall script (Shai-Hulud 2.0),3
+@browserbasehq/director-ai,1.0.3,medium,1000,2025-11-21,false,Compromised package: @browserbasehq/director-ai,preinstall script (Shai-Hulud 2.0),3
+@browserbasehq/mcp,2.1.1,medium,1000,2025-11-21,false,Compromised package: @browserbasehq/mcp,preinstall script (Shai-Hulud 2.0),3
+@browserbasehq/mcp-server-browserbase,2.4.2,medium,1000,2025-11-21,false,Compromised package: @browserbasehq/mcp-server-browserbase,preinstall script (Shai-Hulud 2.0),3
+@browserbasehq/sdk-functions,0.0.4,medium,1000,2025-11-21,false,Compromised package: @browserbasehq/sdk-functions,preinstall script (Shai-Hulud 2.0),3
+@browserbasehq/stagehand,3.0.4,medium,1000,2025-11-21,false,Compromised package: @browserbasehq/stagehand,preinstall script (Shai-Hulud 2.0),3
+@browserbasehq/stagehand-docs,1.0.1,medium,1000,2025-11-21,false,Compromised package: @browserbasehq/stagehand-docs,preinstall script (Shai-Hulud 2.0),3
+@caretive/caret-cli,0.0.2,medium,1000,2025-11-21,false,Compromised package: @caretive/caret-cli,preinstall script (Shai-Hulud 2.0),3
+@clausehq/flows-step-httprequest,0.1.14,medium,1000,2025-11-21,false,Compromised package: @clausehq/flows-step-httprequest,preinstall script (Shai-Hulud 2.0),3
+@clausehq/flows-step-jsontoxml,0.1.14,medium,1000,2025-11-21,false,Compromised package: @clausehq/flows-step-jsontoxml,preinstall script (Shai-Hulud 2.0),3
+@clausehq/flows-step-mqtt,0.1.14,medium,1000,2025-11-21,false,Compromised package: @clausehq/flows-step-mqtt,preinstall script (Shai-Hulud 2.0),3
+@clausehq/flows-step-sendgridemail,0.1.14,medium,1000,2025-11-21,false,Compromised package: @clausehq/flows-step-sendgridemail,preinstall script (Shai-Hulud 2.0),3
+@clausehq/flows-step-taskscreateurl,0.1.14,medium,1000,2025-11-21,false,Compromised package: @clausehq/flows-step-taskscreateurl,preinstall script (Shai-Hulud 2.0),3
+@commute/bloom,1.0.3,medium,1000,2025-11-21,false,Compromised package: @commute/bloom,preinstall script (Shai-Hulud 2.0),3
+@commute/market-data,1.0.2,medium,1000,2025-11-21,false,Compromised package: @commute/market-data,preinstall script (Shai-Hulud 2.0),3
+@commute/market-data-chartjs,2.3.1,medium,1000,2025-11-21,false,Compromised package: @commute/market-data-chartjs,preinstall script (Shai-Hulud 2.0),3
+@crowdstrike/commitlint,"8.1.1, 8.1.2",high,15000,2025-11-21,false,Compromised package: @crowdstrike/commitlint,preinstall script (Shai-Hulud 2.0),2
+@crowdstrike/falcon-shoelace,"0.4.1, 0.4.2",high,15000,2025-11-21,false,Compromised package: @crowdstrike/falcon-shoelace,preinstall script (Shai-Hulud 2.0),2
+@crowdstrike/foundry-js,"0.19.1, 0.19.2",high,15000,2025-11-21,false,Compromised package: @crowdstrike/foundry-js,preinstall script (Shai-Hulud 2.0),2
+@crowdstrike/glide-core,"0.34.2, 0.34.3",high,15000,2025-11-21,false,Compromised package: @crowdstrike/glide-core,preinstall script (Shai-Hulud 2.0),2
+@crowdstrike/logscale-dashboard,"1.205.1, 1.205.2",high,15000,2025-11-21,false,Compromised package: @crowdstrike/logscale-dashboard,preinstall script (Shai-Hulud 2.0),2
+@crowdstrike/logscale-file-editor,"1.205.1, 1.205.2",high,15000,2025-11-21,false,Compromised package: @crowdstrike/logscale-file-editor,preinstall script (Shai-Hulud 2.0),2
+@crowdstrike/logscale-parser-edit,"1.205.1, 1.205.2",high,15000,2025-11-21,false,Compromised package: @crowdstrike/logscale-parser-edit,preinstall script (Shai-Hulud 2.0),2
+@crowdstrike/logscale-search,"1.205.1, 1.205.2",high,15000,2025-11-21,false,Compromised package: @crowdstrike/logscale-search,preinstall script (Shai-Hulud 2.0),2
+@crowdstrike/tailwind-toucan-base,"5.0.1, 5.0.2",high,15000,2025-11-21,false,Compromised package: @crowdstrike/tailwind-toucan-base,preinstall script (Shai-Hulud 2.0),2
+@ctrl/deluge,"7.2.2, 7.2.1",critical,2200000,2025-09-15,false,Compromised package: @ctrl/deluge,postinstall script (original Shai-Hulud),1
+@ctrl/golang-template,"1.4.3, 1.4.2",high,50000,2025-11-21,false,Compromised package: @ctrl/golang-template,preinstall script (Shai-Hulud 2.0),2
+@ctrl/magnet-link,"4.0.4, 4.0.3",high,50000,2025-11-21,false,Compromised package: @ctrl/magnet-link,preinstall script (Shai-Hulud 2.0),2
+@ctrl/ngx-codemirror,"7.0.2, 7.0.1",high,50000,2025-11-21,false,Compromised package: @ctrl/ngx-codemirror,preinstall script (Shai-Hulud 2.0),2
+@ctrl/ngx-csv,"6.0.2, 6.0.1",high,50000,2025-11-21,false,Compromised package: @ctrl/ngx-csv,preinstall script (Shai-Hulud 2.0),2
+@ctrl/ngx-emoji-mart,"9.2.2, 9.2.1",high,50000,2025-11-21,false,Compromised package: @ctrl/ngx-emoji-mart,preinstall script (Shai-Hulud 2.0),2
+@ctrl/ngx-rightclick,"4.0.2, 4.0.1",high,50000,2025-11-21,false,Compromised package: @ctrl/ngx-rightclick,preinstall script (Shai-Hulud 2.0),2
+@ctrl/qbittorrent,"9.7.2, 9.7.1",high,50000,2025-11-21,false,Compromised package: @ctrl/qbittorrent,preinstall script (Shai-Hulud 2.0),2
+@ctrl/react-adsense,"2.0.2, 2.0.1",high,50000,2025-11-21,false,Compromised package: @ctrl/react-adsense,preinstall script (Shai-Hulud 2.0),2
+@ctrl/shared-torrent,"6.3.2, 6.3.1",high,50000,2025-11-21,false,Compromised package: @ctrl/shared-torrent,preinstall script (Shai-Hulud 2.0),2
+@ctrl/tinycolor,"4.1.1, 4.1.2",critical,2200000,2025-09-15,false,Compromised package: @ctrl/tinycolor,postinstall script (original Shai-Hulud),1
+@ctrl/torrent-file,"4.1.2, 4.1.1",high,50000,2025-11-21,false,Compromised package: @ctrl/torrent-file,preinstall script (Shai-Hulud 2.0),2
+@ctrl/transmission,7.3.1,high,50000,2025-11-21,false,Compromised package: @ctrl/transmission,preinstall script (Shai-Hulud 2.0),2
+@ctrl/ts-base32,"4.0.2, 4.0.1",high,50000,2025-11-21,false,Compromised package: @ctrl/ts-base32,preinstall script (Shai-Hulud 2.0),2
+@dev-blinq/ai-qa-logic,1.0.19,medium,1000,2025-11-21,false,Compromised package: @dev-blinq/ai-qa-logic,preinstall script (Shai-Hulud 2.0),3
+@dev-blinq/cucumber-js,1.0.131,medium,1000,2025-11-21,false,Compromised package: @dev-blinq/cucumber-js,preinstall script (Shai-Hulud 2.0),3
+@dev-blinq/cucumber_client,1.0.738,medium,1000,2025-11-21,false,Compromised package: @dev-blinq/cucumber_client,preinstall script (Shai-Hulud 2.0),3
+@dev-blinq/ui-systems,1.0.93,medium,1000,2025-11-21,false,Compromised package: @dev-blinq/ui-systems,preinstall script (Shai-Hulud 2.0),3
+@ensdomains/address-encoder,1.1.5,medium,1000,2025-11-21,false,Compromised package: @ensdomains/address-encoder,preinstall script (Shai-Hulud 2.0),3
+@ensdomains/blacklist,1.0.1,medium,1000,2025-11-21,false,Compromised package: @ensdomains/blacklist,preinstall script (Shai-Hulud 2.0),3
+@ensdomains/buffer,0.1.2,medium,1000,2025-11-21,false,Compromised package: @ensdomains/buffer,preinstall script (Shai-Hulud 2.0),3
+@ensdomains/ccip-read-cf-worker,0.0.4,medium,1000,2025-11-21,false,Compromised package: @ensdomains/ccip-read-cf-worker,preinstall script (Shai-Hulud 2.0),3
+@ensdomains/ccip-read-dns-gateway,0.1.1,medium,1000,2025-11-21,false,Compromised package: @ensdomains/ccip-read-dns-gateway,preinstall script (Shai-Hulud 2.0),3
+@ensdomains/ccip-read-router,0.0.7,medium,1000,2025-11-21,false,Compromised package: @ensdomains/ccip-read-router,preinstall script (Shai-Hulud 2.0),3
+@ensdomains/ccip-read-worker-viem,0.0.4,medium,1000,2025-11-21,false,Compromised package: @ensdomains/ccip-read-worker-viem,preinstall script (Shai-Hulud 2.0),3
+@ensdomains/content-hash,3.0.1,medium,1000,2025-11-21,false,Compromised package: @ensdomains/content-hash,preinstall script (Shai-Hulud 2.0),3
+@ensdomains/curvearithmetics,1.0.1,medium,1000,2025-11-21,false,Compromised package: @ensdomains/curvearithmetics,preinstall script (Shai-Hulud 2.0),3
+@ensdomains/cypress-metamask,1.2.1,medium,1000,2025-11-21,false,Compromised package: @ensdomains/cypress-metamask,preinstall script (Shai-Hulud 2.0),3
+@ensdomains/dnsprovejs,0.5.3,medium,1000,2025-11-21,false,Compromised package: @ensdomains/dnsprovejs,preinstall script (Shai-Hulud 2.0),3
+@ensdomains/dnssec-oracle-anchors,0.0.2,medium,1000,2025-11-21,false,Compromised package: @ensdomains/dnssec-oracle-anchors,preinstall script (Shai-Hulud 2.0),3
+@ensdomains/dnssecoraclejs,0.2.9,medium,1000,2025-11-21,false,Compromised package: @ensdomains/dnssecoraclejs,preinstall script (Shai-Hulud 2.0),3
+@ensdomains/durin,0.1.2,medium,1000,2025-11-21,false,Compromised package: @ensdomains/durin,preinstall script (Shai-Hulud 2.0),3
+@ensdomains/durin-middleware,0.0.2,medium,1000,2025-11-21,false,Compromised package: @ensdomains/durin-middleware,preinstall script (Shai-Hulud 2.0),3
+@ensdomains/ens-archived-contracts,0.0.3,medium,1000,2025-11-21,false,Compromised package: @ensdomains/ens-archived-contracts,preinstall script (Shai-Hulud 2.0),3
+@ensdomains/ens-avatar,1.0.4,medium,1000,2025-11-21,false,Compromised package: @ensdomains/ens-avatar,preinstall script (Shai-Hulud 2.0),3
+@ensdomains/ens-contracts,1.6.1,medium,1000,2025-11-21,false,Compromised package: @ensdomains/ens-contracts,preinstall script (Shai-Hulud 2.0),3
+@ensdomains/ens-test-env,1.0.2,medium,1000,2025-11-21,false,Compromised package: @ensdomains/ens-test-env,preinstall script (Shai-Hulud 2.0),3
+@ensdomains/ens-validation,0.1.1,medium,1000,2025-11-21,false,Compromised package: @ensdomains/ens-validation,preinstall script (Shai-Hulud 2.0),3
+@ensdomains/ensjs,4.0.3,medium,1000,2025-11-21,false,Compromised package: @ensdomains/ensjs,preinstall script (Shai-Hulud 2.0),3
+@ensdomains/ensjs-react,0.0.5,medium,1000,2025-11-21,false,Compromised package: @ensdomains/ensjs-react,preinstall script (Shai-Hulud 2.0),3
+@ensdomains/eth-ens-namehash,2.0.16,medium,1000,2025-11-21,false,Compromised package: @ensdomains/eth-ens-namehash,preinstall script (Shai-Hulud 2.0),3
+@ensdomains/hackathon-registrar,1.0.5,medium,1000,2025-11-21,false,Compromised package: @ensdomains/hackathon-registrar,preinstall script (Shai-Hulud 2.0),3
+@ensdomains/hardhat-chai-matchers-viem,0.1.15,medium,1000,2025-11-21,false,Compromised package: @ensdomains/hardhat-chai-matchers-viem,preinstall script (Shai-Hulud 2.0),3
+@ensdomains/hardhat-toolbox-viem-extended,0.0.6,medium,1000,2025-11-21,false,Compromised package: @ensdomains/hardhat-toolbox-viem-extended,preinstall script (Shai-Hulud 2.0),3
+@ensdomains/mock,2.1.52,medium,1000,2025-11-21,false,Compromised package: @ensdomains/mock,preinstall script (Shai-Hulud 2.0),3
+@ensdomains/name-wrapper,1.0.1,medium,1000,2025-11-21,false,Compromised package: @ensdomains/name-wrapper,preinstall script (Shai-Hulud 2.0),3
+@ensdomains/offchain-resolver-contracts,0.2.2,medium,1000,2025-11-21,false,Compromised package: @ensdomains/offchain-resolver-contracts,preinstall script (Shai-Hulud 2.0),3
+@ensdomains/op-resolver-contracts,0.0.2,medium,1000,2025-11-21,false,Compromised package: @ensdomains/op-resolver-contracts,preinstall script (Shai-Hulud 2.0),3
+@ensdomains/react-ens-address,0.0.32,medium,1000,2025-11-21,false,Compromised package: @ensdomains/react-ens-address,preinstall script (Shai-Hulud 2.0),3
+@ensdomains/renewal,0.0.13,medium,1000,2025-11-21,false,Compromised package: @ensdomains/renewal,preinstall script (Shai-Hulud 2.0),3
+@ensdomains/renewal-widget,0.1.10,medium,1000,2025-11-21,false,Compromised package: @ensdomains/renewal-widget,preinstall script (Shai-Hulud 2.0),3
+@ensdomains/reverse-records,1.0.1,medium,1000,2025-11-21,false,Compromised package: @ensdomains/reverse-records,preinstall script (Shai-Hulud 2.0),3
+@ensdomains/server-analytics,0.0.2,medium,1000,2025-11-21,false,Compromised package: @ensdomains/server-analytics,preinstall script (Shai-Hulud 2.0),3
+@ensdomains/solsha1,0.0.4,medium,1000,2025-11-21,false,Compromised package: @ensdomains/solsha1,preinstall script (Shai-Hulud 2.0),3
+@ensdomains/subdomain-registrar,0.2.4,medium,1000,2025-11-21,false,Compromised package: @ensdomains/subdomain-registrar,preinstall script (Shai-Hulud 2.0),3
+@ensdomains/test-utils,1.3.1,medium,1000,2025-11-21,false,Compromised package: @ensdomains/test-utils,preinstall script (Shai-Hulud 2.0),3
+@ensdomains/thorin,0.6.51,medium,1000,2025-11-21,false,Compromised package: @ensdomains/thorin,preinstall script (Shai-Hulud 2.0),3
+@ensdomains/ui,3.4.6,medium,1000,2025-11-21,false,Compromised package: @ensdomains/ui,preinstall script (Shai-Hulud 2.0),3
+@ensdomains/unicode-confusables,0.1.1,medium,1000,2025-11-21,false,Compromised package: @ensdomains/unicode-confusables,preinstall script (Shai-Hulud 2.0),3
+@ensdomains/unruggable-gateways,0.0.3,medium,1000,2025-11-21,false,Compromised package: @ensdomains/unruggable-gateways,preinstall script (Shai-Hulud 2.0),3
+@ensdomains/vite-plugin-i18next-loader,4.0.4,medium,1000,2025-11-21,false,Compromised package: @ensdomains/vite-plugin-i18next-loader,preinstall script (Shai-Hulud 2.0),3
+@ensdomains/web3modal,1.10.2,medium,1000,2025-11-21,false,Compromised package: @ensdomains/web3modal,preinstall script (Shai-Hulud 2.0),3
+@everreal/react-charts,"2.0.1, 2.0.2",medium,1000,2025-11-21,false,Compromised package: @everreal/react-charts,preinstall script (Shai-Hulud 2.0),3
+@everreal/validate-esmoduleinterop-imports,"1.4.4, 1.4.5",medium,1000,2025-11-21,false,Compromised package: @everreal/validate-esmoduleinterop-imports,preinstall script (Shai-Hulud 2.0),3
+@everreal/web-analytics,"0.0.1, 0.0.2",medium,1000,2025-11-21,false,Compromised package: @everreal/web-analytics,preinstall script (Shai-Hulud 2.0),3
+@faq-component/core,0.0.4,medium,1000,2025-11-21,false,Compromised package: @faq-component/core,preinstall script (Shai-Hulud 2.0),3
+@faq-component/react,1.0.1,medium,1000,2025-11-21,false,Compromised package: @faq-component/react,preinstall script (Shai-Hulud 2.0),3
+@fishingbooker/browser-sync-plugin,1.0.5,medium,1000,2025-11-21,false,Compromised package: @fishingbooker/browser-sync-plugin,preinstall script (Shai-Hulud 2.0),3
+@fishingbooker/react-loader,1.0.7,medium,1000,2025-11-21,false,Compromised package: @fishingbooker/react-loader,preinstall script (Shai-Hulud 2.0),3
+@fishingbooker/react-pagination,2.0.6,medium,1000,2025-11-21,false,Compromised package: @fishingbooker/react-pagination,preinstall script (Shai-Hulud 2.0),3
+@fishingbooker/react-raty,2.0.1,medium,1000,2025-11-21,false,Compromised package: @fishingbooker/react-raty,preinstall script (Shai-Hulud 2.0),3
+@fishingbooker/react-swiper,0.1.5,medium,1000,2025-11-21,false,Compromised package: @fishingbooker/react-swiper,preinstall script (Shai-Hulud 2.0),3
+@hapheus/n8n-nodes-pgp,1.5.1,medium,1000,2025-11-21,false,Compromised package: @hapheus/n8n-nodes-pgp,preinstall script (Shai-Hulud 2.0),3
+@hestjs/core,0.2.1,medium,1000,2025-11-21,false,Compromised package: @hestjs/core,preinstall script (Shai-Hulud 2.0),3
+@hestjs/cqrs,0.1.6,medium,1000,2025-11-21,false,Compromised package: @hestjs/cqrs,preinstall script (Shai-Hulud 2.0),3
+@hestjs/demo,0.1.2,medium,1000,2025-11-21,false,Compromised package: @hestjs/demo,preinstall script (Shai-Hulud 2.0),3
+@hestjs/eslint-config,0.1.2,medium,1000,2025-11-21,false,Compromised package: @hestjs/eslint-config,preinstall script (Shai-Hulud 2.0),3
+@hestjs/logger,0.1.6,medium,1000,2025-11-21,false,Compromised package: @hestjs/logger,preinstall script (Shai-Hulud 2.0),3
+@hestjs/scalar,0.1.7,medium,1000,2025-11-21,false,Compromised package: @hestjs/scalar,preinstall script (Shai-Hulud 2.0),3
+@hestjs/validation,0.1.6,medium,1000,2025-11-21,false,Compromised package: @hestjs/validation,preinstall script (Shai-Hulud 2.0),3
+@hover-design/core,0.0.1,medium,1000,2025-11-21,false,Compromised package: @hover-design/core,preinstall script (Shai-Hulud 2.0),3
+@hover-design/react,0.2.1,medium,1000,2025-11-21,false,Compromised package: @hover-design/react,preinstall script (Shai-Hulud 2.0),3
+@ifelsedeveloper/protocol-contracts-svm-idl,0.1.2,medium,1000,2025-11-21,false,Compromised package: @ifelsedeveloper/protocol-contracts-svm-idl,preinstall script (Shai-Hulud 2.0),3
+@ifings/design-system,4.9.2,medium,1000,2025-11-21,false,Compromised package: @ifings/design-system,preinstall script (Shai-Hulud 2.0),3
+@ifings/metatron3,0.1.5,medium,1000,2025-11-21,false,Compromised package: @ifings/metatron3,preinstall script (Shai-Hulud 2.0),3
+@kvytech/cli,0.0.7,medium,1000,2025-11-21,false,Compromised package: @kvytech/cli,preinstall script (Shai-Hulud 2.0),3
+@kvytech/components,0.0.2,medium,1000,2025-11-21,false,Compromised package: @kvytech/components,preinstall script (Shai-Hulud 2.0),3
+@kvytech/habbit-e2e-test,0.0.2,medium,1000,2025-11-21,false,Compromised package: @kvytech/habbit-e2e-test,preinstall script (Shai-Hulud 2.0),3
+@kvytech/medusa-plugin-announcement,0.0.8,medium,1000,2025-11-21,false,Compromised package: @kvytech/medusa-plugin-announcement,preinstall script (Shai-Hulud 2.0),3
+@kvytech/medusa-plugin-management,0.0.5,medium,1000,2025-11-21,false,Compromised package: @kvytech/medusa-plugin-management,preinstall script (Shai-Hulud 2.0),3
+@kvytech/medusa-plugin-newsletter,0.0.5,medium,1000,2025-11-21,false,Compromised package: @kvytech/medusa-plugin-newsletter,preinstall script (Shai-Hulud 2.0),3
+@kvytech/medusa-plugin-product-reviews,0.0.9,medium,1000,2025-11-21,false,Compromised package: @kvytech/medusa-plugin-product-reviews,preinstall script (Shai-Hulud 2.0),3
+@kvytech/medusa-plugin-promotion,0.0.2,medium,1000,2025-11-21,false,Compromised package: @kvytech/medusa-plugin-promotion,preinstall script (Shai-Hulud 2.0),3
+@kvytech/web,0.0.2,medium,1000,2025-11-21,false,Compromised package: @kvytech/web,preinstall script (Shai-Hulud 2.0),3
+@lessondesk/api-client,"9.12.2, 9.12.3",medium,1000,2025-11-21,false,Compromised package: @lessondesk/api-client,preinstall script (Shai-Hulud 2.0),3
+@lessondesk/babel-preset,1.0.1,medium,1000,2025-11-21,false,Compromised package: @lessondesk/babel-preset,preinstall script (Shai-Hulud 2.0),3
+@lessondesk/electron-group-api-client,1.0.3,medium,1000,2025-11-21,false,Compromised package: @lessondesk/electron-group-api-client,preinstall script (Shai-Hulud 2.0),3
+@lessondesk/eslint-config,1.4.2,medium,1000,2025-11-21,false,Compromised package: @lessondesk/eslint-config,preinstall script (Shai-Hulud 2.0),3
+@lessondesk/material-icons,1.0.3,medium,1000,2025-11-21,false,Compromised package: @lessondesk/material-icons,preinstall script (Shai-Hulud 2.0),3
+@lessondesk/react-table-context,2.0.4,medium,1000,2025-11-21,false,Compromised package: @lessondesk/react-table-context,preinstall script (Shai-Hulud 2.0),3
+@lessondesk/schoolbus,"5.2.2, 5.2.3",medium,1000,2025-11-21,false,Compromised package: @lessondesk/schoolbus,preinstall script (Shai-Hulud 2.0),3
+@livecms/live-edit,0.0.32,medium,1000,2025-11-21,false,Compromised package: @livecms/live-edit,preinstall script (Shai-Hulud 2.0),3
+@livecms/nuxt-live-edit,1.9.2,medium,1000,2025-11-21,false,Compromised package: @livecms/nuxt-live-edit,preinstall script (Shai-Hulud 2.0),3
+@louisle2/core,1.0.1,medium,1000,2025-11-21,false,Compromised package: @louisle2/core,preinstall script (Shai-Hulud 2.0),3
+@louisle2/cortex-js,0.1.6,medium,1000,2025-11-21,false,Compromised package: @louisle2/cortex-js,preinstall script (Shai-Hulud 2.0),3
+@lpdjs/firestore-repo-service,1.0.1,medium,1000,2025-11-21,false,Compromised package: @lpdjs/firestore-repo-service,preinstall script (Shai-Hulud 2.0),3
+@markvivanco/app-version-checker,"1.0.1, 1.0.2",medium,1000,2025-11-21,false,Compromised package: @markvivanco/app-version-checker,preinstall script (Shai-Hulud 2.0),3
+@nativescript-community/arraybuffers,"1.1.6, 1.1.7, 1.1.8",high,25000,2025-11-21,false,Compromised package: @nativescript-community/arraybuffers,preinstall script (Shai-Hulud 2.0),2
+@nativescript-community/gesturehandler,2.0.35,high,25000,2025-11-21,false,Compromised package: @nativescript-community/gesturehandler,preinstall script (Shai-Hulud 2.0),2
+@nativescript-community/perms,"3.0.5, 3.0.6, 3.0.7, 3.0.8, 3.0.9",high,25000,2025-11-21,false,Compromised package: @nativescript-community/perms,preinstall script (Shai-Hulud 2.0),2
+@nativescript-community/sentry,4.6.43,high,25000,2025-11-21,false,Compromised package: @nativescript-community/sentry,preinstall script (Shai-Hulud 2.0),2
+@nativescript-community/sqlite,"3.5.2, 3.5.3, 3.5.4, 3.5.5",high,25000,2025-11-21,false,Compromised package: @nativescript-community/sqlite,preinstall script (Shai-Hulud 2.0),2
+@nativescript-community/text,"1.6.13, 1.6.10, 1.6.11, 1.6.12, 1.6.9",high,25000,2025-11-21,false,Compromised package: @nativescript-community/text,preinstall script (Shai-Hulud 2.0),2
+@nativescript-community/typeorm,"0.2.30, 0.2.31, 0.2.32, 0.2.33",high,25000,2025-11-21,false,Compromised package: @nativescript-community/typeorm,preinstall script (Shai-Hulud 2.0),2
+@nativescript-community/ui-collectionview,6.0.6,high,25000,2025-11-21,false,Compromised package: @nativescript-community/ui-collectionview,preinstall script (Shai-Hulud 2.0),2
+@nativescript-community/ui-document-picker,"1.1.27, 1.1.28, 13.0.32",high,25000,2025-11-21,false,Compromised package: @nativescript-community/ui-document-picker,preinstall script (Shai-Hulud 2.0),2
+@nativescript-community/ui-drawer,0.1.30,high,25000,2025-11-21,false,Compromised package: @nativescript-community/ui-drawer,preinstall script (Shai-Hulud 2.0),2
+@nativescript-community/ui-image,4.5.6,high,25000,2025-11-21,false,Compromised package: @nativescript-community/ui-image,preinstall script (Shai-Hulud 2.0),2
+@nativescript-community/ui-label,"1.3.35, 1.3.36, 1.3.37",high,25000,2025-11-21,false,Compromised package: @nativescript-community/ui-label,preinstall script (Shai-Hulud 2.0),2
+@nativescript-community/ui-material-bottom-navigation,"7.2.72, 7.2.73, 7.2.74, 7.2.75",high,25000,2025-11-21,false,Compromised package: @nativescript-community/ui-material-bottom-navigation,preinstall script (Shai-Hulud 2.0),2
+@nativescript-community/ui-material-bottomsheet,7.2.72,high,25000,2025-11-21,false,Compromised package: @nativescript-community/ui-material-bottomsheet,preinstall script (Shai-Hulud 2.0),2
+@nativescript-community/ui-material-core,"7.2.76, 7.2.72, 7.2.73, 7.2.74, 7.2.75",high,25000,2025-11-21,false,Compromised package: @nativescript-community/ui-material-core,preinstall script (Shai-Hulud 2.0),2
+@nativescript-community/ui-material-core-tabs,"7.2.76, 7.2.72, 7.2.73, 7.2.74, 7.2.75",high,25000,2025-11-21,false,Compromised package: @nativescript-community/ui-material-core-tabs,preinstall script (Shai-Hulud 2.0),2
+@nativescript-community/ui-material-ripple,"7.2.72, 7.2.73, 7.2.74, 7.2.75",high,25000,2025-11-21,false,Compromised package: @nativescript-community/ui-material-ripple,preinstall script (Shai-Hulud 2.0),2
+@nativescript-community/ui-material-tabs,"7.2.72, 7.2.73, 7.2.74, 7.2.75",high,25000,2025-11-21,false,Compromised package: @nativescript-community/ui-material-tabs,preinstall script (Shai-Hulud 2.0),2
+@nativescript-community/ui-pager,"14.1.35, 14.1.36, 14.1.37, 14.1.38",high,25000,2025-11-21,false,Compromised package: @nativescript-community/ui-pager,preinstall script (Shai-Hulud 2.0),2
+@nativescript-community/ui-pulltorefresh,"2.5.4, 2.5.5, 2.5.6, 2.5.7",high,25000,2025-11-21,false,Compromised package: @nativescript-community/ui-pulltorefresh,preinstall script (Shai-Hulud 2.0),2
+@nexe/config-manager,0.1.1,medium,1000,2025-11-21,false,Compromised package: @nexe/config-manager,preinstall script (Shai-Hulud 2.0),3
+@nexe/eslint-config,0.1.1,medium,1000,2025-11-21,false,Compromised package: @nexe/eslint-config,preinstall script (Shai-Hulud 2.0),3
+@nexe/logger,0.1.3,medium,1000,2025-11-21,false,Compromised package: @nexe/logger,preinstall script (Shai-Hulud 2.0),3
+@nstudio/angular,"20.0.4, 20.0.5, 20.0.6",medium,1000,2025-11-21,false,Compromised package: @nstudio/angular,preinstall script (Shai-Hulud 2.0),3
+@nstudio/focus,"20.0.4, 20.0.5, 20.0.6",medium,1000,2025-11-21,false,Compromised package: @nstudio/focus,preinstall script (Shai-Hulud 2.0),3
+@nstudio/nativescript-checkbox,"2.0.6, 2.0.7, 2.0.8, 2.0.9",medium,1000,2025-11-21,false,Compromised package: @nstudio/nativescript-checkbox,preinstall script (Shai-Hulud 2.0),3
+@nstudio/nativescript-loading-indicator,"5.0.1, 5.0.2, 5.0.3, 5.0.4",medium,1000,2025-11-21,false,Compromised package: @nstudio/nativescript-loading-indicator,preinstall script (Shai-Hulud 2.0),3
+@nstudio/ui-collectionview,"5.1.11, 5.1.12, 5.1.13, 5.1.14",medium,1000,2025-11-21,false,Compromised package: @nstudio/ui-collectionview,preinstall script (Shai-Hulud 2.0),3
+@nstudio/web,20.0.4,medium,1000,2025-11-21,false,Compromised package: @nstudio/web,preinstall script (Shai-Hulud 2.0),3
+@nstudio/web-angular,20.0.4,medium,1000,2025-11-21,false,Compromised package: @nstudio/web-angular,preinstall script (Shai-Hulud 2.0),3
+@nstudio/xplat,"20.0.4, 20.0.5, 20.0.6, 20.0.7",medium,1000,2025-11-21,false,Compromised package: @nstudio/xplat,preinstall script (Shai-Hulud 2.0),3
+@nstudio/xplat-utils,"20.0.4, 20.0.5, 20.0.6, 20.0.7",medium,1000,2025-11-21,false,Compromised package: @nstudio/xplat-utils,preinstall script (Shai-Hulud 2.0),3
+@ntnx/passport-wso2,0.0.3,medium,1000,2025-11-21,false,Compromised package: @ntnx/passport-wso2,preinstall script (Shai-Hulud 2.0),3
+@ntnx/t,0.0.101,medium,1000,2025-11-21,false,Compromised package: @ntnx/t,preinstall script (Shai-Hulud 2.0),3
+@operato/board,"9.0.35, 9.0.36, 9.0.37, 9.0.38, 9.0.39, 9.0.40, 9.0.41, 9.0.42, 9.0.43, 9.0.44, 9.0.45, 9.0.46, 9.0.47, 9.0.48, 9.0.49, 9.0.50, 9.0.51",medium,1000,2025-11-21,false,Compromised package: @operato/board,preinstall script (Shai-Hulud 2.0),3
+@operato/data-grist,"9.0.29, 9.0.35, 9.0.36, 9.0.37",medium,1000,2025-11-21,false,Compromised package: @operato/data-grist,preinstall script (Shai-Hulud 2.0),3
+@operato/graphql,"9.0.22, 9.0.35, 9.0.36, 9.0.37, 9.0.38, 9.0.39, 9.0.40, 9.0.41, 9.0.42, 9.0.43, 9.0.44, 9.0.45, 9.0.46, 9.0.47, 9.0.48, 9.0.49, 9.0.50, 9.0.51",medium,1000,2025-11-21,false,Compromised package: @operato/graphql,preinstall script (Shai-Hulud 2.0),3
+@operato/headroom,"9.0.2, 9.0.35, 9.0.36, 9.0.37",medium,1000,2025-11-21,false,Compromised package: @operato/headroom,preinstall script (Shai-Hulud 2.0),3
+@operato/help,"9.0.35, 9.0.36, 9.0.37, 9.0.38, 9.0.39, 9.0.40, 9.0.41, 9.0.42, 9.0.43, 9.0.44, 9.0.45, 9.0.46, 9.0.47, 9.0.48, 9.0.49, 9.0.50, 9.0.51",medium,1000,2025-11-21,false,Compromised package: @operato/help,preinstall script (Shai-Hulud 2.0),3
+@operato/i18n,"9.0.35, 9.0.36, 9.0.37",medium,1000,2025-11-21,false,Compromised package: @operato/i18n,preinstall script (Shai-Hulud 2.0),3
+@operato/input,"9.0.27, 9.0.35, 9.0.36, 9.0.37, 9.0.38, 9.0.39, 9.0.40, 9.0.41, 9.0.42, 9.0.43, 9.0.44, 9.0.45, 9.0.46, 9.0.47, 9.0.48",medium,1000,2025-11-21,false,Compromised package: @operato/input,preinstall script (Shai-Hulud 2.0),3
+@operato/layout,"9.0.35, 9.0.36, 9.0.37",medium,1000,2025-11-21,false,Compromised package: @operato/layout,preinstall script (Shai-Hulud 2.0),3
+@operato/popup,"9.0.22, 9.0.35, 9.0.36, 9.0.37, 9.0.38, 9.0.39, 9.0.40, 9.0.41, 9.0.42, 9.0.43, 9.0.44, 9.0.45, 9.0.46, 9.0.47, 9.0.48, 9.0.49, 9.0.50, 9.0.51",medium,1000,2025-11-21,false,Compromised package: @operato/popup,preinstall script (Shai-Hulud 2.0),3
+@operato/pull-to-refresh,"9.0.35, 9.0.36, 9.0.37, 9.0.38, 9.0.39, 9.0.40, 9.0.41, 9.0.42, 9.0.43, 9.0.44, 9.0.45, 9.0.46, 9.0.47",medium,1000,2025-11-21,false,Compromised package: @operato/pull-to-refresh,preinstall script (Shai-Hulud 2.0),3
+@operato/shell,"9.0.22, 9.0.35, 9.0.36, 9.0.37, 9.0.38, 9.0.39",medium,1000,2025-11-21,false,Compromised package: @operato/shell,preinstall script (Shai-Hulud 2.0),3
+@operato/styles,"9.0.2, 9.0.35, 9.0.36, 9.0.37",medium,1000,2025-11-21,false,Compromised package: @operato/styles,preinstall script (Shai-Hulud 2.0),3
+@operato/utils,"9.0.22, 9.0.35, 9.0.36, 9.0.37, 9.0.38, 9.0.39, 9.0.40, 9.0.41, 9.0.42, 9.0.43, 9.0.44, 9.0.45, 9.0.46, 9.0.47, 9.0.48, 9.0.49, 9.0.50, 9.0.51",medium,1000,2025-11-21,false,Compromised package: @operato/utils,preinstall script (Shai-Hulud 2.0),3
+@orbitgtbelgium/mapbox-gl-draw-cut-polygon-mode,2.0.5,medium,1000,2025-11-21,false,Compromised package: @orbitgtbelgium/mapbox-gl-draw-cut-polygon-mode,preinstall script (Shai-Hulud 2.0),3
+@orbitgtbelgium/mapbox-gl-draw-scale-rotate-mode,1.1.1,medium,1000,2025-11-21,false,Compromised package: @orbitgtbelgium/mapbox-gl-draw-scale-rotate-mode,preinstall script (Shai-Hulud 2.0),3
+@orbitgtbelgium/orbit-components,1.2.9,medium,1000,2025-11-21,false,Compromised package: @orbitgtbelgium/orbit-components,preinstall script (Shai-Hulud 2.0),3
+@orbitgtbelgium/time-slider,1.0.187,medium,1000,2025-11-21,false,Compromised package: @orbitgtbelgium/time-slider,preinstall script (Shai-Hulud 2.0),3
+@osmanekrem/bmad,1.0.6,medium,1000,2025-11-21,false,Compromised package: @osmanekrem/bmad,preinstall script (Shai-Hulud 2.0),3
+@osmanekrem/error-handler,1.2.2,medium,1000,2025-11-21,false,Compromised package: @osmanekrem/error-handler,preinstall script (Shai-Hulud 2.0),3
+@posthog/agent,1.24.1,medium,1000,2025-11-21,false,Compromised package: @posthog/agent,preinstall script (Shai-Hulud 2.0),3
+@posthog/ai,7.1.2,medium,1000,2025-11-21,false,Compromised package: @posthog/ai,preinstall script (Shai-Hulud 2.0),3
+@posthog/cli,0.5.15,medium,1000,2025-11-21,false,Compromised package: @posthog/cli,preinstall script (Shai-Hulud 2.0),3
+@posthog/clickhouse,1.7.1,medium,1000,2025-11-21,false,Compromised package: @posthog/clickhouse,preinstall script (Shai-Hulud 2.0),3
+@posthog/core,1.5.6,medium,1000,2025-11-21,false,Compromised package: @posthog/core,preinstall script (Shai-Hulud 2.0),3
+@posthog/hedgehog-mode,0.0.42,medium,1000,2025-11-21,false,Compromised package: @posthog/hedgehog-mode,preinstall script (Shai-Hulud 2.0),3
+@posthog/icons,0.36.1,medium,1000,2025-11-21,false,Compromised package: @posthog/icons,preinstall script (Shai-Hulud 2.0),3
+@posthog/lemon-ui,0.0.1,medium,1000,2025-11-21,false,Compromised package: @posthog/lemon-ui,preinstall script (Shai-Hulud 2.0),3
+@posthog/nextjs-config,1.5.1,medium,1000,2025-11-21,false,Compromised package: @posthog/nextjs-config,preinstall script (Shai-Hulud 2.0),3
+@posthog/nuxt,1.2.9,medium,1000,2025-11-21,false,Compromised package: @posthog/nuxt,preinstall script (Shai-Hulud 2.0),3
+@posthog/piscina,3.2.1,medium,1000,2025-11-21,false,Compromised package: @posthog/piscina,preinstall script (Shai-Hulud 2.0),3
+@posthog/plugin-contrib,0.0.6,medium,1000,2025-11-21,false,Compromised package: @posthog/plugin-contrib,preinstall script (Shai-Hulud 2.0),3
+@posthog/react-rrweb-player,1.1.4,medium,1000,2025-11-21,false,Compromised package: @posthog/react-rrweb-player,preinstall script (Shai-Hulud 2.0),3
+@posthog/rrdom,0.0.31,medium,1000,2025-11-21,false,Compromised package: @posthog/rrdom,preinstall script (Shai-Hulud 2.0),3
+@posthog/rrweb,0.0.31,medium,1000,2025-11-21,false,Compromised package: @posthog/rrweb,preinstall script (Shai-Hulud 2.0),3
+@posthog/rrweb-player,0.0.31,medium,1000,2025-11-21,false,Compromised package: @posthog/rrweb-player,preinstall script (Shai-Hulud 2.0),3
+@posthog/rrweb-record,0.0.31,medium,1000,2025-11-21,false,Compromised package: @posthog/rrweb-record,preinstall script (Shai-Hulud 2.0),3
+@posthog/rrweb-replay,0.0.19,medium,1000,2025-11-21,false,Compromised package: @posthog/rrweb-replay,preinstall script (Shai-Hulud 2.0),3
+@posthog/rrweb-snapshot,0.0.31,medium,1000,2025-11-21,false,Compromised package: @posthog/rrweb-snapshot,preinstall script (Shai-Hulud 2.0),3
+@posthog/rrweb-utils,0.0.31,medium,1000,2025-11-21,false,Compromised package: @posthog/rrweb-utils,preinstall script (Shai-Hulud 2.0),3
+@posthog/siphash,1.1.2,medium,1000,2025-11-21,false,Compromised package: @posthog/siphash,preinstall script (Shai-Hulud 2.0),3
+@posthog/wizard,1.18.1,medium,1000,2025-11-21,false,Compromised package: @posthog/wizard,preinstall script (Shai-Hulud 2.0),3
+@postman/aether-icons,"2.23.2, 2.23.3, 2.23.4",medium,1000,2025-11-21,false,Compromised package: @postman/aether-icons,preinstall script (Shai-Hulud 2.0),3
+@postman/csv-parse,"4.0.3, 4.0.4, 4.0.5",medium,1000,2025-11-21,false,Compromised package: @postman/csv-parse,preinstall script (Shai-Hulud 2.0),3
+@postman/node-keytar,"7.9.4, 7.9.5, 7.9.6",medium,1000,2025-11-21,false,Compromised package: @postman/node-keytar,preinstall script (Shai-Hulud 2.0),3
+@postman/tunnel-agent,"0.6.5, 0.6.6, 0.6.7",medium,1000,2025-11-21,false,Compromised package: @postman/tunnel-agent,preinstall script (Shai-Hulud 2.0),3
+@pradhumngautam/common-app,1.0.2,medium,1000,2025-11-21,false,Compromised package: @pradhumngautam/common-app,preinstall script (Shai-Hulud 2.0),3
+@pruthvi21/use-debounce,1.0.3,medium,1000,2025-11-21,false,Compromised package: @pruthvi21/use-debounce,preinstall script (Shai-Hulud 2.0),3
+@quick-start-soft/quick-document-translator,1.4.2511142126,medium,1000,2025-11-21,false,Compromised package: @quick-start-soft/quick-document-translator,preinstall script (Shai-Hulud 2.0),3
+@quick-start-soft/quick-git-clean-markdown,1.4.2511142126,medium,1000,2025-11-21,false,Compromised package: @quick-start-soft/quick-git-clean-markdown,preinstall script (Shai-Hulud 2.0),3
+@quick-start-soft/quick-markdown,1.4.2511142126,medium,1000,2025-11-21,false,Compromised package: @quick-start-soft/quick-markdown,preinstall script (Shai-Hulud 2.0),3
+@quick-start-soft/quick-markdown-compose,1.4.2506300029,medium,1000,2025-11-21,false,Compromised package: @quick-start-soft/quick-markdown-compose,preinstall script (Shai-Hulud 2.0),3
+@quick-start-soft/quick-markdown-image,1.4.2511142126,medium,1000,2025-11-21,false,Compromised package: @quick-start-soft/quick-markdown-image,preinstall script (Shai-Hulud 2.0),3
+@quick-start-soft/quick-markdown-print,1.4.2511142126,medium,1000,2025-11-21,false,Compromised package: @quick-start-soft/quick-markdown-print,preinstall script (Shai-Hulud 2.0),3
+@quick-start-soft/quick-markdown-translator,1.4.2509202331,medium,1000,2025-11-21,false,Compromised package: @quick-start-soft/quick-markdown-translator,preinstall script (Shai-Hulud 2.0),3
+@quick-start-soft/quick-remove-image-background,1.4.2511142126,medium,1000,2025-11-21,false,Compromised package: @quick-start-soft/quick-remove-image-background,preinstall script (Shai-Hulud 2.0),3
+@quick-start-soft/quick-task-refine,1.4.2511142126,medium,1000,2025-11-21,false,Compromised package: @quick-start-soft/quick-task-refine,preinstall script (Shai-Hulud 2.0),3
+@relyt/claude-context-core,0.1.1,medium,1000,2025-11-21,false,Compromised package: @relyt/claude-context-core,preinstall script (Shai-Hulud 2.0),3
+@seezo/sdr-mcp-server,0.0.5,medium,1000,2025-11-21,false,Compromised package: @seezo/sdr-mcp-server,preinstall script (Shai-Hulud 2.0),3
+@seung-ju/next,0.0.2,medium,1000,2025-11-21,false,Compromised package: @seung-ju/next,preinstall script (Shai-Hulud 2.0),3
+@seung-ju/openapi-generator,0.0.4,medium,1000,2025-11-21,false,Compromised package: @seung-ju/openapi-generator,preinstall script (Shai-Hulud 2.0),3
+@seung-ju/react-hooks,0.0.2,medium,1000,2025-11-21,false,Compromised package: @seung-ju/react-hooks,preinstall script (Shai-Hulud 2.0),3
+@seung-ju/react-native-action-sheet,0.2.1,medium,1000,2025-11-21,false,Compromised package: @seung-ju/react-native-action-sheet,preinstall script (Shai-Hulud 2.0),3
+@sme-ui/aoma-vevasound-metadata-lib,0.1.3,medium,1000,2025-11-21,false,Compromised package: @sme-ui/aoma-vevasound-metadata-lib,preinstall script (Shai-Hulud 2.0),3
+@strapbuild/react-native-date-time-picker,2.0.4,medium,1000,2025-11-21,false,Compromised package: @strapbuild/react-native-date-time-picker,preinstall script (Shai-Hulud 2.0),3
+@strapbuild/react-native-perspective-image-cropper,0.4.15,medium,1000,2025-11-21,false,Compromised package: @strapbuild/react-native-perspective-image-cropper,preinstall script (Shai-Hulud 2.0),3
+@strapbuild/react-native-perspective-image-cropper-2,0.4.7,medium,1000,2025-11-21,false,Compromised package: @strapbuild/react-native-perspective-image-cropper-2,preinstall script (Shai-Hulud 2.0),3
+@strapbuild/react-native-perspective-image-cropper-poojan31,0.4.6,medium,1000,2025-11-21,false,Compromised package: @strapbuild/react-native-perspective-image-cropper-poojan31,preinstall script (Shai-Hulud 2.0),3
+@suraj_h/medium-common,1.0.5,medium,1000,2025-11-21,false,Compromised package: @suraj_h/medium-common,preinstall script (Shai-Hulud 2.0),3
+@teselagen/bio-parsers,"0.4.29, 0.4.30",medium,1000,2025-11-21,false,Compromised package: @teselagen/bio-parsers,preinstall script (Shai-Hulud 2.0),3
+@teselagen/bounce-loader,"0.3.16, 0.3.17",medium,1000,2025-11-21,false,Compromised package: @teselagen/bounce-loader,preinstall script (Shai-Hulud 2.0),3
+@teselagen/file-utils,"0.3.21, 0.3.22",medium,1000,2025-11-21,false,Compromised package: @teselagen/file-utils,preinstall script (Shai-Hulud 2.0),3
+@teselagen/liquibase-tools,0.4.1,medium,1000,2025-11-21,false,Compromised package: @teselagen/liquibase-tools,preinstall script (Shai-Hulud 2.0),3
+@teselagen/ove,"0.7.39, 0.7.40",medium,1000,2025-11-21,false,Compromised package: @teselagen/ove,preinstall script (Shai-Hulud 2.0),3
+@teselagen/range-utils,"0.3.14, 0.3.15",medium,1000,2025-11-21,false,Compromised package: @teselagen/range-utils,preinstall script (Shai-Hulud 2.0),3
+@teselagen/react-list,"0.8.19, 0.8.20",medium,1000,2025-11-21,false,Compromised package: @teselagen/react-list,preinstall script (Shai-Hulud 2.0),3
+@teselagen/react-table,"6.10.21, 6.10.19, 6.10.20, 6.10.22",medium,1000,2025-11-21,false,Compromised package: @teselagen/react-table,preinstall script (Shai-Hulud 2.0),3
+@teselagen/sequence-utils,"0.3.33, 0.3.34",medium,1000,2025-11-21,false,Compromised package: @teselagen/sequence-utils,preinstall script (Shai-Hulud 2.0),3
+@teselagen/ui,"0.9.9, 0.9.10",medium,1000,2025-11-21,false,Compromised package: @teselagen/ui,preinstall script (Shai-Hulud 2.0),3
+@thangved/callback-window,1.1.4,medium,1000,2025-11-21,false,Compromised package: @thangved/callback-window,preinstall script (Shai-Hulud 2.0),3
+@thedelta/eslint-config,1.0.2,medium,1000,2025-11-21,false,Compromised package: @thedelta/eslint-config,preinstall script (Shai-Hulud 2.0),3
+@things-factory/attachment-base,"9.0.42, 9.0.43, 9.0.44, 9.0.45, 9.0.46, 9.0.47, 9.0.48, 9.0.49, 9.0.50, 9.0.51, 9.0.52, 9.0.53, 9.0.54, 9.0.55",medium,1000,2025-11-21,false,Compromised package: @things-factory/attachment-base,preinstall script (Shai-Hulud 2.0),3
+@things-factory/auth-base,"9.0.42, 9.0.43, 9.0.44, 9.0.45",medium,1000,2025-11-21,false,Compromised package: @things-factory/auth-base,preinstall script (Shai-Hulud 2.0),3
+@things-factory/email-base,"9.0.42, 9.0.43, 9.0.44, 9.0.45, 9.0.46, 9.0.47, 9.0.48, 9.0.49, 9.0.50, 9.0.51, 9.0.52, 9.0.53, 9.0.54, 9.0.55, 9.0.56, 9.0.57, 9.0.58, 9.0.59",medium,1000,2025-11-21,false,Compromised package: @things-factory/email-base,preinstall script (Shai-Hulud 2.0),3
+@things-factory/env,"9.0.42, 9.0.43, 9.0.44, 9.0.45",medium,1000,2025-11-21,false,Compromised package: @things-factory/env,preinstall script (Shai-Hulud 2.0),3
+@things-factory/integration-base,"9.0.42, 9.0.43, 9.0.44, 9.0.45",medium,1000,2025-11-21,false,Compromised package: @things-factory/integration-base,preinstall script (Shai-Hulud 2.0),3
+@things-factory/integration-marketplace,"9.0.42, 9.0.43, 9.0.44, 9.0.45",medium,1000,2025-11-21,false,Compromised package: @things-factory/integration-marketplace,preinstall script (Shai-Hulud 2.0),3
+@things-factory/shell,"9.0.42, 9.0.43, 9.0.44, 9.0.45",medium,1000,2025-11-21,false,Compromised package: @things-factory/shell,preinstall script (Shai-Hulud 2.0),3
+@tiaanduplessis/json,"2.0.2, 2.0.3",medium,1000,2025-11-21,false,Compromised package: @tiaanduplessis/json,preinstall script (Shai-Hulud 2.0),3
+@tiaanduplessis/react-progressbar,"1.0.1, 1.0.2",medium,1000,2025-11-21,false,Compromised package: @tiaanduplessis/react-progressbar,preinstall script (Shai-Hulud 2.0),3
+@tnf-dev/api,1.0.8,medium,1000,2025-11-21,false,Compromised package: @tnf-dev/api,preinstall script (Shai-Hulud 2.0),3
+@tnf-dev/core,1.0.8,medium,1000,2025-11-21,false,Compromised package: @tnf-dev/core,preinstall script (Shai-Hulud 2.0),3
+@tnf-dev/js,1.0.8,medium,1000,2025-11-21,false,Compromised package: @tnf-dev/js,preinstall script (Shai-Hulud 2.0),3
+@tnf-dev/mui,1.0.8,medium,1000,2025-11-21,false,Compromised package: @tnf-dev/mui,preinstall script (Shai-Hulud 2.0),3
+@tnf-dev/react,1.0.8,medium,1000,2025-11-21,false,Compromised package: @tnf-dev/react,preinstall script (Shai-Hulud 2.0),3
+@trefox/sleekshop-js,0.1.6,medium,1000,2025-11-21,false,Compromised package: @trefox/sleekshop-js,preinstall script (Shai-Hulud 2.0),3
+@trigo/atrix,7.0.1,medium,1000,2025-11-21,false,Compromised package: @trigo/atrix,preinstall script (Shai-Hulud 2.0),3
+@trigo/atrix-elasticsearch,2.0.1,medium,1000,2025-11-21,false,Compromised package: @trigo/atrix-elasticsearch,preinstall script (Shai-Hulud 2.0),3
+@trigo/atrix-postgres,1.0.3,medium,1000,2025-11-21,false,Compromised package: @trigo/atrix-postgres,preinstall script (Shai-Hulud 2.0),3
+@trigo/atrix-pubsub,4.0.3,medium,1000,2025-11-21,false,Compromised package: @trigo/atrix-pubsub,preinstall script (Shai-Hulud 2.0),3
+@trigo/atrix-soap,1.0.2,medium,1000,2025-11-21,false,Compromised package: @trigo/atrix-soap,preinstall script (Shai-Hulud 2.0),3
+@trigo/atrix-swagger,3.0.1,medium,1000,2025-11-21,false,Compromised package: @trigo/atrix-swagger,preinstall script (Shai-Hulud 2.0),3
+@trigo/bool-expressions,4.1.3,medium,1000,2025-11-21,false,Compromised package: @trigo/bool-expressions,preinstall script (Shai-Hulud 2.0),3
+@trigo/eslint-config-trigo,3.3.1,medium,1000,2025-11-21,false,Compromised package: @trigo/eslint-config-trigo,preinstall script (Shai-Hulud 2.0),3
+@trigo/fsm,3.4.2,medium,1000,2025-11-21,false,Compromised package: @trigo/fsm,preinstall script (Shai-Hulud 2.0),3
+@trigo/hapi-auth-signedlink,1.3.1,medium,1000,2025-11-21,false,Compromised package: @trigo/hapi-auth-signedlink,preinstall script (Shai-Hulud 2.0),3
+@trigo/pathfinder-ui-css,0.1.1,medium,1000,2025-11-21,false,Compromised package: @trigo/pathfinder-ui-css,preinstall script (Shai-Hulud 2.0),3
+@trigo/trigo-hapijs,5.0.1,medium,1000,2025-11-21,false,Compromised package: @trigo/trigo-hapijs,preinstall script (Shai-Hulud 2.0),3
+@trpc-rate-limiter/cloudflare,0.1.4,medium,1000,2025-11-21,false,Compromised package: @trpc-rate-limiter/cloudflare,preinstall script (Shai-Hulud 2.0),3
+@trpc-rate-limiter/hono,0.1.4,medium,1000,2025-11-21,false,Compromised package: @trpc-rate-limiter/hono,preinstall script (Shai-Hulud 2.0),3
+@ui-ux-gang/devextreme-angular-rpk,24.1.7,medium,1000,2025-11-21,false,Compromised package: @ui-ux-gang/devextreme-angular-rpk,preinstall script (Shai-Hulud 2.0),3
+@ui-ux-gang/devextreme-rpk,24.1.7,medium,1000,2025-11-21,false,Compromised package: @ui-ux-gang/devextreme-rpk,preinstall script (Shai-Hulud 2.0),3
+@varsityvibe/api-client,"1.3.36, 1.3.37",medium,1000,2025-11-21,false,Compromised package: @varsityvibe/api-client,preinstall script (Shai-Hulud 2.0),3
+@varsityvibe/utils,5.0.6,medium,1000,2025-11-21,false,Compromised package: @varsityvibe/utils,preinstall script (Shai-Hulud 2.0),3
+@varsityvibe/validation-schemas,"0.6.7, 0.6.8",medium,1000,2025-11-21,false,Compromised package: @varsityvibe/validation-schemas,preinstall script (Shai-Hulud 2.0),3
+@vishadtyagi/full-year-calendar,0.1.11,medium,1000,2025-11-21,false,Compromised package: @vishadtyagi/full-year-calendar,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/alexa-types,"2.15.60, 2.15.61",medium,1000,2025-11-21,false,Compromised package: @voiceflow/alexa-types,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/anthropic,"0.4.4, 0.4.5",medium,1000,2025-11-21,false,Compromised package: @voiceflow/anthropic,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/api-sdk,"3.28.58, 3.28.59",medium,1000,2025-11-21,false,Compromised package: @voiceflow/api-sdk,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/backend-utils,"5.0.1, 5.0.2",medium,1000,2025-11-21,false,Compromised package: @voiceflow/backend-utils,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/base-types,"2.136.2, 2.136.3",medium,1000,2025-11-21,false,Compromised package: @voiceflow/base-types,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/body-parser,"1.21.2, 1.21.3",medium,1000,2025-11-21,false,Compromised package: @voiceflow/body-parser,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/chat-types,"2.14.58, 2.14.59",medium,1000,2025-11-21,false,Compromised package: @voiceflow/chat-types,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/circleci-config-sdk-orb-import,"0.2.1, 0.2.2",medium,1000,2025-11-21,false,Compromised package: @voiceflow/circleci-config-sdk-orb-import,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/commitlint-config,"2.6.1, 2.6.2",medium,1000,2025-11-21,false,Compromised package: @voiceflow/commitlint-config,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/common,"8.9.1, 8.9.2",medium,1000,2025-11-21,false,Compromised package: @voiceflow/common,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/default-prompt-wrappers,"1.7.3, 1.7.4",medium,1000,2025-11-21,false,Compromised package: @voiceflow/default-prompt-wrappers,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/dependency-cruiser-config,"1.8.11, 1.8.12",medium,1000,2025-11-21,false,Compromised package: @voiceflow/dependency-cruiser-config,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/dtos-interact,"1.40.1, 1.40.2",medium,1000,2025-11-21,false,Compromised package: @voiceflow/dtos-interact,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/encryption,"0.3.2, 0.3.3",medium,1000,2025-11-21,false,Compromised package: @voiceflow/encryption,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/eslint-config,"7.16.4, 7.16.5",medium,1000,2025-11-21,false,Compromised package: @voiceflow/eslint-config,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/eslint-plugin,"1.6.1, 1.6.2",medium,1000,2025-11-21,false,Compromised package: @voiceflow/eslint-plugin,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/exception,"1.10.1, 1.10.2",medium,1000,2025-11-21,false,Compromised package: @voiceflow/exception,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/fetch,"1.11.1, 1.11.2",medium,1000,2025-11-21,false,Compromised package: @voiceflow/fetch,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/general-types,"3.2.22, 3.2.23",medium,1000,2025-11-21,false,Compromised package: @voiceflow/general-types,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/git-branch-check,"1.4.3, 1.4.4",medium,1000,2025-11-21,false,Compromised package: @voiceflow/git-branch-check,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/google-dfes-types,"2.17.12, 2.17.13",medium,1000,2025-11-21,false,Compromised package: @voiceflow/google-dfes-types,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/google-types,"2.21.12, 2.21.13",medium,1000,2025-11-21,false,Compromised package: @voiceflow/google-types,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/husky-config,"1.3.1, 1.3.2",medium,1000,2025-11-21,false,Compromised package: @voiceflow/husky-config,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/logger,"2.4.2, 2.4.3",medium,1000,2025-11-21,false,Compromised package: @voiceflow/logger,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/metrics,"1.5.1, 1.5.2",medium,1000,2025-11-21,false,Compromised package: @voiceflow/metrics,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/natural-language-commander,"0.5.2, 0.5.3",medium,1000,2025-11-21,false,Compromised package: @voiceflow/natural-language-commander,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/nestjs-common,"2.75.2, 2.75.3",medium,1000,2025-11-21,false,Compromised package: @voiceflow/nestjs-common,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/nestjs-mongodb,"1.3.1, 1.3.2",medium,1000,2025-11-21,false,Compromised package: @voiceflow/nestjs-mongodb,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/nestjs-rate-limit,"1.3.2, 1.3.3",medium,1000,2025-11-21,false,Compromised package: @voiceflow/nestjs-rate-limit,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/nestjs-redis,"1.3.1, 1.3.2",medium,1000,2025-11-21,false,Compromised package: @voiceflow/nestjs-redis,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/nestjs-timeout,"1.3.1, 1.3.2",medium,1000,2025-11-21,false,Compromised package: @voiceflow/nestjs-timeout,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/npm-package-json-lint-config,"1.1.1, 1.1.2",medium,1000,2025-11-21,false,Compromised package: @voiceflow/npm-package-json-lint-config,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/openai,"3.2.2, 3.2.3",medium,1000,2025-11-21,false,Compromised package: @voiceflow/openai,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/pino,"6.11.3, 6.11.4",medium,1000,2025-11-21,false,Compromised package: @voiceflow/pino,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/pino-pretty,"4.4.1, 4.4.2",medium,1000,2025-11-21,false,Compromised package: @voiceflow/pino-pretty,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/prettier-config,"1.10.1, 1.10.2",medium,1000,2025-11-21,false,Compromised package: @voiceflow/prettier-config,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/react-chat,"1.65.3, 1.65.4",medium,1000,2025-11-21,false,Compromised package: @voiceflow/react-chat,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/runtime,"1.29.1, 1.29.2",medium,1000,2025-11-21,false,Compromised package: @voiceflow/runtime,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/runtime-client-js,"1.17.2, 1.17.3",medium,1000,2025-11-21,false,Compromised package: @voiceflow/runtime-client-js,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/sdk-runtime,"1.43.1, 1.43.2",medium,1000,2025-11-21,false,Compromised package: @voiceflow/sdk-runtime,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/secrets-provider,"1.9.2, 1.9.3",medium,1000,2025-11-21,false,Compromised package: @voiceflow/secrets-provider,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/semantic-release-config,"1.4.1, 1.4.2",medium,1000,2025-11-21,false,Compromised package: @voiceflow/semantic-release-config,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/serverless-plugin-typescript,"2.1.7, 2.1.8",medium,1000,2025-11-21,false,Compromised package: @voiceflow/serverless-plugin-typescript,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/slate-serializer,"1.7.3, 1.7.4",medium,1000,2025-11-21,false,Compromised package: @voiceflow/slate-serializer,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/stitches-react,"2.3.2, 2.3.3",medium,1000,2025-11-21,false,Compromised package: @voiceflow/stitches-react,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/storybook-config,"1.2.2, 1.2.3",medium,1000,2025-11-21,false,Compromised package: @voiceflow/storybook-config,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/stylelint-config,"1.1.1, 1.1.2",medium,1000,2025-11-21,false,Compromised package: @voiceflow/stylelint-config,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/test-common,"2.1.1, 2.1.2",medium,1000,2025-11-21,false,Compromised package: @voiceflow/test-common,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/tsconfig,"1.12.1, 1.12.2",medium,1000,2025-11-21,false,Compromised package: @voiceflow/tsconfig,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/tsconfig-paths,"1.1.4, 1.1.5",medium,1000,2025-11-21,false,Compromised package: @voiceflow/tsconfig-paths,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/utils-designer,"1.74.19, 1.74.20",medium,1000,2025-11-21,false,Compromised package: @voiceflow/utils-designer,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/verror,"1.1.4, 1.1.5",medium,1000,2025-11-21,false,Compromised package: @voiceflow/verror,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/vite-config,"2.6.2, 2.6.3",medium,1000,2025-11-21,false,Compromised package: @voiceflow/vite-config,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/vitest-config,"1.10.2, 1.10.3",medium,1000,2025-11-21,false,Compromised package: @voiceflow/vitest-config,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/voice-types,"2.10.58, 2.10.59",medium,1000,2025-11-21,false,Compromised package: @voiceflow/voice-types,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/voiceflow-types,"3.32.45, 3.32.46",medium,1000,2025-11-21,false,Compromised package: @voiceflow/voiceflow-types,preinstall script (Shai-Hulud 2.0),3
+@voiceflow/widget,"1.7.18, 1.7.19",medium,1000,2025-11-21,false,Compromised package: @voiceflow/widget,preinstall script (Shai-Hulud 2.0),3
+@yoobic/design-system,6.5.17,medium,1000,2025-11-21,false,Compromised package: @yoobic/design-system,preinstall script (Shai-Hulud 2.0),3
+@yoobic/jpeg-camera-es6,1.0.13,medium,1000,2025-11-21,false,Compromised package: @yoobic/jpeg-camera-es6,preinstall script (Shai-Hulud 2.0),3
+@yoobic/yobi,8.7.53,medium,1000,2025-11-21,false,Compromised package: @yoobic/yobi,preinstall script (Shai-Hulud 2.0),3
+@zapier/ai-actions,"0.1.18, 0.1.19, 0.1.20",medium,1000,2025-11-21,false,Compromised package: @zapier/ai-actions,preinstall script (Shai-Hulud 2.0),3
+@zapier/babel-preset-zapier,"6.4.1, 6.4.2, 6.4.3",medium,1000,2025-11-21,false,Compromised package: @zapier/babel-preset-zapier,preinstall script (Shai-Hulud 2.0),3
+@zapier/browserslist-config-zapier,"1.0.3, 1.0.4, 1.0.5",medium,1000,2025-11-21,false,Compromised package: @zapier/browserslist-config-zapier,preinstall script (Shai-Hulud 2.0),3
+@zapier/secret-scrubber,"1.1.3, 1.1.4, 1.1.5",medium,1000,2025-11-21,false,Compromised package: @zapier/secret-scrubber,preinstall script (Shai-Hulud 2.0),3
+ace-colorpicker-rpk,0.0.14,medium,1000,2025-11-21,false,Compromised package: ace-colorpicker-rpk,preinstall script (Shai-Hulud 2.0),3
+ai-crowl-shield,1.0.7,medium,1000,2025-11-21,false,Compromised package: ai-crowl-shield,preinstall script (Shai-Hulud 2.0),3
+airchief,0.3.1,medium,1000,2025-11-21,false,Compromised package: airchief,preinstall script (Shai-Hulud 2.0),3
+airpilot,0.8.8,medium,1000,2025-11-21,false,Compromised package: airpilot,preinstall script (Shai-Hulud 2.0),3
+angulartics2,"14.1.2, 14.1.1",critical,200000,2025-09-15,false,Compromised package: angulartics2,postinstall script (original Shai-Hulud),1
+arc-cli-fc,1.0.1,medium,1000,2025-11-21,false,Compromised package: arc-cli-fc,preinstall script (Shai-Hulud 2.0),3
+asyncapi-preview,"1.0.1, 1.0.2",medium,1000,2025-11-21,false,Compromised package: asyncapi-preview,preinstall script (Shai-Hulud 2.0),3
+atrix,1.0.1,medium,1000,2025-11-21,false,Compromised package: atrix,preinstall script (Shai-Hulud 2.0),3
+automation_model,1.0.491,medium,1000,2025-11-21,false,Compromised package: automation_model,preinstall script (Shai-Hulud 2.0),3
+axios-builder,1.2.1,medium,1000,2025-11-21,false,Compromised package: axios-builder,preinstall script (Shai-Hulud 2.0),3
+axios-cancelable,"1.0.1, 1.0.2",medium,1000,2025-11-21,false,Compromised package: axios-cancelable,preinstall script (Shai-Hulud 2.0),3
+axios-timed,"1.0.1, 1.0.2",medium,1000,2025-11-21,false,Compromised package: axios-timed,preinstall script (Shai-Hulud 2.0),3
+barebones-css,"1.1.3, 1.1.4",medium,1000,2025-11-21,false,Compromised package: barebones-css,preinstall script (Shai-Hulud 2.0),3
+benmostyn-frame-print,1.0.1,medium,1000,2025-11-21,false,Compromised package: benmostyn-frame-print,preinstall script (Shai-Hulud 2.0),3
+bestgpiocontroller,1.0.10,medium,1000,2025-11-21,false,Compromised package: bestgpiocontroller,preinstall script (Shai-Hulud 2.0),3
+bidirectional-adapter,"1.2.2, 1.2.3, 1.2.4, 1.2.5",medium,1000,2025-11-21,false,Compromised package: bidirectional-adapter,preinstall script (Shai-Hulud 2.0),3
+blinqio-executions-cli,1.0.41,medium,1000,2025-11-21,false,Compromised package: blinqio-executions-cli,preinstall script (Shai-Hulud 2.0),3
+blob-to-base64,1.0.3,medium,1000,2025-11-21,false,Compromised package: blob-to-base64,preinstall script (Shai-Hulud 2.0),3
+browser-webdriver-downloader,3.0.8,medium,1000,2025-11-21,false,Compromised package: browser-webdriver-downloader,preinstall script (Shai-Hulud 2.0),3
+bun-plugin-httpfile,0.1.1,medium,1000,2025-11-21,false,Compromised package: bun-plugin-httpfile,preinstall script (Shai-Hulud 2.0),3
+bytecode-checker-cli,"1.0.10, 1.0.11, 1.0.8, 1.0.9",medium,1000,2025-11-21,false,Compromised package: bytecode-checker-cli,preinstall script (Shai-Hulud 2.0),3
+bytes-to-x,1.0.1,medium,1000,2025-11-21,false,Compromised package: bytes-to-x,preinstall script (Shai-Hulud 2.0),3
+calc-loan-interest,1.0.4,medium,1000,2025-11-21,false,Compromised package: calc-loan-interest,preinstall script (Shai-Hulud 2.0),3
+capacitor-notificationhandler,"0.0.2, 0.0.3",medium,1000,2025-11-21,false,Compromised package: capacitor-notificationhandler,preinstall script (Shai-Hulud 2.0),3
+capacitor-plugin-apptrackingios,0.0.21,medium,1000,2025-11-21,false,Compromised package: capacitor-plugin-apptrackingios,preinstall script (Shai-Hulud 2.0),3
+capacitor-plugin-healthapp,"0.0.2, 0.0.3",medium,1000,2025-11-21,false,Compromised package: capacitor-plugin-healthapp,preinstall script (Shai-Hulud 2.0),3
+capacitor-plugin-ihealth,"1.1.8, 1.1.9",medium,1000,2025-11-21,false,Compromised package: capacitor-plugin-ihealth,preinstall script (Shai-Hulud 2.0),3
+capacitor-plugin-purchase,0.1.1,medium,1000,2025-11-21,false,Compromised package: capacitor-plugin-purchase,preinstall script (Shai-Hulud 2.0),3
+capacitor-plugin-scgssigninwithgoogle,0.0.5,medium,1000,2025-11-21,false,Compromised package: capacitor-plugin-scgssigninwithgoogle,preinstall script (Shai-Hulud 2.0),3
+capacitor-plugin-vonage,"1.0.2, 1.0.3",medium,1000,2025-11-21,false,Compromised package: capacitor-plugin-vonage,preinstall script (Shai-Hulud 2.0),3
+capacitor-purchase-history,0.0.10,medium,1000,2025-11-21,false,Compromised package: capacitor-purchase-history,preinstall script (Shai-Hulud 2.0),3
+capacitor-voice-recorder-wav,6.0.3,medium,1000,2025-11-21,false,Compromised package: capacitor-voice-recorder-wav,preinstall script (Shai-Hulud 2.0),3
+capacitorandroidpermissions,"0.0.4, 0.0.5",medium,1000,2025-11-21,false,Compromised package: capacitorandroidpermissions,preinstall script (Shai-Hulud 2.0),3
+chrome-extension-downloads,"0.0.3, 0.0.4",medium,1000,2025-11-21,false,Compromised package: chrome-extension-downloads,preinstall script (Shai-Hulud 2.0),3
+claude-token-updater,1.0.3,medium,1000,2025-11-21,false,Compromised package: claude-token-updater,preinstall script (Shai-Hulud 2.0),3
+coinmarketcap-api,"3.1.2, 3.1.3",medium,1000,2025-11-21,false,Compromised package: coinmarketcap-api,preinstall script (Shai-Hulud 2.0),3
+colors-regex,2.0.1,medium,1000,2025-11-21,false,Compromised package: colors-regex,preinstall script (Shai-Hulud 2.0),3
+command-irail,0.5.4,medium,1000,2025-11-21,false,Compromised package: command-irail,preinstall script (Shai-Hulud 2.0),3
+compare-obj,"1.1.1, 1.1.2",medium,1000,2025-11-21,false,Compromised package: compare-obj,preinstall script (Shai-Hulud 2.0),3
+composite-reducer,"1.0.2, 1.0.3, 1.0.4, 1.0.5",medium,1000,2025-11-21,false,Compromised package: composite-reducer,preinstall script (Shai-Hulud 2.0),3
+config-cordova,0.8.5,medium,1000,2025-11-21,false,Compromised package: config-cordova,preinstall script (Shai-Hulud 2.0),3
+cordova-plugin-voxeet2,1.0.24,medium,1000,2025-11-21,false,Compromised package: cordova-plugin-voxeet2,preinstall script (Shai-Hulud 2.0),3
+cordova-voxeet,1.0.32,medium,1000,2025-11-21,false,Compromised package: cordova-voxeet,preinstall script (Shai-Hulud 2.0),3
+count-it-down,"1.0.1, 1.0.2",medium,1000,2025-11-21,false,Compromised package: count-it-down,preinstall script (Shai-Hulud 2.0),3
+cpu-instructions,0.0.14,medium,1000,2025-11-21,false,Compromised package: cpu-instructions,preinstall script (Shai-Hulud 2.0),3
+create-director-app,0.1.1,medium,1000,2025-11-21,false,Compromised package: create-director-app,preinstall script (Shai-Hulud 2.0),3
+create-glee-app,"0.2.2, 0.2.3",medium,1000,2025-11-21,false,Compromised package: create-glee-app,preinstall script (Shai-Hulud 2.0),3
+create-hardhat3-app,"1.1.1, 1.1.2, 1.1.3, 1.1.4",medium,1000,2025-11-21,false,Compromised package: create-hardhat3-app,preinstall script (Shai-Hulud 2.0),3
+create-hest-app,0.1.9,medium,1000,2025-11-21,false,Compromised package: create-hest-app,preinstall script (Shai-Hulud 2.0),3
+crypto-addr-codec,0.1.9,medium,1000,2025-11-21,false,Compromised package: crypto-addr-codec,preinstall script (Shai-Hulud 2.0),3
+css-dedoupe,0.1.2,medium,1000,2025-11-21,false,Compromised package: css-dedoupe,preinstall script (Shai-Hulud 2.0),3
+dashboard-empty-state,1.0.3,medium,1000,2025-11-21,false,Compromised package: dashboard-empty-state,preinstall script (Shai-Hulud 2.0),3
+db-evo,"1.1.4, 1.1.5",medium,1000,2025-11-21,false,Compromised package: db-evo,preinstall script (Shai-Hulud 2.0),3
+designstudiouiux,1.0.1,medium,1000,2025-11-21,false,Compromised package: designstudiouiux,preinstall script (Shai-Hulud 2.0),3
+devextreme-angular-rpk,21.2.8,medium,1000,2025-11-21,false,Compromised package: devextreme-angular-rpk,preinstall script (Shai-Hulud 2.0),3
+devextreme-rpk,21.2.8,medium,1000,2025-11-21,false,Compromised package: devextreme-rpk,preinstall script (Shai-Hulud 2.0),3
+devstart-cli,1.0.6,medium,1000,2025-11-21,false,Compromised package: devstart-cli,preinstall script (Shai-Hulud 2.0),3
+dialogflow-es,"1.1.1, 1.1.2, 1.1.3, 1.1.4",medium,1000,2025-11-21,false,Compromised package: dialogflow-es,preinstall script (Shai-Hulud 2.0),3
+discord-bot-server,0.1.2,medium,1000,2025-11-21,false,Compromised package: discord-bot-server,preinstall script (Shai-Hulud 2.0),3
+docusaurus-plugin-vanilla-extract,1.0.3,medium,1000,2025-11-21,false,Compromised package: docusaurus-plugin-vanilla-extract,preinstall script (Shai-Hulud 2.0),3
+dont-go,1.1.2,medium,1000,2025-11-21,false,Compromised package: dont-go,preinstall script (Shai-Hulud 2.0),3
+dotnet-template,"0.0.3, 0.0.4",medium,1000,2025-11-21,false,Compromised package: dotnet-template,preinstall script (Shai-Hulud 2.0),3
+drop-events-on-property-plugin,0.0.2,medium,1000,2025-11-21,false,Compromised package: drop-events-on-property-plugin,preinstall script (Shai-Hulud 2.0),3
+email-deliverability-tester,1.1.1,medium,1000,2025-11-21,false,Compromised package: email-deliverability-tester,preinstall script (Shai-Hulud 2.0),3
+ember-browser-services,"5.0.2, 5.0.3",high,10000,2025-11-21,false,Compromised package: ember-browser-services,preinstall script (Shai-Hulud 2.0),2
+ember-headless-form,"1.1.2, 1.1.3",high,10000,2025-11-21,false,Compromised package: ember-headless-form,preinstall script (Shai-Hulud 2.0),2
+ember-headless-form-yup,1.0.1,high,10000,2025-11-21,false,Compromised package: ember-headless-form-yup,preinstall script (Shai-Hulud 2.0),2
+ember-headless-table,"2.1.5, 2.1.6",high,10000,2025-11-21,false,Compromised package: ember-headless-table,preinstall script (Shai-Hulud 2.0),2
+ember-url-hash-polyfill,"1.0.12, 1.0.13",high,10000,2025-11-21,false,Compromised package: ember-url-hash-polyfill,preinstall script (Shai-Hulud 2.0),2
+ember-velcro,"2.2.1, 2.2.2",high,10000,2025-11-21,false,Compromised package: ember-velcro,preinstall script (Shai-Hulud 2.0),2
+encounter-playground,"0.0.4, 0.0.5, 0.0.2, 0.0.3",medium,1000,2025-11-21,false,Compromised package: encounter-playground,preinstall script (Shai-Hulud 2.0),3
+enforce-branch-name,1.1.3,medium,1000,2025-11-21,false,Compromised package: enforce-branch-name,preinstall script (Shai-Hulud 2.0),3
+esbuild-plugin-brotli,0.2.1,medium,1000,2025-11-21,false,Compromised package: esbuild-plugin-brotli,preinstall script (Shai-Hulud 2.0),3
+esbuild-plugin-eta,0.1.1,medium,1000,2025-11-21,false,Compromised package: esbuild-plugin-eta,preinstall script (Shai-Hulud 2.0),3
+esbuild-plugin-httpfile,0.4.1,medium,1000,2025-11-21,false,Compromised package: esbuild-plugin-httpfile,preinstall script (Shai-Hulud 2.0),3
+eslint-config-crowdstrike,"11.0.2, 11.0.3",medium,1000,2025-11-21,false,Compromised package: eslint-config-crowdstrike,preinstall script (Shai-Hulud 2.0),3
+eslint-config-crowdstrike-node,"4.0.3, 4.0.4",medium,1000,2025-11-21,false,Compromised package: eslint-config-crowdstrike-node,preinstall script (Shai-Hulud 2.0),3
+eslint-config-nitpicky,4.0.1,medium,1000,2025-11-21,false,Compromised package: eslint-config-nitpicky,preinstall script (Shai-Hulud 2.0),3
+eslint-config-teselagen,"6.1.7, 6.1.8",medium,1000,2025-11-21,false,Compromised package: eslint-config-teselagen,preinstall script (Shai-Hulud 2.0),3
+eslint-config-trigo,22.0.2,medium,1000,2025-11-21,false,Compromised package: eslint-config-trigo,preinstall script (Shai-Hulud 2.0),3
+eslint-config-zeallat-base,1.0.4,medium,1000,2025-11-21,false,Compromised package: eslint-config-zeallat-base,preinstall script (Shai-Hulud 2.0),3
+ethereum-ens,0.8.1,medium,1000,2025-11-21,false,Compromised package: ethereum-ens,preinstall script (Shai-Hulud 2.0),3
+evm-checkcode-cli,"1.0.12, 1.0.13, 1.0.14, 1.0.15",medium,1000,2025-11-21,false,Compromised package: evm-checkcode-cli,preinstall script (Shai-Hulud 2.0),3
+exact-ticker,0.3.5,medium,1000,2025-11-21,false,Compromised package: exact-ticker,preinstall script (Shai-Hulud 2.0),3
+expo-audio-session,0.2.1,medium,1000,2025-11-21,false,Compromised package: expo-audio-session,preinstall script (Shai-Hulud 2.0),3
+expressos,1.1.3,medium,1000,2025-11-21,false,Compromised package: expressos,preinstall script (Shai-Hulud 2.0),3
+fat-fingered,"1.0.1, 1.0.2",medium,1000,2025-11-21,false,Compromised package: fat-fingered,preinstall script (Shai-Hulud 2.0),3
+feature-flip,"1.0.1, 1.0.2",medium,1000,2025-11-21,false,Compromised package: feature-flip,preinstall script (Shai-Hulud 2.0),3
+firestore-search-engine,1.2.3,medium,1000,2025-11-21,false,Compromised package: firestore-search-engine,preinstall script (Shai-Hulud 2.0),3
+fittxt,"1.0.2, 1.0.3",medium,1000,2025-11-21,false,Compromised package: fittxt,preinstall script (Shai-Hulud 2.0),3
+flapstacks,"1.0.1, 1.0.2",medium,1000,2025-11-21,false,Compromised package: flapstacks,preinstall script (Shai-Hulud 2.0),3
+flatten-unflatten,"1.0.1, 1.0.2",medium,1000,2025-11-21,false,Compromised package: flatten-unflatten,preinstall script (Shai-Hulud 2.0),3
+formik-error-focus,2.0.1,medium,1000,2025-11-21,false,Compromised package: formik-error-focus,preinstall script (Shai-Hulud 2.0),3
+formik-store,1.0.1,medium,1000,2025-11-21,false,Compromised package: formik-store,preinstall script (Shai-Hulud 2.0),3
+fuzzy-finder,"1.0.5, 1.0.6",medium,1000,2025-11-21,false,Compromised package: fuzzy-finder,preinstall script (Shai-Hulud 2.0),3
+gate-evm-check-code2,"2.0.3, 2.0.4, 2.0.5, 2.0.6",medium,1000,2025-11-21,false,Compromised package: gate-evm-check-code2,preinstall script (Shai-Hulud 2.0),3
+gate-evm-tools-test,"1.0.5, 1.0.6, 1.0.7, 1.0.8",medium,1000,2025-11-21,false,Compromised package: gate-evm-tools-test,preinstall script (Shai-Hulud 2.0),3
+gatsby-plugin-cname,"1.0.1, 1.0.2",medium,1000,2025-11-21,false,Compromised package: gatsby-plugin-cname,preinstall script (Shai-Hulud 2.0),3
+generator-meteor-stock,0.1.6,medium,1000,2025-11-21,false,Compromised package: generator-meteor-stock,preinstall script (Shai-Hulud 2.0),3
+generator-ng-itobuz,0.0.15,medium,1000,2025-11-21,false,Compromised package: generator-ng-itobuz,preinstall script (Shai-Hulud 2.0),3
+get-them-args,1.3.3,medium,1000,2025-11-21,false,Compromised package: get-them-args,preinstall script (Shai-Hulud 2.0),3
+github-action-for-generator,"2.1.27, 2.1.28",medium,1000,2025-11-21,false,Compromised package: github-action-for-generator,preinstall script (Shai-Hulud 2.0),3
+gitsafe,1.0.5,medium,1000,2025-11-21,false,Compromised package: gitsafe,preinstall script (Shai-Hulud 2.0),3
+globalize-rpk,1.7.4,medium,1000,2025-11-21,false,Compromised package: globalize-rpk,preinstall script (Shai-Hulud 2.0),3
+go-template,"0.1.8, 0.1.9",medium,1000,2025-11-21,false,Compromised package: go-template,preinstall script (Shai-Hulud 2.0),3
+graphql-sequelize-teselagen,"5.3.8, 5.3.9",medium,1000,2025-11-21,false,Compromised package: graphql-sequelize-teselagen,preinstall script (Shai-Hulud 2.0),3
+gulp-inject-envs,"1.2.1, 1.2.2",medium,1000,2025-11-21,false,Compromised package: gulp-inject-envs,preinstall script (Shai-Hulud 2.0),3
+haufe-axera-api-client,"0.0.1, 0.0.2",medium,1000,2025-11-21,false,Compromised package: haufe-axera-api-client,preinstall script (Shai-Hulud 2.0),3
+hope-mapboxdraw,0.1.1,medium,1000,2025-11-21,false,Compromised package: hope-mapboxdraw,preinstall script (Shai-Hulud 2.0),3
+hopedraw,1.0.3,medium,1000,2025-11-21,false,Compromised package: hopedraw,preinstall script (Shai-Hulud 2.0),3
+hover-design-prototype,0.0.5,medium,1000,2025-11-21,false,Compromised package: hover-design-prototype,preinstall script (Shai-Hulud 2.0),3
+html-to-base64-image,1.0.2,medium,1000,2025-11-21,false,Compromised package: html-to-base64-image,preinstall script (Shai-Hulud 2.0),3
+httpness,"1.0.2, 1.0.3",medium,1000,2025-11-21,false,Compromised package: httpness,preinstall script (Shai-Hulud 2.0),3
+hyper-fullfacing,1.0.3,medium,1000,2025-11-21,false,Compromised package: hyper-fullfacing,preinstall script (Shai-Hulud 2.0),3
+hyperterm-hipster,1.0.7,medium,1000,2025-11-21,false,Compromised package: hyperterm-hipster,preinstall script (Shai-Hulud 2.0),3
+ids-css,1.5.1,medium,1000,2025-11-21,false,Compromised package: ids-css,preinstall script (Shai-Hulud 2.0),3
+ids-enterprise-mcp-server,0.0.2,medium,1000,2025-11-21,false,Compromised package: ids-enterprise-mcp-server,preinstall script (Shai-Hulud 2.0),3
+ids-enterprise-ng,20.1.6,medium,1000,2025-11-21,false,Compromised package: ids-enterprise-ng,preinstall script (Shai-Hulud 2.0),3
+ids-enterprise-typings,20.1.6,medium,1000,2025-11-21,false,Compromised package: ids-enterprise-typings,preinstall script (Shai-Hulud 2.0),3
+image-to-uri,"1.0.1, 1.0.2",medium,1000,2025-11-21,false,Compromised package: image-to-uri,preinstall script (Shai-Hulud 2.0),3
+insomnia-plugin-random-pick,1.0.4,medium,1000,2025-11-21,false,Compromised package: insomnia-plugin-random-pick,preinstall script (Shai-Hulud 2.0),3
+invo,0.2.2,medium,1000,2025-11-21,false,Compromised package: invo,preinstall script (Shai-Hulud 2.0),3
+iron-shield-miniapp,0.0.2,medium,1000,2025-11-21,false,Compromised package: iron-shield-miniapp,preinstall script (Shai-Hulud 2.0),3
+ito-button,8.0.3,medium,1000,2025-11-21,false,Compromised package: ito-button,preinstall script (Shai-Hulud 2.0),3
+itobuz-angular,0.0.1,medium,1000,2025-11-21,false,Compromised package: itobuz-angular,preinstall script (Shai-Hulud 2.0),3
+itobuz-angular-auth,8.0.11,medium,1000,2025-11-21,false,Compromised package: itobuz-angular-auth,preinstall script (Shai-Hulud 2.0),3
+itobuz-angular-button,8.0.11,medium,1000,2025-11-21,false,Compromised package: itobuz-angular-button,preinstall script (Shai-Hulud 2.0),3
+jacob-zuma,"1.0.1, 1.0.2",medium,1000,2025-11-21,false,Compromised package: jacob-zuma,preinstall script (Shai-Hulud 2.0),3
+jaetut-varit-test,1.0.2,medium,1000,2025-11-21,false,Compromised package: jaetut-varit-test,preinstall script (Shai-Hulud 2.0),3
+jan-browser,0.13.1,medium,1000,2025-11-21,false,Compromised package: jan-browser,preinstall script (Shai-Hulud 2.0),3
+jquery-bindings,"1.1.2, 1.1.3",medium,1000,2025-11-21,false,Compromised package: jquery-bindings,preinstall script (Shai-Hulud 2.0),3
+json-rules-engine-simplified,"0.2.1, 0.2.2, 0.2.3, 0.2.4",medium,1000,2025-11-21,false,Compromised package: json-rules-engine-simplified,preinstall script (Shai-Hulud 2.0),3
+jsonsurge,1.0.7,medium,1000,2025-11-21,false,Compromised package: jsonsurge,preinstall script (Shai-Hulud 2.0),3
+jumpgate,0.0.2,medium,1000,2025-11-21,false,Compromised package: jumpgate,preinstall script (Shai-Hulud 2.0),3
+just-toasty,1.7.1,medium,1000,2025-11-21,false,Compromised package: just-toasty,preinstall script (Shai-Hulud 2.0),3
+kill-port,"2.0.2, 2.0.3",medium,1000,2025-11-21,false,Compromised package: kill-port,preinstall script (Shai-Hulud 2.0),3
+koa2-swagger-ui,"5.11.2, 5.11.1",medium,1000,2025-11-21,false,Compromised package: koa2-swagger-ui,preinstall script (Shai-Hulud 2.0),3
+korea-administrative-area-geo-json-util,1.0.7,medium,1000,2025-11-21,false,Compromised package: korea-administrative-area-geo-json-util,preinstall script (Shai-Hulud 2.0),3
+kwami,"1.5.10, 1.5.9",medium,1000,2025-11-21,false,Compromised package: kwami,preinstall script (Shai-Hulud 2.0),3
+lang-codes,"1.0.1, 1.0.2",medium,1000,2025-11-21,false,Compromised package: lang-codes,preinstall script (Shai-Hulud 2.0),3
+license-o-matic,"1.2.1, 1.2.2",medium,1000,2025-11-21,false,Compromised package: license-o-matic,preinstall script (Shai-Hulud 2.0),3
+lint-staged-imagemin,"1.3.1, 1.3.2",medium,1000,2025-11-21,false,Compromised package: lint-staged-imagemin,preinstall script (Shai-Hulud 2.0),3
+lite-serper-mcp-server,0.2.2,medium,1000,2025-11-21,false,Compromised package: lite-serper-mcp-server,preinstall script (Shai-Hulud 2.0),3
+luno-api,1.2.3,medium,1000,2025-11-21,false,Compromised package: luno-api,preinstall script (Shai-Hulud 2.0),3
+manual-billing-system-miniapp-api,1.3.1,medium,1000,2025-11-21,false,Compromised package: manual-billing-system-miniapp-api,preinstall script (Shai-Hulud 2.0),3
+mcfly-semantic-release,1.3.1,medium,1000,2025-11-21,false,Compromised package: mcfly-semantic-release,preinstall script (Shai-Hulud 2.0),3
+mcp-knowledge-base,0.0.2,medium,1000,2025-11-21,false,Compromised package: mcp-knowledge-base,preinstall script (Shai-Hulud 2.0),3
+mcp-knowledge-graph,1.2.1,medium,1000,2025-11-21,false,Compromised package: mcp-knowledge-graph,preinstall script (Shai-Hulud 2.0),3
+medusa-plugin-announcement,0.0.3,medium,1000,2025-11-21,false,Compromised package: medusa-plugin-announcement,preinstall script (Shai-Hulud 2.0),3
+medusa-plugin-logs,0.0.17,medium,1000,2025-11-21,false,Compromised package: medusa-plugin-logs,preinstall script (Shai-Hulud 2.0),3
+medusa-plugin-momo,0.0.68,medium,1000,2025-11-21,false,Compromised package: medusa-plugin-momo,preinstall script (Shai-Hulud 2.0),3
+medusa-plugin-product-reviews-kvy,0.0.4,medium,1000,2025-11-21,false,Compromised package: medusa-plugin-product-reviews-kvy,preinstall script (Shai-Hulud 2.0),3
+medusa-plugin-zalopay,0.0.40,medium,1000,2025-11-21,false,Compromised package: medusa-plugin-zalopay,preinstall script (Shai-Hulud 2.0),3
+mobioffice-cli,1.0.3,medium,1000,2025-11-21,false,Compromised package: mobioffice-cli,preinstall script (Shai-Hulud 2.0),3
+mod10-check-digit,1.0.1,medium,1000,2025-11-21,false,Compromised package: mod10-check-digit,preinstall script (Shai-Hulud 2.0),3
+mon-package-react-typescript,1.0.1,medium,1000,2025-11-21,false,Compromised package: mon-package-react-typescript,preinstall script (Shai-Hulud 2.0),3
+monorepo-next,"13.0.1, 13.0.2",medium,1000,2025-11-21,false,Compromised package: monorepo-next,preinstall script (Shai-Hulud 2.0),3
+mstate-angular,0.4.4,medium,1000,2025-11-21,false,Compromised package: mstate-angular,preinstall script (Shai-Hulud 2.0),3
+mstate-cli,0.4.7,medium,1000,2025-11-21,false,Compromised package: mstate-cli,preinstall script (Shai-Hulud 2.0),3
+mstate-dev-react,1.1.1,medium,1000,2025-11-21,false,Compromised package: mstate-dev-react,preinstall script (Shai-Hulud 2.0),3
+mstate-react,1.6.5,medium,1000,2025-11-21,false,Compromised package: mstate-react,preinstall script (Shai-Hulud 2.0),3
+my-saeed-lib,0.1.1,medium,1000,2025-11-21,false,Compromised package: my-saeed-lib,preinstall script (Shai-Hulud 2.0),3
+n8n-nodes-tmdb,0.5.1,medium,1000,2025-11-21,false,Compromised package: n8n-nodes-tmdb,preinstall script (Shai-Hulud 2.0),3
+n8n-nodes-vercel-ai-sdk,0.1.7,medium,1000,2025-11-21,false,Compromised package: n8n-nodes-vercel-ai-sdk,preinstall script (Shai-Hulud 2.0),3
+n8n-nodes-viral-app,0.2.5,medium,1000,2025-11-21,false,Compromised package: n8n-nodes-viral-app,preinstall script (Shai-Hulud 2.0),3
+nanoreset,"7.0.1, 7.0.2",medium,1000,2025-11-21,false,Compromised package: nanoreset,preinstall script (Shai-Hulud 2.0),3
+next-circular-dependency,"1.0.2, 1.0.3",medium,1000,2025-11-21,false,Compromised package: next-circular-dependency,preinstall script (Shai-Hulud 2.0),3
+next-simple-google-analytics,"1.1.1, 1.1.2",medium,1000,2025-11-21,false,Compromised package: next-simple-google-analytics,preinstall script (Shai-Hulud 2.0),3
+next-styled-nprogress,"1.0.4, 1.0.5",medium,1000,2025-11-21,false,Compromised package: next-styled-nprogress,preinstall script (Shai-Hulud 2.0),3
+ng-imports-checker,"0.0.10, 0.0.9",medium,1000,2025-11-21,false,Compromised package: ng-imports-checker,preinstall script (Shai-Hulud 2.0),3
+ng2-file-upload,"8.0.3, 7.0.2, 7.0.3, 8.0.1, 8.0.2, 9.0.1",medium,1000,2025-11-21,false,Compromised package: ng2-file-upload,preinstall script (Shai-Hulud 2.0),3
+ngx-bootstrap,"18.1.4, 19.0.3, 20.0.4, 20.0.5, 20.0.6, 19.0.4, 20.0.3",critical,300000,2025-09-15,false,Compromised package: ngx-bootstrap,postinstall script (original Shai-Hulud),1
+ngx-color,"10.0.2, 10.0.1",high,20000,2025-11-21,false,Compromised package: ngx-color,preinstall script (Shai-Hulud 2.0),2
+ngx-toastr,"19.0.2, 19.0.1",high,20000,2025-11-21,false,Compromised package: ngx-toastr,preinstall script (Shai-Hulud 2.0),2
+ngx-trend,8.0.1,high,20000,2025-11-21,false,Compromised package: ngx-trend,preinstall script (Shai-Hulud 2.0),2
+ngx-useful-swiper-prosenjit,9.0.2,high,20000,2025-11-21,false,Compromised package: ngx-useful-swiper-prosenjit,preinstall script (Shai-Hulud 2.0),2
+ngx-wooapi,12.0.1,high,20000,2025-11-21,false,Compromised package: ngx-wooapi,preinstall script (Shai-Hulud 2.0),2
+ngx-ws,"1.1.5, 1.1.6",high,20000,2025-11-21,false,Compromised package: ngx-ws,preinstall script (Shai-Hulud 2.0),2
+normal-store,"1.3.1, 1.3.2, 1.3.3, 1.3.4",medium,1000,2025-11-21,false,Compromised package: normal-store,preinstall script (Shai-Hulud 2.0),3
+obj-to-css,"1.0.2, 1.0.3",medium,1000,2025-11-21,false,Compromised package: obj-to-css,preinstall script (Shai-Hulud 2.0),3
+okta-react-router-6,5.0.1,medium,1000,2025-11-21,false,Compromised package: okta-react-router-6,preinstall script (Shai-Hulud 2.0),3
+open2internet,0.1.1,medium,1000,2025-11-21,false,Compromised package: open2internet,preinstall script (Shai-Hulud 2.0),3
+oradm-to-gql,"35.0.14, 35.0.15",medium,1000,2025-11-21,false,Compromised package: oradm-to-gql,preinstall script (Shai-Hulud 2.0),3
+oradm-to-sqlz,"1.1.2, 1.1.3, 1.1.4, 1.1.5",medium,1000,2025-11-21,false,Compromised package: oradm-to-sqlz,preinstall script (Shai-Hulud 2.0),3
+orbit-boxicons,2.1.3,medium,1000,2025-11-21,false,Compromised package: orbit-boxicons,preinstall script (Shai-Hulud 2.0),3
+orbit-nebula-draw-tools,1.0.10,medium,1000,2025-11-21,false,Compromised package: orbit-nebula-draw-tools,preinstall script (Shai-Hulud 2.0),3
+orbit-nebula-editor,1.0.2,medium,1000,2025-11-21,false,Compromised package: orbit-nebula-editor,preinstall script (Shai-Hulud 2.0),3
+orbit-soap,0.43.13,medium,1000,2025-11-21,false,Compromised package: orbit-soap,preinstall script (Shai-Hulud 2.0),3
+orchestrix,12.1.2,medium,1000,2025-11-21,false,Compromised package: orchestrix,preinstall script (Shai-Hulud 2.0),3
+ove-auto-annotate,"0.0.9, 0.0.10",medium,1000,2025-11-21,false,Compromised package: ove-auto-annotate,preinstall script (Shai-Hulud 2.0),3
+package-tester,1.0.1,medium,1000,2025-11-21,false,Compromised package: package-tester,preinstall script (Shai-Hulud 2.0),3
+parcel-plugin-asset-copier,"1.1.2, 1.1.3",medium,1000,2025-11-21,false,Compromised package: parcel-plugin-asset-copier,preinstall script (Shai-Hulud 2.0),3
+pdf-annotation,0.0.2,medium,1000,2025-11-21,false,Compromised package: pdf-annotation,preinstall script (Shai-Hulud 2.0),3
+piclite,1.0.1,medium,1000,2025-11-21,false,Compromised package: piclite,preinstall script (Shai-Hulud 2.0),3
+pico-uid,"1.0.3, 1.0.4",medium,1000,2025-11-21,false,Compromised package: pico-uid,preinstall script (Shai-Hulud 2.0),3
+pkg-readme,1.1.1,medium,1000,2025-11-21,false,Compromised package: pkg-readme,preinstall script (Shai-Hulud 2.0),3
+pm2-gelf-json,"1.0.4, 1.0.5",medium,1000,2025-11-21,false,Compromised package: pm2-gelf-json,preinstall script (Shai-Hulud 2.0),3
+poper-react-sdk,0.1.2,medium,1000,2025-11-21,false,Compromised package: poper-react-sdk,preinstall script (Shai-Hulud 2.0),3
+posthog-docusaurus,2.0.6,medium,1000,2025-11-21,false,Compromised package: posthog-docusaurus,preinstall script (Shai-Hulud 2.0),3
+posthog-js,1.297.3,medium,1000,2025-11-21,false,Compromised package: posthog-js,preinstall script (Shai-Hulud 2.0),3
+posthog-node,"4.18.1, 5.11.3, 5.13.3",medium,1000,2025-11-21,false,Compromised package: posthog-node,preinstall script (Shai-Hulud 2.0),3
+posthog-plugin-hello-world,1.0.1,medium,1000,2025-11-21,false,Compromised package: posthog-plugin-hello-world,preinstall script (Shai-Hulud 2.0),3
+posthog-react-native,"4.11.1, 4.12.5",medium,1000,2025-11-21,false,Compromised package: posthog-react-native,preinstall script (Shai-Hulud 2.0),3
+posthog-react-native-session-replay,1.2.2,medium,1000,2025-11-21,false,Compromised package: posthog-react-native-session-replay,preinstall script (Shai-Hulud 2.0),3
+prime-one-table,0.0.19,medium,1000,2025-11-21,false,Compromised package: prime-one-table,preinstall script (Shai-Hulud 2.0),3
+printjs-rpk,1.6.1,medium,1000,2025-11-21,false,Compromised package: printjs-rpk,preinstall script (Shai-Hulud 2.0),3
+prompt-eng,1.0.50,medium,1000,2025-11-21,false,Compromised package: prompt-eng,preinstall script (Shai-Hulud 2.0),3
+puny-req,1.0.3,medium,1000,2025-11-21,false,Compromised package: puny-req,preinstall script (Shai-Hulud 2.0),3
+ra-auth-firebase,1.0.3,medium,1000,2025-11-21,false,Compromised package: ra-auth-firebase,preinstall script (Shai-Hulud 2.0),3
+ra-data-firebase,"1.0.7, 1.0.8",medium,1000,2025-11-21,false,Compromised package: ra-data-firebase,preinstall script (Shai-Hulud 2.0),3
+react-complaint-image,"0.0.32, 0.0.33, 0.0.34, 0.0.35",high,15000,2025-11-21,false,Compromised package: react-complaint-image,preinstall script (Shai-Hulud 2.0),2
+react-component-taggers,0.1.9,high,15000,2025-11-21,false,Compromised package: react-component-taggers,preinstall script (Shai-Hulud 2.0),2
+react-data-to-export,1.0.1,high,15000,2025-11-21,false,Compromised package: react-data-to-export,preinstall script (Shai-Hulud 2.0),2
+react-element-prompt-inspector,0.1.18,high,15000,2025-11-21,false,Compromised package: react-element-prompt-inspector,preinstall script (Shai-Hulud 2.0),2
+react-favic,1.0.2,high,15000,2025-11-21,false,Compromised package: react-favic,preinstall script (Shai-Hulud 2.0),2
+react-hook-form-persist,"3.0.1, 3.0.2",high,15000,2025-11-21,false,Compromised package: react-hook-form-persist,preinstall script (Shai-Hulud 2.0),2
+react-jam-icons,"1.0.1, 1.0.2",high,15000,2025-11-21,false,Compromised package: react-jam-icons,preinstall script (Shai-Hulud 2.0),2
+react-jsonschema-form-conditionals,"0.3.18, 0.3.19, 0.3.20, 0.3.21",high,15000,2025-11-21,false,Compromised package: react-jsonschema-form-conditionals,preinstall script (Shai-Hulud 2.0),2
+react-jsonschema-form-extras,"1.0.1, 1.0.2, 1.0.3, 1.0.4",high,15000,2025-11-21,false,Compromised package: react-jsonschema-form-extras,preinstall script (Shai-Hulud 2.0),2
+react-jsonschema-rxnt-extras,"0.4.6, 0.4.7, 0.4.8, 0.4.9",high,15000,2025-11-21,false,Compromised package: react-jsonschema-rxnt-extras,preinstall script (Shai-Hulud 2.0),2
+react-keycloak-context,"1.0.8, 1.0.9",high,15000,2025-11-21,false,Compromised package: react-keycloak-context,preinstall script (Shai-Hulud 2.0),2
+react-library-setup,0.0.6,high,15000,2025-11-21,false,Compromised package: react-library-setup,preinstall script (Shai-Hulud 2.0),2
+react-linear-loader,1.0.2,high,15000,2025-11-21,false,Compromised package: react-linear-loader,preinstall script (Shai-Hulud 2.0),2
+react-micromodal.js,"1.0.1, 1.0.2",high,15000,2025-11-21,false,Compromised package: react-micromodal.js,preinstall script (Shai-Hulud 2.0),2
+react-native-datepicker-modal,"1.3.1, 1.3.2",high,15000,2025-11-21,false,Compromised package: react-native-datepicker-modal,preinstall script (Shai-Hulud 2.0),2
+react-native-email,"2.1.1, 2.1.2",high,15000,2025-11-21,false,Compromised package: react-native-email,preinstall script (Shai-Hulud 2.0),2
+react-native-fetch,"2.0.1, 2.0.2",high,15000,2025-11-21,false,Compromised package: react-native-fetch,preinstall script (Shai-Hulud 2.0),2
+react-native-get-pixel-dimensions,"1.0.1, 1.0.2",high,15000,2025-11-21,false,Compromised package: react-native-get-pixel-dimensions,preinstall script (Shai-Hulud 2.0),2
+react-native-google-maps-directions,2.1.2,high,15000,2025-11-21,false,Compromised package: react-native-google-maps-directions,preinstall script (Shai-Hulud 2.0),2
+react-native-jam-icons,"1.0.1, 1.0.2",high,15000,2025-11-21,false,Compromised package: react-native-jam-icons,preinstall script (Shai-Hulud 2.0),2
+react-native-log-level,"1.2.1, 1.2.2",high,15000,2025-11-21,false,Compromised package: react-native-log-level,preinstall script (Shai-Hulud 2.0),2
+react-native-modest-checkbox,3.3.1,high,15000,2025-11-21,false,Compromised package: react-native-modest-checkbox,preinstall script (Shai-Hulud 2.0),2
+react-native-modest-storage,2.1.1,high,15000,2025-11-21,false,Compromised package: react-native-modest-storage,preinstall script (Shai-Hulud 2.0),2
+react-native-phone-call,"1.2.1, 1.2.2",high,15000,2025-11-21,false,Compromised package: react-native-phone-call,preinstall script (Shai-Hulud 2.0),2
+react-native-retriable-fetch,"2.0.1, 2.0.2",high,15000,2025-11-21,false,Compromised package: react-native-retriable-fetch,preinstall script (Shai-Hulud 2.0),2
+react-native-use-modal,1.0.3,high,15000,2025-11-21,false,Compromised package: react-native-use-modal,preinstall script (Shai-Hulud 2.0),2
+react-native-view-finder,"1.2.1, 1.2.2",high,15000,2025-11-21,false,Compromised package: react-native-view-finder,preinstall script (Shai-Hulud 2.0),2
+react-native-websocket,"1.0.3, 1.0.4",high,15000,2025-11-21,false,Compromised package: react-native-websocket,preinstall script (Shai-Hulud 2.0),2
+react-native-worklet-functions,3.3.3,high,15000,2025-11-21,false,Compromised package: react-native-worklet-functions,preinstall script (Shai-Hulud 2.0),2
+react-qr-image,1.1.1,high,15000,2025-11-21,false,Compromised package: react-qr-image,preinstall script (Shai-Hulud 2.0),2
+rediff,1.0.5,medium,1000,2025-11-21,false,Compromised package: rediff,preinstall script (Shai-Hulud 2.0),3
+rediff-viewer,0.0.7,medium,1000,2025-11-21,false,Compromised package: rediff-viewer,preinstall script (Shai-Hulud 2.0),3
+redux-router-kit,"1.2.2, 1.2.3, 1.2.4",medium,1000,2025-11-21,false,Compromised package: redux-router-kit,preinstall script (Shai-Hulud 2.0),3
+remark-preset-lint-crowdstrike,"4.0.1, 4.0.2",medium,1000,2025-11-21,false,Compromised package: remark-preset-lint-crowdstrike,preinstall script (Shai-Hulud 2.0),3
+rollup-plugin-httpfile,0.2.1,medium,1000,2025-11-21,false,Compromised package: rollup-plugin-httpfile,preinstall script (Shai-Hulud 2.0),3
+rxnt-authentication,"0.0.5, 0.0.6, 0.0.3, 0.0.4",critical,150,2025-09-15,true,Compromised package: rxnt-authentication,postinstall script (original Shai-Hulud),1
+rxnt-healthchecks-nestjs,"1.0.4, 1.0.5, 1.0.2, 1.0.3",medium,1000,2025-11-21,false,Compromised package: rxnt-healthchecks-nestjs,preinstall script (Shai-Hulud 2.0),3
+rxnt-kue,"1.0.6, 1.0.7, 1.0.4, 1.0.5",medium,1000,2025-11-21,false,Compromised package: rxnt-kue,preinstall script (Shai-Hulud 2.0),3
+sa-company-registration-number-regex,"1.0.1, 1.0.2",medium,1000,2025-11-21,false,Compromised package: sa-company-registration-number-regex,preinstall script (Shai-Hulud 2.0),3
+sa-id-gen,"1.0.4, 1.0.5",medium,1000,2025-11-21,false,Compromised package: sa-id-gen,preinstall script (Shai-Hulud 2.0),3
+samesame,1.0.3,medium,1000,2025-11-21,false,Compromised package: samesame,preinstall script (Shai-Hulud 2.0),3
+scgs-capacitor-subscribe,1.0.11,medium,1000,2025-11-21,false,Compromised package: scgs-capacitor-subscribe,preinstall script (Shai-Hulud 2.0),3
+scgsffcreator,1.0.5,medium,1000,2025-11-21,false,Compromised package: scgsffcreator,preinstall script (Shai-Hulud 2.0),3
+set-nested-prop,"2.0.1, 2.0.2",medium,1000,2025-11-21,false,Compromised package: set-nested-prop,preinstall script (Shai-Hulud 2.0),3
+shelf-jwt-sessions,0.1.2,medium,1000,2025-11-21,false,Compromised package: shelf-jwt-sessions,preinstall script (Shai-Hulud 2.0),3
+shell-exec,"1.1.3, 1.1.4",medium,1000,2025-11-21,false,Compromised package: shell-exec,preinstall script (Shai-Hulud 2.0),3
+shinhan-limit-scrap,1.0.3,medium,1000,2025-11-21,false,Compromised package: shinhan-limit-scrap,preinstall script (Shai-Hulud 2.0),3
+skills-use,"0.1.1, 0.1.2",medium,1000,2025-11-21,false,Compromised package: skills-use,preinstall script (Shai-Hulud 2.0),3
+solomon-api-stories,1.0.2,medium,1000,2025-11-21,false,Compromised package: solomon-api-stories,preinstall script (Shai-Hulud 2.0),3
+solomon-v3-stories,1.15.6,medium,1000,2025-11-21,false,Compromised package: solomon-v3-stories,preinstall script (Shai-Hulud 2.0),3
+solomon-v3-ui-wrapper,1.6.1,medium,1000,2025-11-21,false,Compromised package: solomon-v3-ui-wrapper,preinstall script (Shai-Hulud 2.0),3
+sort-by-distance,2.0.1,medium,1000,2025-11-21,false,Compromised package: sort-by-distance,preinstall script (Shai-Hulud 2.0),3
+south-african-id-info,1.0.2,medium,1000,2025-11-21,false,Compromised package: south-african-id-info,preinstall script (Shai-Hulud 2.0),3
+stat-fns,1.0.1,medium,1000,2025-11-21,false,Compromised package: stat-fns,preinstall script (Shai-Hulud 2.0),3
+stoor,2.3.2,medium,1000,2025-11-21,false,Compromised package: stoor,preinstall script (Shai-Hulud 2.0),3
+super-commit,1.0.1,medium,1000,2025-11-21,false,Compromised package: super-commit,preinstall script (Shai-Hulud 2.0),3
+svelte-autocomplete-select,1.1.1,medium,1000,2025-11-21,false,Compromised package: svelte-autocomplete-select,preinstall script (Shai-Hulud 2.0),3
+svelte-toasty,"1.1.2, 1.1.3",medium,1000,2025-11-21,false,Compromised package: svelte-toasty,preinstall script (Shai-Hulud 2.0),3
+swc-plugin-component-annotate,"1.9.2, 1.9.1",medium,1000,2025-11-21,false,Compromised package: swc-plugin-component-annotate,preinstall script (Shai-Hulud 2.0),3
+tanstack-shadcn-table,1.1.5,medium,1000,2025-11-21,false,Compromised package: tanstack-shadcn-table,preinstall script (Shai-Hulud 2.0),3
+tbssnch,1.0.2,medium,1000,2025-11-21,false,Compromised package: tbssnch,preinstall script (Shai-Hulud 2.0),3
+tcsp,2.0.2,medium,1000,2025-11-21,false,Compromised package: tcsp,preinstall script (Shai-Hulud 2.0),3
+tcsp-draw-test,1.0.5,medium,1000,2025-11-21,false,Compromised package: tcsp-draw-test,preinstall script (Shai-Hulud 2.0),3
+tcsp-test-vd,2.4.4,medium,1000,2025-11-21,false,Compromised package: tcsp-test-vd,preinstall script (Shai-Hulud 2.0),3
+template-lib,"1.1.3, 1.1.4",medium,1000,2025-11-21,false,Compromised package: template-lib,preinstall script (Shai-Hulud 2.0),3
+template-micro-service,"1.0.2, 1.0.3",medium,1000,2025-11-21,false,Compromised package: template-micro-service,preinstall script (Shai-Hulud 2.0),3
+tenacious-fetch,"2.3.2, 2.3.3",medium,1000,2025-11-21,false,Compromised package: tenacious-fetch,preinstall script (Shai-Hulud 2.0),3
+teselagen-interval-tree,1.1.2,medium,1000,2025-11-21,false,Compromised package: teselagen-interval-tree,preinstall script (Shai-Hulud 2.0),3
+test-foundry-app,"1.0.1, 1.0.2, 1.0.3, 1.0.4",medium,1000,2025-11-21,false,Compromised package: test-foundry-app,preinstall script (Shai-Hulud 2.0),3
+test-hardhat-app,"1.0.1, 1.0.2, 1.0.3, 1.0.4",medium,1000,2025-11-21,false,Compromised package: test-hardhat-app,preinstall script (Shai-Hulud 2.0),3
+test23112222-api,1.0.1,medium,1000,2025-11-21,false,Compromised package: test23112222-api,preinstall script (Shai-Hulud 2.0),3
+tg-client-query-builder,"2.14.4, 2.14.5",medium,1000,2025-11-21,false,Compromised package: tg-client-query-builder,preinstall script (Shai-Hulud 2.0),3
+tg-redbird,"1.3.1, 1.3.2",medium,1000,2025-11-21,false,Compromised package: tg-redbird,preinstall script (Shai-Hulud 2.0),3
+tg-seq-gen,"1.0.9, 1.0.10",medium,1000,2025-11-21,false,Compromised package: tg-seq-gen,preinstall script (Shai-Hulud 2.0),3
+thangved-react-grid,1.0.3,medium,1000,2025-11-21,false,Compromised package: thangved-react-grid,preinstall script (Shai-Hulud 2.0),3
+tiaan,1.0.2,medium,1000,2025-11-21,false,Compromised package: tiaan,preinstall script (Shai-Hulud 2.0),3
+token.js-fork,0.7.32,medium,1000,2025-11-21,false,Compromised package: token.js-fork,preinstall script (Shai-Hulud 2.0),3
+trigo-react-app,4.1.2,medium,1000,2025-11-21,false,Compromised package: trigo-react-app,preinstall script (Shai-Hulud 2.0),3
+ts-gaussian,"3.0.6, 3.0.5",medium,1000,2025-11-21,false,Compromised package: ts-gaussian,preinstall script (Shai-Hulud 2.0),3
+ts-imports,"1.0.1, 1.0.2",medium,1000,2025-11-21,false,Compromised package: ts-imports,preinstall script (Shai-Hulud 2.0),3
+tvi-cli,0.1.5,medium,1000,2025-11-21,false,Compromised package: tvi-cli,preinstall script (Shai-Hulud 2.0),3
+typefence,"1.2.2, 1.2.3",medium,1000,2025-11-21,false,Compromised package: typefence,preinstall script (Shai-Hulud 2.0),3
+typeorm-orbit,0.2.27,medium,1000,2025-11-21,false,Compromised package: typeorm-orbit,preinstall script (Shai-Hulud 2.0),3
+undefsafe-typed,"1.0.3, 1.0.4",medium,1000,2025-11-21,false,Compromised package: undefsafe-typed,preinstall script (Shai-Hulud 2.0),3
+uplandui,0.5.4,medium,1000,2025-11-21,false,Compromised package: uplandui,preinstall script (Shai-Hulud 2.0),3
+upload-to-play-store,"1.0.1, 1.0.2",medium,1000,2025-11-21,false,Compromised package: upload-to-play-store,preinstall script (Shai-Hulud 2.0),3
+url-encode-decode,"1.0.1, 1.0.2",medium,1000,2025-11-21,false,Compromised package: url-encode-decode,preinstall script (Shai-Hulud 2.0),3
+use-unsaved-changes,1.0.9,medium,1000,2025-11-21,false,Compromised package: use-unsaved-changes,preinstall script (Shai-Hulud 2.0),3
+valid-south-african-id,1.0.3,medium,1000,2025-11-21,false,Compromised package: valid-south-african-id,preinstall script (Shai-Hulud 2.0),3
+ve-bamreader,"0.2.6, 0.2.7",medium,1000,2025-11-21,false,Compromised package: ve-bamreader,preinstall script (Shai-Hulud 2.0),3
+ve-editor,"1.0.1, 1.0.2",medium,1000,2025-11-21,false,Compromised package: ve-editor,preinstall script (Shai-Hulud 2.0),3
+verror-extra,6.0.1,medium,1000,2025-11-21,false,Compromised package: verror-extra,preinstall script (Shai-Hulud 2.0),3
+vf-oss-template,"1.0.1, 1.0.2, 1.0.3, 1.0.4",medium,1000,2025-11-21,false,Compromised package: vf-oss-template,preinstall script (Shai-Hulud 2.0),3
+vite-plugin-httpfile,0.2.1,medium,1000,2025-11-21,false,Compromised package: vite-plugin-httpfile,preinstall script (Shai-Hulud 2.0),3
+voip-callkit,"1.0.2, 1.0.3",medium,1000,2025-11-21,false,Compromised package: voip-callkit,preinstall script (Shai-Hulud 2.0),3
+vue-browserupdate-nuxt,1.0.5,medium,1000,2025-11-21,false,Compromised package: vue-browserupdate-nuxt,preinstall script (Shai-Hulud 2.0),3
+wdio-web-reporter,0.1.3,medium,1000,2025-11-21,false,Compromised package: wdio-web-reporter,preinstall script (Shai-Hulud 2.0),3
+web-scraper-mcp,1.1.4,medium,1000,2025-11-21,false,Compromised package: web-scraper-mcp,preinstall script (Shai-Hulud 2.0),3
+web-types-htmx,0.1.1,medium,1000,2025-11-21,false,Compromised package: web-types-htmx,preinstall script (Shai-Hulud 2.0),3
+web-types-lit,0.1.1,medium,1000,2025-11-21,false,Compromised package: web-types-lit,preinstall script (Shai-Hulud 2.0),3
+webpack-loader-httpfile,0.2.1,medium,1000,2025-11-21,false,Compromised package: webpack-loader-httpfile,preinstall script (Shai-Hulud 2.0),3
+wellness-expert-ng-gallery,5.1.1,medium,1000,2025-11-21,false,Compromised package: wellness-expert-ng-gallery,preinstall script (Shai-Hulud 2.0),3
+wenk,"1.0.10, 1.0.9",medium,1000,2025-11-21,false,Compromised package: wenk,preinstall script (Shai-Hulud 2.0),3
+yargs-help-output,5.0.3,medium,1000,2025-11-21,false,Compromised package: yargs-help-output,preinstall script (Shai-Hulud 2.0),3
+yoo-styles,6.0.326,medium,1000,2025-11-21,false,Compromised package: yoo-styles,preinstall script (Shai-Hulud 2.0),3
+zapier-async-storage,"1.0.1, 1.0.2, 1.0.3",medium,1000,2025-11-21,false,Compromised package: zapier-async-storage,preinstall script (Shai-Hulud 2.0),3
+zapier-platform-cli,"18.0.2, 18.0.3, 18.0.4",medium,1000,2025-11-21,false,Compromised package: zapier-platform-cli,preinstall script (Shai-Hulud 2.0),3
+zapier-platform-core,"18.0.2, 18.0.3, 18.0.4",medium,1000,2025-11-21,false,Compromised package: zapier-platform-core,preinstall script (Shai-Hulud 2.0),3
+zapier-platform-schema,"18.0.2, 18.0.3, 18.0.4",medium,1000,2025-11-21,false,Compromised package: zapier-platform-schema,preinstall script (Shai-Hulud 2.0),3
+zapier-scripts,"7.8.3, 7.8.4",medium,1000,2025-11-21,false,Compromised package: zapier-scripts,preinstall script (Shai-Hulud 2.0),3
+zuper-cli,1.0.1,medium,1000,2025-11-21,false,Compromised package: zuper-cli,preinstall script (Shai-Hulud 2.0),3
+zuper-sdk,1.0.57,medium,1000,2025-11-21,false,Compromised package: zuper-sdk,preinstall script (Shai-Hulud 2.0),3
+zuper-stream,2.0.9,medium,1000,2025-11-21,false,Compromised package: zuper-stream,preinstall script (Shai-Hulud 2.0),3
+zapier-platform-legacy-scripting-runner,"4.0.2, 4.0.3, 4.0.4",medium,1000,2025-11-21,false,Compromised package: zapier-platform-legacy-scripting-runner,preinstall script (Shai-Hulud 2.0),3

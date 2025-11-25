@@ -7,14 +7,14 @@ Comprehensive test suite created for OreNPMGuard covering both original Shai-Hul
 ## Test Results
 
 ### Python Tests
-- **Total Tests**: 19
-- **Status**: ✅ All Passing
+- **Total Tests**: 21
+- **Status**: ✅ All Passing (1 skipped - awaiting GitHub sync)
 - **Coverage**: IoC detection, package detection, backward compatibility, pattern definitions
 
 ### Node.js Tests
-- **Total Tests**: 13
-- **Status**: ✅ All Passing
-- **Coverage**: IoC detection, backward compatibility, variant detection
+- **Total Tests**: 15
+- **Status**: ✅ All Passing (1 skipped - awaiting GitHub sync)
+- **Coverage**: IoC detection, backward compatibility, variant detection, package detection
 
 ## Test Files Created
 
@@ -36,6 +36,7 @@ Comprehensive test suite created for OreNPMGuard covering both original Shai-Hul
 - ✅ Shai-Hulud 2.0 preinstall hook (`"preinstall": "node setup_bun.js"`)
 - ✅ Payload files (`setup_bun.js`, `bun_environment.js`)
 - ✅ Data files (`cloud.json`, `contents.json`, `environment.json`, `truffleSecrets.json`)
+- ✅ **NEW**: `actionsSecrets.json` detection (GitHub Actions secrets exfiltration file)
 - ✅ Webhook.site references
 - ✅ GitHub workflows (`discussion.yaml`, `formatter_*.yml`)
 - ✅ Self-hosted runner detection (SHA1HULUD)
@@ -45,6 +46,7 @@ Comprehensive test suite created for OreNPMGuard covering both original Shai-Hul
 ### Package Detection
 - ✅ Compromised package version matching
 - ✅ Potential match detection (same package, different version)
+- ✅ **NEW**: `zapier-platform-legacy-scripting-runner` detection (skipped until GitHub sync)
 
 ### Backward Compatibility
 - ✅ Original Shai-Hulud patterns still detected

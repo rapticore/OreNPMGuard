@@ -31,7 +31,7 @@ SHAI_HULUD_IOCS = {
     # Shai-Hulud 2.0 IoCs (November 2025)
     'preinstall_pattern': r'"preinstall":\s*"node\s+(bundle|setup_bun|bun_environment)\.js"',
     'payload_files': ['bundle.js', 'setup_bun.js', 'bun_environment.js'],
-    'data_files': ['cloud.json', 'contents.json', 'environment.json', 'truffleSecrets.json'],
+    'data_files': ['cloud.json', 'contents.json', 'environment.json', 'truffleSecrets.json', 'actionsSecrets.json'],
     'github_workflow_patterns': {
         'discussion_yaml': r'\.github/workflows/discussion\.yaml',
         'formatter_yml': r'\.github/workflows/formatter_\d+\.yml',
