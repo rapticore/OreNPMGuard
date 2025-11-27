@@ -21,7 +21,7 @@
     "validate:python": "python3 -m py_compile shai_hulud_scanner.py && echo 'Python scanner syntax OK'"
   },
   "dependencies": {
-    "js-yaml": "^4.1.0"
+    "js-yaml": "^4.1.1"
   },
   "engines": {
     "node": ">=14.0.0"
