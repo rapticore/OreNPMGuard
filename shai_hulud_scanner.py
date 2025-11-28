@@ -43,7 +43,7 @@ SHAI_HULUD_IOCS = {
     'docker_privilege_escalation_pattern': r'docker\s+run\s+--rm\s+--privileged\s+-v\s+/:/host'
 }
 
-GITHUB_YAML_URL = "https://raw.githubusercontent.com/rapticore/OreNPMGuard/main/affected_packages.yaml"
+GITHUB_YAML_URL = "https://raw.githubusercontent.com/otto-de/OreNPMGuard/main/affected_packages.yaml"
 
 # Global cache for affected packages data
 _affected_packages_cache = None

@@ -44,9 +44,9 @@ jobs:
       - name: 🚨 Download OreNPMGuard Scanner
         run: |
           echo "🔍 Downloading latest OreNPMGuard scanner..."
-          curl -sSL https://raw.githubusercontent.com/rapticore/OreNPMGuard/main/shai_hulud_scanner.py -o shai_hulud_scanner.py
-          curl -sSL https://raw.githubusercontent.com/rapticore/OreNPMGuard/main/shai_hulud_scanner.js -o shai_hulud_scanner.js
-          curl -sSL https://raw.githubusercontent.com/rapticore/OreNPMGuard/main/affected_packages.yaml -o affected_packages.yaml
+          curl -sSL https://raw.githubusercontent.com/otto-de/OreNPMGuard/main/shai_hulud_scanner.py -o shai_hulud_scanner.py
+          curl -sSL https://raw.githubusercontent.com/otto-de/OreNPMGuard/main/shai_hulud_scanner.js -o shai_hulud_scanner.js
+          curl -sSL https://raw.githubusercontent.com/otto-de/OreNPMGuard/main/affected_packages.yaml -o affected_packages.yaml
           chmod +x shai_hulud_scanner.py shai_hulud_scanner.js
 
       - name: 🔍 Scan package.json files
