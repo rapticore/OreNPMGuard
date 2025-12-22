@@ -1,0 +1,13 @@
+node_modules/
+.idea/
+collectors/.cache/
+scan-output/
+collectors/raw-data/
+collectors/final-data/
+logs/
+.env
+.DS_Store
+collectors/final-data/*
+collectors/raw-data/*
+collectors/__pycache__/*
+scanners/__pycache__/*
