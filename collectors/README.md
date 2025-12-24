@@ -243,11 +243,6 @@ phylum:
 - [ ] **Validation** - Cross-reference packages across sources
 - [ ] **Metrics Dashboard** - Track package counts over time
 
-### Excluded Sources (Competitors)
-
-- Wiz
-- Snyk
-
 ## Troubleshooting
 
 ### Clone Timeout
