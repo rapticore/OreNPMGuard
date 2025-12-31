@@ -1,9 +1,18 @@
 # OreNPMGuard - Shai-Hulud Package Scanner
 ## Version 2.0.0 - Shai-Hulud 2.0 Detection & Enhanced Prevention System
 
-A security tool to detect compromised npm packages from the Shai-Hulud supply chain attacks (original September 2025 and Shai-Hulud 2.0 November 2025). Scans both package.json and package-lock.json files to detect exact installed versions. Available in both Python and Node.js implementations with centralized YAML configuration for easy maintenance.
+A security tool to detect compromised npm packages from the Shai-Hulud supply chain attacks (original September 2025 and Shai-Hulud 2.0 November 2025). Scans both package.json and package-lock.json files to detect exact installed versions and Indicators of Compromise (IoCs). Available in both Python and Node.js implementations with centralized YAML configuration for easy maintenance.
 
 **Latest Update:** November 24, 2025 - **738+ compromised packages** tracked with **1,291 unique package@version combinations**. Now detects both original Shai-Hulud and Shai-Hulud 2.0 attack variants.
+
+**For multi-ecosystem scanning**, see [ore-mal-pkg-inspector](https://github.com/rapticore/ore-mal-pkg-inspector).
+
+## 🔗 Related Projects
+
+For **multi-ecosystem malicious package scanning** (npm, PyPI, Maven, RubyGems, Go, Cargo), see:
+**[ore-mal-pkg-inspector](https://github.com/rapticore/ore-mal-pkg-inspector)** - Comprehensive malicious package scanner with dynamic threat intelligence.
+
+OreNPMGuard focuses specifically on **Shai-Hulud attack defense** for npm packages.
 
 ## 🚨 About the Shai-Hulud Attacks
 
@@ -114,147 +123,7 @@ This attack is directly linked to the August 2025 **s1ngularity/Nx compromise**,
 - **Python scanner**: Requires `PyYAML` (`pip install pyyaml`)
 - **Node.js scanner**: Requires `js-yaml` (`npm install js-yaml`)
 
-### Multi-Ecosystem Scanner (NEW) - `malicious_package_scanner.py`
-
-The new multi-ecosystem scanner supports npm, PyPI, Maven, RubyGems, Go, and Cargo, with IoC detection and unified malicious package databases.
-
-#### Installation
-```bash
-# Activate virtual environment (recommended)
-source .venv/bin/activate
-
-# Or install dependencies globally
-pip install -r requirements.txt
-```
-
-#### Basic Usage
-
-**Scan Directory (Auto-detect ecosystem):**
-```bash
-# Auto-detect ecosystem and scan
-python3 malicious_package_scanner.py /path/to/project
-
-# Scan with absolute path
-python3 malicious_package_scanner.py /home/user/projects/my-app
-
-# Scan current directory
-python3 malicious_package_scanner.py .
-```
-
-**Scan with Ecosystem Override:**
-```bash
-# Force specific ecosystem
-python3 malicious_package_scanner.py /path/to/project --ecosystem npm
-python3 malicious_package_scanner.py /path/to/project --ecosystem pypi
-python3 malicious_package_scanner.py /path/to/project --ecosystem maven
-```
-
-**Scan Dependency Files:**
-```bash
-# Ecosystem auto-detected from filename
-python3 malicious_package_scanner.py --file package.json
-python3 malicious_package_scanner.py --file requirements.txt
-python3 malicious_package_scanner.py --file pom.xml
-python3 malicious_package_scanner.py --file Gemfile
-python3 malicious_package_scanner.py --file go.mod
-python3 malicious_package_scanner.py --file Cargo.toml
-```
-
-**Scan Generic Package Lists:**
-```bash
-# Text file (one package per line)
-python3 malicious_package_scanner.py --file packages.txt --ecosystem pypi
-
-# JSON file
-python3 malicious_package_scanner.py --file packages.json --ecosystem npm
-
-# YAML file
-python3 malicious_package_scanner.py --file packages.yaml --ecosystem npm
-```
-
-#### Command-Line Options
-
-| Option | Short | Description |
-|--------|-------|-------------|
-| `--file` | `-f` | Path to file to scan (skips directory detection) |
-| `--ecosystem` | `-e` | Ecosystem to scan: `npm`, `pypi`, `maven`, `rubygems`, `go`, `cargo` |
-| `--output` | `-o` | Custom output path for report JSON file (default: `scan-output/malicious_packages_report_{timestamp}.json`) |
-| `--no-summary` | | Skip printing report summary to console |
-| `--no-ioc` | | Skip IoC (Indicators of Compromise) scanning for faster execution |
-| `--ioc-only` | | Only scan for IoCs, skip package dependency checking |
-
-#### Advanced Usage Examples
-
-**Custom Output Path:**
-```bash
-# Save to custom location
-python3 malicious_package_scanner.py /path/to/project --output /tmp/scan_report.json
-
-# Save to subdirectory
-python3 malicious_package_scanner.py /path/to/project --output scan-output/custom/report.json
-```
-
-**IoC Scanning Options:**
-```bash
-# Full scan (packages + IoCs) - default behavior
-python3 malicious_package_scanner.py /path/to/project
-
-# Skip IoC scanning (faster, package-only)
-python3 malicious_package_scanner.py /path/to/project --no-ioc
-
-# Only scan for IoCs (no package checking)
-python3 malicious_package_scanner.py /path/to/project --ioc-only
-```
-
-**Quiet Mode (No Summary):**
-```bash
-# Generate report without console summary
-python3 malicious_package_scanner.py /path/to/project --no-summary
-```
-
-**Multiple Ecosystems:**
-```bash
-# Scanner automatically detects and scans all ecosystems found
-python3 malicious_package_scanner.py /path/to/multi-language-project
-# Output: "Detected multiple ecosystems: npm, pypi"
-# Scans both npm and pypi packages
-```
-
-#### Output
-
-Reports are saved to `scan-output/` directory by default (or custom path with `--output`):
-
-```json
-{
-  "scan_timestamp": "2025-12-17T10:30:00Z",
-  "ecosystem": "npm",
-  "scanned_path": "/path/to/project",
-  "total_packages_scanned": 150,
-  "malicious_packages_found": 2,
-  "iocs_found": 3,
-  "malicious_packages": [
-    {
-      "name": "malicious-pkg",
-      "version": "1.0.0",
-      "severity": "critical",
-      "sources": ["openssf", "osv", "shai-hulud"],
-      "description": "...",
-      "detected_behaviors": ["malicious_code"]
-    }
-  ],
-  "iocs": [
-    {
-      "type": "malicious_bundle_js",
-      "path": "path/to/bundle.js",
-      "hash": "...",
-      "severity": "CRITICAL",
-      "variant": "original"
-    }
-  ]
-}
-```
-
-#### Python Version
+### Python Scanner
 ```bash
 # Make executable
 chmod +x shai_hulud_scanner.py
@@ -272,7 +141,7 @@ python3 shai_hulud_scanner.py ./my-project
 python3 shai_hulud_scanner.py .
 ```
 
-#### Node.js Version
+### Node.js Scanner
 ```bash
 # Install dependencies first
 npm install
@@ -293,27 +162,7 @@ node shai_hulud_scanner.js ./my-project
 node shai_hulud_scanner.js .
 ```
 
-## What the Scanners Do
-
-### Multi-Ecosystem Scanner (`malicious_package_scanner.py`)
-
-✅ **Multi-Ecosystem Support**: Scans npm, PyPI, Maven, RubyGems, Go, and Cargo packages
-
-✅ **Unified Database**: Checks against dynamically collected malicious package databases from OpenSSF, OSV.dev, and other sources
-
-✅ **Auto-Detection**: Automatically detects ecosystem from directory structure or file names
-
-✅ **Multiple Ecosystems**: Can scan multiple ecosystems in a single run when detected
-
-✅ **IoC Detection**: Scans for Shai-Hulud Indicators of Compromise (files, hooks, workflows, etc.)
-
-✅ **Shai-Hulud Integration**: Also checks npm packages against Shai-Hulud affected packages list
-
-✅ **Comprehensive Reporting**: Generates JSON reports with malicious packages and IoCs
-
-✅ **Flexible Input**: Supports dependency files or generic package lists (text, JSON, YAML)
-
-### Original Shai-Hulud Scanner (`shai_hulud_scanner.py`)
+## What the Scanner Does
 
 ✅ **Exact Match Detection**: Identifies packages with exact version matches to known compromised versions
 
@@ -333,68 +182,6 @@ node shai_hulud_scanner.js .
    - **Common**: References to `webhook.site` exfiltration endpoints, SHA1HULUD runner patterns, Docker privilege escalation
 
 ## Output Examples
-
-### Multi-Ecosystem Scanner Output
-
-**Scanning Multiple Ecosystems:**
-```
-🔍 Detected multiple ecosystems: npm, pypi
-   Scanning all detected ecosystems...
-
-   Scanning npm...
-   📦 Found 2 dependency file(s) for npm
-      Parsing: package.json
-      Parsing: package-lock.json
-
-   Scanning pypi...
-   📦 Found 1 dependency file(s) for pypi
-      Parsing: requirements.txt
-
-✅ Extracted 45 unique package(s) across 2 ecosystem(s)
-
-🔍 Checking 45 package(s) against malicious databases...
-   Checking 30 npm package(s)...
-   Checking 15 pypi package(s)...
-
-🕵️  Found 2 Indicator(s) of Compromise
-
-📊 Generating report...
-```
-
-**Report Summary:**
-```
-============================================================
-SCAN REPORT SUMMARY
-============================================================
-Ecosystem: npm, pypi
-Scanned Path: /path/to/project
-Scan Timestamp: 2025-12-17T10:30:00Z
-Total Packages Scanned: 45
-Malicious Packages Found: 1
-IoCs Found: 2
-============================================================
-
-🚨 MALICIOUS PACKAGES DETECTED:
-
-1. malicious-pkg
-   Version: 1.0.0
-   Severity: CRITICAL
-   Description: Malicious code detected
-   Sources: openssf, osv, shai-hulud
-
-🚨 INDICATORS OF COMPROMISE (IoCs) DETECTED:
-
-1. 🔴 MALICIOUS_BUNDLE_JS [original]: path/to/bundle.js
-   SHA-256: 46faab8ab153fae6e80e7cca38eab363075bb524edd79e42269217a083628f09
-
-2. 🔴 MALICIOUS_POSTINSTALL [original]: package.json
-   Pattern: node bundle.js
-
-Full report saved to: scan-output/malicious_packages_report_20251217_103000.json
-============================================================
-```
-
-### Original Shai-Hulud Scanner Output
 
 **🚨 Critical (Compromised Packages Found):**
 ```
@@ -454,35 +241,7 @@ Full report saved to: scan-output/malicious_packages_report_20251217_103000.json
      - Review self-hosted runner registrations
      - Check cloud provider credentials and secret manager access
 
-## Scanner Comparison
-
-| Feature | `malicious_package_scanner.py` | `shai_hulud_scanner.py` |
-|---------|-------------------------------|------------------------|
-| **Ecosystems** | npm, PyPI, Maven, RubyGems, Go, Cargo | npm only |
-| **Data Sources** | Unified databases (OpenSSF, OSV.dev) + Shai-Hulud list | Shai-Hulud list only |
-| **IoC Detection** | ✅ Yes (optional with `--no-ioc`) | ✅ Yes (always enabled) |
-| **Auto-Detection** | ✅ Yes (ecosystem from files/directory) | ❌ No (npm only) |
-| **Report Format** | JSON (with IoCs) | Console output |
-| **Output Location** | `scan-output/` directory | Console only |
-| **Package Lists** | ✅ Supports text/JSON/YAML input | ❌ No |
-| **Use Case** | Multi-ecosystem projects, CI/CD integration | npm-specific Shai-Hulud scanning |
-
-**Recommendation**: Use `malicious_package_scanner.py` for comprehensive multi-ecosystem scanning. Use `shai_hulud_scanner.py` for quick npm-specific Shai-Hulud checks.
-
 ## Configuration
-
-### Multi-Ecosystem Scanner
-
-The scanner uses unified malicious package databases from the `collectors/` module:
-- **Location**: `collectors/final-data/unified_{ecosystem}.json`
-- **Sources**: OpenSSF, OSV.dev, Phylum, Socket.dev
-- **Update**: Run `collectors/run_all.sh` to update databases
-
-For Shai-Hulud specific packages:
-- **Location**: `affected_packages.yaml` (project root)
-- **Auto-update**: Downloads from GitHub on first run, falls back to local file
-
-### Original Shai-Hulud Scanner
 
 Package data is centralized in `affected_packages.yaml`. To add new compromised packages:
 
@@ -512,34 +271,6 @@ done
 ```
 
 ### CI/CD Integration
-
-**Multi-Ecosystem Scanner (Recommended):**
-```yaml
-# GitHub Actions example
-- name: Scan for malicious packages
-  run: |
-    pip install -r requirements.txt
-    python3 malicious_package_scanner.py .
-    if [ $? -ne 0 ]; then
-      echo "SECURITY ALERT: Malicious packages or IoCs detected!"
-      exit 1
-    fi
-
-# With custom output
-- name: Scan and upload report
-  run: |
-    pip install -r requirements.txt
-    python3 malicious_package_scanner.py . --output scan-report.json
-  continue-on-error: true
-- name: Upload scan report
-  uses: actions/upload-artifact@v3
-  if: always()
-  with:
-    name: security-scan-report
-    path: scan-report.json
-```
-
-**Original Shai-Hulud Scanner:**
 ```yaml
 # GitHub Actions example
 - name: Scan for Shai-Hulud packages
